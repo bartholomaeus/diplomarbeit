@@ -1,0 +1,221 @@
+%
+%
+% Kapitel Detektor
+%
+%
+
+\chapter{Das CMS-Experiment am LHC}
+
+\section{Der Large Hadron Collider}
+
+Der Large Hadron Collider (LHC) ist ein Kreisbeschleuniger für Protonen und Ionen, der von der Europäischen Organisation für Kernforschung (CERN) in der Nähe von Genf an der schweiz-französischen Grenze betrieben wird. Die gegenläufigen Teilchenstrahlen werden in einem Ring von 26,7\,km Umfang an vier Wechselwirkungspunkten (Interaction Points, IP) zur Kollision gebracht. Jeder dieser Wechselwirkungspunkte ist von einem komplexen Detektorsystem umgeben. Neben zwei Vielzweckdetektoren, ATLAS und CMS, gibt es einen auf Schwer-Ionen-Kollisionen spezialisierten Detektor, ALICE und einen Detektor, der hauptsächlich für Untersuchungen von b-Quarks konstruiert wurde, LHCb. \\
+Die Protonenpakete werden in verschiedenen Systemen erzeugt und vorbeschleunigt, siehe dazu~\ref{fig:lhc}. Der Linearbeschleuniger LINAC 2, stellt zunächst Protonen mit einer Energie von 50\,MeV bereit, diese werden dann in den Proton Synchroton Booster (PSB) eingespeist. Der PSB erhöht die nergie der Protonen auf 1,4\,GeV, bevor sie in das Proton Synchrotron (PS) weitergeleitet werden, wo sie dann auf 26\,GeV beschleunigt werden. Als letzter Vorbeschleuniger dient das Super Proton Synchrotron (SPS), das die Energie der Protonen schließlich auf 450\,GeV erhöht, bevor sie dann in den Hauptbeschleuniger LHC injiziert werden. Dort werden dann die Protonenpakete gesammelt und innerhalb von 20 Minuten auf ihre Endenergie beschleunigt. Der LHC ist für Protonenergien von 7\,TeV ausgelegt, die Protonenpakete werden dabei von 1232 supraleitenden Dipolmagneten mit einer magnetischen Feldstärke von bis zu 8,3\,T auf eine Kreisbahn gezwungen. Zwischen den Dipolmagneten befinden sich außerdem Magnete, die Feldkonfigurationen höherer Ordnung erzeugen, wie Quadrupole und Sextupole. Diese werden dazu verwendet, den Teilchenstrahl zu fokussieren und Abweichungen von der Sollbahn zu korrigieren. \\
+Neben der Schwerpunktsenergie ist die Luminosität $\mathcal L$ der wichtigste Kennwert eines Beschleunigers. Durch die Luminosität bestimmt sich die Ereignisrate eines Prozesses mit einem Wirkungsquerschnitt $\sigma$ zu
+\nopagebreak
+\begin{equation}
+N = \sigma \cdot \mathcal L \ .
+\end{equation}
+
+Die Luminosität hängt von der Anzahl $N_{p}$ der Protonen pro Teilchenpaket, der Anzahl $n_{b}$ der Pakete, der Umlauffrequenz $f$ und dem Strahlprofil $A$ am IP ab:
+
+\begin{equation}
+\mathcal L = \frac{N_{p}^{2} \cdot n_{b} \cdot f}{A}
+\end{equation}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/lhc}%
+\caption{Schematische Skizze des LHC und seiner Vorbeschleuniger \cite{Hoehle:Diplom}.}%
+\label{fig:lhc}%
+\end{figure}
+
+Die Designluminosität des LHC beträgt 10$^{34}$\,cm$^{-2}$s$^{-1}$. Die wesentlichen Charakteristika des Beschleunigers bei Designluminosität und -energie sind in Tabelle~\ref{tab:lhc} zusammengefasst. \\
+Diese Arbeit befasst sich mit der Analyse von Daten, die im Jahre 2011 bei einer Schwerpunktsenergie von 7 TeV genommen worden sind. In diesem Jahr wurden maximal 1,45 $\cdot$ 10$^{11}$ Protonen zu einem Paket zusammengefasst, und maximal 1380 Pakete waren gleichzeitig im Beschleuniger vorhanden. Diese hatten einen Abstand zueinander von 50\,ns. Abbildung~\ref{fig:lumi2011} und~\ref{fig:intlumi2011} beschreiben die Entwicklung von instantaner und integrierter Luminositätdes LHC im jahre 2011. Am Ende des Jahres wurde eine integrierte Luminosität von 5,5\,fb$^{-1}$ erreicht, davon werden 4,7\,fb$^{-1}$ in dieser Arbeit zur Analyse herangezogen.
+
+\begin{table}
+\caption{Design-Kenngrößen des LHC bei Proton-Proton-Betrieb \cite{LHC:Design1}.}
+\centering
+\vspace{0,2 cm}
+\begin{tabular}{lrl}
+\hline
+\textbf{Eigenschaft} & \textbf{Wert} & \textbf{Einheit}	 \\
+\hline
+Umfang des Beschleunigers & 26,66 & km  \\
+Umlauffrequenz & 11,2 & kHz \\
+Schwerpunktsenergie & 14 & TeV \\
+Energie pro Proton & 7 & TeV \\
+Energie pro Strahl & 362 & MJ \\
+Strahlstrom & 0,582 & A \\
+Luminosität & 1,0 $\cdot$ 10$^{34}$ & cm$^{-2}$s$^{-1}$ \\
+Teilchenpakete pro Strahl & 2808 & \\
+Protonen pro Teilchenpaket & 1,15 $\cdot$ 10$^{11}$ & \\
+Frequenz der Paketkollisionen & 40 & MHz \\
+Kreuzungswinkel der Strahlen am IP & 285 & $\mu$rad \\
+Radius des Strahls am IP & 16,7 & $\mu$m \\
+Länge eines Teilchenpaketes & 7,55 & cm \\
+\hline
+\end{tabular}
+\label{tab:lhc}
+\end{table}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.7\columnwidth]{bilder/lumi2012}%
+\caption{Zeitlicher Verlauf der maximalen Luminosität am CMS-Experiment in 2012 \cite{CMS:Lumiresults}.}%
+\label{fig:lumi2011}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.7\columnwidth]{bilder/intlumi2012}%
+\caption{Zeitlicher Verlauf der totalen integrierten Luminosität am CMS-Experiment in 2012 \cite{CMS:Lumiresults}.}%
+\label{fig:intlumi2011}%
+\end{figure}
+
+\section{Der CMS-Detektor}
+Der CMS-Detektor ist ein sogenannter Vielzweckdetektor, das heißt er bildet einen Kompromiss aus Generalität auf der einen sowie Spezialisierung auf besonders interessante physikalische Untersuchungen auf der anderen Seite. Der Name \enquote{Compact Muon Solenoid} (CMS) beschreibt, auf welche Aspekte beim Design des Detektors besonderer Wert gelegt wurde. \\
+Der CMS-Detektor ist zylindrisch aufgebaut, 21,6\,m lang, hat einen Durchmesser von 14,6\,m und eine Masse von 12.500\,t. Trotzdem bezeichnet man den Detektor auf Grund seiner Bauweise mit wenigen Zwischenräumen zwischen den einzelnen Komponenten als \enquote{kompakt}. Dadurch wird zum einen eine optimale Ausnutzung des Magnetfeldes zur Impulsmessung gewährleistet, zum anderen verringert sich die Wahrscheinlichkeit, dass Teilchen den Detektor undetektiert durch nicht abgedeckte Gebiete verlassen. \\
+Eine der wesentlichen Anforderungen an den CMS-Detektor ist eine sehr gute Myonrekonstruktion. Myonen geben auf Grund ihrer hohen Masse kaum Bremsstrahlung ab, bilden demnach keine elektromagnetischen Schauer und durchdringen den gesamten Detektor. Dadurch können sie sehr gut identifiziert werden. Mit seinen leistungsfähigen Spurdetektoren und das Myonkammersystem kann der CMS-Detektor diese Anforderungen sehr gut erfüllen. \\
+Das letzte namensgebende Element des Detektors ist der Solenoidmagnet, der in den Detektor integriert ist. Er erreicht eine Feldstärke von bis zu 3,8\,T und kann dadurch auch bei hochenergetischen Teilchen deren Trajektorien derart verändern, dass Ladung und idealerweise auch der Impuls des Teilchens bestimmt werden können. So ist eine der Hauptanforderungen an den CMS-Detektor erfüllt, die Möglichkeit, die Ladung von Myonen mit einem Transversalimpuls von bis zu 1\,TeV eindeutig bestimmen zu können \cite{Coll:CMSExperiment}.
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.6\columnwidth]{bilder/detektor.png}%
+\caption{Schematische Skizze des CMS-Detektors \cite{Coll:CMSExperiment}.}%
+\label{fig:detektor}%
+\end{figure}
+
+Eine Skizze des CMS-Detektors ist in Abbildung \ref{fig:detektor} gezeigt. Dort ist ein Teil des Detektors entfernt, um die einzelnen Komponenten sichtbar zu machen. Der \enquote{Interaction Point}, also der Kollisionspunkt der Protonen im Zentrum des Detektors stellt den Ursprung des Koordinatensystems dar, welches von der CMS-Kollaboration genutzt wird. Dabei zeigt die x-Achse zum Mittelpunkt des Beschleunigerrings, die y-Achse nach oben und die z-Achse entsprechend eines rechtshändigen Koordinatensystems entlang der Strahlachse. Bei Angaben in Kugelkoordinaten wird der Polarwinkel $\Theta$ mit Startwert Null auf der positiven, sowie Endwert $\pi$ auf der negativen z-Achse verwendet. Der Azimutalwinkel $\Phi$ ist in der x-y-Ebene senkrecht zum Strahl definiert. In der Teilchenphysik wird statt des Polarwinkels $\Theta$ häufig die Pseudorapidität $\eta$ genutzt, die gegeben ist durch
+\begin{equation}
+\eta = - \ln \left\lbrack \tan \left(\frac{\Theta}{2}\right)\right\rbrack \ .
+\end{equation}
+
+
+\subsection{Die Silizium-Spurdetektoren}
+
+Den innersten Kern des Detektors bilden die Spurdetektoren. Durch ihre unmittelbare Nähe zum Kollisionspunkt befindet sich nur wenig Material zwischen dem Wechselwirkungspunkt und der Messsensorik. Dies bewirkt eine Verringerung der Vielfachstreuung und es wird eine hochpräzise Messung ermöglicht. Aufgrund dieser genauen Spurmessungen erreicht man eine sehr gute Rekonstruktion der primären und sekundären Vertizes. Dies ist notwendig, um die O(20) Teilchenkollisionen pro Paket trennen zu können und eine gute Rekonstruktion der Sekundärvertizes zu ermöglichen, die unter anderem wichtig ist für die Identifizierung von Jets aus b-Quarks (B-Tagging). \\
+Die Spurdetektoren bestehen aus zwei verschiedenen Systemen, dem Pixeldetektor und dem Streifendetektor. Der Pixeldetektor erreicht eine bessere Auflösung, beschränkt sich jedoch aus Kostengründen nur auf den inneren Bereich des Spurdetektors. \\
+Die große Nähe der Silizium-Spurdetektoren zum Wechselwirkungspunkt heißt, dass die Detektoren einem sehr hohen Teilchenfluss ausgesetzt werden. Um die dadurch verursachten Schäden im Silizium-Gitter zu verringern, werden die Siliziummodule auf eine Temperatur von -10\,°C herabgekühlt. Die Laufzeit des Pixeldetektors erreicht somit 2 Jahre bei Designluminosität, der Streifendetektor erreicht eine Lebensdauer von 10 Jahren.
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/halbleiterdetektor.png}%
+\caption{Skizze zur Funktionsweise eines Halbleiterdetektors \cite{Kuessel:Diplom}.}%
+\label{fig:halbleiterdetektor}%
+\end{figure}
+
+\subsubsection*{Funktionsweise eines Spurdetektors}
+
+Die Spurdetektoren im CMS-Experiment sind Silizium-Halbleiterdetektoren. Beim Durchgang eines geladenen Teilchens durch die Verarmungszone eines p-n-Übergangs werden entlang seiner Spur Ladungen erzeugt. Diese fließen zur Anode bzw. Kathode ab und erzeugen dort einen elektrischen Spannungspuls, siehe Abbildung~\ref{fig:halbleiterdetektor}. Es läßt sich anhand des Krümmungsradius der Teilchenimpuls bestimmen:
+
+\begin{align}
+F_{zentripetal} = \frac{mv^{2}}{r} &= qvB = F_{Lorentz} \\
+\Leftrightarrow p &= qvBr
+\end{align}
+
+Der Spurradius r wird über die Sagitta bestimmt. Daher ist die Messgenauigkeit proportional zum Teilchenimpuls.
+
+\subsubsection*{Der Pixeldetektor}
+
+Der Pixeldetektor ist unterteilt in den Barrel Pixel(BPIX) und den Forward Pixel(FPIX), siehe Abbildung~\ref{fig:pixeldetektor}. Der BPIX besteht aus drei jeweils 53\,cm langen zylindrischen Lagen mit Radien von 4,4\,cm, 7,3\,cm und 10,2\,cm. Die beiden FPIX haben einen Durchmesser von 30\,cm und bestehen aus jeweils 2 Scheiben, die bei $\left|z\right| = $ 34,5\,cm und $\left|z\right| = $ 46,5\,cm installiert sind. Die insgesamt 66 Millionen Pixel bedecken eine Fläche von 1\,m$^{2}$ und erstrecken sich bis $\left|\eta\right| = $ 2,4. Die einzelnen Pixel haben eine Ausdehnung von $100 \times 150\, \mu$m$^{2}$. Diese ist so gewählt, dass äquivalente Auflösungen in der $r-\Phi-$Ebene sowie in $z-$Richtung erreicht werden. Durch die Lorentzkraft verteilen sich die im Silizium freigesetzten Ladungen über mehrere Pixel. Durch eine analoge Auslese der einzelnen Pixel kann dann über eine Gewichtung benachbarter Messwerte eine räumliche Auflösung von 15 - 20\,$\mu$m erreicht werden.
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.7\columnwidth]{bilder/pixeldetektor.png}%
+\caption{Schematische Skizze des Pixeldetektors. Mittig die einzelnen Module des BPIX und an deren Enden die Module des FPIX \cite{Kuessel:Diplom}.}%
+\label{fig:pixeldetektor}%
+\end{figure}
+
+\subsubsection*{Der Streifendetektor}
+
+Der Streifendetektor schließt sich unmittelbar an den Pixeldetektor an. Er lässt sich, wie in Abbildung~\ref{fig:streifendetektor} dargestellt, in vier Bereiche einteilen: Tracker Inner Barrel(TIB), Tracker Inner Disks(TID), Tracker Outer Barrel(TOB) sowie Tracker Endcap(TEC), die sich durch die Anordnung und Art ihrer Module unterscheiden. TIB und TOB sind zylindrisch um die Strahlachse angeordnet, TID und TEC bilden Endkappen senkrecht zur Strahlrichtung. Der gesamte Detektor hat einen Radius von 1,1\,m bei einer Länge von 5,8\,m. Damit ergibt sich eine aktive Detektorfläche von 198\,m$^{2}$ und eine Abdeckung von $\left|\eta\right| < $ 2,5.\\
+Insgesamt sind 9,3 Millionen Siliziumstreifen auf 15.148 Detektormodulen installiert. Neben den einseitigen gibt es auch doppelseitige Module, um die Spurauflösung zu erhöhen. Diese bestehen aus zwei einseitigen Modulen, deren Siliziumstreifen unter einem Winkelversatz von 5,7\,° Rücken an Rücken angebracht sind. Dadurch wird eine Ortsauflösung von 23-53\,$\mu$m in der $r-\Phi-$Ebene und 230-530\,$\mu$m in $z-$Richtung ermöglicht. Die Länge der Sensoren nimmt mit steigendem Radius zu, damit ihre Okkupanz gleichbleibt. Damit wird jedoch gleichzeitig das Signal-zu-Rauschen-Verhältnis verändert, dies wird durch eine ansteigende Dicke der Sensoren ausgeglichen. Diese beträgt innen 320\,$\mu$m und nimmt nach außen bis auf 500\,$\mu$m zu.
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.7\columnwidth]{bilder/streifendetektor.png}%
+\caption{Schema des Streifendetektors \cite{Hegner:Diplom}.}%
+\label{fig:streifendetektor}%
+\end{figure}
+
+\subsection{Die Kalorimeter}
+
+Das Kalorimetersystem des CMS-Experimentes setzt sich aus einem elektromagnetischen Kalorimeter (ECAL) und einem hadronischen Kalorimeter (HCAL) zusammen. Dabei schließt sich das ECAL direkt an den Silizium-Streifendetektor an, radial dahinter angebracht ist das HCAL. In den Kalorimetern sollen alle Teilchen gestoppt und ihre Energie dabei möglichst genau vermessen werden. Davon ausgenommen sind Myonen, welche die Kalorimeter passieren und im Myonsystem näher untersucht werden sowie Neutrinos, die ausschließlich der schwachen Wechselwirkung unterliegen und so vom CMS-Detektor gar nicht direkt beobachtet werden können, sondern nur indirekt über fehlende transversale Energie. \\
+Im ECAL werden hauptsächlich elektromagnetisch und wenig stark wechselwirkende Teilchen vermessen, also Photonen und Elektronen. Aufgabe des HCAL ist die Detektion aller stark wechselwirkenden Teilchen. Diese sind Mesonen und Baryonen, die aus Hadronisierungsprozessen hervorgegangen sind.
+
+\subsubsection*{Das elektromagnetische Kalorimeter}
+
+Elektronen und Photonen werden im ECAL durch zwei Prozesse ineinander umgewandelt und dabei abgebremst: Bremsstrahlung ($e \rightarrow e\gamma$) und Paarbildung ($\gamma \rightarrow e^{+}e^{-}$). Es gibt mehrere Kenndaten, die einen so entstehenden Teilchenschauer beschreiben:
+\begin{itemize}
+	\item Die Strahlungslänge $X_{0}$ bezeichnet die Länge, nach der ein Elektron auf 1/e seiner ursprünglichen Energie abgebremst wurde und ist charakteristisch für das Material, das im Kalorimeter verbaut wurde.
+	\item Der Molière-Radius $R_{M}$ beschreibt die transversale Ausdehnung des Schauers und enthält 95\% der Energie des Ursprungsteilchens. Er ist in guter Näherung proportional zur Strahlungslänge.
+	\item Der Teilchenschauer stoppt, wenn die Energie der Photonen unter die doppelte Elektronmasse und die Energie der Elektronen unter die kritische Energie $E_{C}$ fällt. Für diese gilt:
+	\begin{equation}
+	E_{C} = \frac{E_{0}}{2^{n}},
+	\end{equation}
+	hierbei ist $E_{0}$ die Energie des Ursprungsteilchens und n die Zahl der Strahlungslängen bis zum Unterschreiten der kritischen Energie.
+\end{itemize}
+Die so entstandenen Teilchen werden durch einen Szintillator detektiert und gezählt. Deren Anzahl ist proportional zur Anfangsenergie $E_{0}$ des abzubremsenden Teilchens, somit ergibt sich eine Energieauflösung eines Kalorimeters von
+\begin{equation}
+\frac{\sigma(E)}{E} \propto \frac{1}{\sqrt{E}}.
+\label{eq:energieaufloesung}
+\end{equation}
+
+Im ECAL des CMS-Experimentes werden Kristalle aus Blei-Wolframat (PbWO$_{4}$) verwendet, einem Metallglas, welches sowohl die einfallenden Teilchen effektiv abbremst als auch selbst als Szintillator dient. Es sind 61.200 Kristalle im Barrel-Bereich sowie jeweils 7.324 Kristalle in den Endkappen verbaut. PbWO$_{4}$ hat aufgrund seiner hohen Dichte eine sehr kurze Strahlungslänge $X_{0} = 0,89$\,cm und einen somit kleinen Molière-Radius $R_{M} = 2,2$\,cm. Es eignet sich somit sehr gut für die kompakte Bauweise des Kalorimeters. \\
+Die verwendeten Kristalle haben eine Querschnittsfläche von 22 $\times$ 22\,mm$^{2}$, also in der Größenordnung des Molière-Radius, und eine Länge von 23\,cm. Dies entspricht 25,8 Strahlungslängen. Das ECAL erreicht eine sehr hohe Granularität von 0,0175\,rad in $\eta$ und $\Phi$ im Barrel-Bereich und 0,05\,rad im Bereich der Endkappen. Durch diese hohe Granularität ist allerdings die Lichtausbeute pro MeV mit vier bis fünf Photoelektronen gering, so dass das Lichtsignal der Szintillatoren verstärkt werden muß und hohe Anforderungen an die verwendeten Photodioden und -trioden gestellt werden. Deswegen werden dafür im Barrel-Bereich Lawinenphotodioden (Avalanche Photodiodes, APDs) aus Silizium genutzt. Diese wurden speziell für CMS entwickelt. In den Endkappen sind Vakuum-Phototrioden verbaut, die eine Quanteneffizienz von 22\% und eine maximale Verstärkung bis 10,2 erreichen. \\
+Die Energieauflösung des Kalorimeters kann wie folgt parametrisiert werden:
+\begin{equation}
+\frac{\sigma_{E}}{E} = \frac{2,8\%}{\sqrt{E}} \oplus \frac{12\%}{E} \oplus 0,3\% \quad(E \text{ in GeV})
+\label{eq:}
+\end{equation}
+Hier berücksichtigt der erste Term die stochastischen Schwankungen aus Gleichung~\ref{eq:energieaufloesung}, der zweite Term alle Arten von Rauschen, darunter elektronisches Rauschen und Digitalisierungseffekte. Der dritte, konstante Term schließlich berücksichtigt Kalibrationsfehler und ist dominant bei hohen Energien.
+
+\subsubsection*{Das hadronische Kalorimeter}
+
+\begin{figure}%
+\includegraphics[width=\columnwidth]{bilder/kalorimeter}%
+\caption{Anordnung des elektromagnetischen und hadronischen Kalorimeters. Gezeigt sind jeweils der Barrel- und Endkappenbereich \cite{Hoehle:Diplom}.}%
+\label{fig:kalorimeter}%
+\end{figure}
+
+Auf das ECAL folgt in radialer Richtung unmittelbar das HCAL, das zum Großteil ebenfalls noch innerhalb des Solenoidmagneten liegt. Es ist aufgeteilt in die Teile Barrel (HB), Endkappen (HE) und Vorwärtsbereich (HF), siehe Abbildung~\ref{fig:kalorimeter} und~\ref{fig:kalorimeter2}. Die zentralen Module decken einen Bereich von $\left|\eta\right| \leq 3$ ab, der anschließende Vorwärtsbereich geht bis $\left|\eta\right| = 5$. \\
+Das hadronische Kalorimeter ist als Sampling-Kalorimeter konstruiert, das absorbierende Schauermaterial ist also physikalisch vom Detektormaterial getrennt. Als Absorber wird hier Messing und als detektierendes Material Plastikszintillatoren verwendet, die mittels einer wellenlängenschiebenden Faser ausgelesen werden. Der Vorwärtsbereich des HCAL besteht aufgrund der hohen Strahlungsbelastung in Strahlrohrnähe aus einer Quarz-/Eisen-Struktur, in der die Teilchen durch Cerenkov-Licht nachgewiesen werden. Er ist 6\,m hinter den Endkappen angebracht, außerhalb des Myonsystems, siehe Abbildung~\ref{fig:kalorimeter2} und dient unter anderem der Messung fehlender transversaler Energie durch Neutrinos. Ebenso außerhalb des Solenoidmagneten befindet sich im zentralen Bereich das Outer Calorimeter (HO, Abb.~\ref{fig:kalorimeter2}). Es dient der Detektion spät aufschauernder Teilchen, die durch den Solenoiden zusätzlich abgebremst werden. Die Dicke des HCAL erreicht damit etwa 12 Strahlungslängen. Zusammen mit dem ECAL beträgt die Energieauflösung des HCAL
+\begin{equation}
+\frac{\sigma(E)}{E} = \frac{1}{\sqrt{E}} \oplus 0,045 \ .
+\end{equation}
+
+\begin{figure}%
+\includegraphics[width=\columnwidth]{bilder/kalorimeter2}%
+\caption{Übersicht des CMS-Detektors mit Outer Calorimeter (HO) und Vorwärtskalorimeter (HF) \cite{Coll:CMSExperiment}.}%
+\label{fig:kalorimeter2}%
+\end{figure}
+
+\subsection{Der Solenoidmagnet}
+
+Der für den Detektor namensgebende Solenoidmagnet erzeugt ein Magnetfeld von bis zu 3,8\,T. Diese hohe Feldstärke ist notwendig, um die Bahnen der bei Schwerpunktsenergien von bis zu 14\,TeV entstehenden hochenergetischen Teilchen ausreichend zu krümmen. Das Feld wird mittels einer supraleitenden Niob-Titan-Spule erzeugt. Diese ist auf 4,5\,K abgekühlt und besitzt 2168 Windungen. Der umlaufende Strom von 19,5\,kA erzeugt ein Feld der Energie 2,7\,GJ. Es wurde Wert darauf gelegt, die massive Magnetspule so weit wie möglich außen im Detektor anzuordnen, da sie die Messung auf Grund von Vielfachstreuung der Teilchen verfälscht. Im CMS-Detektor ist der Solenoidmagnet im Abstand von 5,9\,m von der Strahlachse angebracht und erreicht eine Länge von 12,9\,m.
+
+\subsection{Die Myonkammern}
+
+An den Solenoiden schließt sich das Myonsystem als letzte Detektorkomponente an. Es ist außerhalb des Solenoidmagneten in dessen Rückführjoch integriert, so dass auch hier ein Magnetfeld existiert, das jedoch dem im Inneren des Detektors entgegengerichtet ist und eine Feldstärke von 2\,T aufweist. Somit wird die Myonenbahn auch hier gekrümmt, wodurch eine Impulsmessung ermöglicht wird. Des weiteren werden die Myonkammern durch das Rückführjoch von begleitenden elektromagnetischen Schauern und abgeschirmt. Myonen sind durch ihre vergleichsweise hohe Masse kaum ionisierend, so daß sie die inneren Detektorkomponenten annähernd ungebremst durchqueren, und damit als einzige Teilchen im Myonsystem detektiert werden. Es werden hier in Abhängigkeit von $\eta$ drei verschiedene Arten von Gasdetektoren eingesetzt, siehe Abbildung \ref{fig:myon}. Beim Durchtritt eines Myons wird deren Gas ionisiert. Im Zentralbereich $\left|\eta\right|<0.8$ verwendet man Driftkammern (DT). Dies sind Kathodenröhren, die mit einem $Ar/CO_2$-Gemisch gefüllt sind. Durchfliegende Myonen ionisieren das Gas und die so entstehenden Ladungsträger fließen durch die angelegte Spannung zu den entsprechenden Elektroden ab. Bei bekannter Driftgeschwindigkeit kann die zurückgelegte Strecke berechnet werden und man erhält eine Ortsauflösung von 250\,$\mu$m pro DT und 100\,$\mu$m pro Kammer, die aus jeweils drei DTs besteht. In den Endkappen bei Pseudorapiditäten $0,8<\left|\eta\right|<2,4$ befinden sich Kathodenstreifenkammern (CSC). Diese setzen sich aus jeweils sieben Lagen mit eingebrachten Kathodenstreifen zusammen, in den sechs gasgefüllten Zwischenräumen sind dazu senkrecht Anodendrähte gespannt. Dadurch wird eine feinere Segmentierung durch die kleineren Abstände zwischen Kathoden beziehungsweise Anoden erreicht. Auf Grund der so erzielten kürzeren Driftstrecke werden kürzere Reaktionszeiten von 25\,ns erreicht, was dem Abstand zweier Kollisionen entspricht. Zusätzlich zu den DTs und CSCs sind im gesamten $\eta$-Bereich Resistive Plate Chambers (RPC) verbaut. Diese bestehen aus jeweils zwei Bakelitplatten, die gasgefüllt sind und zwischen denen eine hohe Spannung anliegt. Sie zeichnen sich durch ihre kurze Reaktionszeit aus und verbessern somit die Zuordnung der Spuren zu den Kollisionen. Ein die RPC durchquerendes Teilchen löst eine lawinenartige Kaskade aus, die von 96 Aluminiumstreifen ausgelesen wird. Im Barrelbereich sind 370, in den Endkappen 432 RPCs verwendet. Die Impulsauflösung des Myonsystems in Kombination mit dem inneren Spurdetektor ergibt sich zu
+\begin{equation}
+\frac{\delta p_T}{p_T}=0,04\sqrt{p_T}\quad (p_T\text{ in TeV}).
+\end{equation}
+
+\begin{figure}%
+\includegraphics[width=\columnwidth]{bilder/myonsystem.png}%
+\caption{Das Myonsystem bei CMS \cite{James:MuonID}.}%
+\label{fig:myon}%
+\end{figure}
+
+\subsection{Das Triggersystem}
+
+Bei Design-Luminosität kommt es innerhalb des CMS-Detektors zu $10^{10}$ Wechselwirkungen pro Sekunde. Von diesen können allerdings nur etwa $10^{2}$ Ereignisse pro Sekunde zur späteren Analyse gespeichert werden. Die Zeit zwischen zwei Paketkollisionen beträgt 25\,ns. Die Datenrate muss also von 40\,MHz auf 100\,Hz verringert werden. Zu diesem Zweck wurden zwei Triggersysteme entwickelt: der hardwarebasierte Level-1-Trigger und der softwarebasierte High-Level-Trigger (HLT).
+
+\subsubsection*{Level-1-Trigger}
+
+Der Level-1-Trigger setzt sich aus einem Myon- und einem Kalorimeter-Trigger zusammen. Er triggert die vier Elektronen, Photonen, Tau-Jets, zentralen Jets und Forward-Jets mit der höchsten transversalen Energie, die vier Myonen mit dem höchsten transversalen Impuls sowie den $\eta$- und $\Phi$-Wert dieser Objekte mit reduzierter Granularität und Auflösung des Detektors. Diese Objekte werden dann dem HLT als Startwert übergeben, wenn der Level-1-Trigger entscheidet, das Ereignis vollständig auszulesen. Für diese Entscheidung wird etwa 1\,$\mu$s benötigt. Währenddesssen werden die gesamten Detektorinformationen für 3,2\,$\mu$s in einem Puffer zwischengespeichert. Die dem HLT übergebene Eventrate liegt im kHz-Bereich.
+
+\subsubsection*{High-Level-Trigger (HLT)}
+
+Der softwarebasierte HLT arbeitet mit komplexeren Algorithmen und nutzt die komplette Detektorinformation zur Entscheidung und Berechnung von interessanten Objekten, wie z.B. einem hochenergetischen Myon. Als Startwerte des Rekonstruktionsalgorithmus werden die oben beschriebenen Objekte des Level-1-Triggers benutzt. Dieser Algorithmus ist zwar gegenüber denen des Level-1-Triggers komplexer, im Vergleich zur späteren Nachprozessierung der Daten aber vereinfacht, da man immer noch mit einer sehr hohen Datenrate arbeitet. Der HLT prozessiert die Daten in Pfaden. Dabei werden nach jedem Schritt die Trigger-Entscheidungen zurückgegeben und dadurch Pfade gestoppt oder sogar das ganze Ereignis verworfen. Der HLT ist also effektiv in einen N-Level-Trigger unterteilt. \\
+Die Softwareumgebung des Triggers ist dieselbe, die auch für die Ereignisgeneration, die Detektorsimulation und die nachfolgende Analyse benutzt wird.
