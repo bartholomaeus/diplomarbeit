@@ -194,3 +194,11 @@
   timestamp = {2013.06.14}
 }
 
+@ELECTRONIC{CMS:Lumiresults,
+  year = {2013},
+  title = {{CMS} {L}uminosity - {P}ublic {R}esults},
+  url = {https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults},
+  owner = {Markus_2},
+  timestamp = {2013.06.14}
+}
+

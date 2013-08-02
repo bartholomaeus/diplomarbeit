@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  20 JUN 2013 14:34
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  2 AUG 2013 15:40
 entering extended mode
 **Diplomarbeit.tex
-(D:\LaTEX\Diplomarbeit\Diplomarbeit.tex
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
 , bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
@@ -10,7 +10,7 @@ ian, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, icelandic, 
 erman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, s
 lovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishm
 ax, welsh, loaded.
-(D:\LaTEX\Diplomarbeit\kapitel/header.tex
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/header.tex
 (C:\Users\Markus_2\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrreprt.cls
 Document Class: scrreprt 2012/07/29 v3.11b KOMA-Script document class (report)
 (C:\Users\Markus_2\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
@@ -352,8 +352,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (D:\LaTEX\Diplomarbeit\Diplomarbeit.aux
-(D:\LaTEX\Diplomarbeit\kapitel/detektor.aux) (D:\LaTEX\Diplomarbeit\kapitel/theorie.aux))
+
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.aux
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/simulation.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
@@ -385,7 +386,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count131
- (D:\LaTEX\Diplomarbeit\kapitel/detektor.tex
+ (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/simulation.tex
 Kapitel 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -394,208 +395,73 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+
+Overfull \hbox (17.43794pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/n/12 Ein Ver-gleich der Er-geb-nis-se aus von CMS ge-mes-se-nen Da-ten mit Monte-Carlo-Simulationen
+ []
+
+[1
+
+
+
+
+{C:/Users/Markus_2/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
+) <bilder/whizard.png, id=7, 430.60875pt x 238.64156pt>
+File: bilder/whizard.png Graphic file (type png)
 
+<use bilder/whizard.png>
+Package pdftex.def Info: bilder/whizard.png used on input line 41.
+(pdftex.def)             Requested size: 313.69029pt x 173.85002pt.
 
-
-
-{C:/Users/Markus_2/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] <bilder/lhc.png, id=9, 253.68245pt x 418.13358pt>
-File: bilder/lhc.png Graphic file (type png)
- <use bilder/lhc.png>
-Package pdftex.def Info: bilder/lhc.png used on input line 27.
-(pdftex.def)             Requested size: 179.24963pt x 295.46051pt.
-
-<bilder/lumi2012.png, id=10, 578.16pt x 433.62pt>
-File: bilder/lumi2012.png Graphic file (type png)
- <use bilder/lumi2012.png>
-Package pdftex.def Info: bilder/lumi2012.png used on input line 63.
-(pdftex.def)             Requested size: 313.69029pt x 235.26288pt.
-
-<bilder/intlumi2012.png, id=12, 578.16pt x 433.62pt>
-File: bilder/intlumi2012.png Graphic file (type png)
- <use bilder/intlumi2012.png>
-Package pdftex.def Info: bilder/intlumi2012.png used on input line 70.
-(pdftex.def)             Requested size: 313.69029pt x 235.26288pt.
-
-Underfull \hbox (badness 1960) in paragraph at lines 71--71
-[][]|\OT1/cmr/m/n/12 Zeit-li-cher Ver-lauf der to-ta-len in-te-grier-ten Lu-mi-no-sitat am CMS-
+Overfull \hbox (33.71419pt too wide) in paragraph at lines 46--48
+[]\OT1/cmr/m/n/12 WHIZARD be-nutzt die Par-ton-dich-te-ver-tei-lung CTEQ6L1 und ei-ne va-ria-ble Renormalisierungs-
  []
 
-
-Underfull \vbox (badness 3039) has occurred while \output is active []
-
- [2 <D:/LaTEX/Diplomarbeit/bilder/lhc.png>] [3 <D:/LaTEX/Diplomarbeit/bilder/lumi2012.png>]
-Underfull \vbox (badness 2351) has occurred while \output is active []
-
- [4 <D:/LaTEX/Diplomarbeit/bilder/intlumi2012.png>]
-<bilder/detektor.png, id=28, 438.49214pt x 320.58647pt>
-File: bilder/detektor.png Graphic file (type png)
- <use bilder/detektor.png>
-Package pdftex.def Info: bilder/detektor.png used on input line 83.
-(pdftex.def)             Requested size: 268.8813pt x 196.58961pt.
- [5 <D:/LaTEX/Diplomarbeit/bilder/detektor.png>] <bilder/halbleiterdetektor.png, id=33, 165.418pt x 145.343pt>
-File: bilder/halbleiterdetektor.png Graphic file (type png)
- <use bilder/halbleiterdetektor.png>
-Package pdftex.def Info: bilder/halbleiterdetektor.png used on input line 102.
-(pdftex.def)             Requested size: 179.24963pt x 157.50476pt.
-
-Overfull \hbox (5.27495pt too wide) in paragraph at lines 109--110
-\OT1/cmr/m/n/12 Die Spur-de-tek-to-ren im CMS-Experiment sind Silizium-Halbleiterdetektoren. Beim Durch-
+[2]
+Overfull \hbox (1.33807pt too wide) in paragraph at lines 51--53
+\OT1/cmr/m/n/12 Top-Ereignisse wur-den mit POWHEG si-mu-liert, der Zer-fall des $\OML/cmm/m/it/12 $\OT1/cmr/m/n/12 -Lep
+tons mit-tels TAUO-
  []
 
-[6 <D:/LaTEX/Diplomarbeit/bilder/halbleiterdetektor.png>] <bilder/pixeldetektor.png, id=37, 289.08pt x 129.9951pt>
-File: bilder/pixeldetektor.png Graphic file (type png)
-
-<use bilder/pixeldetektor.png>
-Package pdftex.def Info: bilder/pixeldetektor.png used on input line 124.
-(pdftex.def)             Requested size: 313.69029pt x 141.069pt.
- [7 <D:/LaTEX/Diplomarbeit/bilder/pixeldetektor.png>]
-<bilder/streifendetektor.png, id=42, 423.88148pt x 249.10085pt>
-File: bilder/streifendetektor.png Graphic file (type png)
- <use bilder/streifendetektor.png>
-Package pdftex.def Info: bilder/streifendetektor.png used on input line 136.
-(pdftex.def)             Requested size: 313.69029pt x 184.34694pt.
- [8 <D:/LaTEX/Diplomarbeit/bilder/streifendetektor.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
-
-Overfull \hbox (8.77068pt too wide) in paragraph at lines 155--157
-\OT1/cmr/m/n/12 hierbei ist $\OML/cmm/m/it/12 E[]$ \OT1/cmr/m/n/12 die Ener-gie des Ur-sprungs-teil-chens und n die Zahl
- der Strah-lungslangen
- []
-
-[9] <bilder/kalorimeter.png, id=49, 424.30151pt x 246.62914pt>
-File: bilder/kalorimeter.png Graphic file (type png)
- <use bilder/kalorimeter.png>
-Package pdftex.def Info: bilder/kalorimeter.png used on input line 176.
-(pdftex.def)             Requested size: 448.13095pt x 260.48856pt.
- [10 <D:/LaTEX/Diplomarbeit/bilder/kalorimeter.png>] <bilder/kalorimeter2.png, id=53, 424.19348pt x 251.61562pt>
-File: bilder/kalorimeter2.png Graphic file (type png)
- <use bilder/kalorimeter2.png>
-Package pdftex.def Info: bilder/kalorimeter2.png used on input line 188.
-(pdftex.def)             Requested size: 448.13095pt x 265.8167pt.
-
-Underfull \hbox (badness 2626) in paragraph at lines 189--189
-[][]|[]\OT1/cmr/m/n/12 Uber-sicht des CMS-Detektors mit Ou-ter Ca-lo-ri-me-ter (HO) und
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <D:/LaTEX/Diplomarbeit/bilder/kalorimeter2.png>] [12] <bilder/myonsystem.png, id=60, 413.99702pt x 263.23509pt>
-File: bilder/myonsystem.png Graphic file (type png)
- <use bilder/myonsystem.png>
-Package pdftex.def Info: bilder/myonsystem.png used on input line 205.
-(pdftex.def)             Requested size: 448.13095pt x 284.9564pt.
-
-Underfull \vbox (badness 4132) has occurred while \output is active []
-
- [13 <D:/LaTEX/Diplomarbeit/bilder/myonsystem.png>])
-[14] (D:\LaTEX\Diplomarbeit\kapitel/theorie.tex
-Kapitel 2.
-[15
+[3 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/whizard.png>]
+<bilder/reco.png, id=17, 424.21207pt x 218.0929pt>
+File: bilder/reco.png Graphic file (type png)
+ <use bilder/reco.png>
+Package pdftex.def Info: bilder/reco.png used on input line 63.
+(pdftex.def)             Requested size: 448.13095pt x 230.40198pt.
+) [4 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/reco.png>] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit
+\Diplomarbeit.bbl) [5
 
 
 
-
-] [16] <bilder/gluonfusion-s-kanal.png, id=75, 206.74709pt x 134.47708pt>
-File: bilder/gluonfusion-s-kanal.png Graphic file (type png)
- <use bilder/gluonfusion-s-kanal.png>
-Package pdftex.def Info: bilder/gluonfusion-s-kanal.png used on input line 96.
-(pdftex.def)             Requested size: 179.24963pt x 116.59808pt.
-
-<bilder/gluonfusion-t-kanal.png, id=76, 206.87288pt x 119.2455pt>
-File: bilder/gluonfusion-t-kanal.png Graphic file (type png)
- <use bilder/gluonfusion-t-kanal.png>
-Package pdftex.def Info: bilder/gluonfusion-t-kanal.png used on input line 102.
-(pdftex.def)             Requested size: 179.24963pt x 103.32788pt.
-
-<bilder/gluonfusion-u-kanal.png, id=77, 206.87288pt x 107.50162pt>
-File: bilder/gluonfusion-u-kanal.png Graphic file (type png)
- <use bilder/gluonfusion-u-kanal.png>
-Package pdftex.def Info: bilder/gluonfusion-u-kanal.png used on input line 109.
-(pdftex.def)             Requested size: 179.24963pt x 93.15164pt.
-
-<bilder/quark-annihilation.png, id=78, 206.3995pt x 127.94354pt>
-File: bilder/quark-annihilation.png Graphic file (type png)
- <use bilder/quark-annihilation.png>
-Package pdftex.def Info: bilder/quark-annihilation.png used on input line 115.
-(pdftex.def)             Requested size: 179.24963pt x 111.11668pt.
-
-<bilder/wirkungsquerschnitt.png, id=79, 394.05318pt x 474.80179pt>
-File: bilder/wirkungsquerschnitt.png Graphic file (type png)
- <use bilder/wirkungsquerschnitt.png>
-Package pdftex.def Info: bilder/wirkungsquerschnitt.png used on input line 125.
-(pdftex.def)             Requested size: 358.50612pt x 431.99062pt.
-
-Underfull \vbox (badness 1642) has occurred while \output is active []
-
- [17] [18 <D:/LaTEX/Diplomarbeit/bilder/gluonfusion-s-kanal.png> <D:/LaTEX/Diplomarbeit/bilder/gluonfusion-t-kanal.png> 
-<D:/LaTEX/Diplomarbeit/bilder/gluonfusion-u-kanal.png> <D:/LaTEX/Diplomarbeit/bilder/quark-annihilation.png>] [19 <D:/La
-TEX/Diplomarbeit/bilder/wirkungsquerschnitt.png>]
-<bilder/kuchen.pdf, id=91, 796.9775pt x 597.23125pt>
-File: bilder/kuchen.pdf Graphic file (type pdf)
- <use bilder/kuchen.pdf>
-Package pdftex.def Info: bilder/kuchen.pdf used on input line 148.
-(pdftex.def)             Requested size: 403.31511pt x 302.23274pt.
- [20 <D:/LaTEX/Diplomarbeit/bilder/kuchen.pdf>] <bilder/vertex1.png, id=108, 258.21469pt x 141.52875pt>
-File: bilder/vertex1.png Graphic file (type png)
- <use bilder/vertex1.png>
-Package pdftex.def Info: bilder/vertex1.png used on input line 167.
-(pdftex.def)             Requested size: 179.24963pt x 98.25096pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--168
-[][]|\OT1/cmr/m/n/10.95 Feynman-Graph in fuhren-der
- []
-
-<bilder/vertex2.png, id=109, 260.47313pt x 137.7647pt>
-File: bilder/vertex2.png Graphic file (type png)
- <use bilder/vertex2.png>
-Package pdftex.def Info: bilder/vertex2.png used on input line 174.
-(pdftex.def)             Requested size: 179.24963pt x 94.80547pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
-[][]|\OT1/cmr/m/n/10.95 Mit ei-ner Schlei-fen-kor-rek-tur
- []
-
-) [21 <D:/LaTEX/Diplomarbeit/bilder/vertex1.png> <D:/LaTEX/Diplomarbeit/bilder/vertex2.png>] [22]
-(D:\LaTEX\Diplomarbeit\Diplomarbeit.bbl [23
-
-
-
-]) [24] (D:\LaTEX\Diplomarbeit\Diplomarbeit.aux
-(D:\LaTEX\Diplomarbeit\kapitel/detektor.aux) (D:\LaTEX\Diplomarbeit\kapitel/theorie.aux)) ) 
+]
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.aux
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/simulation.aux)) ) 
 Here is how much of TeX's memory you used:
- 7339 strings out of 494045
- 110203 string characters out of 3145961
- 211961 words of memory out of 3000000
- 10502 multiletter control sequences out of 15000+200000
- 10722 words of font info for 40 fonts, out of 3000000 for 9000
+ 7181 strings out of 494045
+ 107026 string characters out of 3145961
+ 203216 words of memory out of 3000000
+ 10370 multiletter control sequences out of 15000+200000
+ 12714 words of font info for 49 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,17n,52p,2627b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Diplomarbeit.pdf (24 pages, 6016686 bytes).
+ 42i,6n,52p,1340b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Diplomarbeit.pdf (5 pages, 175576 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

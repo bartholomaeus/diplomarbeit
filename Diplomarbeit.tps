@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1068
-NormalPos.bottom=469
+NormalPos.bottom=495
 Class=LaTeXView
-Document=kapitel\theorie.tex
+Document=kapitel\simulation.tex
 
 [Frame0_View0,0]
-TopLine=175
-Cursor=10234
+TopLine=84
+Cursor=8479
 
 [Frame1]
 Flags=0
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1068
-NormalPos.bottom=469
+NormalPos.bottom=495
 Class=LaTeXView
-Document=kapitel\detektor.tex
+Document=kapitel\header.tex
 
 [Frame1_View0,0]
-TopLine=79
-Cursor=4926
+TopLine=0
+Cursor=266
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1068
-NormalPos.bottom=469
+NormalPos.bottom=495
 Class=LaTeXView
-Document=Diplomarbeit.tex
+Document=kapitel\theorie.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=227
+TopLine=184
+Cursor=10234
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1068
-NormalPos.bottom=469
+NormalPos.bottom=495
 Class=LaTeXView
-Document=kapitel\header.tex
+Document=Diplomarbeit.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=266
+Cursor=259
 
 [Frame4]
 Flags=0
@@ -84,13 +84,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1068
-NormalPos.bottom=469
+NormalPos.bottom=495
 Class=LaTeXView
-Document=kapitel\titelseite.tex
+Document=kapitel\detektor.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=0
+TopLine=38
+Cursor=4926
 
 [Frame5]
 Flags=0
@@ -102,16 +102,34 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1068
-NormalPos.bottom=469
-Class=BibTeXView
-Document=referenzen.bib
+NormalPos.bottom=495
+Class=LaTeXView
+Document=kapitel\titelseite.tex
 
 [Frame5_View0,0]
 TopLine=0
 Cursor=0
 
+[Frame6]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1068
+NormalPos.bottom=495
+Class=LaTeXView
+Document=kapitel\einleitung.tex
+
+[Frame6_View0,0]
+TopLine=0
+Cursor=26
+
 [SessionInfo]
-FrameCount=6
+FrameCount=7
 ActiveFrame=0
 
 [Bookmarks]
