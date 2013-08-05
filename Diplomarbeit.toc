@@ -1,7 +1,28 @@
 \contentsline {chapter}{\numberline {1}Das CMS-Experiment am LHC}{3}
-\contentsline {section}{\numberline {1.1}Der Large Hadron Collider (LHC)}{3}
-\contentsline {section}{\numberline {1.2}Der CMS-Detektor}{3}
-\contentsline {subsection}{\numberline {1.2.1}Die Spurdetektoren}{3}
-\contentsline {subsection}{\numberline {1.2.2}Die Kalorimeter}{3}
-\contentsline {subsection}{\numberline {1.2.3}Der Solenoidmagnet}{3}
-\contentsline {subsection}{\numberline {1.2.4}Die Myonkammern}{4}
+\contentsline {section}{\numberline {1.1}Der Large Hadron Collider}{3}
+\contentsline {section}{\numberline {1.2}Der CMS-Detektor}{6}
+\contentsline {subsection}{\numberline {1.2.1}Die Silizium-Spurdetektoren}{7}
+\contentsline {subsection}{\numberline {1.2.2}Die Kalorimeter}{10}
+\contentsline {subsection}{\numberline {1.2.3}Der Solenoidmagnet}{14}
+\contentsline {subsection}{\numberline {1.2.4}Die Myonkammern}{14}
+\contentsline {subsection}{\numberline {1.2.5}Das Triggersystem}{15}
+\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{17}
+\contentsline {section}{\numberline {2.1}Das Standardmodell der Teilchenphysik}{17}
+\contentsline {section}{\numberline {2.2}Das Top-Quark am LHC}{17}
+\contentsline {subsection}{\numberline {2.2.1}Erzeugung von Top-Quark-Paaren}{18}
+\contentsline {subsection}{\numberline {2.2.2}Top-Quark-Zerfall}{20}
+\contentsline {section}{\numberline {2.3}Anomale Kopplungen des Top-Quarks}{22}
+\contentsline {chapter}{\numberline {3}Datensimulation und -rekonstruktion}{25}
+\contentsline {section}{\numberline {3.1}Monte-Carlo-Simulation}{25}
+\contentsline {subsection}{\numberline {3.1.1}Produktionskette}{25}
+\contentsline {subsection}{\numberline {3.1.2}Simulation von $t\overline {t}+\gamma $ Ereignissen}{26}
+\contentsline {subsection}{\numberline {3.1.3}Simulation des Top-Paar-Prozesses und der betrachteten Untergr\"unde}{27}
+\contentsline {subsection}{\numberline {3.1.4}Detektorsimulation}{27}
+\contentsline {section}{\numberline {3.2}Ereignisrekonstruktion}{28}
+\contentsline {subsection}{\numberline {3.2.1}Myonen}{28}
+\contentsline {subsection}{\numberline {3.2.2}Elektronen}{30}
+\contentsline {subsection}{\numberline {3.2.3}Photonen}{31}
+\contentsline {subsection}{\numberline {3.2.4}geladene und ungeladene Hadronen}{32}
+\contentsline {subsection}{\numberline {3.2.5}Particle Flow}{32}
+\contentsline {subsection}{\numberline {3.2.6}Jets}{33}
+\contentsline {chapter}{Literaturverzeichnis}{34}

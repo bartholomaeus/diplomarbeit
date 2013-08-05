@@ -1,7 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Diplomarbeit.aux
+A level-1 auxiliary file: kapitel/detektor.aux
+A level-1 auxiliary file: kapitel/theorie.aux
 A level-1 auxiliary file: kapitel/simulation.aux
 The style file: amsplain.bst
 Database file #1: referenzen.bib
+Warning--entry type for "Heinson:Diagrams" isn't style-file defined
+--line 193 of file referenzen.bib
+Warning--entry type for "CMS:Lumiresults" isn't style-file defined
+--line 282 of file referenzen.bib
+Warning--to sort, need author or key in CMS:Lumiresults
+Warning--missing pages in Catani:QCD
 Warning--missing journal name in CMS:Slice
 Warning--missing pages in CMS:Slice
-(There were 2 warnings)
+Warning--missing pages in James:MuonID
+Warning--missing pages in Baffioni:Reco
+Warning--missing pages in Adam:Reco
+Warning--missing pages in Fruehwirth:Reco
+(There were 10 warnings)
