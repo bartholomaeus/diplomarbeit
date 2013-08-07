@@ -74,6 +74,12 @@ S.~Abachi et~al., \emph{Search for {H}igh {M}ass {T}op {Q}uark {P}roduction in
   $p\overline{p}$ {C}ollisions at $\sqrt{s} = 1.8$\, {T}e{V}}, Phys. Rev. Lett.
   \textbf{74(13)} (1995), 2422--2426.
 
+\bibitem{Chatrchyan:CrossSection}
+Serguei~Chatrchyan et~al., \emph{Measurement of the $t\bar{t}$ {P}roduction
+  {C}ross {S}ection in the {D}ilepton {C}hannel in $pp$ {C}ollisions at
+  $\sqrt{s}=7$ {TeV}}, Journal of High Energy Physics \textbf{1211} (2012),
+  067.
+
 \bibitem{Baffioni:Reco}
 Stephanie~Baffioni et~al., \emph{Electron {R}econstruction in {CMS}}, CMS Note
   \textbf{2006/40} (2006).
@@ -86,6 +92,10 @@ The~{CMS}Collaboration et~al., \emph{Particle-flow {E}vent {R}econstruction in
 \bibitem{Adam:Reco}
 Wolfgang~Adam et~al., \emph{Track {R}econstruction in the {CMS} {T}racker}, CMS
   Note \textbf{2006/41} (2005).
+
+\bibitem{Haefner:SingleTop}
+Petra Haefner, \emph{Single {T}op {R}esults by {ATLAS} and {CMS}}, Tech. Report
+  ATL-PHYS-PROC-2012-019, arXiv:1205.1352, 2012.
 
 \bibitem{Hegner:Diplom}
 Benedikt Hegner, \emph{Integration von {S}i-{S}treifenmodulen in den
@@ -100,6 +110,11 @@ Ann Heinson, \emph{Useful {D}iagrams of {T}op {S}ignals and {B}ackgrounds},
 Felix Höhle, \emph{Untersichung von {S}pinkorrelationen im semileptonischen
   {T}op-{P}aar-{Z}erfall mit dem {CMS}-{E}xperiment}, Diplomarbeit, III.
   Physikalisches Institut B, RWTH Aachen, 2010.
+
+\bibitem{Collins:Drell-Yan}
+Davison E. Soper und George~Sterman John C.~Collins, \emph{Transverse
+  {M}omentum {D}istribution in {D}rell-{Y}an {P}air and {W} and {Z} {B}oson
+  {P}roduction}, Nuclear Physics B \textbf{250(1)} (1985), 199--224.
 
 \bibitem{Kalman:Filter}
 Rudolph~Emil Kalman, \emph{A {N}ew {A}pproach to {L}inear {F}iltering and
@@ -116,6 +131,10 @@ Yvonne Kuessel, \emph{Massenbestimmung von {T}op-quarks mit semileptonischen
   {T}op-{P}aar-{Z}erfällen am {CMS}-{D}etektor}, Diplomarbeit, III.
   Physikalisches Institut B, RWTH Aachen, 2009.
 
+\bibitem{Kuessel:Doktor}
+\bysame, \emph{Constraints on the top quark's charge with the {CMS}
+  experiment}, Doktorarbeit, III. Physikalisches Institut B, RWTH Aachen, 2012.
+
 \bibitem{Cacciari:Antikt}
 Gavin P. Salam und Gregory~Soyez Matteo~Cacciari, \emph{The anti-k t {j}et
   {c}lustering {a}lgorithm}, Journal of High Energy Physics \textbf{2008 04}
@@ -130,6 +149,11 @@ Cristophe Saout, \emph{B-{T}agging at {M}ultipurpose {LHC} {E}xperiments},
 Heiner Josef~Antonius Tholen, \emph{Study of the {I}nclusive $t\overline{t} +
   \gamma$ {C}ross {S}ection with the {CMS} {E}xperiment}, Masterarbeit, III.
   Physikalisches Institut B, RWTH Aachen, 2012.
+
+\bibitem{Melnikov:GaugeBoson}
+Kirill~Melnikov und Frank~Petriello, \emph{Electroweak {G}auge {B}oson
+  {P}roduction at {H}adron {C}olliders through $\mathcal {O}(\alpha_s^2)$},
+  Phys. Rev. D \textbf{74:114017} (2006).
 
 \bibitem{Bethe-Heidler}
 Hans~Bethe und Walter~Heitler, \emph{On the {S}topping of {F}ast {P}articles
