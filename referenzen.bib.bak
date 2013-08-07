@@ -65,6 +65,17 @@
   timestamp = {2013.08.05}
 }
 
+@TECHREPORT{PAS:Particleflow,
+  author = {The {CMS}Collaboration et al.},
+  title = {Particle-flow {E}vent {R}econstruction in {CMS} and {P}erformance
+	for {J}ets, {T}au and {MET}},
+  institution = {CERN},
+  year = {2009},
+  number = {PAS-PFT-09-001},
+  owner = {Markus_2},
+  timestamp = {2013.08.05}
+}
+
 @ARTICLE{Adam:Reco,
   author = {Wolfgang Adam et al.},
   title = {Track {R}econstruction in the {CMS} {T}racker},
@@ -145,6 +156,16 @@
   year = {2000},
   owner = {Markus_2},
   timestamp = {2013.06.12}
+}
+
+@TECHREPORT{CMS:BTag,
+  author = {The CMS Collaboration},
+  title = {b-Jet Identification in the CMS-Experiment},
+  institution = {CERN},
+  year = {2012},
+  number = {CMS-PAS-BTV-11-004},
+  owner = {Markus_2},
+  timestamp = {2013.08.07}
 }
 
 @TECHREPORT{PAS:TopMass,
@@ -231,6 +252,27 @@
   type = {Diplomarbeit},
   owner = {Markus},
   timestamp = {2013.06.07}
+}
+
+@ARTICLE{Cacciari:Antikt,
+  author = {Matteo Cacciari, Gavin P. Salam und Gregory Soyez},
+  title = {The anti-k t {j}et {c}lustering {a}lgorithm},
+  journal = {Journal of High Energy Physics},
+  year = {2008},
+  volume = {2008 04},
+  pages = {063-063},
+  owner = {Markus_2},
+  timestamp = {2013.08.06}
+}
+
+@ARTICLE{Saout:BTag,
+  author = {Cristophe Saout},
+  title = {B-{T}agging at {M}ultipurpose {LHC} {E}xperiments},
+  journal = {Helmholtz Alliance Workshop, Detector Understanding with First LHC
+	Data},
+  year = {2009},
+  owner = {Markus_2},
+  timestamp = {2013.08.07}
 }
 
 @MASTERSTHESIS{Tholen:Master,

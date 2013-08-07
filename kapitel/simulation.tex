@@ -104,3 +104,33 @@ Die bisherige Rekonstruktion kann mehrdeutig sein, da viele der Kandidaten dense
 
 \subsection{Jets}
 
+Als Jet wird eine Kollektion von verschiedenen Teilchen bezeichnet, die nur geringe relative Impulskomponenten untereinander besitzen. Sie entstehen, wenn im Zuge der Hadronisierung einzelne Gluonen und Quarks aus dem Kollisionsprozess zu farbneutralen Teilchen zusammengefasst werden. Größtenteils sind in Jets Pionen und Kaonen enthalten, aber auch Baryonen und vereinzelt Leptonen. Während der Hadronisierung existiert ein ständiger Impulsaustausch der einzelnen Teilchen während der Hadronisierung und so entsteht ein Teilchenkegel um die Schwerpunktsachse des Jets. Diese stimmt im Idealfall mit der Trajektorie des ursprünglichen, farbtragenden Objektes überein. Für die Untersuchung von Jets sind die Kalorimeter die wichtigsten Detektorkomponenten, nahezu alle im Jet enthaltenen Teilchen deponieren hier ihre gesamte Energie. Jets, die ausschließlich anhand von Kalorimetereinträgen rekonstruiert wurden, nennt man Kalorimeterjets, diese bilden den Ausgangspunkt für nahezu alle Rekonstruktions-Algorithmen von Jets. \\
+Für einen gegebenen Jet ist nicht eindeutig beantwortbar, welches Teilchen zum Jet gehört und welches nicht. Das Endergebnis der Messung wird jedoch von den Jeteigenschaften wie Energie und Richtung beeinflusst, und damit auch davon, ob ein Teilchen zum Jet gezählt wird oder nicht. Daher versucht man, die Jet-Algorithmen ständig zu verbessern, die aus den gegebenen Messwerten wie z.B. Kalorimetereinträgen Jets zu rekonstruieren. In dieser Analyse wird der sogenannte \enquote{anti-k$_T$-Algorithmus} verwendet, der im folgenden kurz erläutert wird: \\
+Der anti-k$_T$-Algorithmus bsasiert auf den sogenannten \enquote{Cluster}- oder Kombinationsalgorithmen, bei denen zunächst für jedes Teilchen- bzw. Protojetpaar ein Abstandsmaß berechnet wird. Die Viererimpulse der Teilchen mit dem kleinsten Abstand werden zu einem Protojet aufaddiert, dieser wird zur Kollektion hinzugefügt und die beiden ursprünglichen Objekte entfernt. Dies wird so lange wiederholt, bis eine Abbruchbedingung erfüllt ist. Der Jet gilt dann als komplett rekonstruiert und wird aus der Kollektion entfernt. \\
+\newpage
+Als Abstandsmaß zwischen den Objekten $i$ und $j$ wird ein mit den Impulsen gewichteter Winkelabstand
+
+\begin{equation}
+d_{ij} = \text{min}\left(k_{Ti}^{-2},k_{Tj}^{-2}\right)\frac{\Delta_{ij}^2}{\rho^2}
+\end{equation}
+
+verwendet, mit $\Delta_{ij}^2=\left(y_i-y_j\right)^2+\left(\Phi_i-\Phi_j\right)^2$. Hier bezeichnet $k_T$ den Transversalimpuls, $\Phi$ den Azimuthalwinkel und $y$ die Rapidität. Die Abbruchbedingung wird mittels
+
+\begin{equation}
+d_{i,Beam}=k_{Ti}^{-2}
+\end{equation}
+
+bestimmt. Wenn $d_{i,Beam}$ kleiner ist als jedes $d_{ij}$, ist diese erfüllt. Der Radiusparameter $\rho$, der das Abbruchkriterium mitdefiniert, ist in dieser Analyse auf $\rho = 0.5$ festgelegt. \\
+Der anti-k$_T$-Algotithmus ist sicher gegenüber niederenergetischen Teilchen und gegen kollineare Abstrahlungen \cite{Cacciari:Antikt}. Zunächst werden die hochenergetischen Teilchen zu einem Jet kombiniert. Dies wird durch den negativen Exponenten in der Impulsgewichtung erreicht. Danach erst werden alle weichen Objekte im Abstand $2\rho$ hinzugefügt. Sie haben keinen Einfluß auf die Form der Jets. Die Wahrscheinlichkeit, einen Jet aus vielen weichen Objekten zu bilden, wird dadurch sehr gering und auch die Wahrscheinlichkeit, dass durch ein zusätzliches weiches Objekt ein harter Bestandteil einem anderen Jet zugeordnet wird, wird gegenüber anderen Jet-Algorithmen deutlich verringert.
+
+\subsection{B-Tag}
+
+Die aus dem Zerfall des Top-Quark-Paares entstehenden zwei b-Quarks können aufgrund ihrer langen Lebensdauer hadronische Zustände bilden, die wiederum schwach zerfallen. Ein solcher Zerfall ist in der CKM-Matrix stark unterdrückt, die b-Hadronen sind daher sehr langlebig und zerfallen überwiegend in c-Quarks, weniger häufig in Leptonen und u-Quarks. Somit hat die Signatur eines b-Jets drei charakteristische Eigenschaften, die für seine Identifizierung genutzt werden können \cite{Saout:BTag}:
+
+\begin{itemize}
+	\item Es existiert eine große Anzahl an deplazierten Spuren.
+	\item Die deplazierten Spuren treffen sich in einem Sekundärvertex.
+	\item Ein Großteil der Jet-Energie wird vom b-Hadron getragen.
+\end{itemize}
+
+Es wurden diverse Algorithmen entwickelt, um b-Quarks zu identifizieren. In dieser Analyse wird ein sogenannter \enquote{combined secondary vertex b-tag with medium operation point} (CSVM) benutzt. Dieser führt eine Wahrscheinlichkeitsanalyse aufgrund von neun spurbasierten Parametern durch. Dieser Algorithmus liefert auch dann ein Ergebnis, wenn kein Sekundärvertex rekonstruiert werden kann, indem er einen \enquote{Pseudo-Vertex} benutzt. Nähere Informationen hierzu liefert \cite{CMS:BTag}

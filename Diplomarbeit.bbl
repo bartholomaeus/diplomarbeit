@@ -38,8 +38,12 @@ The~{CMS} {C}ollaboration, \emph{Interactive slice of the {CMS} detector},
 \bysame, \emph{Photon {R}econstruction and {I}dentification at sqrt(s) = 7
   tev}, Tech. Report CMS-PAS-EGM-10-005, CERN, 2010.
 
+\bibitem{CMS:BTag}
+The~CMS Collaboration, \emph{b-{J}et {I}dentification in the
+  {CMS}-{E}xperiment}, Tech. Report CMS-PAS-BTV-11-004, CERN, 2012.
+
 \bibitem{PAS:TopMass}
-The~CMS Collaboration, \emph{{LHC} {C}ombination: {T}op {M}ass}, Tech. Report
+\bysame, \emph{{LHC} {C}ombination: {T}op {M}ass}, Tech. Report
   CMS-PAS-TOP-12-001, CERN, 2012.
 
 \bibitem{CMS:Higgs}
@@ -111,6 +115,16 @@ Nikolaos Kidonakis, \emph{Next-to-next-to-leading soft-gluon corrections for
 Yvonne Kuessel, \emph{Massenbestimmung von {T}op-quarks mit semileptonischen
   {T}op-{P}aar-{Z}erfällen am {CMS}-{D}etektor}, Diplomarbeit, III.
   Physikalisches Institut B, RWTH Aachen, 2009.
+
+\bibitem{Cacciari:Antikt}
+Gavin P. Salam und Gregory~Soyez Matteo~Cacciari, \emph{The anti-k t {j}et
+  {c}lustering {a}lgorithm}, Journal of High Energy Physics \textbf{2008 04}
+  (2008), 063--063.
+
+\bibitem{Saout:BTag}
+Cristophe Saout, \emph{B-{T}agging at {M}ultipurpose {LHC} {E}xperiments},
+  Helmholtz Alliance Workshop, Detector Understanding with First LHC Data
+  (2009).
 
 \bibitem{Tholen:Master}
 Heiner Josef~Antonius Tholen, \emph{Study of the {I}nclusive $t\overline{t} +

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  5 AUG 2013 20:17
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  7 AUG 2013 09:40
 entering extended mode
 **Diplomarbeit.tex
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.tex
@@ -637,20 +637,25 @@ Overfull \hbox (1.95175pt too wide) in paragraph at lines 100--101
 \OT1/cmr/m/n/12 Clusters in-ner-halb ge-ge-be-ner Un-si-cher-hei-ten uber-ein-stim-men, wer-den die Spu-
  []
 
-[32]) [33] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.bbl [34
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+[33]) [34] [35] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.bbl [36
 
 
 
-] [35] [36]) [37]
+] [37] [38]) [39]
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.aux
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/detektor.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/theorie.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/simulation.aux)) ) 
 Here is how much of TeX's memory you used:
- 7394 strings out of 494045
- 112204 string characters out of 3145961
- 213381 words of memory out of 3000000
- 10545 multiletter control sequences out of 15000+200000
+ 7397 strings out of 494045
+ 112243 string characters out of 3145961
+ 213396 words of memory out of 3000000
+ 10548 multiletter control sequences out of 15000+200000
  13321 words of font info for 51 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  42i,17n,52p,2627b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -662,9 +667,9 @@ amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Diplomarbeit.pdf (37 pages, 6137768 bytes).
+Output written on Diplomarbeit.pdf (39 pages, 6145596 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
