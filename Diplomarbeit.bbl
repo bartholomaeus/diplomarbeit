@@ -7,9 +7,6 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{10}
 
-\bibitem{CMS:Lumiresults}
-\emph{{CMS} {L}uminosity - {P}ublic {R}esults}, 2013.
-
 \bibitem{Aguilar:Couplings}
 J.A. Aguilar-Savedra, \emph{A minimal set of top anomalous couplings}, Nuclear
   Physics B \textbf{812(1)} (2009), 181--204.
@@ -20,6 +17,9 @@ Christoph Berger, \emph{Elementarteilchenphysik}, Springer-Verlag, 1992.
 \bibitem{Catani:QCD}
 Stefano Catani, \emph{Aspects of {QCD}, from the {T}evatron to the {LHC}},
   arXiv:hep-ph/0005233 (2000).
+
+\bibitem{CMS:Lumiresults}
+CMS Collaboration, \emph{{CMS} {L}uminosity - {P}ublic {R}esults},  (2013).
 
 \bibitem{ATLAS:Higgs}
 The~{ATLAS} {C}ollaboration, \emph{Observation of a new particle in the search
@@ -38,9 +38,14 @@ The~{CMS} {C}ollaboration, \emph{Interactive slice of the {CMS} detector},
 \bysame, \emph{Photon {R}econstruction and {I}dentification at sqrt(s) = 7
   tev}, Tech. Report CMS-PAS-EGM-10-005, CERN, 2010.
 
+\bibitem{CMS:WZProduction}
+The~CMS Collaboration, \emph{Measurement of {W} and {Z} {P}roduction in pp
+  {C}ollisions at $\sqrt{s}=7$ tev}, Physics Letters B \textbf{701(5)} (2011),
+  535--555.
+
 \bibitem{CMS:BTag}
-The~CMS Collaboration, \emph{b-{J}et {I}dentification in the
-  {CMS}-{E}xperiment}, Tech. Report CMS-PAS-BTV-11-004, CERN, 2012.
+\bysame, \emph{b-{J}et {I}dentification in the {CMS}-{E}xperiment}, Tech.
+  Report CMS-PAS-BTV-11-004, CERN, 2012.
 
 \bibitem{PAS:TopMass}
 \bysame, \emph{{LHC} {C}ombination: {T}op {M}ass}, Tech. Report

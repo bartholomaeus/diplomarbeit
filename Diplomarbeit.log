@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  7 AUG 2013 20:33
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  8 AUG 2013 19:17
 entering extended mode
 **Diplomarbeit.tex
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.tex
@@ -628,17 +628,17 @@ Package pdftex.def Info: bilder/reco.png used on input line 64.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-Overfull \hbox (0.60971pt too wide) in paragraph at lines 96--97
+Overfull \hbox (0.60971pt too wide) in paragraph at lines 97--98
 []\OT1/cmr/m/n/12 Block fur Block wer-den al-le Mehr-deu-tig-kei-ten auf-gelost. Bei mehr als ei-ner Moglich-
  []
 
 
-Overfull \hbox (1.95175pt too wide) in paragraph at lines 100--101
+Overfull \hbox (1.95175pt too wide) in paragraph at lines 101--102
 \OT1/cmr/m/n/12 Clusters in-ner-halb ge-ge-be-ner Un-si-cher-hei-ten uber-ein-stim-men, wer-den die Spu-
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
@@ -661,7 +661,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <bilder/qcd.png, id=171, 194.2544pt x 171.23846pt>
 File: bilder/qcd.png Graphic file (type png)
  <use bilder/qcd.png>
-Package pdftex.def Info: bilder/qcd.png used on input line 41.
+Package pdftex.def Info: bilder/qcd.png used on input line 42.
 (pdftex.def)             Requested size: 179.24963pt x 158.01422pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -670,7 +670,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 41165pt>
 File: bilder/w+jets.png Graphic file (type png)
  <use bilder/w+jets.png>
-Package pdftex.def Info: bilder/w+jets.png used on input line 52.
+Package pdftex.def Info: bilder/w+jets.png used on input line 53.
 (pdftex.def)             Requested size: 179.24963pt x 163.3432pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -680,65 +680,77 @@ ilder/w+jets.png>]
 <bilder/drellyan.png, id=179, 1003.75pt x 890.32625pt>
 File: bilder/drellyan.png Graphic file (type png)
  <use bilder/drellyan.png>
-Package pdftex.def Info: bilder/drellyan.png used on input line 63.
+Package pdftex.def Info: bilder/drellyan.png used on input line 64.
 (pdftex.def)             Requested size: 179.24963pt x 158.98837pt.
  [40 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/drellyan.png (PNG copy)>] <bilder/singletop_s.png, id=183, 
 147.4965pt x 98.55pt>
 File: bilder/singletop_s.png Graphic file (type png)
 
 <use bilder/singletop_s.png>
-Package pdftex.def Info: bilder/singletop_s.png used on input line 76.
+Package pdftex.def Info: bilder/singletop_s.png used on input line 77.
 (pdftex.def)             Requested size: 134.44064pt x 89.83252pt.
  <bilder/singletop_t.png, id=184, 148.00203pt x 139.34694pt>
 File: bilder/singletop_t.png Graphic file (type png)
  <use bilder/singletop_t.png>
-Package pdftex.def Info: bilder/singletop_t.png used on input line 83.
+Package pdftex.def Info: bilder/singletop_t.png used on input line 84.
 (pdftex.def)             Requested size: 134.44064pt x 126.57837pt.
 
 <bilder/singletop_tW.png, id=185, 147.44371pt x 213.9063pt>
 File: bilder/singletop_tW.png Graphic file (type png)
  <use bilder/singletop_tW.png>
-Package pdftex.def Info: bilder/singletop_tW.png used on input line 90.
+Package pdftex.def Info: bilder/singletop_tW.png used on input line 91.
 (pdftex.def)             Requested size: 134.44064pt x 195.04669pt.
  [41 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/singletop_s.png> <C:/Users/Markus_2/Documents/GitHub/diplom
 arbeit/bilder/singletop_t.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/singletop_tW.png>]
 <bilder/isr_quark.png, id=189, 193.9879pt x 90.52768pt>
 File: bilder/isr_quark.png Graphic file (type png)
  <use bilder/isr_quark.png>
-Package pdftex.def Info: bilder/isr_quark.png used on input line 110.
+Package pdftex.def Info: bilder/isr_quark.png used on input line 111.
 (pdftex.def)             Requested size: 179.24963pt x 83.64973pt.
 
 <bilder/isr_gluon.png, id=190, 194.13217pt x 88.46844pt>
 File: bilder/isr_gluon.png Graphic file (type png)
  <use bilder/isr_gluon.png>
-Package pdftex.def Info: bilder/isr_gluon.png used on input line 117.
+Package pdftex.def Info: bilder/isr_gluon.png used on input line 118.
 (pdftex.def)             Requested size: 179.24963pt x 81.68892pt.
 
 <bilder/fsr.png, id=191, 387.9585pt x 222.066pt>
 File: bilder/fsr.png Graphic file (type png)
  <use bilder/fsr.png>
-Package pdftex.def Info: bilder/fsr.png used on input line 127.
+Package pdftex.def Info: bilder/fsr.png used on input line 128.
 (pdftex.def)             Requested size: 403.31511pt x 230.86522pt.
-) [42 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/isr_quark.png> <C:/Users/Markus_2/Documents/GitHub/diploma
-rbeit/bilder/isr_gluon.png>] [43 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fsr.png>] (C:\Users\Markus_2\Do
-cuments\GitHub\diplomarbeit\Diplomarbeit.bbl
-[44
+ [42 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/isr_quark.png> <C:/Users/Markus_2/Documents/GitHub/diplomar
+beit/bilder/isr_gluon.png>] [43 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fsr.png>] [44] <bilder/jurassic_
+ecal.png, id=202, 114.5692pt x 114.5692pt>
+File: bilder/jurassic_ecal.png Graphic file (type png)
+
+<use bilder/jurassic_ecal.png>
+Package pdftex.def Info: bilder/jurassic_ecal.png used on input line 178.
+(pdftex.def)             Requested size: 134.44064pt x 134.4475pt.
+ [45]
+Overfull \hbox (8.46626pt too wide) in paragraph at lines 185--186
+[]$\OML/cmm/m/it/12 []$ \OT1/cmr/m/n/12 be-zeich-net die Energie-gewichtete Auf-sprei-zung des ECAL
+ []
+
+) [46 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/jurassic_ecal.png>]
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.bbl [47
 
 
 
-] [45] [46]) [47] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.aux
+] [48]) [49]
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.aux
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/detektor.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/theorie.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/simulation.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/selektion.aux)) ) 
 Here is how much of TeX's memory you used:
- 7481 strings out of 494045
- 114209 string characters out of 3145961
- 212970 words of memory out of 3000000
- 10615 multiletter control sequences out of 15000+200000
+ 7492 strings out of 494045
+ 114455 string characters out of 3145961
+ 214012 words of memory out of 3000000
+ 10625 multiletter control sequences out of 15000+200000
  13321 words of font info for 51 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,17n,52p,2627b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,17n,52p,2627b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
@@ -747,9 +759,9 @@ msfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
 mr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Diplomarbeit.pdf (48 pages, 6440276 bytes).
+Output written on Diplomarbeit.pdf (50 pages, 6469998 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

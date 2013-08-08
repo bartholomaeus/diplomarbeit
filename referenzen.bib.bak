@@ -65,6 +65,18 @@
   timestamp = {2013.08.05}
 }
 
+@ARTICLE{Chatrchyan:CrossSection,
+  author = {Serguei Chatrchyan et al.},
+  title = {Measurement of the $t\bar{t}$ {P}roduction {C}ross {S}ection in the
+	{D}ilepton {C}hannel in $pp$ {C}ollisions at $\sqrt{s}=7$ {TeV}},
+  journal = {Journal of High Energy Physics},
+  year = {2012},
+  volume = {1211},
+  pages = {067},
+  owner = {Markus_2},
+  timestamp = {2013.08.07}
+}
+
 @TECHREPORT{PAS:Particleflow,
   author = {The {CMS}Collaboration et al.},
   title = {Particle-flow {E}vent {R}econstruction in {CMS} and {P}erformance
@@ -158,6 +170,15 @@
   timestamp = {2013.06.12}
 }
 
+@ARTICLE{CMS:Lumiresults,
+  author = {The CMS Collaboration},
+  title = {{CMS} {L}uminosity - {P}ublic {R}esults},
+  year = {2013},
+  owner = {Markus_2},
+  timestamp = {2013.06.14},
+  url = {https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults}
+}
+
 @TECHREPORT{CMS:BTag,
   author = {The CMS Collaboration},
   title = {b-{J}et {I}dentification in the {CMS}-{E}xperiment},
@@ -176,6 +197,18 @@
   number = {CMS-PAS-TOP-12-001},
   owner = {Markus_2},
   timestamp = {2013.06.11}
+}
+
+@ARTICLE{CMS:WZProduction,
+  author = {The CMS Collaboration},
+  title = {Measurement of {W} and {Z} {P}roduction in pp {C}ollisions at $\sqrt{s}=7$
+	TeV},
+  journal = {Physics Letters B},
+  year = {2011},
+  volume = {701(5)},
+  pages = {535-555},
+  owner = {Markus_2},
+  timestamp = {2013.08.08}
 }
 
 @ARTICLE{Coll:CMSExperiment,
@@ -351,13 +384,5 @@
   volume = {2005/001},
   owner = {Markus_2},
   timestamp = {2013.08.05}
-}
-
-@ELECTRONIC{CMS:Lumiresults,
-  year = {2013},
-  title = {{CMS} {L}uminosity - {P}ublic {R}esults},
-  url = {https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults},
-  owner = {Markus_2},
-  timestamp = {2013.06.14}
 }
 

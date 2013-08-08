@@ -31,6 +31,7 @@ Der semimyonische Kanal wird für diese Analyse ausgewählt, weil er einen sehr gu
 \section{Untergründe}
 
 \subsection{Untergründe der Top-Paar-Signatur}
+\label{sec:top_untergrund}
 
 \subsubsection*{QCD-Untergrund}
 
@@ -130,3 +131,64 @@ Die Untergründe der Photon-Signatur lassen sich in drei Klassen unterteilen. Die
 \end{figure}
 
 \section{Selektion}
+
+\subsection{Top-Paar-Selektion}
+
+Um die $t\overline{t}$-Ereignisse von den in Abschnitt \ref{sec:top_untergrund} beschriebenen Untergründen zu trennen, wird eine Vorselektion der Top-Paar-Ereignisse durchgeführt. Diese orientiert sich an der von der CMS Kollaboration herausgegebenen Empfehlungen \cite{Kuessel:Doktor}. Die einzelnen Schritte werden im folgenden beschrieben.
+
+\begin{description}
+  \item[HL Trigger] Der High-Level-Trigger mit dem Pfad HLT\_IsoMu24 wird benutzt. Dieser verlangt ein Myon mit einem Transversalimpuls von mindestens 24\,GeV und einer Isolation von $\Delta R > 0,24$. Die Lage der Trigger-sensitiven Myondetektoren schränkt den $\eta$-Bereich des Myons ein auf $\left|\eta\right|<2,1$.
+  \item[Primärvertex] Der Vertex mit der höchsten skalaren Summe der Transversalimpulse wird Primärvertex genannt. Spuren von Teilchen, die auf andere Vertizes zeigen, werden als Pile-Up behandelt und nicht weiter berücksichtigt. Der Primärvertex muss vier Freiheitsgrade besitzen und innerhalb von $\left|z\right|<24$\,cm bzw. $\rho<2$\,cm vom Interaktionspunkt liegen.
+  \item[Hochenergetisches Myon] Ein hochenergetisches, gut isoliertes Myon muss im Ereignis enthalten sein. Isolationsvariablen sind skalare Summen von transversalen Energien oder Impulsen von Teilchen in einem bestimmten Abstand vom Myon. Die relative Isolation $relIso$ ist hier definiert durch
+
+\begin{equation}
+\text{relIso}=\frac{\text{photonIso}+\text{hadronIso}}{p_T}\ ,
+\end{equation}
+
+dabei bezeichnet photonIso (hadronIso) die skalare Summe der transversalen Energie (des transversalen Impulses) aller Photonen (Hadronen) innerhalb eines Kegels von $\Delta R < 0,4$. Es wird ein Wert von $\text{relIso} < 0,125$ verlangt, weiterhin muss der Abstand zu Jets in der $\eta-\Phi$-Ebene $\Delta R > 0,3$ sein. Das Myon muss ein globales Myon sein mit $\chi^2<10$ im globalen Fit (vgl. dazu auch die Myon-Rekonstruktion in Abschnitt \ref{sec:Reco_Myon}). Um kosmische Myonen auszuschliessen, wird ein maximaler Abstand zwischen der Myonspur und dem Primärvertex in der Transversalebene von $\Delta z<5$\,mm und $\rho<0,2$\,mm verlangt.
+  \item[Jets] Es werden mindestens vier Jets in der instrumentierten Region des Spurdetektors $\left|\eta\right|<2,4$ vorhanden sein, deren transversaler Impuls jeweils größer als 30\,GeV sein muss. Der Jet muss aus mindestens zwei Elementen bestehen, von denen mindestens eines geladen ist. Als eine weitere Forderung müssen die elektromagnetischen bzw. hadronischen Energieanteile kleiner als 99\% sein, um fälschlich als Jets rekonstruierte Photonen bzw. Pionen zu vermeiden.
+  \item[Veto auf Elektron] Ereignisse, in denen ein Elektron mit $E_T>15$\,GeV und $\text{relIso}<0,2$ im Bereich $\left|\eta\right|<2,5$ werden verworfen, um dileptonische Top-Paar-Ereignisse zu unterdrücken.
+  \item[Veto auf zweites Myon] Es wird gefordert, dass sich neben dem hochenergetischen Myon kein weiteres Myon mit $p_T>10$\,GeV, $\left|\eta\right|<2,5$ und $\text{relIso}<0,2$ im Ereignis befindet, um Ereignisse aus Z-Untergründen auszuschliessen.
+  \item[b-Tag] Mindestens einer der oben erwähnten Jets muss b-artig sein. Dazu wird ein sogenannter \enquote{combined secondary vertex} Algorithmus verwendet mit einem Diskriminator von $\text{CSVM}>0,679$.
+\end{description}
+
+\subsection{Selektion von $t\overline{t}+\gamma$-Ereignissen}
+
+Im folgenden werden die Erfordernisse an die Photonen im Endzustand beschrieben. Diese setzen sich aus Schnitten zusammen, die spezifisch für diese Analyse sind, sowie aus Forderungen, die auf einer CMS Empfehlung für Photon-Selektion basieren (\enquote{Photon-ID}, \cite{CMS:WZProduction}).
+
+\subsubsection{Analyse-spezifische Schnitte}
+
+\begin{description}
+  \item[$\eta$-Bereich] Nur Photonen im Bereich von $\left|\eta\right|<1,4442$ und $1,556<\left|\eta\right|<2,5$ werden berücksichtigt, um sicherzustellen, dass der elektromagnetische Schauer des Photons im ECAL komplett rekonstruiert wurde.
+  \item[Transversale Energie] Ein Schnitt auf die transversale Energie des Photons wird angewandt, um falsch rekonstruierte Photonen und Photonen, die nicht aus dem Primärvertex stammen, zu unterdrücken. $E_T>20$\,GeV wird gefordert.
+	\item[$\Delta R$(Photon, Myon)] Eine minimale Distanz von $\Delta R(\gamma,\mu)>0,3$ in der $\eta-\Phi$-Ebene wird gefordert, um Photonen, die vom hochenergetischen Myon abgestrahlt werden, auszuschliessen.
+	\item[$\Delta R$(Photon, Jet)] Der Jet-Algorithmus bezieht sehr oft Photonen in die rekonstruierten Jets ein. Deshalb werden alle Photonen im Bereich von $0,15<\Delta R(\gamma,\text{jet})<0,5$ nicht berücksichtigt, die obere Ausschlussgrenze repräsentiert dabei den Jet-Radius von $\Delta R_{kt}=0,5$. Photon-Kandidaten innerhalb von $\Delta R < 0,15$ werden im nächsten Schnitt gesondert behandelt.
+	\item[Verhältnis von $E_{T,\gamma}$ zu $p_{T,Jet}$] Photonen im Bereich von $\Delta R < 0,15$ werden hinsichtlich des Verhältnisses von transversaler Energie des Photons zum transversalen Impuls des Jets weiter untersucht. Es wird angenommen, dass sich die Jets in diesem Bereich hauptsächlich aus dem Photon und niederenergetischer hadronischer Aktivität zusammensetzen, und dass die Photonen, bei denen der Einfluss der hadronischen Aktivität die präzise Messung des ECAL beeinträchtigt, von den weiter unten besprochenen Photon-Identifikationsschnitten weitestmöglich herausgefiltert werden. Photon-Kandidaten mit einem Verhältnis von $E_{T,\gamma}/p_{T,Jet}>75\%$ werden akzeptiert.
+\end{description}
+
+\subsubsection{Photon-Identifikationsschnitte}
+
+\begin{description}
+  \item[\enquote{pixel seed} Veto] Das Photon darf keinen \enquote{track seed} im Pixeldetektor haben.
+	\item[Spurisolation] Die \enquote{Hollow Cone Track Isolation} $\Sigma_{trk}$ addiert den transversalen Impuls der Spuren im Siliziumspurdetektor in einem Kegel von $0,04<\Delta R<0,4$. Dieser Kegel ist hohl, um Photonen aus Paarerzeugung zu erlauben. Photonen in einem Bereich von $\Sigma_{trk}<2,0+0,001\cdot E_T/GeV$ werden akzeptiert.
+	\item[ECAL Isolation] Die \enquote{Jurassic ECAL Isolation} $\Sigma_{ECAL}$ ist ein Hohlkegel mit $0,06<\Delta R<0,4$. Zusätzlich wird ein rechteckiger Bereich mit den Abmessungen $\Delta \eta \times \Delta \Phi =0,04\times 0,4$ um die Richtung des Photons nicht für die Berechnung der Isolation hinzugezogen, siehe Abb. \ref{fig:jurassic_ecal}. Dieser Schnitt fordert einen Wert von $\Sigma_{ECAL}<4,2+0,006\cdot E_T/GeV$
+	
+\begin{figure}%
+\centering
+\includegraphics[width=0.3\columnwidth]{bilder/jurassic_ecal}%
+\caption{Skizze zur \enquote{Jurassic ECAL Isolation}. Der zentrale Bereich wird für die Berechnung der Isolation nicht berücksichtigt. \cite{Tholen:Master}}%
+\label{fig:jurassic_ecal}%
+\end{figure}	
+	
+	\item[HCAL Isolation] Die \enquote{Tower-based HCAL Isolation} $\Sigma_{HCAL}$ summiert über die deponierte Energie in allen HCAL towers innerhalb $\Delta R<0,4$, dabei werden die towers hinter angesprochenen ECAL Clustern nicht berücksichtigt, mit diesen befasst sich der nächste Schritt. Die Photonen müssen die Forderung $\Sigma_{HCAL}<2,2+0,0025\cdot E_T/GeV$ erfüllen.
+	\item[Verhältnis HCAL/ECAL] Die Energiedeposition in HCAL towers hinter den zugehörigen ECAL Clustern darf maximal 5\% sein.
+	\item[Weite des Superclusters] $\sigma_{i\eta i\eta}$ bezeichnet die Energie-gewichtete Aufspreizung des ECAL Superclusters in Richtung von $\eta$. Diese ist wie folgt definiert:
+	
+\begin{equation}
+\sigma_{i\eta i\eta}=\left(\frac{\sum(\eta_i-\overline{\eta})^2\omega_i}{\sum \omega_i}\right)^{1/2} \ ; \ \overline{\eta}=\frac{\sum \eta_i\omega_i}{\sum \omega_i} \ ; \ \omega_i=\text{max}\left(0;4,7+log\frac{E_i}{E_{5\times 5}}\right) \ .
+\end{equation}	
+
+Hier ist $E_i$ die in einem einzelnen ECAL-Kristall deponierte Energieund $E_{5\times 5}$ die Summe der Energiedepositionen in einem Cluster von 5 $\times$ 5 Kristallen um den höchste Energieeintrag herum. Photonen aus dem harten Prozess haben eine kleinere Schauerweite im ECAL als missidentifizierte Photonen. Die Forderung an die Schauerweite ist $\sigma_{i\eta i\eta}<0,011$ im Bereich von $\left|\eta\right|<1,5$ und $\sigma_{i\eta i\eta}<0,03$ für $\left|\eta\right|>1,5$.
+
+\end{description}
+
