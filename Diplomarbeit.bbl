@@ -14,12 +14,13 @@ J.A. Aguilar-Savedra, \emph{A minimal set of top anomalous couplings}, Nuclear
 \bibitem{Berger:Teilchen}
 Christoph Berger, \emph{Elementarteilchenphysik}, Springer-Verlag, 1992.
 
+\bibitem{Brun:Root}
+Rene Brun, \emph{{ROOT}. {A} {D}ata {A}nalysis {F}ramework},
+  \url{http://root.cern.ch}.
+
 \bibitem{Catani:QCD}
 Stefano Catani, \emph{Aspects of {QCD}, from the {T}evatron to the {LHC}},
   arXiv:hep-ph/0005233 (2000).
-
-\bibitem{CMS:Lumiresults}
-CMS Collaboration, \emph{{CMS} {L}uminosity - {P}ublic {R}esults},  (2013).
 
 \bibitem{ATLAS:Higgs}
 The~{ATLAS} {C}ollaboration, \emph{Observation of a new particle in the search
@@ -35,13 +36,12 @@ The~{CMS} {C}ollaboration, \emph{Interactive slice of the {CMS} detector},
   (2010).
 
 \bibitem{PAS:Photonreco}
-\bysame, \emph{Photon {R}econstruction and {I}dentification at sqrt(s) = 7
-  tev}, Tech. Report CMS-PAS-EGM-10-005, CERN, 2010.
+The~CMS Collaboration, \emph{Photon {R}econstruction and {I}dentification at
+  sqrt(s) = 7 tev}, Tech. Report CMS-PAS-EGM-10-005, CERN, 2010.
 
 \bibitem{CMS:WZProduction}
-The~CMS Collaboration, \emph{Measurement of {W} and {Z} {P}roduction in pp
-  {C}ollisions at $\sqrt{s}=7$ tev}, Physics Letters B \textbf{701(5)} (2011),
-  535--555.
+\bysame, \emph{Measurement of {W} and {Z} {P}roduction in pp {C}ollisions at
+  $\sqrt{s}=7$ tev}, Physics Letters B \textbf{701(5)} (2011), 535--555.
 
 \bibitem{CMS:BTag}
 \bysame, \emph{b-{J}et {I}dentification in the {CMS}-{E}xperiment}, Tech.
@@ -56,6 +56,9 @@ The~{CMS} {C}ollaboration, \emph{Observation of a new boson at a mass of 125
   {G}e{V} with the {CMS} experiment at the {LHC}}, Phys. Lett. B
   \textbf{716(1)} (2012), 30--61.
 
+\bibitem{CMS:Lumiresults}
+The~CMS Collaboration, \emph{{CMS} {L}uminosity - {P}ublic {R}esults},  (2013).
+
 \bibitem{James:MuonID}
 E.~James et~al., \emph{Muon {I}dentification in {CMS}}, CMS AN
   \textbf{2005/047} (2005).
@@ -64,6 +67,10 @@ E.~James et~al., \emph{Muon {I}dentification in {CMS}}, CMS AN
 F.~Abe et~al., \emph{Observation of top quark production in $p\overline{p}$
   collisions with the collider detector at fermilab}, Phys. Rev. Lett.
   \textbf{74(14)} (1995), 2626--2631.
+
+\bibitem{Alwall:LesHouches}
+Johan~Alwall et~al., \emph{A standard format for les houches event files},
+  Computer Physics Communications \textbf{176(4)} (2007), 300--304.
 
 \bibitem{Koba:CPV}
 M.~Kobayashi et~al., \emph{{CP}-{V}iolation in the {R}enormalizable {T}heory of
@@ -109,7 +116,8 @@ Benedikt Hegner, \emph{Integration von {S}i-{S}treifenmodulen in den
 
 \bibitem{Heinson:Diagrams}
 Ann Heinson, \emph{Useful {D}iagrams of {T}op {S}ignals and {B}ackgrounds},
-  2009.
+  2009,
+  \url{http://www-d0.fnal.gov/Run2Physics/top/top_public_web_pages/top_feynman_diagrams.html}.
 
 \bibitem{Hoehle:Diplom}
 Felix Höhle, \emph{Untersichung von {S}pinkorrelationen im semileptonischen

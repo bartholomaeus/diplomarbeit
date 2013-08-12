@@ -23,6 +23,17 @@
   timestamp = {2013.06.10}
 }
 
+@ARTICLE{Alwall:LesHouches,
+  author = {Johan Alwall et al.},
+  title = {A standard format for Les Houches Event Files},
+  journal = {Computer Physics Communications},
+  year = {2007},
+  volume = {176(4)},
+  pages = {300-304},
+  owner = {Markus_2},
+  timestamp = {2013.08.09}
+}
+
 @ARTICLE{Koba:CPV,
   author = {M. Kobayashi et al.},
   title = {{CP}-{V}iolation in the {R}enormalizable {T}heory of Weak Interaction},
@@ -118,6 +129,15 @@
   timestamp = {2013.06.10}
 }
 
+@ELECTRONIC{Brun:Root,
+  author = {Rene Brun},
+  title = {{ROOT}. {A} {D}ata {A}nalysis {F}ramework},
+  note = {\url{http://root.cern.ch}},
+  url = {http://root.cern.ch},
+  owner = {Markus_2},
+  timestamp = {2013.08.12}
+}
+
 @ARTICLE{ATLAS:Higgs,
   author = {The {ATLAS} {C}ollaboration},
   title = {Observation of a new particle in the search for the {S}tandard {M}odel
@@ -149,16 +169,6 @@
   owner = {Markus_2},
   timestamp = {2013.08.02},
   url = {https://cms-docdb.cern.ch/cgi-bin/PublicDocDB/ShowDocument?docid=4172}
-}
-
-@TECHREPORT{PAS:Photonreco,
-  author = {The {CMS} {C}ollaboration},
-  title = {Photon {R}econstruction and {I}dentification at sqrt(s) = 7 TeV},
-  institution = {CERN},
-  year = {2010},
-  number = {CMS-PAS-EGM-10-005},
-  owner = {Markus_2},
-  timestamp = {2013.08.05}
 }
 
 @ARTICLE{Catani:QCD,
@@ -209,6 +219,16 @@
   pages = {535-555},
   owner = {Markus_2},
   timestamp = {2013.08.08}
+}
+
+@TECHREPORT{PAS:Photonreco,
+  author = {The CMS Collaboration},
+  title = {Photon {R}econstruction and {I}dentification at sqrt(s) = 7 TeV},
+  institution = {CERN},
+  year = {2010},
+  number = {CMS-PAS-EGM-10-005},
+  owner = {Markus_2},
+  timestamp = {2013.08.05}
 }
 
 @ARTICLE{Coll:CMSExperiment,

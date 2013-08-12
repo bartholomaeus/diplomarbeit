@@ -3,19 +3,22 @@ A level-1 auxiliary file: kapitel/detektor.aux
 A level-1 auxiliary file: kapitel/theorie.aux
 A level-1 auxiliary file: kapitel/simulation.aux
 A level-1 auxiliary file: kapitel/selektion.aux
+A level-1 auxiliary file: kapitel/mc_studien.aux
 The style file: amsplain.bst
 Database file #1: referenzen.bib
+Warning--entry type for "Brun:Root" isn't style-file defined
+--line 132 of file referenzen.bib
 Warning--entry type for "Heinson:Diagrams" isn't style-file defined
---line 257 of file referenzen.bib
+--line 277 of file referenzen.bib
 Warning--missing pages in Catani:QCD
-Warning--missing journal name in CMS:Lumiresults
-Warning--missing pages in CMS:Lumiresults
 Warning--missing journal name in CMS:Slice
 Warning--missing pages in CMS:Slice
+Warning--missing journal name in CMS:Lumiresults
+Warning--missing pages in CMS:Lumiresults
 Warning--missing pages in James:MuonID
 Warning--missing pages in Baffioni:Reco
 Warning--missing pages in Adam:Reco
 Warning--missing pages in Saout:BTag
 Warning--missing pages in Melnikov:GaugeBoson
 Warning--missing pages in Fruehwirth:Reco
-(There were 12 warnings)
+(There were 13 warnings)
