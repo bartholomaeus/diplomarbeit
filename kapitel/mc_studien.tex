@@ -7,12 +7,13 @@
 
 \chapter{Studie der von WHIZARD generierten Monte-Carlo-Samples}
 
-Die Studie der von WHIZARD generierten MOnte-Carlo-Daten soll zeigen, wie sich der Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses sowie das $E_T$-Spektrum der Photonen aus dem harten Prozess durch Variation des angenommenen $d_A^{\gamma}$-Wertes verändert. Des weiteren soll untersucht werden, welche Variable sich am besten dazu eignet, zwischen verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden. Durch Verwendung von Generatorteilchen werden Auflösungseffekte durch die Rekonstruktion sowie Akzeptanzeffekte durch die Selektion vernachlässigt.
+Die Studie der von WHIZARD generierten Monte-Carlo-Daten soll zeigen, wie sich der Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses sowie das $E_T$-Spektrum der Photonen aus dem harten Prozess durch Variation des angenommenen $d_A^{\gamma}$-Wertes verändert. Des weiteren soll untersucht werden, welche Variable sich am besten dazu eignet, zwischen verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden. Durch Verwendung von Generatorteilchen werden Auflösungseffekte durch die Rekonstruktion sowie Akzeptanzeffekte durch die Selektion vernachlässigt.
 
 \section{Wirkungsquerschnitt des \texorpdfstring{$t\overline{t}+\gamma$}{ttg}-Prozesses}
+\label{sec:wq}
 
 Es wird eine quadratische Abhängigkeit des Wirkungsquerschnittes vom Parameter $d_A^{\gamma}$ erwartet, da $d_A^{\gamma}$ linear in das Matrixelement eingeht und der Wirkungsquerschnitt proportional zum Quadrat des Matrixelementes ist. \\
-Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden für Werte für das elektrische Dipolmoment von $0<d_A^{\gamma}<1$ in Schritten von 0,01 zunächst die Matrixelemente für den harten Prozess generiert. Der Ansatz $2 \rightarrow 5$ wird implementiert mit zwei W-Bosonen, zwei b-Quarks und einem Photon im Endzustand. Die Matrixelement-Berechnung wird abgebrochen, wenn ein Fehler auf den Wirkungsquerschnitt von unter 1\% errechnet wird. Die so berechneten Wirkungsquerschnitte sind in Abb. \ref{fig:cs_wofit} links dargestellt. Man erkennt die erwartete quadratische Abhängigkeit. Fittet man eine quadratische Funktion an die Verteilung (Abb. \ref{fig:cs_wofit}), wird diese Abhängigkeit noch deutlicher.
+Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden für Werte für das elektrische Dipolmoment von $0<d_A^{\gamma}<1$ in Schritten von 0,01 zunächst die Matrixelemente für den harten Prozess generiert. Der Ansatz $2 \rightarrow 5$ wird implementiert mit zwei W-Bosonen, zwei b-Quarks und einem Photon im Endzustand. Die Matrixelement-Berechnung wird abgebrochen, wenn ein Fehler auf den Wirkungsquerschnitt von unter 1\% errechnet wird. Die so berechneten Wirkungsquerschnitte sind in Abb. \ref{fig:cs_wofit} links dargestellt. Man erkennt die erwartete quadratische Abhängigkeit. Fittet man eine quadratische Funktion an die Verteilung (Abb. \ref{fig:cs_wofit}), wird diese Abhängigkeit noch deutlicher. Auffällig ist der große Fehler auf den Wirkungsquerschnitt bei den Werten $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$. Dieser lässt sich auch bei deutlich längerer Berechnung des Matrixelements nicht weiter verringern.
 
 \begin{figure}%
 \centering
@@ -33,7 +34,7 @@ Aus dem berechneten Matrixelement werden nun für jeden $d_A^{\gamma}$-Wert 105.0
 
 \subsection{2-Bin-Analyse}
 
-Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht von 50\,GeV bis 100\,GeV, der zweite von 100\,GeV bis 200\,GeV, siehe dazu Abb. \ref{fig:2bin_skizze}. Nun wird das Verhältnis der Anzahl der Photonen in den beiden Bereichen gegen $d_A^{\gamma}$ aufgetragen, siehe Abb. \ref{fig:2bin_plot}.
+Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht von 50\,GeV bis 100\,GeV, der zweite von 100\,GeV bis 200\,GeV, siehe dazu Abb. \ref{fig:2bin_skizze}. Nun wird das Verhältnis der Anzahl der Photonen in den beiden Bereichen gegen $d_A^{\gamma}$ aufgetragen, siehe Abb. \ref{fig:2bin_plot}. Auf der linken Seite sieht man zwei Messwerte, die nicht dem allgemeinen Verlauf folgen. Dies sind die schon in Kapitel \ref{sec:wq} angesprochenen Messpunkte, die durch irreduzibel große Fehler auf den Wirkungsquerschnitt auffielen und auch in allen anderen Analysemethoden herausstechen. Es scheint sich hier um einen Fehler in der Matrixelementberechnung von WHIZARD zu handeln, die Punkte $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$ werden im folgenden für die Auswertung der verschiedenen Analysemethoden nicht berücksichtigt. In Abb. \ref{fig:2bin_plot} rechts ist eine polynomische Funktion zweiten Grades an die Verteilung gefittet. Man erkennt eine gute Übereinstimmung des Fits mit den Messwerten, die sich am Wert von $\chi^2/ndf=105,3/96$ ablesen lässt.
 
 \begin{figure}%
 \centering
@@ -44,14 +45,20 @@ Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht vo
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/twobinplot}%
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/twobinplot}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/twobinfit}%
+\end{subfigure}
 \caption{Verhältnis der Anzahl der Photonen in Bin 1 und Bin 2.}%
 \label{fig:2bin_plot}%
 \end{figure}
 
 \subsection{\texorpdfstring{$E_T$}{ET}-Mean-Analyse}
 
-In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, siehe Abb. \ref{fig:mean_skizze}, dies ist der gewichtete Mittelwert dieser Verteilung. Mithilfe der Analysesoftware ROOT \cite{Brun:Root} wird dieser Parameter ermittelt und gegen $d_A^{\gamma}$ aufgetragen. Diese Auftragung ist in Abb. \ref{fig:mean_plot} zu sehen.
+In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, siehe Abb. \ref{fig:mean_skizze}, dies ist der gewichtete Mittelwert dieser Verteilung. Mithilfe der Analysesoftware ROOT \cite{Brun:Root} wird dieser Parameter und dessen Fehler ermittelt und gegen $d_A^{\gamma}$ aufgetragen. Diese Auftragung ist in Abb. \ref{fig:mean_plot} zu sehen. Wieder sieht man in der linken Verteilung die oben angesprochenen Punkte, die für den Fit im rechten Bild unberücksichtigt blieben. Auch hier wurde eine Polynom zweiten Grades angefittet. die Übereinstimmung dieses Fits ist in dieser Analysemethode etwas schlechter, was damit zusammenhängen kann, dass die Fehler auf den Schwerpunkt der $E_T$-Verteilung von ROOT als zu klein angenommen werden. 
 
 \begin{figure}%
 \centering
@@ -62,7 +69,13 @@ In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, siehe Abb
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/meanplot}%
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/meanplot}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/meanfit}%
+\end{subfigure}
 \caption{Verlauf des Schwerpunktes der $E_T$-Verteilung.}%
 \label{fig:mean_plot}%
 \end{figure}
@@ -76,17 +89,23 @@ In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, siehe Abb
 \label{fig:slope_skizze}%
 \end{figure}
 
-Hier wird schließlich die Einhüllende der $E_T$-Verteilung betrachtet. Wie in Abb. \ref{fig:slope_skizze} zu sehen ist, kann die Verteilung im Bereich zwischen 50\,GeV und 200\,GeV durch eine logarithmische Funktion
+Hier wird schließlich die Einhüllende der $E_T$-Verteilung betrachtet. Wie in Abb. \ref{fig:slope_skizze} zu sehen ist, kann die Verteilung im Bereich zwischen 100\,GeV und 225\,GeV durch eine logarithmische Funktion
 
 \begin{equation}
 N(x) = N_0\cdot e^{\lambda \cdot x}
 \end{equation}
 
-beschrieben werden. Für jeden $d_A^{\gamma}$-Wert wird nun an das $E_T$-Spektrum eine Exponentialfunktion angefittet und der Wert von $\lambda$ gegen $d_A^{\gamma}$ aufgetragen. Dieser Plot ist in Abb. \ref{fig:slope_plot} zu sehen.
+beschrieben werden. Für jeden $d_A^{\gamma}$-Wert wird nun an das $E_T$-Spektrum eine Exponentialfunktion angefittet und der Wert von $\lambda$ gegen $d_A^{\gamma}$ aufgetragen. Dieser Plot ist in Abb. \ref{fig:slope_plot} zu sehen. Man erkennt im linken Bild eine Korrelation zwischen dem Parameter $\lambda$ der Exponentialfunktion und dem elektrischen Dipolmoment $d_A^{\gamma}$. Es wird eine $x^3$-Abhängigkeit angenommen und der rechte Plot in \ref{fig:slope_plot} zeigt einen Fit mit einem Polynom dritten Grades. Auch hier ist die Übereinstimmung des Fits mit den Datenpunkten sehr gut, es ergibt sich ein $\chi^2/ndf$ von $94,56/95$.
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/slopeplot}%
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/slopeplot}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/slopefit}%
+\end{subfigure}
 \caption{Verlauf der Einhüllenden der $E_T$-Verteilung.}%
 \label{fig:slope_plot}%
 \end{figure}
