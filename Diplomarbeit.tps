@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=Diplomarbeit.bbl
+Document=kapitel\datenstudie.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=1096
+Cursor=135
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=kapitel\selektion.tex
+Document=kapitel\mc_studien.tex
 
 [Frame1_View0,0]
-TopLine=34
-Cursor=2906
+TopLine=0
+Cursor=802
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=kapitel\theorie.tex
+Document=kapitel\selektion.tex
 
 [Frame2_View0,0]
-TopLine=202
-Cursor=10234
+TopLine=159
+Cursor=14220
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=Diplomarbeit.tex
+Document=kapitel\simulation.tex
 
 [Frame3_View0,0]
-TopLine=10
-Cursor=321
+TopLine=32
+Cursor=6798
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=kapitel\simulation.tex
+Document=Diplomarbeit.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=90
+Cursor=193
 
 [Frame5]
 Flags=0
@@ -101,14 +101,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=kapitel\header.tex
+Document=kapitel\einleitung.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=266
+Cursor=26
 
 [Frame6]
 Flags=0
@@ -119,14 +119,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=kapitel\detektor.tex
+Document=kapitel\zusammenfassung.tex
 
 [Frame6_View0,0]
-TopLine=76
-Cursor=4926
+TopLine=0
+Cursor=68
 
 [Frame7]
 Flags=0
@@ -137,14 +137,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=kapitel\titelseite.tex
+Document=kapitel\theorie.tex
 
 [Frame7_View0,0]
-TopLine=0
-Cursor=0
+TopLine=153
+Cursor=13833
 
 [Frame8]
 Flags=0
@@ -155,17 +155,53 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1068
-NormalPos.bottom=495
+NormalPos.right=1622
+NormalPos.bottom=941
 Class=LaTeXView
-Document=kapitel\einleitung.tex
+Document=kapitel\header.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=26
+Cursor=335
+
+[Frame9]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1622
+NormalPos.bottom=941
+Class=LaTeXView
+Document=kapitel\detektor.tex
+
+[Frame9_View0,0]
+TopLine=86
+Cursor=4926
+
+[Frame10]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1622
+NormalPos.bottom=941
+Class=LaTeXView
+Document=kapitel\titelseite.tex
+
+[Frame10_View0,0]
+TopLine=0
+Cursor=0
 
 [SessionInfo]
-FrameCount=9
+FrameCount=11
 ActiveFrame=0
 
 [Bookmarks]

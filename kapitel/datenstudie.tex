@@ -6,3 +6,112 @@
 
 
 \chapter{Vergleich der Monte-Carlo-Simulationen mit Daten}
+
+\section{\texorpdfstring{$E_T$}{ET}-Spektren}
+
+Für elf der in Kapitel \ref{sec:montecarlo} erzeugten WHIZARD-Sample ($0\leq d_A^{\gamma} \leq 1$, Schritte von 0,1) werden nun die Hadronisierung und die Detektorantwort simuliert, die Rekonstruktionsalgorithmen darauf angewendet (siehe Abschnitt \ref{sec:reco}) sowie die in den Abschnitten \ref{sec:vorselektion} respektive \ref{sec:ttg_selektion} beschriebenen Selektionen durchgeführt. Die jeweiligen $E_T$-Spektren werden aufgetragen. Abb. \ref{fig:et_galerie} zeigt einige dieser Spektren in logarithmischer Auftragung, die $y$-Achse ist hier auf die Luminosität normiert. Man erkennt, dass wie erwartet das Spektrum mit steigendem $d_A^{\gamma}$ härter wird, sich also zu höherenergetischen Photonen verschiebt. Dies lässt sich auch in Abb. \ref{fig:et_kombi} erkennen, in der dre dieser Energiespektren übereinandergeplottet sind. Des weiteren erkennt man eine Zunahme der Anzahl der rekonstruierten und selektierten Photonen mit steigender Kopplungsstärke. Dies kommt zum einen daher, dass die $t\overline{t}+\gamma$-Selektion niederenergetische Photonen unterdrückt, zum anderen kann man hier auch auf eine Abhängigkeit des Wirkungsquerschnittes des Prozesses von $d_A^{\gamma}$ schliessen, siehe \ref{sec:wq}. \\
+
+\begin{figure}%
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/et_0}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/et_02}%
+\end{subfigure}
+
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/et_04}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/et_06}%
+\end{subfigure}
+
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/et_08}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/et_1}%
+\end{subfigure}
+\caption{$E_T$-Verteilungen von rekonstruierten und selektierten Monte-Carlo-Daten für verschiedene Werte von $d_A^{\gamma}$.}%
+\label{fig:et_galerie}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/platzhalter}%
+\caption{$E_T$-Spektren bei $d_A^{\gamma}=$0; 0,5 und 1.}%
+\label{fig:et_kombi}%
+\end{figure}
+
+\section{Exponentieller Fit an die \texorpdfstring{$E_T$}{ET}-Spektren}
+
+Von den in Kapitel \ref{sec:montecarlo} vorgestellten Analysemethoden, um den Wert von $d_A^{\gamma}$ anhand von Daten einzugrenzen, wird hier exemplarisch die Analyse der Einhüllenden der $E_T$-Verteilung der Photonen besprochen. Dazu wird nun an die prozessierten Monte-Carlo-Simulationen eine Exponentialfunktion
+
+\begin{equation}
+N(x) = N_0\cdot e^{\lambda \cdot x}
+\end{equation}
+
+ angefittet, siehe Abb. \ref{fig:fit_galerie}. Der Fitbereich liegt zwischen dem Bin mit der maximalen Anzahl der Einträge bis 250\,GeV. Der Parameter$\lambda$ wird gegen $d_A^{\gamma}$ aufgetragen, siehe \ref{fig:et_slope}. Wie schon in Kapitel \ref{sec:ana_slope} wird nun ein Polynom dritten Grades an diese Datenpunkte gefittet, siehe Abb. \ref{fig:et_slopefit}. Man sieht, dass die Parameter ersten bis dritten Grades innerhalb der Unsicherheit des Fits mit Null vereinbar sind. Um dieser Problematik entgegenzuwirken, wird ein zweiter Ansatz mit einem linearen Fit gewählt. Dieser zeigt auch eine gute Übereinstimmung mit den Messwerten (Abb. \ref{fig:et_slopefit_linear}).  \\
+In Abbildung \ref{fig:fehlerbandplot} sieht man die aus dem linearen Fit ermittelte Funktion $\lambda\left(d_A^{\gamma}\right) = p_1\cdot d_A^{\gamma} +p_0$ (mittlere Gerade). Die obere und untere Gerade beschreibt respektive die Funktion für $\lambda\left(d_A^{\gamma}\right) = (p_1+\Delta p_1)\cdot d_A^{\gamma} +(p_0+\Delta p_0)$ bzw. $\lambda\left(d_A^{\gamma}\right) = (p_1-\Delta p_1)\cdot d_A^{\gamma} +(p_0-\Delta p_0)$, das so gebildete Fehlerband umschliesst somit eine Standardabweichung.
+
+\begin{figure}%
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/fit_0}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/fit_02}%
+\end{subfigure}
+
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/fit_04}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/fit_06}%
+\end{subfigure}
+
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/fit_08}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/fit_1}%
+\end{subfigure}
+\caption{Exponentieller Fit an die $E_T$-Verteilungen von rekonstruierten und selektierten Monte-Carlo-Daten für verschiedene Werte von $d_A^{\gamma}$.}%
+\label{fig:fit_galerie}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/et_slope}%
+\caption{Verlauf des $\lambda$-Parameters des Fits an die $E_T$-Spektren.}%
+\label{fig:et_slope}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/et_slopefit}%
+\caption{Fit eines Polynoms dritten Grades an den Verlauf des $\lambda$-Parameters.}%
+\label{fig:et_slopefit}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/et_slopefit_linear}%
+\caption{Linearer Fit an den Verlauf des $\lambda$-Parameters.}%
+\label{fig:et_slopefit_linear}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/fehlerbandplot}%
+\caption{Gefitteter Verlauf des $\lambda$-Wertes mit Fehlerband.}%
+\label{fig:fehlerbandplot}%
+\end{figure}
+
+\section{Vergleich mit Daten}
+
