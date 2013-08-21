@@ -1,7 +1,7 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{3}{chapter.1}
 \contentsline {chapter}{\numberline {2}Das CMS-Experiment am LHC}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Der Large Hadron Collider}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Der CMS-Detektor}{8}{section.2.2}
+\contentsline {section}{\numberline {2.2}Der CMS-Detektor}{7}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Die Silizium-Spurdetektoren}{9}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Die Kalorimeter}{12}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Der Solenoidmagnet}{16}{subsection.2.2.3}
@@ -46,5 +46,6 @@
 \contentsline {chapter}{\numberline {7}Vergleich der Monte-Carlo-Simulationen mit Daten}{55}{chapter.7}
 \contentsline {section}{\numberline {7.1}$E_T$-Spektren}{55}{section.7.1}
 \contentsline {section}{\numberline {7.2}Exponentieller Fit an die $E_T$-Spektren}{55}{section.7.2}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{61}{chapter.8}
-\contentsline {chapter}{Literaturverzeichnis}{62}{chapter.8}
+\contentsline {section}{\numberline {7.3}Vergleich mit Daten}{58}{section.7.3}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{63}{chapter.8}
+\contentsline {chapter}{Literaturverzeichnis}{64}{chapter.8}
