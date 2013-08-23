@@ -5,132 +5,104 @@
 %
 
 
-\chapter{Ereignisselektion}
+\chapter{Ereignisrekonstruktion und -selektion}
 
-\section{Signatur des Signals}
-\label{sec:signatur}
+\section{Ereignisrekonstruktion}
+\label{sec:reco}
+
+Die Ereignisrekonstruktion erstellt aus den Messwerten der verschiedenen Subdetektoren Kandidaten für physikalische Objekte wie z.B. Myonen, Elektronen, Photonen oder Jets und verwendet dazu die digitalisierten Ausgangssignale des Detektors. Abbildung \ref{fig:reco} zeigt einen Ausschnitt des CMS-Detektors und die unterschiedlichen Signaturen, die beim Teilchendurchgang durch den Detektor erzeugt werden. Als einzige detektierbare Teilchen durchqueren Myonen den gesamten Detektor und hinterlassen Spuren in allen Subdetektoren. Bei hohen Energien dominiert für Elektronen der Energieverlust durch Bremsstrahlung. Diese hinterlassen daher nur einen Eintrag im Spurdetektor und werden im elektromagnetischen Kalorimeter gestoppt. Photonen sind elektrisch neutral und hinterlassen somit nur Einträge im elektromagnetischen Kalorimeter. Stark wechselwirkende Teilchen sind in den meisten Fällen geladen und hinterlassen somit auch eine Spur im Spurdetektor, weiterhin deponieren sie Energie im elektromagnetischen und im hadronischen Kalorimeter. \\
+Die Rekonstruktion untersucht diese Signaturen, um Rückschlüsse auf die erzeugten Teilchen zu ziehen. In der CMS Kollaboration werden sogenannte \enquote{Physics Object Groups} (POG) gebildet, die sich auf die Rekonstruktion einzelner Teilchenarten spezialisieren und die Objekte definieren, mit denen in Physik-Analysen gearbeitet wird. Im folgenden wird ein kurzer Überblick gegeben, wie verschiedene Objekte zu Leptonen oder Jets rekonstruiert werden.
 
 \begin{figure}%
-\centering
-\includegraphics[width=0.5\columnwidth]{bilder/signal}%
-\caption{Der semimyonische $t\overline{t}+\gamma$-Zerfall \cite{Tholen:Master}}%
-\label{fig:signal}%
+\includegraphics[width=\columnwidth]{bilder/reco}%
+\caption{Ein Ausschnitt des CMS Detektors mit Signaturen verschiedener Teilchen \cite{CMS:Slice}}%
+\label{fig:reco}%
 \end{figure}
 
-Das in dieser Analyse betrachtete Signal ist der semimyonische Top-Paar-Zerfall mit einem zusätzlichen Photon im Endzustand. Es ist in Abb. \ref{fig:signal} dargestellt, das Top- und Anti-Top-Quark können in diesem Schema auch vertauscht sein, woraus sich dann ein negativ geladenes Myon im Endzustand ergibt. Die Anforderungen an die Signalsignatur sind im folgenden aufgelistet:
+\subsection{Myonen}
+\label{sec:Reco_Myon}
+
+Myonen können vom CMS-Detektor konstruktionsbedingt überaus präzise detektiert werden \cite{CMS:TDR1}. Myonen sind geladene Teilchen, ihre Spur ist demnach im Tracker gekrümmt und sie hinterlassen in jedem weiteren Subdetektor eine spezifische Signatur, die zur Rekonstruktion genutzt werden kann. Ein hochenergetisches Myon verliert in den Kalorimetern nur wenig Energie und erzeugt ab einer Energie von 4\,GeV Einträge im Myonsystem. Die Algorithmen der Rekonstruktionssoftware kombinieren die Informationen des Trackers und des Myonsystems und profitiert so von der speziellen Myon-Signatur. Es wird zwischen \enquote{standalone muons}, die ausschließlich anhand von Informationen des Myonsystems rekonstruiert werden, und \enquote{global muons}, die aus der Kombination von Spurdetektor und Myonkammern gebildet werden, unterschieden. \\
+Als Startwert für die Erzeugung von standalone muons dienen zum einen die Myonen, welche vom L1-Trigger rekonstruiert wurden, zum anderen Regionen erhöhter Aktivität im Myonsystem. In den umliegenden Myonkammern wird dann nach charakteristischen Einträgen gesucht, die eine Spur bilden könnten. Schließlich wird ein Kalman-Filter angewendet \cite{Kalman:Filter}. Zunächst von innen nach außen, dann von außen nach innen, wird ein iterativer Fit der Spur in den einzelnen Detektorlagen durchgeführt. Die Spurparameter der Ausgangsspur werden dabei in die jeweils nächste Ebene der Myonkammern projiziert. Wenn das $\chi^2/ndf$ des Fits größer ist als ein Maximalwert von 25 oder nicht mindestens zwei Einträge der Anpassung in den Myonkammern verwendet wurden, davon mindestens einer in den Driftkammern oder Kathodenstreifenkammern, wird die Spur verworfen. Als letzte Forderung an die Myonspur wird gestellt, dass sie aus dem Wechselwirkungspunkt stammen muss, der in den Fit mit einbezogen wird. So wird die Impulsauflösung des Myons verbessert und gegen kosmische Myonen gefiltert. Die Teilchenspuren in den inneren Spurdetektoren werden auf eine ähnliche Weise mittels eines Kalman-Filters rekonstruiert \cite{Adam:Reco}. Wie im Myonsystem wird hier ausgehend von einem Startpunkt in der nächsten Detektorlage nach einem Eintrag gesucht, der dann in den Fit einbezogen wird. In den Spurdetektoren finden sich jedoch aufgrund der hohen Teilchenrate mehrere passende Einträge. Diese werden parallel verarbeitet, und nur die besten fünf Spuren werden nach jedem Schritt nicht verworfen. Als weitere Forderung müssen mindestens fünf Einträge in den einzelnen Lagen des Trackers Verwendung finden. Die so von außen nach innen rekonstruierte Spur wird auch hier noch einmal in Richtung des Strahlrohres gefittet. \\
+Um ein globales Myon zu rekonstruieren, werden Spuren aus dem Myonsystem mit Spuren der inneren Spurdetektoren kombiniert. Dabei geht man von einem bereits rekonstruierten standalone muon aus und nutzt die rekonstruierten Spuren in den Spurkammern. Zunächst wird abhängig von Parametern des standalone muons wie Ort und Impuls ein Raumwinkelbereich definiert, aus dem innere Spuren berücksichtigt werden. Dieser Bereich ist rechteckig in der $\eta-\Phi-$Ebene. Dann werden die Tracker-Spuren und die Trajektorie des standalone muons auf eine gemeinsame Fläche in $\eta$ und $\Phi$ extrapoliert, auf der die Suche nach bester Übereinstimmung vorgenommen wird. Die Wahl dieser Fläche ist abhängig vom Myonimpuls. Auf der gemeinsamen Fläche werden nun unter Verwendung von örtlichen Diskriminatoren, die für hochenergetische Myonen besonders effektiv sind, sowie Impulsdiskriminatoren, die für die Auswahl niederenergetischer Myonen relevant sind, iterativ die besten Übereinstimmungen der Spuren gesucht. Im Allgemeinen bleiben durch diesen Schritt mehrere Tracker-Spuren übrig. Schließlich werden alle möglichen Paare von standalone muons und den ausgewählten Tracker-Spuren global gefittet. Bei mehreren möglichen Paarungen wird die ausgewählt, deren Fit das niedrigste $\chi^2/ndf$ aufweist. So wird aus jedem standalone muon maximal ein globales Myon gebildet. \\
+In Abbildung \ref{fig:reco_eff_muon} und \ref{fig:reco_res_muon} ist ein Vergleich der Rekonstruktionseffizienz und der $q/p_T$-Auflösung, das ist ein maß der Spurqualität und -krümmung, der \enquote{standalone} mit den globalen Myonen zu sehen. Die Rekonstruktionseffizienzen sind in $\left| \eta \right|$ vergleichbar, die $q/p_T$-Auflösung ist für globale Myonen um eine Größenordnung verbessert. Die verschlechterung der Effizienz in lokalen $\left| \eta \right|$-Bereichen ist durch Lücken zwischen den aktiven Detektorelementen verursacht, in den Übrigen Bereichen liegt die Effizienz zwischen 95 und 99\%.
+
+\begin{figure}%
+\includegraphics[width=0.9\columnwidth]{bilder/reco_eff_muon}%
+\caption{Rekonstruktionseffizienz für Myonen als Funktion der Pseudorapidität für verschiedene $p_T$-Werte. a) \enquote{standalone} Myonen; b) global rekonstruierte Myonen \cite{CMS:TDR1}.}%
+\label{fig:reco_eff_muon}%
+\end{figure}
+
+\begin{figure}%
+\includegraphics[width=0.9\columnwidth]{bilder/reco_res_muon}%
+\caption{$q/p_T$-Auflösung für a) \enquote{standalone} und b) global rekonstruierte Myonen in Abhängigkeit von der Pseudorapidität \cite{CMS:TDR1}.}%
+\label{fig:reco_res_muon}%
+\end{figure}
+
+\subsection{Elektronen}
+
+Das Fehlen einer eindeutigen Signatur, wie sie bei den Myonen durch Einträge in den äußeren Myonkammern vorhanden ist, erschwert die Rekonstruktion von Elektronen. Elektronen sind ebenso wie Myonen geladene Teilchen und hinterlassen so Spuren in den Silizium-Spurdetektoren, zusätzlich schauern sie im elektromagnetischen Kalorimeter auf. Somit kann die Rekonstruktion entweder von den Einträgen im ECAL (\enquote{ECAL-getrieben}) oder von den Spuren im Silizium-Tracker (\enquote{Tracker-getrieben}) ausgehen. Letztere Methode ist nur für niederenergetische oder nicht isolierte Elektronen von Bedeutung, daher wird im folgenden der ECAL-getriebene Algorithmus erläutert \cite{Baffioni:Reco}: \\
+Den Ausgangspunkt bilden hier sogenannte \enquote{Supercluster} im ECAL. Diese bestehen aus mehreren Kristallblöcken, in denen Energie deponiert wurde (\enquote{Cluster}). Mittels verschiedener Algorithmen wird die aufgrund von Bremsstrahlung entlang der $\Phi$-Richtung verteilte Energie zusammengefasst. Energieeinträge in einem Bereich von $\Delta \Phi \approx 0,3$\,rad um den Startcluster werden berücksichtigt. Die Richtung des ursprünglichen Elektrons entspricht dem Schwerpunkt des Superclusters, wenn dieser alle durch Bremsstrahlung abgestrahlte Energie enthält. Daher wird nach Einträgen im entsprechenden $\eta-\Phi-$Bereich in den innersten Lagen des Spurdetektors gesucht, da dort kaum Einflüsse durch Abstrahlungen zu erwarten sind. Von den so gefundenen Einträgen in den inneren Spurdetektorlagen ausgehend wird nun eine Spur gebildet. Der dafür genutzte Algorithmus berücksichtigt explizite Energieabstrahlungsmodelle für Elektronen und unterscheidet sich so vom allgemeinen Spurfit. An jedem Messpunkt werden dazu Überlagerungen von Gaußkurven entsprechend der Vorhersagen der Bethe-Heitler-Formel, die den differentiellen Wirkungsquerschnitt für den Energieverlust von Elektronen durch Bremsstrahlung im Feld schwerer Kerne beschreibt \cite{Bethe-Heidler}, verwendet und die Spur mithilfe eines Gauß'schen Summenfilters gefittet \cite{Fruehwirth:Reco}. Die Informationen der gebildeten Elektronenspur wird mit dem Supercluster im ECAL zusammengefasst und dabei eine Reihe von Variablen gespeichert, die später Informationen über die Qualität des Elektrons geben können, darunter z.B. das Verhältnis $E/p$. Ambiguitäten in den Spurdetektoren, die beispielsweise auftreten können, wenn ein durch Bremsstrahlung erzeugtes Photon durch Paarbildung ein weiteres Elektron erzeugt, welches in diesem Schritt dem ursprünglichen Elektron zugeordnet werden muss, werden aufgelöst. Dazu wird das ursprüngliche Elektron durch einen ersten Trackereintrag möglichst nah am Wechselwirkungspunkt bestimmt. Reicht dieses Kriterium nicht aus, wird das Elektron mit dem größeren $E/p$-Verhältnis ausgewählt. Schließlich wird die Ladung der Elektronen bestimmt. Dazu werden drei Methoden benutzt: Ladung der rekonstruierten Elektronenspur, Ladung der nächsten Spur der normalen Spurrekonstruktion und Vektordifferenz der Vektoren vom Wechselwirkungspunkt zum ersten Siliziumdetektoreintrag und vom Wechselwirkungspunkt zum Supercluster. Die Ladung wird ausgewählt, die von mindestens zwei der drei Methoden bestimmt wurde. 
+
+\subsection{Photonen}
+
+Ausgangspunkt für die Photonrekonstruktion sind Photon-Kandidaten aus energiekorrigierten Superclustern. Diese Kandidaten müssen eine minimale unkorrigierte Energie von mindestens 20\,GeV besitzen und das Verhältnis der deponierten Energien in HCAL und ECAL $E_{HCAL}/E_{ECAL}$ muss kleiner als 5\% sein. Ein weiterer Schnitt in $\eta$ wird angewandt, es werden nur Photon-Kandidaten mit $\left|\eta\right|<1,4442$ und $1,566<\left|\eta\right|<2,5$ akzeptiert. Die Richtung des Impulsvektors wird bestimmt, indem der rekonstruierte Primärvertex mit der Position des Superclusters, in dem die Energie deponiert wurde, verbunden wird. Die Energie des Photons wird bestimmt aus der korrigierten Energie des Superclusters (konvertiertes Photon) oder der Summe der Energien in einem 5x5 Kristallblock um die höchste Energiedeposition(Photon aus dem harten Prozess, \enquote{prompt photon}). Für weitere Details siehe \cite{PAS:Photonreco}. \\
+Die hier angesprochenen Photon-Kandidaten sind der Ausgangspunkt für die Photonselektion, in welcher weitere Qualitätsschnitte angewendet werden, um den Anteil der gut rekonstruierten prompt photons zu erhöhen.
+
+\subsection{geladene und ungeladene Hadronen}
+
+Spuren und Kalorimetereinträge, die noch nicht einem Myon, Elektron oder Photon zugeordnet wurden, werden als (geladene oder ungeladene) Hadronen identifiziert und als Funktion von $\eta$ und den Energiedepositionen im ECAL und HCAL rekalibriert.
+
+\subsection{Particle Flow}
+
+Die bisherige Rekonstruktion kann mehrdeutig sein, da viele der Kandidaten denselben Detektoreinträgen zugeordnet sein können. Der sogenannte \enquote{Particle Flow}-Algorithmus, der auch für diese Analyse benutzt wird, entfernt diese Ambiguität und erstellt eine Liste von exakt rekonstruierten Teilchen. Die Quellen für diesen Algorithmus sind Cluster in den Kalorimetern, Spuren aus dem inneren Spurdetektor und voridentifizierte Elektronen und Myonen. Die wesentlichen Schritte des Algorithmus werden im folgenden beschrieben \cite{PAS:Particleflow}:
 
 \begin{itemize}
-	\item Genau ein hochenergetisches und gut isoliertes Myon.
-	\item Vier hochenergetische Jets, davon zwei b-artig.
-	\item Fehlende transversale Energie aufgrund des nicht detektierten Neutrinos.
-	\item Ein hartes und gut isoliertes Photon.
+	\item Im ECAL und HCAL werden sogenannte \enquote{topologische Cluster} aus den ursprünglichen Clustern gebildet. Die Spuren des inneren Spurdetektors werden zu den Kalorimetern hin extrapoliert.
+	\item Eine topologische Verknüpfung erzeugt sogenannte \enquote{blocks} von wenigen Elementen, dies sind Spuren und Cluster. Die Verknüpfungen zwischen den Elementen werden nach ihrem Abstand in der $\eta-\Phi-$Ebene bewertet, bei Verknüpfungen von Einträgen im Myonsystem und Spuren im Tracker wird der Wert des $\chi^2$ des globalen Fits als Bewertung verwendet. Bremsstrahlung wird berücksichtigt.
+	\item Block für Block werden alle Mehrdeutigkeiten aufgelöst. Bei mehr als einer Möglichkeit der Auflösung von verknüpften Elementen wird diejenige gewählt, welche die beste Bewertung besitzt. Für jeden Block werden die folgenden Schritte durchgeführt:
+	\begin{itemize}
+		\item Myonen werden mit allen zugehörigen Spuren vom Block entfernt. Ein durchschnittlicher Energiebetrag wird von den Kalorimeter-Clustern subtrahiert, dieser Betrag wurde mithilfe von kosmischen Myonen bestimmt.
+		\item Die voridentifizierten Elektronen werden noch einmal untersucht, um passende Spuren und Bremsstrahlungsphotonen zu finden. Eine finale Kombination mit Spuren und Kalorimeter-Variablen wird gefittet. Alle damit zusammenhängenden Elemente werden aus dem Block entfernt.
+		\item Alle übriggebliebenen Spuren werden zu \enquote{geladenen Particle Flow Hadronen}. Wenn der Transversalimpuls der Spur und die Energie des Kalorimeter-Clusters innerhalb gegebener Unsicherheiten übereinstimmen, werden die Spuren mithilfe der Kalorimetereinträge als Randbedingungen neu gefittet. Anderenfalls wird ein \enquote{Particle Flow Photon} mit der verbliebenen Energie des ECAL erzeugt oder, bei signifikantem Eintrag im HCAL, es werden ein Particle Flow Photon und ein \enquote{ungeladenes Particle Flow Hadron} generiert.
+		\item Die verbleibenden ECAL und HCAL Cluster werden als Particle Flow Photonen bzw. ungeladene Particle Flow Hadronen identifiziert.
+	\end{itemize}
 \end{itemize}
 
-Der semimyonische Kanal wird für diese Analyse ausgewählt, weil er einen sehr guten Kompromiss darstellt. Zum einen verspricht das Verzweigungsverhälnis von rund 15\% ein gewisses Maß an Statistik im Vergleich zum dileptonischen Kanal, zum anderen ist das Signal mit einem Myon gerade im dafür ausgelegten CMS-Detektor sehr gut zu identifizieren und lässt sich sehr viel besser vom QCD-Untergrund unterscheiden als der vollhadronische Kanal.
+\subsection{Jets}
 
-\section{Untergrund-Prozesse}
+Als Jet wird eine Kollektion von verschiedenen Teilchen bezeichnet, die nur geringe relative Impulskomponenten untereinander besitzen. Sie entstehen, wenn im Zuge der Hadronisierung einzelne Gluonen und Quarks aus dem Kollisionsprozess zu farbneutralen Teilchen zusammengefasst werden. Größtenteils sind in Jets Pionen und Kaonen enthalten, aber auch Baryonen und vereinzelt Leptonen. Während der Hadronisierung existiert ein ständiger Impulsaustausch der einzelnen Teilchen und so entsteht ein Teilchenkegel um die Schwerpunktsachse des Jets. Diese stimmt im Idealfall mit der Trajektorie des ursprünglichen, farbtragenden Objektes überein. Für die Untersuchung von Jets sind die Kalorimeter die wichtigsten Detektorkomponenten, nahezu alle im Jet enthaltenen Teilchen deponieren hier ihre gesamte Energie. Jets, die ausschließlich anhand von Kalorimetereinträgen rekonstruiert wurden, nennt man Kalorimeterjets, diese bilden den Ausgangspunkt für nahezu alle Rekonstruktions-Algorithmen von Jets. \\
+Für einen gegebenen Jet ist nicht eindeutig beantwortbar, welches Teilchen zum Jet gehört und welches nicht. Das Endergebnis der Messung wird jedoch von den Jeteigenschaften wie Energie und Richtung beeinflusst, und damit auch davon, ob ein Teilchen zum Jet gezählt wird oder nicht. Daher versucht man, die Jet-Algorithmen ständig zu optimieren, die aus den gegebenen Messwerten wie z.B. Kalorimetereinträgen Jets zu rekonstruieren. In dieser Analyse wird der sogenannte \enquote{anti-k$_T$-Algorithmus} verwendet, der im folgenden kurz erläutert wird: \\
+Der anti-k$_T$-Algorithmus basiert auf den sogenannten \enquote{Cluster}- oder Kombinationsalgorithmen, bei denen zunächst für jedes Teilchen- bzw. Protojetpaar ein Abstandsmaß berechnet wird. Die Viererimpulse der Teilchen mit dem kleinsten Abstand werden zu einem Protojet aufaddiert, dieser wird zur Kollektion hinzugefügt und die beiden ursprünglichen Objekte entfernt. Dies wird so lange wiederholt, bis eine Abbruchbedingung erfüllt ist. Der Jet gilt dann als komplett rekonstruiert und wird aus der Kollektion entfernt. \\
+Als Abstandsmaß zwischen den Objekten $i$ und $j$ wird ein mit den Impulsen gewichteter Winkelabstand
 
-\subsection{Untergründe der Top-Paar-Signatur}
-\label{sec:top_untergrund}
+\begin{equation}
+d_{ij} = \text{min}\left(k_{Ti}^{-2},k_{Tj}^{-2}\right)\frac{\Delta_{ij}^2}{\rho^2}
+\end{equation}
 
-\subsubsection*{QCD-Untergrund}
+verwendet, mit $\Delta_{ij}^2=\left(y_i-y_j\right)^2+\left(\Phi_i-\Phi_j\right)^2$. Hier bezeichnet $k_T$ den Transversalimpuls, $\Phi$ den Azimuthalwinkel und $y$ die Rapidität. Die Abbruchbedingung wird mittels
 
-Als QCD-Ereignisse bezeichnet man Signaturen, bei denen die Partonen der kollidierenden Protonen über starke Prozesse wechselwirken. Zu einem großen Teil beinhalten sie zwei Jets und kein hochenergetisches Lepton. Durch den hohen Wirkungsquerschnitt von QCD-Ereignissen ergibt sich eine nicht vernachlässigenswerte Anzahl von signalähnlichen Ereignissen, siehe Abb. \ref{fig:qcd}. Jets eines QCD-Ereignisses können durch die Protonreste oder durch Abstrahlungen im harten Prozess entstehen, die Myonen durch einen missidentifizierten Jet, der bis ins Myonsystem gelangt oder durch Zerfall eines W-Bosons. Das Myon aus dem W-Zerfall ist jedoch niederenergetisch, da es nicht aus einem Top-Zerfall hervorgeht, und unterscheidet sich so von dem eines $t\overline{t}$-Ereignisses. Die aus einem falsch rekonstruierten Jet resultierenden Myonen sind nahe an dem erzeugenden Jet und somit nicht so isoliert wie das Myon eines semimyonischen $t\overline{t}$-Zerfalls. Daraus resultiert die Forderung nach einem hochenergetischen, gut isolierten Myon in Abschnitt \ref{sec:signatur}. Der hier verwendete Datensatz hat einen Wirkungsquerschnitt von $\sigma_{QCD}=84,7$\,nb \cite{Kuessel:Doktor}.
+\begin{equation}
+d_{i,Beam}=k_{Ti}^{-2}
+\end{equation}
 
-\begin{figure}%
-\centering
-\includegraphics[width=0.4\columnwidth]{bilder/qcd}%
-\caption{QCD-Ereignis \cite{Hoehle:Diplom}}%
-\label{fig:qcd}%
-\end{figure}
+bestimmt. Wenn $d_{i,Beam}$ kleiner ist als jedes $d_{ij}$, ist diese erfüllt. Der Radiusparameter $\rho$, der das Abbruchkriterium mitdefiniert, ist in dieser Analyse auf $\rho = 0.5$ festgelegt. \\
+Der anti-k$_T$-Algorithmus ist sicher gegenüber niederenergetischen Teilchen und gegen kollineare Abstrahlungen \cite{Cacciari:Antikt}. Zunächst werden die hochenergetischen Teilchen zu einem Jet kombiniert. Dies wird durch den negativen Exponenten in der Impulsgewichtung erreicht. Danach erst werden alle weichen Objekte im Abstand $2\rho$ hinzugefügt. Sie haben keinen Einfluss auf die Form der Jets. Die Wahrscheinlichkeit, einen Jet aus vielen weichen Objekten zu bilden, wird dadurch sehr gering und auch die Wahrscheinlichkeit, dass durch ein zusätzliches weiches Objekt ein harter Bestandteil einem anderen Jet zugeordnet wird, wird gegenüber anderen Jet-Algorithmen deutlich verringert.
 
-\subsubsection*{Ereignisse in Assoziation mit W-Bosonen und Jets (W+jets Ereignisse)}
+\subsection{B-Tag}
 
-Bei W-Zerfällen werden W-Bosonen über die schwache Wechselwirkung gebildet und zerfallen dann. Die Signaturen ähneln dem in \ref{sec:signatur} beschriebenen Signal, das auch ein zerfallendes W-Boson enthält. In Abb. \ref{fig:w+jets} ist der Zerfall eines W-Bosons mit zusätzlichen Jets gezeigt. Wenn das W-Boson leptonisch zerfällt, ist das in \ref{sec:signatur} verlangte Kriterium der hochenergetischen Jets nicht erfüllt, diese können jedoch (siehe Abb. \ref{fig:w+jets}) durch Abstrahlungen oder Protonreste entstehen. Die entstehenden Myonen und Jets sind, ähnlich wie beim QCD-Untergrund, nicht so hochenergetisch wie bei einem Top-Zerfall. Der in dieser Analyse verwendete Datensatz besitzt einen Wirkungsquerschnitt von $\sigma_{W + Jets}=31,3\pm1,6$\,nb \cite{Melnikov:GaugeBoson}.
+Die aus dem Zerfall des Top-Quark-Paares entstehenden zwei b-Quarks können aufgrund ihrer langen Lebensdauer hadronische Zustände bilden, die wiederum schwach zerfallen. Ein solcher Zerfall ist in der CKM-Matrix stark unterdrückt, die b-Hadronen sind daher relativ langlebig und zerfallen überwiegend in c-Quarks, weniger häufig in Leptonen und u-Quarks. Somit hat die Signatur eines b-Jets drei charakteristische Eigenschaften, die für seine Identifizierung genutzt werden können \cite{Saout:BTag}:
 
-\begin{figure}%
-\centering
-\includegraphics[width=0.4\columnwidth]{bilder/w+jets}%
-\caption{Zerfallendes W-Boson mit zusätzlichen Jets \cite{Hoehle:Diplom}}%
-\label{fig:w+jets}%
-\end{figure}
+\begin{itemize}
+	\item Es existiert eine große Anzahl an deplatzierten Spuren.
+	\item Die deplatzierten Spuren treffen sich in einem Sekundärvertex.
+	\item Ein Großteil der Jet-Energie wird vom b-Hadron getragen.
+\end{itemize}
 
-\subsubsection*{Drell-Yan-Ereignisse}
-
-Als Drell-Yan Ereignis bezeichnet man den Zerfall eines Z-Bosons oder eines virtuellen Photons in zwei Myonen \cite{Collins:Drell-Yan}. Abb. \ref{fig:drellyan} zeigt beispielhaft einen solchen Prozess mit einem zerfallenden Z-Boson. Dieser Untergrund motiviert den Schnitt auf genau ein Myon und kann nur zum Signal beitragen, wenn eines der beiden Myonen nicht detektiert oder falsch rekonstruiert wird. Wie auch bei den W-Zerfällen hilft hier die Forderung nach zwei b-Jets, den Untergrundprozess zu unterdrücken. Der Wirkungsquerschnitt des verwendeten Datensatzes beträgt $\sigma_{Drell-Yan}=5,0\pm0,3$\,nb \cite{Melnikov:GaugeBoson}.
-
-\begin{figure}%
-\centering
-\includegraphics[width=0.4\columnwidth]{bilder/drellyan}%
-\caption{Der Drell-Yan-Prozess \cite{Heinson:Diagrams}}%
-\label{fig:drellyan}%
-\end{figure}
-
-\subsubsection*{Einzelne Top-Quark-Zerfälle}
-
-Einen dem Signal sehr ähnlichen Untergrund stellen Zerfälle einzelner Top-Quarks dar, die wegen des Top-Quarks teils eine identische Signatur besitzen. In Abb. \ref{fig:singletop} sind die drei verschiedenen Produktionsarten für einzelne Top-Quarks dargestellt. In Abb. \ref{fig:singletop_s} ist der s-Kanal dargestellt. In seinem Endzustand sind dort ein Top-Quark und ein weiteres b-Quark. Im Prozess entstehen die in der Top-Paar-Selektion verlangten b-Jets, es fehlt jedoch ein W-Boson, dessen Zerfallsprodukte durch Protonreste oder Abstrahlungen entstehen müssen. Beim leptonischen Zerfall des Top-Quarks ist das entstehende Lepton hochenergetisch, so dass sich die Signatur nur durch die geringere Jetanzahl und die niedrigere Jetenergie vom Signal unterscheidet. Im t-Kanal wird ein weiteres Quark im harten Prozess erzeugt (Abb. \ref{fig:singletop_t}), er ist dem $t\overline{t}$-Zerfall dadurch ähnlicher als der s-Kanal. Bei einem leptonischen Zerfall des Top-Quarks muss nur ein weiterer Jet im Ereignis entstehen und man erhält die gleiche Signatur wie im Signal mit zwei b-artigen Jets. Die einzige trennende Variable ist dann die Anzahl der hochenergetischen Jets. Der tW-Kanal schließlich (Abb. \ref{fig:singletop_tW}) ist dem $t\overline{t}$-Zerfall am ähnlichsten, es fehlt nur ein hochenergetischer Jet zur Signatur. Ein weiterer Unterschied ist die im Vergleich zum Top-Zerfall geringere Energie der W-Zerfallsprodukte. Die Wirkungsquerschnitte der in dieser Analyse benutzten Datensätze sind: $\sigma_{single-top, s-Kanal} = 4,6\pm0,2$\,pb, $\sigma_{single-top, t-Kanal} = 64,2\pm2,6$\,pb und $\sigma_{single-top, tW-Kanal} = 15,6\pm1,3$\,pb \cite{Haefner:SingleTop}.
-
-\begin{figure}%
-        \centering
-        \begin{subfigure}[b]{0.3\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{bilder/singletop_s}
-                \caption{s-Kanal}
-                \label{fig:singletop_s}
-        \end{subfigure}%
-				\hspace{0.05\textwidth}
-        \begin{subfigure}[b]{0.3\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{bilder/singletop_t}
-                \caption{t-Kanal}
-                \label{fig:singletop_t}
-        \end{subfigure}%
-				\hspace{0.05\textwidth}
-        \begin{subfigure}[b]{0.3\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{bilder/singletop_tW}
-                \caption{tW-Kanal}
-                \label{fig:singletop_tW}
-        \end{subfigure}
-\caption{Kanäle zur Produktion einzelner Top-Quarks \cite{Hoehle:Diplom}.}%
-\label{fig:singletop}%
-\end{figure}
-
-\subsubsection*{Andere $t\overline{t}$-Zerfälle}
-
-Zu den anderen $t\overline{t}$-Zerfällen werden die vollhadronischen und dileptonischen Kanäle sowie der semileptonische Zerfall des Top-Paares mit einem Elektron oder Tau im Endzustand. Dies entspricht dem in Abb. \ref{fig:signal} dargestellten Szenario mit geänderten Zerfallsprodukten der W-Bosonen. Bei diesen Untergründen besitzen alle Zerfallsprodukte eine zum Signalprozess vergleichbare Energie, die einzigen Unterschiede sind kein einzelnes hochenergetisches Myon sowie eine andere Jetanzahl. Wie schon in anderen Untergrundprozessen erwähnt, kann ein fehlendes hochenergetisches Myon durch Protonreste, Abstrahlungen oder einen missidentifizierten Jet erzeugt werden, dies würde insbesondere die Signatur des vollhadronischen Kanals komplettieren. Im semielektronischen und semitauonischen Kanal kann das hochenergetische Myon analog produziert werden, wobei zu beachten ist, dass beim semitauonischen Kanal $\approx 17\%$ der  $\tau$-Leptonen in ein Myon und zwei Neutrinos zerfallen. Ein nützliches Kriterium ist die Forderung eines einzigen Myons, kombiniert mit dem Veto, dass keine weiteren hoch- oder niederenergetischen Elektronen sowie keine niederenergetischen Myonen gemessen werden. Der inklusive $t\overline{t}$-Wirkungsquerschnitt beträgt $\sigma_{t\overline{t},incl.}=161,9\pm6,8$\,pb \cite{Chatrchyan:CrossSection}.
-
-\subsection{Untergründe der Photon-Signatur}
-
-Die Untergründe der Photon-Signatur lassen sich in drei Klassen unterteilen. Die ersten beiden Klassen beinhalten die irreduziblen Untergründe, sie beinhalten echte Photonen, die entweder von Teilchen im Anfangs- (Abb. \ref{fig:isr}) oder im Endzustand (Abb. \ref{fig:fsr}) abgestrahlt werden. Die dritte Klasse umfasst durch elektromagnetische Energiedepositionen von ungeladenen Hadronen, Elektronen, Myonen sowie durch Photonen aus $\pi^0$-Zerfällen falsch rekonstruierte Photonen (\enquote{fake photons}). Es wird angenommen, dass die Photonabstrahlung in den Untergrund-Datensätzen den Photon-Untergrund in diesen Ereignissen ausreichend beschreibt.
-
-\begin{figure}%
-        \centering
-        \begin{subfigure}[b]{0.4\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{bilder/isr_quark}
-                \caption{Quark-Antiquark-Annihilation}
-                \label{fig:isr_quark}
-        \end{subfigure}%
-				\hspace{0.1\textwidth}
-        \begin{subfigure}[b]{0.4\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{bilder/isr_gluon}
-                \caption{Gluon-Fusion trägt nicht zur Abstrahlung bei.}
-                \label{fig:isr_gluon}
-        \end{subfigure}%
-\caption{Untergründe zur Photon-Identifikation: Abstrahlung von Teilchen im Anfangszustand. \cite{Tholen:Master}}%
-\label{fig:isr}%
-\end{figure}
-
-\begin{figure}%
-\centering
-\includegraphics[width=0.9\columnwidth]{bilder/fsr}        
-\caption{Untergründe zur Photon-Identifikation: Abstrahlung von Teilchen im Endzustand. Alle geladenen Teilchen im Top-Paarzerfallsbaum tragen zur Abstrahlung bei. \cite{Tholen:Master}}%
-\label{fig:fsr}%
-\end{figure}
+Es wurden diverse Algorithmen entwickelt, um b-Quarks zu identifizieren. In dieser Analyse wird ein sogenannter \enquote{combined secondary vertex b-tag with medium operation point} (CSVM) benutzt. Dieser führt eine Wahrscheinlichkeitsanalyse aufgrund von neun spurbasierten Parametern durch. Dieser Algorithmus liefert auch dann ein Ergebnis, wenn kein Sekundärvertex rekonstruiert werden kann, indem er einen \enquote{Pseudo-Vertex} benutzt. Nähere Informationen hierzu liefert \cite{CMS:BTag}
 
 \section{Selektion}
+\label{sec:selektion}
 
 \subsection{Top-Paar-Selektion}
 \label{sec:vorselektion}

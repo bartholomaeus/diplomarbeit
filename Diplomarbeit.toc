@@ -1,48 +1,50 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}Das CMS-Experiment am LHC}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Der Large Hadron Collider}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Der CMS-Detektor}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Die Silizium-Spurdetektoren}{9}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Die Kalorimeter}{12}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Der Solenoidmagnet}{16}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Die Myonkammern}{16}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Das Triggersystem}{17}{subsection.2.2.5}
-\contentsline {chapter}{\numberline {3}Theoretische Grundlagen}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Das Standardmodell der Teilchenphysik}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Das Top-Quark am LHC}{19}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Erzeugung von Top-Quark-Paaren}{20}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Top-Quark-Zerfall}{22}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Anomale Kopplungen des Top-Quarks}{24}{section.3.3}
-\contentsline {chapter}{\numberline {4}Datensimulation und -rekonstruktion}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Monte-Carlo-Simulation}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Produktionskette}{27}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Simulation von $t\overline {t}+\gamma $ Ereignissen}{28}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Simulation des Top-Paar-Prozesses und der betrachteten Untergr\"unde}{29}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Detektorsimulation}{29}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Ereignisrekonstruktion}{30}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Myonen}{30}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Elektronen}{32}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Photonen}{33}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}geladene und ungeladene Hadronen}{34}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Particle Flow}{34}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Jets}{35}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}B-Tag}{36}{subsection.4.2.7}
-\contentsline {chapter}{\numberline {5}Ereignisselektion}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Signatur des Signals}{39}{section.5.1}
-\contentsline {section}{\numberline {5.2}Untergr\"unde}{40}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Untergr\"unde der Top-Paar-Signatur}{40}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Untergr\"unde der Photon-Signatur}{44}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Selektion}{44}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Top-Paar-Selektion}{44}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Selektion von $t\overline {t}+\gamma $-Ereignissen}{46}{subsection.5.3.2}
-\contentsline {subsubsection}{Analyse-spezifische Schnitte}{46}{section*.39}
-\contentsline {subsubsection}{Photon-Identifikationsschnitte}{47}{section*.40}
-\contentsline {chapter}{\numberline {6}Studie der von WHIZARD generierten Monte-Carlo-Samples}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Wirkungsquerschnitt des $t\overline {t}+\gamma $-Prozesses}{49}{section.6.1}
-\contentsline {section}{\numberline {6.2}$E_T$-Spektrum des Photons}{50}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}2-Bin-Analyse}{50}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}$E_T$-Mean-Analyse}{52}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Analyse der Einh\"ullenden der $E_T$-Verteilung}{53}{subsection.6.2.3}
+\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Das Standardmodell der Teilchenphysik}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Das Top-Quark am LHC}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Erzeugung von Top-Quark-Paaren}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Top-Quark-Zerfall}{8}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Anomale Kopplungen des Top-Quarks}{11}{section.2.3}
+\contentsline {chapter}{\numberline {3}Das CMS-Experiment am LHC}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Der Large Hadron Collider}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Der CMS-Detektor}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Die Silizium-Spurdetektoren}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Die Kalorimeter}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Der Solenoidmagnet}{24}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Die Myonkammern}{24}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Das Triggersystem}{25}{subsection.3.2.5}
+\contentsline {chapter}{\numberline {4}Konzept der Analyse}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Signatur des Signals}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}Untergrund-Prozesse}{27}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Untergrund-Prozesse der Top-Paar-Signatur}{28}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Untergr\"unde der Photon-Signatur}{32}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Aufbau der Analyse}{33}{section.4.3}
+\contentsline {chapter}{\numberline {5}Datensimulation}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Monte-Carlo-Simulation}{35}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Produktionskette}{35}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Simulation von $t\overline {t}+\gamma $ Ereignissen}{36}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Simulation des Top-Paar-Prozesses und der betrachteten Untergr\"unde}{37}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Detektorsimulation}{38}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Studie der von WHIZARD generierten Monte-Carlo-Samples}{38}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Wirkungsquerschnitt des $t\overline {t}+\gamma $-Prozesses}{38}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}$E_T$-Spektrum des Photons}{39}{subsection.5.2.2}
+\contentsline {subsubsection}{2-Bin-Analyse}{39}{section*.40}
+\contentsline {subsubsection}{$E_T$-Mean-Analyse}{40}{section*.43}
+\contentsline {subsubsection}{Analyse der Einh\"ullenden der $E_T$-Verteilung}{41}{section*.46}
+\contentsline {chapter}{\numberline {6}Ereignisrekonstruktion und -selektion}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Ereignisrekonstruktion}{43}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Myonen}{43}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Elektronen}{45}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Photonen}{46}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}geladene und ungeladene Hadronen}{47}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Particle Flow}{47}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}Jets}{48}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.7}B-Tag}{49}{subsection.6.1.7}
+\contentsline {section}{\numberline {6.2}Selektion}{50}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Top-Paar-Selektion}{50}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Selektion von $t\overline {t}+\gamma $-Ereignissen}{51}{subsection.6.2.2}
+\contentsline {subsubsection}{Analyse-spezifische Schnitte}{51}{section*.50}
+\contentsline {subsubsection}{Photon-Identifikationsschnitte}{52}{section*.51}
 \contentsline {chapter}{\numberline {7}Vergleich der Monte-Carlo-Simulationen mit Daten}{55}{chapter.7}
 \contentsline {section}{\numberline {7.1}$E_T$-Spektren}{55}{section.7.1}
 \contentsline {section}{\numberline {7.2}Exponentieller Fit an die $E_T$-Spektren}{55}{section.7.2}

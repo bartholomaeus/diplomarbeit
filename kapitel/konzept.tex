@@ -1,0 +1,153 @@
+%
+%
+% Kapitel Konzept der Analyse
+%
+%
+
+
+\chapter{Konzept der Analyse}
+
+Dieses Kapitel stellt das generelle Konzept der Arbeit vor. Dazu wird zunächst auf das untersuchte Signal und die zu berücksichtigenden Untergrund-Prozesse eingegangen, bevor später die Struktur der Analyse erläutert wird.
+
+\section{Signatur des Signals}
+\label{sec:signatur}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.5\columnwidth]{bilder/signal}%
+\caption{Der semimyonische $t\overline{t}+\gamma$-Zerfall \cite{Tholen:Master}}%
+\label{fig:signal}%
+\end{figure}
+
+Das in dieser Analyse betrachtete Signal ist der semimyonische Top-Paar-Zerfall mit einem zusätzlichen Photon im Endzustand. Es ist in Abb. \ref{fig:signal} dargestellt, das Top- und Anti-Top-Quark können in diesem Schema auch vertauscht sein, woraus sich dann ein negativ geladenes Myon im Endzustand ergibt. Die Anforderungen an die Signalsignatur sind im folgenden aufgelistet:
+
+\begin{itemize}
+	\item Genau ein hochenergetisches und gut isoliertes Myon.
+	\item Vier hochenergetische Jets, davon zwei b-artig.
+	\item Fehlende transversale Energie aufgrund des nicht detektierten Neutrinos.
+	\item Ein hartes und gut isoliertes Photon.
+\end{itemize}
+
+\section{Untergrund-Prozesse}
+
+Die Signatur des Signals kann durch verschiedene nicht-signalartige Prozesse gefälscht werden. Diese sogenannten \enquote{Untergrund-Prozesse werden im folgenden näher erläutert.}
+
+\subsection{Untergrund-Prozesse der Top-Paar-Signatur}
+\label{sec:top_untergrund}
+
+\subsubsection*{QCD-Untergrund}
+
+Als QCD-Ereignisse bezeichnet man Signaturen, bei denen die Partonen der kollidierenden Protonen über starke Prozesse wechselwirken. Zu einem großen Teil beinhalten sie zwei Jets und kein hochenergetisches Lepton. Durch den hohen Wirkungsquerschnitt von $\sigma_{QCD}=84,7$\,nb des QCD-Prozesses \cite{Kuessel:Doktor} ergibt sich eine nicht vernachlässigenswerte Anzahl von signalähnlichen Ereignissen, siehe Abb. \ref{fig:qcd}. Jets eines QCD-Ereignisses können durch die Protonreste oder durch Abstrahlungen im harten Prozess entstehen, die Myonen durch einen missidentifizierten Jet, der bis ins Myonsystem gelangt oder durch Zerfall eines W-Bosons. Das Myon aus dem W-Zerfall ist jedoch niederenergetisch, da es nicht aus einem Top-Zerfall hervorgeht, und unterscheidet sich so von dem eines $t\overline{t}$-Ereignisses. Die aus einem falsch rekonstruierten Jet resultierenden Myonen sind nahe an dem erzeugenden Jet und somit nicht so isoliert wie das Myon eines semimyonischen $t\overline{t}$-Zerfalls. Daraus resultiert die Forderung nach einem hochenergetischen, gut isolierten Myon in Abschnitt \ref{sec:signatur}.
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/qcd}%
+\caption{QCD-Ereignis \cite{Hoehle:Diplom}}%
+\label{fig:qcd}%
+\end{figure}
+
+\subsubsection*{Ereignisse in Assoziation mit W-Bosonen und Jets (W+jets Ereignisse)}
+
+Bei W-Zerfällen werden W-Bosonen über die schwache Wechselwirkung gebildet und zerfallen dann. Die Signaturen ähneln dem in \ref{sec:signatur} beschriebenen Signal, das auch ein zerfallendes W-Boson enthält. In Abb. \ref{fig:w+jets} ist der Zerfall eines W-Bosons mit zusätzlichen Jets gezeigt. Wenn das W-Boson leptonisch zerfällt, ist das in \ref{sec:signatur} verlangte Kriterium der hochenergetischen Jets nicht erfüllt, diese können jedoch (siehe Abb. \ref{fig:w+jets}) durch Abstrahlungen oder Protonreste entstehen. Die entstehenden Myonen und Jets sind, ähnlich wie beim QCD-Untergrund, nicht so hochenergetisch wie bei einem Top-Zerfall. Der in dieser Analyse verwendete Datensatz besitzt einen Wirkungsquerschnitt von $\sigma_{W + Jets}=31,3\pm1,6$\,nb \cite{Melnikov:GaugeBoson}.
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/w+jets}%
+\caption{Zerfallendes W-Boson mit zusätzlichen Jets \cite{Hoehle:Diplom}}%
+\label{fig:w+jets}%
+\end{figure}
+
+\subsubsection*{Drell-Yan-Ereignisse}
+
+Als Drell-Yan Ereignis bezeichnet man den Zerfall eines Z-Bosons oder eines virtuellen Photons in zwei Myonen \cite{Collins:Drell-Yan}. Abb. \ref{fig:drellyan} zeigt beispielhaft einen solchen Prozess mit einem zerfallenden Z-Boson. Dieser Untergrund motiviert den Schnitt auf genau ein Myon und kann nur zum Signal beitragen, wenn eines der beiden Myonen nicht detektiert oder falsch rekonstruiert wird. Wie auch bei den W-Zerfällen hilft hier die Forderung nach zwei b-Jets, den Untergrundprozess zu unterdrücken. Der Wirkungsquerschnitt des verwendeten Datensatzes beträgt $\sigma_{Drell-Yan}=5,0\pm0,3$\,nb \cite{Melnikov:GaugeBoson}.
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.4\columnwidth]{bilder/drellyan}%
+\caption{Der Drell-Yan-Prozess \cite{Heinson:Diagrams}}%
+\label{fig:drellyan}%
+\end{figure}
+
+\subsubsection*{Einzelne Top-Quark-Zerfälle}
+
+Einen dem Signal sehr ähnlichen Untergrund stellen Zerfälle einzelner Top-Quarks dar, die wegen des Top-Quarks teils eine identische Signatur besitzen. In Abb. \ref{fig:singletop} sind die drei verschiedenen Produktionsarten für einzelne Top-Quarks dargestellt. In Abb. \ref{fig:singletop_s} ist der s-Kanal dargestellt. In seinem Endzustand sind dort ein Top-Quark und ein weiteres b-Quark. Im Prozess entstehen die in der Top-Paar-Selektion verlangten b-Jets, es fehlt jedoch ein W-Boson, dessen Zerfallsprodukte durch Protonreste oder Abstrahlungen entstehen müssen. Beim leptonischen Zerfall des Top-Quarks ist das entstehende Lepton hochenergetisch, so dass sich die Signatur nur durch die geringere Jetanzahl und die niedrigere Jetenergie vom Signal unterscheidet. Im t-Kanal wird ein weiteres Quark im harten Prozess erzeugt (Abb. \ref{fig:singletop_t}), er ist dem $t\overline{t}$-Zerfall dadurch ähnlicher als der s-Kanal. Bei einem leptonischen Zerfall des Top-Quarks muss nur ein weiterer Jet im Ereignis entstehen und man erhält die gleiche Signatur wie im Signal mit zwei b-artigen Jets. Die einzige trennende Variable ist dann die Anzahl der hochenergetischen Jets. Der tW-Kanal schließlich (Abb. \ref{fig:singletop_tW}) ist dem $t\overline{t}$-Zerfall am ähnlichsten, es fehlt nur ein hochenergetischer Jet zur Signatur. Ein weiterer Unterschied ist die im Vergleich zum Top-Zerfall geringere Energie der W-Zerfallsprodukte. Die Wirkungsquerschnitte der in dieser Analyse benutzten Datensätze sind: $\sigma_{single-top, s-Kanal} = 4,6\pm0,2$\,pb, $\sigma_{single-top, t-Kanal} = 64,2\pm2,6$\,pb und $\sigma_{single-top, tW-Kanal} = 15,6\pm1,3$\,pb \cite{Haefner:SingleTop}.
+
+\begin{figure}%
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{bilder/singletop_s}
+                \caption{s-Kanal}
+                \label{fig:singletop_s}
+        \end{subfigure}%
+				\hspace{0.05\textwidth}
+        \begin{subfigure}[b]{0.3\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{bilder/singletop_t}
+                \caption{t-Kanal}
+                \label{fig:singletop_t}
+        \end{subfigure}%
+				\hspace{0.05\textwidth}
+        \begin{subfigure}[b]{0.3\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{bilder/singletop_tW}
+                \caption{tW-Kanal}
+                \label{fig:singletop_tW}
+        \end{subfigure}
+\caption{Kanäle zur Produktion einzelner Top-Quarks \cite{Hoehle:Diplom}.}%
+\label{fig:singletop}%
+\end{figure}
+
+\subsubsection*{Andere $t\overline{t}$-Zerfälle}
+
+Zu den anderen $t\overline{t}$-Zerfällen werden die vollhadronischen und dileptonischen Kanäle sowie der semileptonische Zerfall des Top-Paares mit einem Elektron oder Tau im Endzustand. Dies entspricht dem in Abb. \ref{fig:signal} dargestellten Szenario mit geänderten Zerfallsprodukten der W-Bosonen. Bei diesen Untergründen besitzen alle Zerfallsprodukte eine zum Signalprozess vergleichbare Energie, die einzigen Unterschiede sind kein einzelnes hochenergetisches Myon sowie eine andere Jetanzahl. Wie schon in anderen Untergrundprozessen erwähnt, kann ein fehlendes hochenergetisches Myon durch Protonreste, Abstrahlungen oder einen missidentifizierten Jet erzeugt werden, dies würde insbesondere die Signatur des vollhadronischen Kanals komplettieren. Im semielektronischen und semitauonischen Kanal kann das hochenergetische Myon analog produziert werden, wobei zu beachten ist, dass beim semitauonischen Kanal $\approx 17\%$ der  $\tau$-Leptonen in ein Myon und zwei Neutrinos zerfallen. Ein nützliches Kriterium ist die Forderung eines einzigen Myons, kombiniert mit dem Veto, dass keine weiteren hoch- oder niederenergetischen Elektronen sowie keine niederenergetischen Myonen gemessen werden. 
+
+\begin{figure}%
+        \centering
+        \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{bilder/isr_quark}
+                \caption{Quark-Antiquark-Annihilation}
+                \label{fig:isr_quark}
+        \end{subfigure}%
+				\hspace{0.1\textwidth}
+        \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{bilder/isr_gluon}
+                \caption{Gluon-Fusion trägt nicht zur Abstrahlung bei.}
+                \label{fig:isr_gluon}
+        \end{subfigure}%
+\caption{Untergründe zur Photon-Identifikation: Abstrahlung von Teilchen im Anfangszustand. \cite{Tholen:Master}}%
+\label{fig:isr}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.9\columnwidth]{bilder/fsr}        
+\caption{Untergründe zur Photon-Identifikation: Abstrahlung von Teilchen im Endzustand. Alle geladenen Teilchen im Top-Paarzerfallsbaum tragen zur Abstrahlung bei. \cite{Tholen:Master}}%
+\label{fig:fsr}%
+\end{figure}
+
+\subsection{Untergründe der Photon-Signatur}
+
+Die Untergründe der Photon-Signatur lassen sich in drei Klassen unterteilen. In den ersten beiden Klassen sind die irreduziblen Untergründe zusammengefasst, sie beinhalten echte Photonen, die entweder von Teilchen im Anfangs- (\enquote{Initial State Radiation}, ISR, Abb. \ref{fig:isr}) oder im Endzustand (\enquote{Final State Radiation}, FSR, Abb. \ref{fig:fsr}) abgestrahlt werden. Dabei spielt die ISR nur eine untergeordnete Rolle, da Top-Paare hauptsächlich aus Gluon-Gluon-Fusion entstehen. Die dritte Klasse umfasst durch elektromagnetische Energiedepositionen von ungeladenen Hadronen, Elektronen, Myonen sowie durch Photonen aus $\pi^0$-Zerfällen falsch rekonstruierte Photonen (\enquote{fake photons}). Es wird angenommen, dass die Photonabstrahlung in den Untergrund-Datensätzen den Photon-Untergrund in diesen Ereignissen ausreichend beschreibt.
+
+\section{Aufbau der Analyse}
+
+In den folgenden Schritten wird der Aufbau dieser Analyse vorgestellt. Eine detaillierte Beschreibung findet sich in den zugehörigen Kapiteln. Ein Flussdiagram der Analyse ist in Abbildung \ref{fig:flowchart} zu sehen. Es werden Daten verwendet, die vom CMS-Detektor im Jahre 2011 bei einer Schwerpunktsenergie von $\sqrt{s} = 7$\,TeV aufgezeichnet wurden. Die Datenmenge entspricht einer integrierten Luminosität von $\mathcal L_{int} = 4,7$\,fb$^{-1}$.
+
+\begin{enumerate}
+	\item Monte-Carlo-Simulation der Signalereignisse für verschiedene Werte von $d_A^{\gamma}$. Weitere simulierte Ereignisse werden von der CMS Kollaboration bereitgestellt.
+	\item Untersuchung des Photon-$E_T$-Spektrums der generierten Monte-Carlo-Ereignisse.
+	\item Modellierung von Teilchenschauern, Hadronisierung und Detektorsimulation der generierten Monte-Carlo-Ereignisse.
+	\item Selektion von Top-Paar-Ereignissen im Myon+Jets Kanal.
+	\item Selektion von $t\overline{t}+\gamma$-Ereignissen.
+	\item Untersuchung des $E_T$-Spektrums der rekonstruierten und selektierten Photonen.
+\end{enumerate}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.9\columnwidth]{bilder/flowchart}%
+\caption{Flussdiagramm der vorliegenden Analyse.}%
+\label{fig:flowchart}%
+\end{figure}
