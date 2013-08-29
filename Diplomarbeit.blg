@@ -1,31 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Diplomarbeit.aux
-A level-1 auxiliary file: kapitel/theorie.aux
-A level-1 auxiliary file: kapitel/detektor.aux
-A level-1 auxiliary file: kapitel/konzept.aux
-A level-1 auxiliary file: kapitel/simulation.aux
-A level-1 auxiliary file: kapitel/selektion.aux
+A level-1 auxiliary file: kapitel/anhang.aux
 The style file: amsplain.bst
+I found no \citation commands---while reading file Diplomarbeit.aux
 Database file #1: referenzen.bib
-Warning--entry type for "Heinson:Diagrams" isn't style-file defined
---line 320 of file referenzen.bib
-Name 1 in "Torbjörn Sjöstrand, Stephen Mrenna, and Peter Skands" has a comma at the end for entry Sjostrand:PYTHIA
-while executing---line 1149 of file amsplain.bst
-Warning--missing pages in Catani:QCD
-Warning--missing journal name in CMS:Slice
-Warning--missing pages in CMS:Slice
-Warning--missing journal name in CMS:Lumiresults
-Warning--missing pages in CMS:Lumiresults
-Warning--missing pages in James:MuonID
-Warning--missing pages in Alwall:MADGRAPH
-Warning--missing pages in Pumplin:CTEQ
-Warning--missing pages in Baffioni:Reco
-Warning--missing pages in Adam:Reco
-Warning--missing pages in Re:POWHEG
-Warning--missing pages in Saout:BTag
-Warning--missing pages in Alioli:POWHEG
-Name 1 in "Torbjörn Sjöstrand, Stephen Mrenna, and Peter Skands" has a comma at the end for entry Sjostrand:PYTHIA
-while executing---line 1233 of file amsplain.bst
-Warning--missing pages in Sjostrand:PYTHIA
-Warning--missing pages in Melnikov:GaugeBoson
-Warning--missing pages in Fruehwirth:Reco
-(There were 2 error messages)
+(There was 1 error message)
