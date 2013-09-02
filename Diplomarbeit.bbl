@@ -5,6 +5,207 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{Aguilar:Couplings}
+J.A. Aguilar-Savedra, \emph{A minimal set of top anomalous couplings}, Nuclear
+  Physics B \textbf{812(1)} (2009), 181--204.
+
+\bibitem{Berger:Teilchen}
+Christoph Berger, \emph{Elementarteilchenphysik}, Springer-Verlag, 1992.
+
+\bibitem{Catani:QCD}
+Stefano Catani, \emph{Aspects of {QCD}, from the {T}evatron to the {LHC}},
+  arXiv:hep-ph/0005233 (2000).
+
+\bibitem{ATLAS:Higgs}
+The~{ATLAS} {C}ollaboration, \emph{Observation of a new particle in the search
+  for the {S}tandard {M}odel {H}iggs boson with the {ATLAS} detector at the
+  {LHC}}, Phys. Lett. B \textbf{716(1)} (2012), 1--29.
+
+\bibitem{CMS:TDR1}
+The~CMS Collaboration, \emph{{CMS} {P}hysics. {T}echnical {D}esign {R}eport,
+  {V}olume 1: {D}etector {P}erformance and {S}oftware}, Tech. report, CERN,
+  2006.
+
+\bibitem{Coll:CMSExperiment}
+\bysame, \emph{The {CMS} {E}xperiment at the {CERN LHC}}, Journal Of
+  Instrumentation \textbf{3 08} (2008), S08004.
+
+\bibitem{CMS:Slice}
+The~{CMS} {C}ollaboration, \emph{Interactive slice of the {CMS} detector},
+  (2010).
+
+\bibitem{PAS:Photonreco}
+The~CMS Collaboration, \emph{Photon {R}econstruction and {I}dentification at
+  sqrt(s) = 7 tev}, Tech. Report CMS-PAS-EGM-10-005, CERN, 2010.
+
+\bibitem{CMS:WZProduction}
+\bysame, \emph{Measurement of {W} and {Z} {P}roduction in pp {C}ollisions at
+  $\sqrt{s}=7$ tev}, Physics Letters B \textbf{701(5)} (2011), 535--555.
+
+\bibitem{CMS:BTag}
+\bysame, \emph{b-{J}et {I}dentification in the {CMS}-{E}xperiment}, Tech.
+  Report CMS-PAS-BTV-11-004, CERN, 2012.
+
+\bibitem{PAS:TopMass}
+\bysame, \emph{{LHC} {C}ombination: {T}op {M}ass}, Tech. Report
+  CMS-PAS-TOP-12-001, CERN, 2012.
+
+\bibitem{CMS:Higgs}
+The~{CMS} {C}ollaboration, \emph{Observation of a new boson at a mass of 125
+  {G}e{V} with the {CMS} experiment at the {LHC}}, Phys. Lett. B
+  \textbf{716(1)} (2012), 30--61.
+
+\bibitem{CMS:Lumiresults}
+The~CMS Collaboration, \emph{{CMS} {L}uminosity - {P}ublic {R}esults},  (2013).
+
+\bibitem{James:MuonID}
+E.~James et~al., \emph{Muon {I}dentification in {CMS}}, CMS AN
+  \textbf{2005/047} (2005).
+
+\bibitem{CDF:Top}
+F.~Abe et~al., \emph{Observation of top quark production in $p\overline{p}$
+  collisions with the collider detector at fermilab}, Phys. Rev. Lett.
+  \textbf{74(14)} (1995), 2626--2631.
+
+\bibitem{Alwall:MADGRAPH}
+Johan~Alwall et~al., \emph{Mad{G}raph/{M}ad{E}vent v4: {T}he {N}ew {W}eb
+  {G}eneration}, Journal of High Energy Physics \textbf{0709:028} (2007).
+
+\bibitem{Alwall:LesHouches}
+\bysame, \emph{A standard format for les houches event files}, Computer Physics
+  Communications \textbf{176(4)} (2007), 300--304.
+
+\bibitem{Pumplin:CTEQ}
+Jonathan~Pumplin et~al., \emph{New {G}eneration of {P}arton {D}istributions
+  with {U}ncertainties from {G}lobal {QCD} {A}nalysis}, Journal of High Energy
+  Physics \textbf{0207:012} (2002).
+
+\bibitem{Koba:CPV}
+M.~Kobayashi et~al., \emph{{CP}-{V}iolation in the {R}enormalizable {T}heory of
+  weak interaction}, Progress of {T}heoretical {P}hysics \textbf{49(2)} (1973),
+  652--657.
+
+\bibitem{LHC:Design1}
+Oliver~Brüning et~al., \emph{{LHC} {D}esign {R}eport {V}ol. 1: {T}he {LHC}
+  {M}ain {R}ing}, CERN, 2004.
+
+\bibitem{D0:Top}
+S.~Abachi et~al., \emph{Search for {H}igh {M}ass {T}op {Q}uark {P}roduction in
+  $p\overline{p}$ {C}ollisions at $\sqrt{s} = 1.8$\, {T}e{V}}, Phys. Rev. Lett.
+  \textbf{74(13)} (1995), 2422--2426.
+
+\bibitem{Agostinelli:GEANT}
+S.~Agostinelli et~al., \emph{Geant4 - a simulation {T}oolkit}, Nuclear
+  Instruments \& Methods in Physics Research, Section A: Accelerators,
+  Spectrometers, Detectors, and Associated Equipment \textbf{506(3)} (2003),
+  250--303.
+
+\bibitem{Baffioni:Reco}
+Stephanie~Baffioni et~al., \emph{Electron {R}econstruction in {CMS}}, CMS Note
+  \textbf{2006/40} (2006).
+
+\bibitem{PAS:Particleflow}
+The~{CMS}Collaboration et~al., \emph{Particle-flow {E}vent {R}econstruction in
+  {CMS} and {P}erformance for {J}ets, {T}au and {MET}}, Tech. Report
+  PAS-PFT-09-001, CERN, 2009.
+
+\bibitem{Adam:Reco}
+Wolfgang~Adam et~al., \emph{Track {R}econstruction in the {CMS} {T}racker}, CMS
+  Note \textbf{2006/41} (2005).
+
+\bibitem{Haefner:SingleTop}
+Petra Haefner, \emph{Single {T}op {R}esults by {ATLAS} and {CMS}}, Tech. Report
+  ATL-PHYS-PROC-2012-019, arXiv:1205.1352, 2012.
+
+\bibitem{Hegner:Diplom}
+Benedikt Hegner, \emph{Integration von {S}i-{S}treifenmodulen in den
+  {V}orwärtsbereich des zentralen {CMS}-{S}purdetektors}, Diplomarbeit, III.
+  Physikalisches Institut B, RWTH Aachen, 2004.
+
+\bibitem{Heinson:Diagrams}
+Ann Heinson, \emph{Useful {D}iagrams of {T}op {S}ignals and {B}ackgrounds},
+  2009,
+  \url{http://www-d0.fnal.gov/Run2Physics/top/top_public_web_pages/top_feynman_diagrams.html}.
+
+\bibitem{Hoehle:Diplom}
+Felix Höhle, \emph{Untersichung von {S}pinkorrelationen im semileptonischen
+  {T}op-{P}aar-{Z}erfall mit dem {CMS}-{E}xperiment}, Diplomarbeit, III.
+  Physikalisches Institut B, RWTH Aachen, 2010.
+
+\bibitem{Collins:Drell-Yan}
+Davison E. Soper und George~Sterman John C.~Collins, \emph{Transverse
+  {M}omentum {D}istribution in {D}rell-{Y}an {P}air and {W} and {Z} {B}oson
+  {P}roduction}, Nuclear Physics B \textbf{250(1)} (1985), 199--224.
+
+\bibitem{Kalman:Filter}
+Rudolph~Emil Kalman, \emph{A {N}ew {A}pproach to {L}inear {F}iltering and
+  {P}rediction {P}roblems}, Journal {O}f {B}asic {E}ngineering \textbf{82
+  Series D} (1960), 35--45.
+
+\bibitem{Kidonakis:Cross}
+Nikolaos Kidonakis, \emph{Next-to-next-to-leading soft-gluon corrections for
+  the top quark cross section and transverse momentum distribution}, Phys. Rev.
+  D \textbf{82(11)} (2010), 114030.
+
+\bibitem{Kuessel:Diplom}
+Yvonne Kuessel, \emph{Massenbestimmung von {T}op-quarks mit semileptonischen
+  {T}op-{P}aar-{Z}erfällen am {CMS}-{D}etektor}, Diplomarbeit, III.
+  Physikalisches Institut B, RWTH Aachen, 2009.
+
+\bibitem{Kuessel:Doktor}
+\bysame, \emph{Constraints on the top quark's charge with the {CMS}
+  experiment}, Doktorarbeit, III. Physikalisches Institut B, RWTH Aachen, 2012.
+
+\bibitem{Cacciari:Antikt}
+Gavin P. Salam und Gregory~Soyez Matteo~Cacciari, \emph{The anti-k t {j}et
+  {c}lustering {a}lgorithm}, Journal of High Energy Physics \textbf{2008 04}
+  (2008), 063--063.
+
+\bibitem{Re:POWHEG}
+Emanuele Re, \emph{Single-top {W}t-channel production matched with parton
+  showers using the {POWHEG} method}, Eur. Phys. J \textbf{C71:1547} (2010).
+
+\bibitem{Saout:BTag}
+Cristophe Saout, \emph{B-{T}agging at {M}ultipurpose {LHC} {E}xperiments},
+  Helmholtz Alliance Workshop, Detector Understanding with First LHC Data
+  (2009).
+
+\bibitem{Alioli:POWHEG}
+Carlo Oleari und Emanuele~Re Simone~Alioli, Paolo~Nason, \emph{{NLO} single-top
+  production matched with shower in {POWHEG}: s- and t-channel contributions},
+  Journal of High Energy Physics \textbf{0909:111; Erratum ibid. 1002:011}
+  (2009).
+
+\bibitem{Tholen:Master}
+Heiner Josef~Antonius Tholen, \emph{Study of the {I}nclusive $t\overline{t} +
+  \gamma$ {C}ross {S}ection with the {CMS} {E}xperiment}, Masterarbeit, III.
+  Physikalisches Institut B, RWTH Aachen, 2012.
+
+\bibitem{Sjostrand:PYTHIA}
+Stephen~Mrenna Torbjörn~Sjöstrand and Peter Skands, \emph{{PYTHIA} 6.4
+  {P}hysics and {M}anual}, Journal of High Energy Physics \textbf{0605:026}
+  (2006).
+
+\bibitem{Melnikov:GaugeBoson}
+Kirill~Melnikov und Frank~Petriello, \emph{Electroweak {G}auge {B}oson
+  {P}roduction at {H}adron {C}olliders through $\mathcal {O}(\alpha_s^2)$},
+  Phys. Rev. D \textbf{74:114017} (2006).
+
+\bibitem{Bethe-Heidler}
+Hans~Bethe und Walter~Heitler, \emph{On the {S}topping of {F}ast {P}articles
+  and on the {C}reation of {P}ositive {E}lectrons}, Proceedings of the Royal
+  Society of London. Series A. Containing Papers of a Mathematical and Physical
+  Character \textbf{146 856} (1934), 83--112.
+
+\bibitem{Was:TAUOLA}
+Zbigniew Was, \emph{Precision simulations with {TAUOLA} and {PHOTOS}}, Nucl.
+  Phys. Proc. Suppl. \textbf{169} (2007), 16--21.
+
+\bibitem{Fruehwirth:Reco}
+Rudolf Frühwirth et~al. Wolfgang~Adam, \emph{Reconstruction of {E}lectrons with
+  the {G}aussian-{S}um {F}ilter in the {CMS} {T}racker at the {LHC}}, CMS Note
+  \textbf{2005/001} (2005).
 
 \end{thebibliography}

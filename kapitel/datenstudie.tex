@@ -9,31 +9,32 @@
 
 \section{\texorpdfstring{$E_T$}{ET}-Spektren}
 
-Für elf der in Kapitel \ref{sec:montecarlo} erzeugten WHIZARD-Sample ($0\leq d_A^{\gamma} \leq 1$, Schritte von 0,1) werden nun die Hadronisierung und die Detektorantwort simuliert, die Rekonstruktionsalgorithmen darauf angewendet (siehe Abschnitt \ref{sec:reco}) sowie die in den Abschnitten \ref{sec:vorselektion} respektive \ref{sec:ttg_selektion} beschriebenen Selektionen durchgeführt. Die jeweiligen $E_T$-Spektren werden aufgetragen. Abb. \ref{fig:et_galerie} zeigt einige dieser Spektren in logarithmischer Auftragung, die $y$-Achse ist hier auf die Luminosität normiert. Man erkennt, dass wie erwartet das Spektrum mit steigendem $d_A^{\gamma}$ härter wird, sich also zu höherenergetischen Photonen verschiebt. Dies lässt sich auch in Abb. \ref{fig:et_kombi} erkennen, in der drei dieser Energiespektren übereinandergeplottet sind. Des weiteren erkennt man eine Zunahme der Anzahl der rekonstruierten und selektierten Photonen mit steigender Kopplungsstärke. Dies kommt zum einen daher, dass die $t\overline{t}+\gamma$-Selektion niederenergetische Photonen unterdrückt, zum anderen kann man hier auch auf eine Abhängigkeit des Wirkungsquerschnittes des Prozesses von $d_A^{\gamma}$ schließen, siehe \ref{sec:wq}. \\
+Für elf der in Kapitel \ref{sec:montecarlo} erzeugten WHIZARD-Sample ($0\leq d_A^{\gamma} \leq 1$, Schritte von 0,1) werden nun die Hadronisierung und die Detektorantwort simuliert, die Rekonstruktionsalgorithmen darauf angewendet (siehe Abschnitt \ref{sec:reco}) sowie die in den Abschnitten \ref{sec:vorselektion} respektive \ref{sec:ttg_selektion} beschriebenen Selektionen durchgeführt. Die jeweiligen $E_T$-Spektren der Photonkandidaten der selektierten Ereignisse werden aufgetragen. Abb. \ref{fig:et_galerie} zeigt einige dieser Spektren in logarithmischer Auftragung, die Ereignisse sind hier integral auf die Luminosität normiert. Man erkennt, dass das Spektrum sich mit steigendem $d_A^{\gamma}$ zu höherenergetischen Photonen verschiebt, was auch in Abb. \ref{fig:et_kombi} zu sehen ist, in der drei dieser Energiespektren übereinandergeplottet sind. Dies ist eine erste qualitative Bestätigung dafür, dass die in Kapitel \ref{sec:etphoton} beschriebenen Analysemethoden auch nach Rekonstruktion und Selektion der simulierten Daten noch anwendbar sind. Des weiteren erkennt man eine Zunahme der integralen Anzahl der rekonstruierten und selektierten Photonen mit steigender Kopplungsstärke. Dies kommt zum einen daher, dass die $t\overline{t}+\gamma$-Selektion niederenergetische Photonen unterdrückt, zum anderen kann man hier auch auf eine Abhängigkeit des Wirkungsquerschnittes des Prozesses von $d_A^{\gamma}$ schließen, siehe \ref{sec:wq}. \\
+Die in Kapitel \ref{sec:etphoton} für die generierten Ereignisse durchgeführten Analysen des Photon-$E_T$-Spektrums werden im folgenden auf die rekonstruierten Ereignisse angewendet.
 
 \begin{figure}%
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/et_0}%
+\includegraphics[width=\textwidth]{bilder/et_0.pdf}%
 \end{subfigure}
 \hspace{0.1\textwidth}
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/et_02}%
+\includegraphics[width=\textwidth]{bilder/et_02.pdf}%
 \end{subfigure}
 
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/et_04}%
+\includegraphics[width=\textwidth]{bilder/et_04.pdf}%
 \end{subfigure}
 \hspace{0.1\textwidth}
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/et_06}%
+\includegraphics[width=\textwidth]{bilder/et_06.pdf}%
 \end{subfigure}
 
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/et_08}%
+\includegraphics[width=\textwidth]{bilder/et_08.pdf}%
 \end{subfigure}
 \hspace{0.1\textwidth}
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/et_1}%
+\includegraphics[width=\textwidth]{bilder/et_1.pdf}%
 \end{subfigure}
 \caption{$E_T$-Verteilungen von rekonstruierten und selektierten Monte-Carlo-Daten für verschiedene Werte von $d_A^{\gamma}$.}%
 \label{fig:et_galerie}%
@@ -41,114 +42,81 @@ Für elf der in Kapitel \ref{sec:montecarlo} erzeugten WHIZARD-Sample ($0\leq d_A
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.4\columnwidth]{bilder/platzhalter}%
+\includegraphics[width=0.4\columnwidth]{bilder/et_kombi}%
 \caption{$E_T$-Spektren bei $d_A^{\gamma}=$0; 0,5 und 1.}%
 \label{fig:et_kombi}%
 \end{figure}
 
-\section{Exponentieller Fit an die \texorpdfstring{$E_T$}{ET}-Spektren}
+\section{2-Bin-Analyse}
 
-Von den in Kapitel \ref{sec:montecarlo} vorgestellten Analysemethoden, um den Wert von $d_A^{\gamma}$ anhand von Daten einzugrenzen, wird hier exemplarisch die Analyse der Einhüllenden der $E_T$-Verteilung der Photonen besprochen. Dazu wird nun an die prozessierten Monte-Carlo-Simulationen eine Exponentialfunktion
+Das $E_T$-Spektrum wird in zwei Bereiche unterteilt, einen niederenergetischen Bereich von 0\,GeV bis 100\,GeV und einen hochenergetischen Bereich von 100\,GeV bis 700\,GeV. Das Verhältnis der Ereignisse in den beiden Bereichen wird gegen $d_A^{\gamma}$ aufgetragen, siehe Abbildung \ref{fig:twobin_reco_plot}. Die $E_{Low}/E_{High}$-Werte und die Unsicherheiten sind hier zwischen den Messwerten interpoliert. Man erkennt auch auf Rekonstruktionsniveau eine klare Abhängigkeit des Verhältnisses $E_{Low}/E_{High}$ von der Kopplungsstärke $d_A^{\gamma}$. Ebenso ist auch hier wie auf Generatorniveau eine gute Separationskraft erkennbar, die Werte reichen von $E_{Low}/E_{High} = 6,4$ bei $d_A^{\gamma} = 0$ bis $E_{Low}/E_{High} = 3,2$ bei $d_A^{\gamma} = 1$. Die Unsicherheit auf den Messwert liegt im Bereich von $\Delta E_{Low}/E_{High} < 0,3$.
 
-\begin{equation}
-N(x) = N_0\cdot e^{\lambda \cdot x}
-\end{equation}
+\begin{figure}%
+\centering
+\includegraphics[width=0.5\columnwidth]{bilder/twobin_reco_plot.pdf}%
+\caption{}%
+\label{fig:twobin_reco_plot}%
+\end{figure}
 
- angefittet, siehe Abb. \ref{fig:fit_galerie}. Der Fitbereich liegt zwischen dem Bin mit der maximalen Anzahl der Einträge bis 250\,GeV. Der Parameter$\lambda$ wird gegen $d_A^{\gamma}$ aufgetragen, siehe \ref{fig:et_slope}. Wie schon in Kapitel \ref{sec:ana_slope} wird nun ein Polynom dritten Grades an diese Datenpunkte gefittet, siehe Abb. \ref{fig:et_slopefit}. Man sieht, dass die Parameter ersten bis dritten Grades innerhalb der Unsicherheit des Fits mit Null vereinbar sind. Um dieser Problematik entgegenzuwirken, wird ein zweiter Ansatz mit einem linearen Fit gewählt. Dieser zeigt auch eine gute Übereinstimmung mit den Messwerten (Abb. \ref{fig:et_slopefit_linear}).  \\
-In Abbildung \ref{fig:fehlerbandplot} sieht man die aus dem linearen Fit ermittelte Funktion 
+\section{\texorpdfstring{$E_T$}{ET}-Mean-Analyse}
 
-\begin{equation}
-\lambda\left(d_A^{\gamma}\right) = p_1\cdot d_A^{\gamma} +p_0 = 0,01069 \cdot d_A^{\gamma} -0,03916
-\label{eq:lambda}
-\end{equation}
+Die Schwerpunkte der $E_T$-Spektren der Photonkandidaten sowie die Unsicherheiten werden mittels der Gleichungen \ref{eq:mean} sowie \ref{eq:meanerror} bestimmt und gegen $d_A^{\gamma}$ aufgetragen. Auch hier bleibt die Abhängigkeit des Schwerpunktes von $d_A^{\gamma}$ auf Rekonstruktionslevel erhalten (siehe Abbildung \ref{fig:mean_reco_plot}. Die Werte liegen dabei zwischen $\overline{E_T} = 53,75$ und $\overline{E_T} = 70,15$ bei einer Unsicherheit von $\Delta \overline{E_T} < 1,9$.
 
-(mittlere Gerade). Die obere und untere Gerade beschreibt respektive die Funktion für
+\begin{figure}%
+\centering
+\includegraphics[width=0.5\columnwidth]{bilder/mean_reco_plot.pdf}%
+\caption{}%
+\label{fig:mean_reco_plot}%
+\end{figure}
 
-\begin{equation}
-\lambda\left(d_A^{\gamma}\right)_{max} = (p_1+\Delta p_1)\cdot d_A^{\gamma} +(p_0+\Delta p_0) = 0,01178 \cdot d_A^{\gamma} - 0,03842
-\end{equation}
+\section{Analyse der Exponentialanpassung der \texorpdfstring{$E_T$}{ET}-Verteilung}
 
-bzw. 
-
-\begin{equation}
-\lambda\left(d_A^{\gamma}\right)_{min} = (p_1-\Delta p_1)\cdot d_A^{\gamma} +(p_0-\Delta p_0) =  0,00960 \cdot d_A^{\gamma} - 0,03990 \ ,
-\end{equation}
-
-das so gebildete Fehlerband umschließt somit eine Standardabweichung.
+Die Anpassung einer Exponentialfunktion an die $E_T$-Verteilung des Photons wird betrachtet. Dazu wird das $E_T$-Spektrum im Bereich von 20\,GeV bis 200\,GeV durch eine Exponentialfunktion wie in Gleichung \ref{eq:expofit} beschrieben angepasst, siehe Abbildung \ref{fig:fit_galerie}. Der Wert für $\lambda$ wird gegen $d_A^{\gamma}$ aufgetragen, siehe Abbildung \ref{fig:slope_reco_plot}. Wie in den beiden anderen Analysestrategien bleibt die Abhängigkeit der Variablen von $d_A^{\gamma}$ auf Rekonstruktionsniveau erhalten, bei $d_A^{\gamma} = 0,7$ ist jedoch ein Knick im ansonsten streng monoton steigenden Verlauf des $\gamma$-Parameters zu erkennen. Dieser liegt jedoch innerhalb der Unsicherheit. Es werden Werte von $\lambda = -0,035$ für $d_A^{\gamma} = 0$ bis $\lambda = -0,024$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit von $\Delta \lambda < 0,0007$ gemessen.
 
 \begin{figure}%
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/fit_0}%
+\includegraphics[width=\textwidth]{bilder/fit_0.pdf}%
 \end{subfigure}
 \hspace{0.1\textwidth}
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/fit_02}%
+\includegraphics[width=\textwidth]{bilder/fit_02.pdf}%
 \end{subfigure}
 
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/fit_04}%
+\includegraphics[width=\textwidth]{bilder/fit_04.pdf}%
 \end{subfigure}
 \hspace{0.1\textwidth}
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/fit_06}%
+\includegraphics[width=\textwidth]{bilder/fit_06.pdf}%
 \end{subfigure}
 
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/fit_08}%
+\includegraphics[width=\textwidth]{bilder/fit_08.pdf}%
 \end{subfigure}
 \hspace{0.1\textwidth}
 \begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/fit_1}%
+\includegraphics[width=\textwidth]{bilder/fit_1.pdf}%
 \end{subfigure}
 \caption{Exponentieller Fit an die $E_T$-Verteilungen von rekonstruierten und selektierten Monte-Carlo-Daten für verschiedene Werte von $d_A^{\gamma}$.}%
 \label{fig:fit_galerie}%
 \end{figure}
 
-\begin{figure}%
-\centering
-\includegraphics[width=0.4\columnwidth]{bilder/et_slope}%
-\caption{Verlauf des $\lambda$-Parameters des Fits an die $E_T$-Spektren.}%
-\label{fig:et_slope}%
-\end{figure}
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.4\columnwidth]{bilder/et_slopefit}%
-\caption{Fit eines Polynoms dritten Grades an den Verlauf des $\lambda$-Parameters.}%
-\label{fig:et_slopefit}%
+\includegraphics[width=0.5\columnwidth]{bilder/slope_reco_plot.pdf}%
+\caption{}%
+\label{fig:slope_reco_plot}%
 \end{figure}
 
-\begin{figure}%
-\centering
-\includegraphics[width=0.4\columnwidth]{bilder/et_slopefit_linear}%
-\caption{Linearer Fit an den Verlauf des $\lambda$-Parameters.}%
-\label{fig:et_slopefit_linear}%
-\end{figure}
+\section{Vergleich der Analysemethoden auf Rekonstruktionsniveau}
 
-\begin{figure}%
-\centering
-\includegraphics[width=0.4\columnwidth]{bilder/fehlerbandplot}%
-\caption{Gefitteter Verlauf des $\lambda$-Wertes mit Fehlerband.}%
-\label{fig:fehlerbandplot}%
-\end{figure}
+Auch bei der Analyse der rekonstruierten und selektierten Monte-Carlo-Ereignisse zeigt sich in allen vorgestellten Analysemethoden eine klare Abhängigkeit der jeweiligen Variablen von $d_A^{\gamma}$. Ebenso weisen alle Variablen eine gewisse Separationskraft auf, diese ist jedoch aufgrund der durch die Rekonstruktion und Selektion verringerten Statistik kleiner als auf Generatorniveau. \\
+Die größte Separationskraft auf Rekonstruktionsniveau zeigt die Analyse der Exponentialanpassung der $E_T$-Verteilung. Hier liegen zwischen den Extremwerten von $\overline{E_T}$ 15 Standardabweichungen. Diee 2-Bin-Analyse weist einen Wertebereich von 10 Standardabweichungen auf und die Analyse des Schwerpunktes der Verteilung hat eine Spannweite von 9 Standardabweichungen. Somit hat die Analyse der Exponentialanpassung im Vergleich zum Generatorniveau nicht viel von ihrer Separationskraft eingebüßt. Die anderen beiden Analysemethoden separieren aufgrund der verringerten Statistik aber wie erwartet auf Rekonstruktionsniveau weitaus weniger stark zwischen den verschiedenen $d_A^{\gamma}$-Szenarien.
 
-\section{Vergleich mit Daten}
+\section{Auswertung von 4,7 \texorpdfstring{fb$^{-1}$}{inv. fb} Daten}
 
-Auf 4,7\,fb$^{-1}$ Daten werden die gleichen Selektionen (Top-Paar- bzw. $t\overline{t}+\gamma$-Selektion) angewendet. Die Daten wurden im Jahr 2011 bei einer Schwerpunktsenergie von 7\,TeV genommen. Aus diesem Datensatz werden 134 Ereignisse selektiert, die alle geforderten Kriterien erfüllen. Das $E_T$-Spektrum dieser Ereignisse ist in Abbildung \ref{fig:et_data} gezeigt. \\
-Auch diese Verteilung wird nun mit einer Exponentialfunktion gefittet, diesen Fit zeigt Abbildung \ref{fig:et_data_fit}. Es ergibt sich für die Einhüllende ein Wert von
-
-\begin{equation}
-\lambda_{Data} = -0,03471 \cdot d_A^{\gamma} \pm 0,00366 \ .
-\end{equation}
-
-Die Genauigkeit dieses Fits ist durch die geringe Anzahl von nur 134 selektierten Ereignissen begrenzt. \\
-Ziel ist es nun, durch Vergleich der Daten mit den Monte-Carlo-Simulationen einen Wert für $d_A^{\gamma}$ zu finden, der die gemessenen Daten repräsentiert. Dazu wird aus der Umkehrfunktion von \ref{eq:lambda} $d_{A, Data}^{\gamma}$ bestimmt, siehe Abbildung \ref{fig:endplot}. Es ergibt sich ein Wert von 
-
-\begin{equation}
-d_{A, Data}^{\gamma} = 0,416_{-0,412}^{+0,506} \ .
-\end{equation}
-
-
+Auf 4,7 fb$^{-1}$ Daten werden die gleichen Selektionen (Top-Paar- bzw. $t\overline{t} + \gamma$-Selektion) angewendet. Die Daten wurden im Jahr 2011 bei einer Schwerpunktsenergie von 7TeV genommen. Aus diesem Datensatz werden 134 Ereignisse selektiert, die alle geforderten Kriterien erfüllen. Das $E_T$-Spektrum dieser Ereignisse ist in Abbildung \ref{fig:et_data} gezeigt. \\
 
 \begin{figure}%
 \centering
@@ -157,16 +125,31 @@ d_{A, Data}^{\gamma} = 0,416_{-0,412}^{+0,506} \ .
 \label{fig:et_data}%
 \end{figure}
 
-\begin{figure}%
-\centering
-\includegraphics[width=0.4\columnwidth]{bilder/et_data_fit}%
-\caption{Exponentialfit an die $E_T$-Verteilung von 4,7\,fb$^{-1}$ Daten aus 2011.}%
-\label{fig:et_data_fit}%
-\end{figure}
+Mit den oben beschriebenen Analysemethoden wird dieses Spektrum analog zu den Spektren aus Monte-Carlo-Simulationen untersucht. Dabei ergeben sich die folgenden Werte:
+
+ \begin{itemize}
+	 \item $(E_{Low}/E_{High})_{Data} = 5,09 \pm 1,19$
+	 \item $\overline{E_T}_{Data} = 55,36 \pm 3,19\,GeV$
+	 \item $\lambda_{Data} = -0,0333 \pm 0,0037$
+ \end{itemize}
+
+Um diese Werte mit den Verläufen aus den Monte-Carlo-Simulationen zu vergleichen, werden sie in die jeweiligen Plots eingefügt, siehe Abbildung \ref{fig:ana_data_mc}.
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.4\columnwidth]{bilder/platzhalter}%
-\caption{Bestimmung des $d_{A, Data}^{\gamma}$-Parameters.}%
-\label{fig:endplot}%
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/twobin_data_mc}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/mean_data_mc}%
+\end{subfigure}
+
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/slope_data_mc}%
+\end{subfigure}
+\caption{Vergleich der Variablen für Monte-Carlo- und Daten-Ereignisse.}
+\label{fig:ana_data_mc}
 \end{figure}
+
+In allen Analysemethoden ist ein großer statistischer Fehler auf die Werte für experimentell gesammelte Daten zu erkennen. Dies ist der kleinen Statistik von lediglich 134 Ereignissen geschuldet. Ebenso ist der Datenwert in allen Methoden mit dem Standardmodellwert von $d_A^{\gamma} = 0$ innerhalb einer Standardabweichung vereinbar, auf der anderen Seite liegen die Werte $d_A^{\gamma} > 0,6$ (Exponentialanpassung, Messung des Schwerpunktes) sowie $d_A^{\gamma} > 0,8$ außerhalb des $1\sigma$-Bandes.

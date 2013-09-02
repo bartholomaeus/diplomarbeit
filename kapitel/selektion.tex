@@ -125,10 +125,25 @@ dabei bezeichnet photonIso (hadronIso) die skalare Summe der transversalen Energ
   \item[b-Tag] Mindestens einer der oben erwähnten Jets muss b-artig sein. Dazu wird ein sogenannter \enquote{combined secondary vertex} Algorithmus verwendet mit einem Diskriminator von $\text{CSVM}>0,679$.
 \end{description}
 
+Es ergibt sich ein Signal-zu-Untergrund-Verhältnis von $S/B = 2,24$ und eine Selektionseffizienz des Signals von $\epsilon_{t\overline{t}} = 2,8\%$. Die Hauptuntergrundprozesse sind W+jets Ereignisse sowie Ereignisse mit einzelnen Top-Zerfällen.
+
 \subsection{Selektion von \texorpdfstring{$t\overline{t}+\gamma$}{ttg}-Ereignissen}
 \label{sec:ttg_selektion}
 
-Im folgenden werden die Erfordernisse an die Photonen im Endzustand beschrieben. Diese setzen sich aus Schnitten zusammen, die spezifisch für diese Analyse sind, sowie aus Forderungen, die auf einer CMS Empfehlung für Photon-Selektion basieren (\enquote{Photon-ID}, \cite{CMS:WZProduction}).
+Im folgenden werden die Erfordernisse an die Photonen im Endzustand beschrieben. Diese setzen sich aus Schnitten zusammen, die spezifisch für diese Analyse sind, sowie aus Forderungen, die auf einer CMS Empfehlung für Photon-Selektion basieren (\enquote{Photon-ID}, \cite{CMS:WZProduction}). \\
+Während der Photon-Selektion werden vor jedem Schnitt Kontrollplots erstellt, welche die Verteilung der jeweiligen Schnittvariable zeigen. In den Abbildungen \ref{fig:eta_et} bis \ref{fig:hollowconetrackiso_jurassicecaliso} sind einige dieser Verteilungen für das $d_A^{\gamma} = 0$-Szenario gezeigt. Im Anhang \ref{sec:kontrollplots} finden sich alle Kontrollplots in linearer und logarithmischer Auftragung für das $d_A^{\gamma} = 0$-Szenario.
+
+\begin{figure}%
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+  \includegraphics[width=\textwidth]{bilder/eta_log}%
+\end{subfigure}
+\begin{subfigure}[b]{0.48\textwidth}
+  \includegraphics[width=\textwidth]{bilder/et_log}%
+\end{subfigure}
+\caption{Links: $\eta$-Verteilung des Photons. Forderung: $\left|\eta\right| < 1,4442$ und $1,556 < \left|\eta\right| < 2,4$. Rechts: $E_T$-Verteilung des Photons. Forderung: $E_T > 20$\,GeV}%
+\label{fig:eta_et}%
+\end{figure}
 
 \subsubsection{Analyse-spezifische Schnitte}
 
@@ -140,11 +155,36 @@ Im folgenden werden die Erfordernisse an die Photonen im Endzustand beschrieben.
 	\item[Verhältnis von $E_{T,\gamma}$ zu $p_{T,Jet}$] Photonen im Bereich von $\Delta R < 0,15$ werden hinsichtlich des Verhältnisses von transversaler Energie des Photons zum transversalen Impuls des Jets weiter untersucht. Es wird angenommen, dass sich die Jets in diesem Bereich hauptsächlich aus dem Photon und niederenergetischer hadronischer Aktivität zusammensetzen, und dass die Photonen, bei denen der Einfluss der hadronischen Aktivität die präzise Messung des ECAL beeinträchtigt, von den weiter unten besprochenen Photon-Identifikationsschnitten weitestmöglich herausgefiltert werden. Photon-Kandidaten mit einem Verhältnis von $E_{T,\gamma}/p_{T,Jet}>75\%$ werden akzeptiert.
 \end{description}
 
+\begin{figure}%
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+  \includegraphics[width=\textwidth]{bilder/drjet_log}%
+\end{subfigure}
+\begin{subfigure}[b]{0.48\textwidth}
+  \includegraphics[width=\textwidth]{bilder/ptreldrjet_log}%
+\end{subfigure}
+\caption{Links: $\Delta R(\gamma,\text{jet})$-Verteilung des Photons. Forderung: $\Delta R(\gamma,\text{jet}) < 0,15$ oder $\Delta R(\gamma,\text{jet}) > 0,5$. Rechts: $E_{T,\gamma}/p_{T,jet}$-Verteilung des Photons für Photonen innerhalb von $\Delta R(\gamma,\text{jet}<0,15$. Forderung: $E_{T,\gamma}/p_{T,jet} > 0,75$.}%
+\label{fig:drjet_ptreldrjet}%
+\end{figure}
+
 \subsubsection{Photon-Identifikationsschnitte}
 
 \begin{description}
   \item[\enquote{pixel seed} Veto] Das Photon darf keinen \enquote{track seed} im Pixeldetektor haben.
 	\item[Spurisolation] Die \enquote{Hollow Cone Track Isolation} $\Sigma_{trk}$ addiert den transversalen Impuls der Spuren im Siliziumspurdetektor in einem Kegel von $0,04<\Delta R<0,4$. Dieser Kegel ist hohl, um Photonen aus Paarerzeugung zu erlauben. Photonen in einem Bereich von $\Sigma_{trk}<2,0+0,001\cdot E_T/GeV$ werden akzeptiert.
+	
+\begin{figure}%
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+  \includegraphics[width=\textwidth]{bilder/hollowconetrackiso_log}%
+\end{subfigure}
+\begin{subfigure}[b]{0.48\textwidth}
+  \includegraphics[width=\textwidth]{bilder/jurassicecaliso_log}%
+\end{subfigure}
+\caption{Links: Spur-Isolations-Verteilung des Photons. Forderung: $\Sigma_{trk} < 2,0 + 0,001\cdot E_T$. Rechts: ECAL-Isolations-Verteilung des Photons. Forderung: $\Sigma_{ECAL} < 4,2 + 0,006\cdot E_T$.}%
+\label{fig:hollowconetrackiso_jurassicecaliso}%
+\end{figure}
+		
 	\item[ECAL Isolation] Die \enquote{Jurassic ECAL Isolation} $\Sigma_{ECAL}$ ist ein Hohlkegel mit $0,06<\Delta R<0,4$. Zusätzlich wird ein rechteckiger Bereich mit den Abmessungen $\Delta \eta \times \Delta \Phi =0,04\times 0,4$ um die Richtung des Photons nicht für die Berechnung der Isolation hinzugezogen, siehe Abb. \ref{fig:jurassic_ecal}. Dieser Schnitt fordert einen Wert von $\Sigma_{ECAL}<4,2+0,006\cdot E_T/GeV$
 	
 \begin{figure}%
@@ -166,3 +206,14 @@ Hier ist $E_i$ die in einem einzelnen ECAL-Kristall deponierte Energie und $E_{5
 
 \end{description}
 
+Im allgemeinen zeigen die Schnittvariablen eine gute Übereinstimmung in der Form der Verteilung zwischen Daten- und Monte-Carlo-Ereignissen. Das Signal-zu-Untergrund-Verhältnis der $t\overline{t} + \gamma$-Selektion liegt bei $S/B = 0,53$, die Selektionseffizienz beträgt $\epsilon_{\gamma} = 23\%$. 134 Ereignisse aus experimentellen Daten werden selektiert. \\
+Abbildung \ref{fig:cutflow} zeigt den sogenannten \enquote{cutflow} der Photon-Selektion für das $d_A^{\gamma} = 0$-Szenario. Er beschreibt den Verlauf der Selektion für Monte-Carlo- und Datenereignisse. Die Ereignisse aus Monte-Carlo-Simulationen sind hier auf die integrierte Luminosität der experimentellen Daten normiert. Man erkennt, dass vor der Photon-Selektion durch Monte-Carlo-Simulationen mehr Ereignisse vorhergesagt werden als in experimentellen Daten aufgezeichnet wurden. Nach der Selektion sind jedoch mehr Datenereignisse vorhanden wie vorhergesagt. Der Übergang vom Monte-Carlo Überschuss zu einem Monte-Carlo Defizit findet im Selektionsschritt \enquote{Verhältnis von $E_{T,\gamma}$ zu $p_{T,Jet}$} statt. Dies weist auf eine Diskrepanz zwischen Monte-Carlo-Simulation und experimentellen Daten hin, die in weiteren Studien näher untersucht werden sollte. Eine mögliche Ursache für diese Diskrepanz könnte beispielsweise die Jet-Simulation oder das angewandte Hadronisierungsmodell sein. Eine nähere Analyse übersteigt jedoch den Rahmen dieser Arbeit. \\
+Die gesamte Selektionseffizienz beträgt für Monte-Carlo-Ereignisse $\epsilon_{\gamma}^{ges, MC} \approx 42\%$ und für experimentell aufgezeichnete Daten $\epsilon_{\gamma}^{ges, Data} \approx 61\%$. 
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.5\columnwidth]{bilder/cutflow}%
+\caption{Cutflow der Photon-Selektion in halblogarithmischer Auftragung. Jedes Bin zeigt hier die Anzahl der selektierten Ereignisse im jeweiligen Selektionsschritt.}%
+\label{fig:cutflow}%
+\end{figure}

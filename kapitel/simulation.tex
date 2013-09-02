@@ -76,6 +76,7 @@ Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden 
 \end{figure}
 
 \subsection{\texorpdfstring{$E_T$}{ET}-Spektrum des Photons}
+\label{sec:etphoton}
 
 Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 Ereignisse generiert und im Les-Houches-Event Format (LHEF) abgespeichert \cite{Alwall:LesHouches}. Abbildung \ref{fig:et_gen_galerie} zeigt in halblogarithmischer Auftragung ausgewählte $E_T$-Spektren dieser generierten Ereignisse. Es bestätigt sich hier die Erwartung, dass sich das Photonspektrum bei einer höheren Kopplungsstärke $d_A^{\gamma}$ zu höheren Energien hin verschiebt. Im folgenden werden mehrere Ansätze diskutiert, die Abhängigkeit des $E_T$-Spektrums von $d_A^{\gamma}$ zu beschreiben.
 
@@ -136,8 +137,9 @@ Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht vo
 In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, dies ist der gewichtete Mittelwert $\overline{E_T}$ dieser Verteilung. Für die Berechnung des gewichteten Mittelwertes und des Fehlers auf diesen Mittelwert werden die folgenden Formeln benutzt:
 
 \begin{align}
-\overline{E_T} &= \frac{1}{N} \sum{x_i\cdot \omega_i} \\
+\overline{E_T} &= \frac{1}{N} \sum{x_i\cdot \omega_i} \label{eq:mean} \\
 \Delta \overline{E_T} &= \frac{\sum{(x_i - \overline{E_T})^2 \cdot \omega_i}}{\sqrt{N}} \ .
+\label{eq:meanerror}
 \end{align}
 
 Hier ist $x_i$ der Mittelpunkt des i-ten Bins des Histogrammes und $\omega_i$ die Anzahl der Einträge in diesem Bin. $E_{T,mean}$ wird gegen $d_A^{\gamma}$ aufgetragen (siehe Abbildung \ref{fig:mean_plot}). Man sieht wiederum eine hohe Separationskraft dieser Variablen auf Generatorniveau, der Wertebereich liegt hier zwischen 34,7 und 53,5\,GeV mit einer Unsicherheit von $\Delta \overline{E_T} \leq 0,22$. 
@@ -163,6 +165,7 @@ Hier wird die Anpassung einer Exponentialkurve an die $E_T$-Verteilung betrachte
 
 \begin{equation}
 N(x) = N_0\cdot e^{\lambda \cdot x}
+\label{eq:expofit}
 \end{equation}
 
 beschrieben werden. Für jeden $d_A^{\gamma}$-Wert wird nun an das $E_T$-Spektrum eine Exponentialfunktion angepasst und der Wert von $\lambda$ gegen $d_A^{\gamma}$ aufgetragen. Dieser Plot ist in Abb. \ref{fig:slope_plot} zu sehen. Auch hier ist ein eindeutiger Trend zu erkennen. Die $\lambda$-Werte reichen von -0,0115 bis -0,0218 bei einer Unsicherheit von $\Delta \lambda \leq 0,00053$.
