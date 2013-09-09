@@ -24,36 +24,41 @@
 \contentsline {subsection}{\numberline {5.1.1}Produktionskette}{35}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Simulation von $t\overline {t}+\gamma $ Ereignissen}{36}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Simulation des Top-Paar-Prozesses und der betrachteten Untergr\"unde}{37}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Detektorsimulation}{38}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.4}Detektorsimulation}{37}{subsection.5.1.4}
 \contentsline {section}{\numberline {5.2}Studie der von WHIZARD generierten Monte-Carlo-Samples}{38}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Wirkungsquerschnitt des $t\overline {t}+\gamma $-Prozesses}{38}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}$E_T$-Spektrum des Photons}{39}{subsection.5.2.2}
-\contentsline {subsubsection}{2-Bin-Analyse}{41}{section*.41}
-\contentsline {subsubsection}{$E_T$-Mean-Analyse}{41}{section*.44}
+\contentsline {subsubsection}{2-Bin-Analyse}{39}{section*.41}
+\contentsline {subsubsection}{$E_T$-Mean-Analyse}{42}{section*.44}
 \contentsline {subsubsection}{Analyse der Exponentialanpassung der $E_T$-Verteilung}{42}{section*.46}
-\contentsline {subsubsection}{Vergleich der verschiedenen Analysemethoden}{44}{section*.49}
-\contentsline {chapter}{\numberline {6}Ereignisrekonstruktion und -selektion}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Ereignisrekonstruktion}{45}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Myonen}{45}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Elektronen}{47}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Photonen}{49}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}geladene und ungeladene Hadronen}{50}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Particle Flow}{50}{subsection.6.1.5}
-\contentsline {subsection}{\numberline {6.1.6}Jets}{51}{subsection.6.1.6}
-\contentsline {subsection}{\numberline {6.1.7}B-Tag}{52}{subsection.6.1.7}
-\contentsline {section}{\numberline {6.2}Selektion}{53}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Top-Paar-Selektion}{53}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Selektion von $t\overline {t}+\gamma $-Ereignissen}{54}{subsection.6.2.2}
-\contentsline {subsubsection}{Analyse-spezifische Schnitte}{55}{section*.54}
-\contentsline {subsubsection}{Photon-Identifikationsschnitte}{56}{section*.56}
-\contentsline {chapter}{\numberline {7}Vergleich der Monte-Carlo-Simulationen mit Daten}{61}{chapter.7}
-\contentsline {section}{\numberline {7.1}$E_T$-Spektren}{61}{section.7.1}
-\contentsline {section}{\numberline {7.2}2-Bin-Analyse}{61}{section.7.2}
-\contentsline {section}{\numberline {7.3}$E_T$-Mean-Analyse}{63}{section.7.3}
-\contentsline {section}{\numberline {7.4}Analyse der Exponentialanpassung der $E_T$-Verteilung}{63}{section.7.4}
-\contentsline {section}{\numberline {7.5}Vergleich der Analysemethoden auf Rekonstruktionsniveau}{65}{section.7.5}
-\contentsline {section}{\numberline {7.6}Auswertung von 4,7 fb$^{-1}$ Daten}{65}{section.7.6}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{69}{chapter.8}
-\contentsline {chapter}{Anhang}{71}{appendix*.68}
-\contentsline {section}{\numberline {A.1}Verteilung der Schnittvariablen der Selektion von $t\overline {t}+\gamma $-Ereignissen}{71}{section.A.1}
-\contentsline {chapter}{Literaturverzeichnis}{78}{figure.caption.79}
+\contentsline {subsubsection}{Ensemblestudie}{43}{section*.49}
+\contentsline {subsubsection}{Vergleich der verschiedenen Analysemethoden}{44}{section*.52}
+\contentsline {chapter}{\numberline {6}Ereignisrekonstruktion und -selektion}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Ereignisrekonstruktion}{47}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Myonen}{47}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Elektronen}{49}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Photonen}{51}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Geladene und ungeladene Hadronen}{52}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Particle Flow}{52}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}Jets}{53}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.7}B-Tag}{54}{subsection.6.1.7}
+\contentsline {section}{\numberline {6.2}Selektion}{55}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Top-Paar-Selektion}{55}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Photon matching}{56}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Selektion von $t\overline {t}+\gamma $-Ereignissen}{58}{subsection.6.2.3}
+\contentsline {subsubsection}{Analyse-spezifische Schnitte}{58}{section*.59}
+\contentsline {subsubsection}{Photon-Identifikationsschnitte}{59}{section*.61}
+\contentsline {chapter}{\numberline {7}Vergleich der Monte-Carlo-Simulationen mit Daten}{63}{chapter.7}
+\contentsline {section}{\numberline {7.1}$E_T$-Spektren}{63}{section.7.1}
+\contentsline {section}{\numberline {7.2}2-Bin-Analyse}{63}{section.7.2}
+\contentsline {section}{\numberline {7.3}$E_T$-Mean-Analyse}{65}{section.7.3}
+\contentsline {section}{\numberline {7.4}Analyse der Exponentialanpassung der $E_T$-Verteilung}{67}{section.7.4}
+\contentsline {section}{\numberline {7.5}Vergleich der Analysemethoden auf Rekonstruktionsniveau}{67}{section.7.5}
+\contentsline {section}{\numberline {7.6}Auswertung von 4,7 fb$^{-1}$ Daten}{67}{section.7.6}
+\contentsline {section}{\numberline {7.7}Statistische und systematische Unsicherheiten der Analyse}{71}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Statistische Unsicherheiten}{71}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Systematische Unsicherheiten}{71}{subsection.7.7.2}
+\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{73}{chapter.8}
+\contentsline {chapter}{Anhang}{77}{appendix*.73}
+\contentsline {section}{\numberline {A.1}Verteilung der Schnittvariablen der Selektion von $t\overline {t}+\gamma $-Ereignissen}{77}{section.A.1}
+\contentsline {chapter}{Literaturverzeichnis}{84}{figure.caption.84}

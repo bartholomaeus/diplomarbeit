@@ -8,8 +8,9 @@
 \chapter{Datensimulation}
 
 \section{Monte-Carlo-Simulation}
+\label{sec:mc_gen}
 
-Ein Vergleich der Ergebnisse aus von CMS gemessenen Daten mit Monte-Carlo-Simulationen ist eine gute Methode, die Messergebnisse mit Vorhersagen des Standardmodells zu vergleichen. Ebenso können so Modelle, die davon abweichen, überprüft werden. Das Ziel der Datensimulation ist es, mithilfe von Zufallsgeneratoren und physikalischer Modelle Pseudodaten zu erzeugen. Diese Pseudodaten liegen dann im selben Datenformat vor, in dem auch die echten Daten zur Verfügung stehen. Somit können dieselben Analysen sowohl auf gemessene als auch auf simulierte Daten angewendet werden. In diesem Kapitel wird erläutert, wie die in dieser Analyse untersuchten simulierten Ereignisse produziert werden.
+Ein Vergleich der Ergebnisse aus von CMS gemessenen Daten mit Monte-Carlo-Simulatio\-nen ermöglicht es, die Messergebnisse mit Vorhersagen des Standardmodells zu vergleichen. Zusätzlich können so Modelle, die nicht dem Standardmodell entsprechen, überprüft werden. Das Ziel der Datensimulation ist es, mithilfe von Zufallsgeneratoren und physikalischer Modelle Pseudodaten zu erzeugen. Diese Pseudodaten haben dasselbe Datenformat wie echte Daten. Somit können dieselben Analysen sowohl auf gemessene als auch auf simulierte Daten angewendet werden. In diesem Kapitel wird erläutert, wie die in dieser Analyse untersuchten simulierten Ereignisse produziert werden.
 
 \subsection{Produktionskette}
 
@@ -28,11 +29,11 @@ Die Simulation der Daten erfolgt in mehreren, aufeinander aufbauenden Schritten.
 
 \subsection{Simulation von \texorpdfstring{$t\overline{t}+\gamma$}{ttg} Ereignissen}
 
-Für die Simulation des $t\overline{t}+\gamma$-Signals wurde WHIZARD, ein Leading-Order-Monte-Carlo-Generator, benutzt. Ein Schaubild mit verschiedenen simulierbaren Endzuständen der Monte-Carlo-Generation ist in Abb.\ref{fig:whizard} gezeigt, auf diese soll hier kurz eingegangen werden:
+Für die Simulation des semimyonischen $t\overline{t}+\gamma$-Signals wurde WHIZARD, ein Leading-Order-Monte-Carlo-Generator, benutzt. Ein Schaubild mit verschiedenen simulierbaren Endzuständen der Monte-Carlo-Generation ist in Abb.\ref{fig:whizard} gezeigt, auf diese soll hier kurz eingegangen werden:
 
 \begin{description}
-  \item[2 $\rightarrow$ 3:] Hier werden nur quantenmechanische Interferenzen aus Photonabstrahlungen von Teilchen im Anfangszustand betrachtet. Die Vorteile dieses Modells sind die geringe CPU-Last, die bei der Berechnung der ME anfällt und die genaue Zuordnung der Photonen zum Top-Vertex. Es zeigt sich aber, dass die Physik hier nicht korrekt beschrieben wird. \cite{Tholen:Master}
-	\item[2 $\rightarrow$ 5:] In diesem Modell ist der Zerfall der Top-Quarks berücksichtigt, hier trägt nun auch die Photonabstrahlung der W-Bosonen und der b-Quarks zum Signal bei. Es stellt einen guten Kompromiss dar zwischen CPU-Auslastung und korrekter Beschreibung der Natur und wird in dieser Analyse benutzt.
+  \item[2 $\rightarrow$ 3:] Hier werden nur quantenmechanische Interferenzen aus Photonabstrahlungen von Teilchen im Anfangszustand betrachtet. Die Vorteile dieses Modells sind die geringe CPU-Last, die bei der Berechnung der ME anfällt und die genaue Zuordnung der Photonen zum Top-Vertex. Dies beschreibt den Signalprozess jedoch ungenau \cite{Tholen:Master}.
+	\item[2 $\rightarrow$ 5:] In diesem Modell ist der Zerfall der Top-Quarks berücksichtigt, und es trägt nun auch die Photonabstrahlung der W-Bosonen und der b-Quarks zum Signal bei. Es stellt einen guten Kompromiss zwischen CPU-Auslastung und genauer Beschreibung der Natur dar und wird in dieser Analyse benutzt.
 	\item[2 $\rightarrow$ 7:] Hier werden alle Photonabstrahlungen des harten Prozesses berücksichtigt und die realen Prozesse am präzisesten beschrieben, diese Strategie ist jedoch überaus CPU-intensiv und wird in dieser Analyse nicht weiter verwendet.
 \end{description}
 
@@ -43,14 +44,14 @@ Für die Simulation des $t\overline{t}+\gamma$-Signals wurde WHIZARD, ein Leading
 \label{fig:whizard}%
 \end{figure}
 
-WHIZARD benutzt die Partondichteverteilung CTEQ6L1 \cite{Pumplin:CTEQ} und eine variable Renorma\-lisierungs- und Faktorisierungsskala. Diese Skalen werden für jedes Ereignis auf einen Wert von 172,5\,GeV ($m_t$) plus der Transversalenergie des erzeugten Photons festgelegt. Die Teilchenschauer der Anfangs- und Endzustände sowie die Hadronisierung werden von PYTHIA6 \cite{Sjostrand:PYTHIA}, TAUOLA und PHOTOS (beide in \cite{Was:TAUOLA}) simuliert, dabei wird dieselbe Konfiguration wie für das Top-Paar-Sample (siehe auch Abschnitt \ref{sec:sim_top_paar} benutzt. \\
-An die Teilchen im Endzustand werden bestimmte Anforderungen gestellt, sogenannte \enquote{Produktionsschnitte}. So wird eine minimale transversale Energie gefordert, um Infrarotdivergenz zu vermeiden und eine Minimaldistanz im $\eta-\Phi$-Raum gegen kollineare Divergenz. In dieser Analyse wird eine minimale Transversalenergie des Photons und beider b-Quarks von 10\,GeV und ein $\Delta R > 0,1$ zwischen dem Photon und jedem anderen Teilchen im Endzustand gefordert. Die Messung wird davon nicht beeinflusst, da die Schnitte in der Ereignisselektion noch härter sind, siehe Kapitel \ref{sec:selektion}.
+WHIZARD benutzt die Partondichteverteilung CTEQ6L1 \cite{Pumplin:CTEQ} und eine variable Renor\-malisierungs- und Faktorisierungsskala. Diese Skalen werden für jedes Ereignis auf einen Wert von 172,5\,GeV ($m_t$) plus der Transversalenergie des erzeugten Photons festgelegt. Die Teilchenschauer der Anfangs- und Endzustände sowie die Hadronisierung werden von PYTHIA6 \cite{Sjostrand:PYTHIA}, TAUOLA und PHOTOS (beide in \cite{Was:TAUOLA}) simuliert, dabei wird dieselbe Konfiguration wie für das Top-Paar-Sample (siehe auch Abschnitt \ref{sec:sim_top_paar}) benutzt. \\
+An die Teilchen im Endzustand werden bestimmte Anforderungen gestellt, sogenannte \enquote{Produktionsschnitte}. Es wird eine minimale transversale Energie gefordert, um Infrarotdivergenz zu vermeiden und eine Minimaldistanz im $\eta-\Phi$-Raum gegen kollineare Divergenz. In dieser Analyse wird eine minimale Transversalenergie des Photons und beider b-Quarks von 10\,GeV und ein $\Delta R > 0,1$ zwischen dem Photon und jedem anderen Teilchen im Endzustand gefordert. Die Messung wird davon nicht beeinflusst, da die Schnitte in der Ereignisselektion noch härter sind, siehe Kapitel \ref{sec:selektion}.
 
 \subsection{Simulation des Top-Paar-Prozesses und der betrachteten Untergründe}
 \label{sec:sim_top_paar}
 
-Die meisten Monte-Carlo-Simulationen neben den $t\overline{t}+\gamma$-Ereignissen werden mit MADGRAPH \cite{Alwall:MADGRAPH} generiert, hier wird die Partondichtefunktion CTEQ6L1 benutzt. Single-Top-Ereignisse werden mit POWHEG \cite{Alioli:POWHEG}, \cite{Re:POWHEG} simuliert, der Zerfall des $\tau$-Leptons mittels TAUOLA. Die Hadronisierung sowie die Teilchenschauer werden mit PYTHIA (hadronische Wechselwirkung) sowie PHOTOS (elektromagnetische Wechselwirkung) modelliert.\
-Der Phasenraum der Ereignisse der WHIZARD $t\overline{t}+\gamma$-Simulation ist im MADGRAPH $t\overline{t}$-Sample schon abgedeckt. Deswegen werden Ereignisse aus dem $t\overline{t}$-Sample, welche die Produktionsschnitte in WHIZARD auf Partonebene erfüllen, nicht berücksichtigt, um diese Überschneidung zu entfernen.
+Die meisten Monte-Carlo-Simulationen neben den $t\overline{t}+\gamma$-Ereignissen werden mit MADGRAPH \cite{Alwall:MADGRAPH} generiert, hier wird die Partondichtefunktion CTEQ6L1 benutzt. Single-Top-Ereignisse werden mit POWHEG \cite{Alioli:POWHEG}, \cite{Re:POWHEG} simuliert, für den Zerfall des $\tau$-Leptons wird TAUOLA benutzt. Die Hadronisierung und die Teilchenschauer werden mit PYTHIA (hadronische Wechselwirkung) sowie PHOTOS (elektromagnetische Wechselwirkung) modelliert.\
+Da der Phasenraum der Ereignisse der WHIZARD $t\overline{t}+\gamma$-Simulation im MADGRAPH $t\overline{t}$-Sample schon abgedeckt ist, werden Ereignisse aus dem $t\overline{t}$-Sample, welche die Produktionsschnitte in WHIZARD auf Partonebene erfüllen, entfernt, um diese Überschneidung zu vermeiden.
 
 \subsection{Detektorsimulation}
 
@@ -60,25 +61,25 @@ Der Durchgang der von den Monte-Carlo-Generatoren erzeugten Teilchen durch die e
 \section{Studie der von WHIZARD generierten Monte-Carlo-Samples}
 \label{sec:montecarlo}
 
-Die Studie der von WHIZARD generierten Monte-Carlo-Daten soll zeigen, wie sich der Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses sowie das $E_T$-Spektrum der Photonen aus dem harten Prozess durch Variation des angenommenen $d_A^{\gamma}$-Wertes verändert. Des weiteren soll untersucht werden, welche Variable sich am besten dazu eignet, zwischen verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden. Durch Verwendung von Generatorteilchen werden Auflösungseffekte durch die Rekonstruktion sowie Akzeptanzeffekte durch die Selektion vernachlässigt.
+Die Studie der von WHIZARD generierten Monte-Carlo-Daten soll zeigen, wie sich der Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses sowie das $E_T$-Spektrum der Photonen aus dem harten Prozess durch Variation des angenommenen $d_A^{\gamma}$-Wertes verändert. Desweiteren soll untersucht werden, welche Variable sich am besten eignet, zwischen verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden. Durch Verwendung von Generatorteilchen werden Auflösungseffekte durch die Rekonstruktion sowie Akzeptanzeffekte durch die Selektion vermieden.
 
 \subsection{Wirkungsquerschnitt des \texorpdfstring{$t\overline{t}+\gamma$}{ttg}-Prozesses}
 \label{sec:wq}
 
 Es wird eine quadratische Abhängigkeit des Wirkungsquerschnittes vom Parameter $d_A^{\gamma}$ erwartet, da $d_A^{\gamma}$ linear in das Matrixelement eingeht und der Wirkungsquerschnitt proportional zum Quadrat des Matrixelementes ist. \\
-Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden für Werte für das elektrische Dipolmoment von $0<d_A^{\gamma}<1$ in Schritten von 0,01 zunächst die Matrixelemente für den harten Prozess generiert. Der Ansatz $2 \rightarrow 5$ wird implementiert mit zwei W-Bosonen, zwei b-Quarks und einem Photon im Endzustand. Die Matrixelement-Berechnung wird so lange fortgeführt, bis ein Fehler auf den Wirkungsquerschnitt von unter 1\% errechnet wird. Die so berechneten Wirkungsquerschnitte sind in Abb. \ref{fig:cs_wofit} dargestellt. Eine Anpassung zeigt die erwartete quadratische Abhängigkeit. Auffällig ist der große Fehler auf den Wirkungsquerschnitt bei den Werten $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$. Dieser lässt sich auch bei deutlich längerer Berechnung des Matrixelements nicht weiter verringern. Es ist derzeit nicht klar, was diesen großen Fehler verursacht. Es wird von einem internen Berechnungsproblem von WHIZARD bei diesen $d_A^{\gamma}$-Werten ausgegangen, da sich die Steuerungsskripte zur Berechnung der verschiedenen Monte-Carlo-Samples ausschließlich im vorgegebenen $d_A^{\gamma}$-Wert unterscheiden, ein Fehler in diesen Skripten also auszuschließen ist.
+Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden zuerst für verschiedene elektrische Dipolmomente in Schritten von 0,01 für $0<d_A^{\gamma}<1$ die Matrixelemente des harten Prozesses generiert. Das Modell $2 \rightarrow 5$ wird implementiert mit zwei W-Bosonen, zwei b-Quarks und einem Photon im Endzustand. Die Matrixelement-Berechnung wird so lange fortgeführt, bis ein Fehler auf den Wirkungsquerschnitt von unter 1\% erreicht wird. Die berechneten Wirkungsquerschnitte sind in Abb. \ref{fig:cs_wofit} dargestellt. Eine Anpassung zeigt die erwartete quadratische Abhängigkeit. Auffällig sind die großen Fehler auf den Wirkungsquerschnitt bei den Werten $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$. Auch eine deutlich längere Berechnung des Matrixelements verringert diese nicht. Es ist derzeit nicht klar, was diesen großen Fehler verursacht. Es wird von einem internen Berechnungsproblem von WHIZARD bei diesen $d_A^{\gamma}$-Werten ausgegangen, da sich die Steuerungsskripte zur Berechnung der verschiedenen Monte-Carlo-Samples ausschließlich im vorgegebenen $d_A^{\gamma}$-Wert unterscheiden.
 
 \begin{figure}%
 \centering
 \includegraphics[width=0.5\columnwidth]{bilder/crosssectionplot}%
-\caption{Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses für $0<d_A^{\gamma}<1$ mit eingezeichneter Fit-Funktion}%
+\caption{Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses für $0<d_A^{\gamma}<1$ mit eingezeichneter quadratischer Anpassung.}%
 \label{fig:cs_wofit}%
 \end{figure}
 
 \subsection{\texorpdfstring{$E_T$}{ET}-Spektrum des Photons}
 \label{sec:etphoton}
 
-Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 Ereignisse generiert und im Les-Houches-Event Format (LHEF) abgespeichert \cite{Alwall:LesHouches}. Abbildung \ref{fig:et_gen_galerie} zeigt in halblogarithmischer Auftragung ausgewählte $E_T$-Spektren dieser generierten Ereignisse. Es bestätigt sich hier die Erwartung, dass sich das Photonspektrum bei einer höheren Kopplungsstärke $d_A^{\gamma}$ zu höheren Energien hin verschiebt. Im folgenden werden mehrere Ansätze diskutiert, die Abhängigkeit des $E_T$-Spektrums von $d_A^{\gamma}$ zu beschreiben.
+Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 Ereignisse generiert und im Les-Houches-Event Format (LHEF) abgespeichert \cite{Alwall:LesHouches}. Abbildung \ref{fig:et_gen_galerie} zeigt in halblogarithmischer Auftragung ausgewählte $E_T$-Spektren dieser generierten Ereignisse. Die Erwartung, dass sich das Photonspektrum bei einer höheren Kopplungsstärke $d_A^{\gamma}$ zu höheren Energien hin verschiebt, bestätigt sich. Im folgenden werden mehrere Ansätze diskutiert, die Abhängigkeit des $E_T$-Spektrums von $d_A^{\gamma}$ zu beschreiben.
 
 \begin{figure}%
 \begin{subfigure}[b]{0.4\textwidth}
@@ -110,7 +111,7 @@ Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 E
 
 \subsubsection{2-Bin-Analyse}
 
-Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht von 0\,GeV bis 100\,GeV, der zweite von 100\,GeV bis 700\,GeV, siehe dazu Abb. \ref{fig:2bin_skizze}. Nun wird das Verhältnis der Anzahl der Photonen in den beiden Bereichen gegen $d_A^{\gamma}$ aufgetragen, siehe Abb. \ref{fig:2bin_plot}. Auf der linken Seite sieht man zwei Messwerte, die nicht dem allgemeinen Verlauf folgen. Dies sind die schon in Kapitel \ref{sec:wq} angesprochenen Messpunkte, die durch irreduzibel große Fehler auf den Wirkungsquerschnitt auffielen und auch in allen anderen Analysemethoden herausstechen. Die Punkte $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$ werden im folgenden für die Auswertung der verschiedenen Analysemethoden nicht berücksichtigt. Der so bereinigte Plot ist in Abb. \ref{fig:2bin_plot} rechts zu sehen. Die 2-Bin-Analyse stellt einen vielversprechenden Ansatz dar, das härtere Photonenspektrum für größere Kopplungsstärken $d_A^{\gamma}$ zu beschreiben. Auf Generatorniveau ist eine sehr gute Separationskraft vorhanden, der Wertebereich erstreckt sich von $E_{Low} / E_{High} = 3,8$ für $d_A^{\gamma} = 0$ bis $E_{Low} / E_{High} = 2,2$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit von $\Delta E_{Low} / E_{High} \leq 0,03$. 
+Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht von 0\,GeV bis 100\,GeV, der zweite von 100\,GeV bis 700\,GeV, siehe dazu Abb. \ref{fig:2bin_skizze}. Nun wird das Verhältnis der Anzahl der Photonen in den beiden Bereichen gegen $d_A^{\gamma}$ aufgetragen, siehe Abb. \ref{fig:2bin_plot}. Auf der linken Seite sieht man zwei Messwerte, die nicht dem allgemeinen Verlauf folgen. Dies sind die schon in Kapitel \ref{sec:wq} angesprochenen Messpunkte, die durch irreduzibel große Fehler auf den Wirkungsquerschnitt auffielen und auch in allen anderen Analysemethoden herausstechen. Die Punkte $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$ werden im folgenden für die Auswertung der verschiedenen Analysemethoden nicht berücksichtigt. Der so bereinigte Plot ist in Abb. \ref{fig:2bin_plot} rechts zu sehen. Die 2-Bin-Analyse stellt einen vielversprechenden Ansatz dar, das härtere Photonenspektrum für größere Kopplungsstärken $d_A^{\gamma}$ zu beschreiben. Auf Generatorniveau ist eine sehr gute Separationskraft vorhanden, der Wertebereich erstreckt sich von $E_{Low} / E_{High} = 3,8$ für $d_A^{\gamma} = 0$ bis $E_{Low} / E_{High} = 2,2$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit durch Statistik von $\Delta E_{Low} / E_{High} \leq 0,03$. 
 
 \begin{figure}%
 \centering
@@ -142,7 +143,7 @@ In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, dies ist 
 \label{eq:meanerror}
 \end{align}
 
-Hier ist $x_i$ der Mittelpunkt des i-ten Bins des Histogrammes und $\omega_i$ die Anzahl der Einträge in diesem Bin. $E_{T,mean}$ wird gegen $d_A^{\gamma}$ aufgetragen (siehe Abbildung \ref{fig:mean_plot}). Man sieht wiederum eine hohe Separationskraft dieser Variablen auf Generatorniveau, der Wertebereich liegt hier zwischen 34,7 und 53,5\,GeV mit einer Unsicherheit von $\Delta \overline{E_T} \leq 0,22$. 
+Hier ist $x_i$ der Mittelpunkt des i-ten Bins des Histogrammes und $\omega_i$ die Anzahl der Einträge in diesem Bin. $E_{T,mean}$ wird gegen $d_A^{\gamma}$ aufgetragen (siehe Abbildung \ref{fig:mean_plot}). Es ergibt sich eine hohe Separationskraft dieser Variablen auf Generatorniveau, der Wertebereich liegt hier zwischen 34,7 und 53,5\,GeV mit einer Unsicherheit von $\Delta \overline{E_T} \leq 0,22\,GeV$. 
 
 \begin{figure}%
 \centering
@@ -168,7 +169,7 @@ N(x) = N_0\cdot e^{\lambda \cdot x}
 \label{eq:expofit}
 \end{equation}
 
-beschrieben werden. Für jeden $d_A^{\gamma}$-Wert wird nun an das $E_T$-Spektrum eine Exponentialfunktion angepasst und der Wert von $\lambda$ gegen $d_A^{\gamma}$ aufgetragen. Dieser Plot ist in Abb. \ref{fig:slope_plot} zu sehen. Auch hier ist ein eindeutiger Trend zu erkennen. Die $\lambda$-Werte reichen von -0,0115 bis -0,0218 bei einer Unsicherheit von $\Delta \lambda \leq 0,00053$.
+beschrieben werden. Für jeden $d_A^{\gamma}$-Wert wird nun an das $E_T$-Spektrum eine Exponentialfunktion angepasst und der Wert von $\lambda$ gegen $d_A^{\gamma}$ aufgetragen. Dieser Plot ist in Abb.~\ref{fig:slope_plot} zu sehen. Ein deutlicher Trend lässt sich erkennen. Die $\lambda$-Werte reichen von -0,0115 bis -0,0218 bei einer Unsicherheit von $\Delta \lambda \leq 0,00053$.
 
 \begin{figure}%
 \centering
@@ -177,7 +178,38 @@ beschrieben werden. Für jeden $d_A^{\gamma}$-Wert wird nun an das $E_T$-Spektrum
 \label{fig:slope_plot}%
 \end{figure}
 
+\subsubsection{Ensemblestudie}
+\label{sec:ensemble}
+
+Um bei der Analyse der Exponentialanpassung die Abhängigkeit der Unsicherheit von der Anzahl der Ereignisse $N$ zu ermitteln, wird eine Ensemblestudie auf Generatorniveau durchgeführt. Das Vorgehen dieser Studie wird im Folgenden beschrieben. \\
+Zunächst wird mit der verfügbaren Statistik von 105000 Ereignissen, das entspricht einer integrierten Luminosität von 36,2\,fb$^{-1}$, die oben beschriebene Analyse der Exponentialanpassung an die $E_T$-Verteilung durchgeführt und der Parameter $\lambda$ bestimmt. Im nächsten Schritt wird diese Verteilung auf verschiedene Luminositätsszenarien skaliert. Ein Pseudoexperiment wird erstellt, welches durch binweises poissonverteiltes Neuwürfeln um den Mittelwert der skalierten Verteilung erhalten wird, siehe Abbildung \ref{fig:ensemble}. Die so neu erstellte Verteilung ist ein möglicher experimenteller Ablauf bei der gewählten Luminosität. Anschließend wird eine Exponentialanpassung durchgeführt und der so bestimmte Wert von $\lambda$ histogrammiert. Dies wird für alle Luminositätsszenarien tausendmal wiederholt. Die Verteilungen der erhaltenen $\lambda$-Werte zeigen das erwartete gaussförmige Profil, siehe Abbildung \ref{fig:gauss}. Die Breite der angepassten Gaussglocke entspricht dem statistischen Fehler auf den $\lambda$-Wert für die jeweils untersuchte Luminosität. Die Unsicherheiten $\sigma_{\lambda}$ werden gegen die angenommene Luminosität aufgetragen. Die Verteilung ist in Abbildung \ref{fig:sigma_lambda} zu sehen. 
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.8\columnwidth]{bilder/platzhalter}
+\caption{Prinzip der Ensemblestudie}%
+\label{fig:ensemble}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/gauss}%
+	\caption{Histogrammiertes $\lambda$.}
+  \label{fig:gauss}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}
+  \includegraphics[width=\textwidth]{bilder/sigma_lambda}%
+	\caption{$\sigma_{\lambda}$ gegen $\mathcal L_{int}$ aufgetragen.}
+	\label{fig:sigma_lambda}
+\end{subfigure}
+\caption{Ergebnisse der Ensemblestudie}%
+\end{figure}
+
+$\sigma_{\lambda}$ verringert sich erwartungsgemäß mit steigender Luminosität. l
+
 \subsubsection{Vergleich der verschiedenen Analysemethoden}
 
 Alle drei vorgestellten Analysemethoden zeigen auf Generatorniveau eine klare Abhängigkeit der untersuchten Variablen von $d_A^{\gamma}$. Dabei weisen die 2-Bin-Analyse sowie die Analyse des Schwerpunktes des Photon-$E_T$-Spektrums die größte Separationskraft auf. In der 2-Bin-Analyse liegen zwischen dem Minimal- und dem Maximalwert von $E_{Low}/E_{High}$ rund 50 Standardabweichungen, bei der Analyse von $\overline{E_T}$ sogar 85. Die Analyse der Exponentialanpassung des Photonspektrums weist eine etwas schwächere Separationskraft auf, hier liegen zwischen den Extremwerten von $\lambda$ 19 Standardabweichungen. \\
-Die Unsicherheiten auf die Variablen bei der 2-Bin-Analyse und der Mean-Analyse sind proportional zu $\sqrt{N}$. Es wird demnach für die Analyse der selektierten Monte-Carlo-Ereignisse und insbesondere für die Analyse von gemessenen Daten eine größere Unsicherheit auf die jeweiligen Variablen erwartet. Bei einer Verringerung von 105.000 Ereignissen (die hier vorgestellte Analyse auf Generatorniveau) auf beispielsweise nur noch 1050 Ereignisse ist die 10-fache Unsicherheit auf die Werte von $E_{Low}/E_{High}$ und $\lambda$ zu erwarten. Wie sehr die Unsicherheit auf die Exponentialanpassung von der Anzahl der untersuchten Ereignisse abhängt, ist weitaus schwieriger zu quantifizieren, es wird aber davon ausgegangen, dass die Abhängigkeit nicht so stark ist wie bei den anderen beiden Analysen. Des weiteren werden zu den hier besprochenen statistischen Unsicherheiten bei der Rekonstruktion und Selektion auch systematische Unsicherheiten entstehen, welche die Separationskraft der analysierten Variablen weiter abnehmen lassen wird.
+Die Unsicherheiten auf die Variablen bei der 2-Bin-Analyse und der Mean-Analyse sind proportional zu $1/\sqrt{N}$. Es wird demnach für die Analyse der selektierten Monte-Carlo-Ereignisse und insbesondere für die Analyse von gemessenen Daten eine größere Unsicherheit auf die jeweiligen Variablen erwartet. Die Abhängigkeit der Unsicherheit auf die Exponentialanpassung von der Anzahl der untersuchten Ereignisse ist im Kapitel \ref{sec:ensemble} untersucht worden. Eine deutliche Verringerung der Unsicherheit mit steigender integrierter Luminosität ist zu erkennen. Desweiteren werden zu den hier besprochenen statistischen Unsicherheiten bei der Rekonstruktion und Selektion auch systematische Unsicherheiten entstehen, welche die Separationskraft der analysierten Variablen weiter abnehmen lassen wird, siehe dazu auch Kapitel~\ref{sec:systematiken}.
