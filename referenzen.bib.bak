@@ -327,6 +327,17 @@
   timestamp = {2013.06.11}
 }
 
+@ARTICLE{Higgs:Bosons,
+  author = {Peter Higgs},
+  title = {Broken {S}ymmetries and the {M}ass of {G}auge {B}osons},
+  journal = {Phys. Rev. Lett.},
+  year = {1964},
+  volume = {13(16)},
+  pages = {508-509},
+  owner = {Markus_2},
+  timestamp = {2013.09.09}
+}
+
 @MASTERSTHESIS{Hoehle:Diplom,
   author = {Felix Höhle},
   title = {Untersichung von {S}pinkorrelationen im semileptonischen {T}op-{P}aar-{Z}erfall
@@ -427,7 +438,7 @@
 }
 
 @ARTICLE{Alioli:POWHEG,
-  author = {Simone Alioli, Paolo Nason, Carlo Oleari, und Emanuele Re},
+  author = {Simone Alioli, Paolo Nason, Carlo Oleari und Emanuele Re},
   title = {{NLO} single-top production matched with shower in {POWHEG}: s- and
 	t-channel contributions},
   journal = {Journal of High Energy Physics},
@@ -435,6 +446,15 @@
   volume = {0909:111; Erratum ibid. 1002:011},
   owner = {Markus_2},
   timestamp = {2013.08.22}
+}
+
+@ARTICLE{Frixione:MCatNLO,
+  author = {Stefano Frixione, Fabian Stoeckli et al.},
+  title = {The {MC@NLO} 4.0 {E}vent {G}enerator},
+  journal = {arXiv:1010.0819},
+  year = {2010},
+  owner = {Markus_2},
+  timestamp = {2013.09.09}
 }
 
 @MASTERSTHESIS{Tholen:Master,
@@ -480,6 +500,17 @@
   pages = {16-21},
   owner = {Markus_2},
   timestamp = {2013.08.22}
+}
+
+@ARTICLE{Weinberg:SM,
+  author = {Steven Weinberg},
+  title = {The {M}aking of the {S}tandard {M}odel},
+  journal = {European Physical Journal C},
+  year = {2004},
+  volume = {34(1)},
+  pages = {5-13},
+  owner = {Markus_2},
+  timestamp = {2013.09.09}
 }
 
 @ARTICLE{Fruehwirth:Reco,

@@ -10,7 +10,7 @@
 \section{Monte-Carlo-Simulation}
 \label{sec:mc_gen}
 
-Ein Vergleich der Ergebnisse aus von CMS gemessenen Daten mit Monte-Carlo-Simulatio\-nen ermöglicht es, die Messergebnisse mit Vorhersagen des Standardmodells zu vergleichen. Zusätzlich können so Modelle, die nicht dem Standardmodell entsprechen, überprüft werden. Das Ziel der Datensimulation ist es, mithilfe von Zufallsgeneratoren und physikalischer Modelle Pseudodaten zu erzeugen. Diese Pseudodaten haben dasselbe Datenformat wie echte Daten. Somit können dieselben Analysen sowohl auf gemessene als auch auf simulierte Daten angewendet werden. In diesem Kapitel wird erläutert, wie die in dieser Analyse untersuchten simulierten Ereignisse produziert werden.
+Ein Vergleich der Ergebnisse aus von CMS gemessenen Daten mit Monte-Carlo-Simula\-tionen ermöglicht es, die Messergebnisse mit Vorhersagen des Standardmodells zu vergleichen. Zusätzlich können Modelle, die nicht dem Standardmodell entsprechen, überprüft werden. Das Ziel der Datensimulation ist es, mithilfe von Zufallsgeneratoren und physikalischer Modelle Pseudodaten zu erzeugen. Diese Pseudodaten haben dasselbe Datenformat wie aufgenommene Daten. Somit können dieselben Analysen sowohl auf gemessene als auch auf simulierte Daten angewendet werden. In diesem Kapitel wird erläutert, wie die in dieser Analyse untersuchten simulierten Ereignisse produziert werden.
 
 \subsection{Produktionskette}
 
@@ -18,13 +18,13 @@ Die Simulation der Daten erfolgt in mehreren, aufeinander aufbauenden Schritten.
 
 \begin{enumerate}
 	\item Numerische Integration des Matrixelementes (ME) des harten Prozesses und Berechnung des Wirkungsquerschnittes.
-	\item Ereignisgeneration: Partonen und Leptonen im Anfangs- und Endzustand der harten Interaktion werden, unter Beachtung der erwarteten Wahrscheinlichkeiten, zufällig erzeugt.
-	\item Modellierung von Teilchenschauern: Die Abstrahlung von Gluonen und Photonen aus den Teilchen im Anfangs- und Endzustand wird simuliert.
+	\item Ereignisgeneration: Partonen und Leptonen im Anfangs- und Endzustand der harten Interaktion werdenentsprechend der Wahrscheinlichkeitsdichtefunktionen aus Punkt 1 zufalls-generiert.
+	\item Modellierung von Teilchenabstrahlungen: Die Abstrahlung von Gluonen und Photonen aus den Teilchen im Anfangs- und Endzustand wird simuliert.
 	\item Hadronisierung: Gruppierung von Quarks zu farbneutralen Hadronen.
 	\item Hadronischer Zerfall: Der Zerfall von kurzlebigen Teilchen wird reproduziert.
 	\item Underlying Event (UE): Hinzufügen von Teilchen im Endzustand, die von Protonrückständen aus dem harten Prozess entstehen.
 	\item Pileup: Eine zufällige Anzahl von zusätzlichen, weichen Proton-Proton-Kollisionen wird erzeugt und dem Ereignis hinzugefügt.
-	\item Detektorsimulation: Die Wechselwirkung der in Schritt 2 bis 7 produzierten Teilchen mit dem Detektormaterial und die Detektorantwort werden simuliert.
+	\item Detektorsimulation: Die Wechselwirkung der in Schritt 2 bis 7 produzierten Teilchen mit dem Detektormaterial und die Digitalisierung werden simuliert.
 \end{enumerate}
 
 \subsection{Simulation von \texorpdfstring{$t\overline{t}+\gamma$}{ttg} Ereignissen}
@@ -44,30 +44,30 @@ Für die Simulation des semimyonischen $t\overline{t}+\gamma$-Signals wurde WHIZA
 \label{fig:whizard}%
 \end{figure}
 
-WHIZARD benutzt die Partondichteverteilung CTEQ6L1 \cite{Pumplin:CTEQ} und eine variable Renor\-malisierungs- und Faktorisierungsskala. Diese Skalen werden für jedes Ereignis auf einen Wert von 172,5\,GeV ($m_t$) plus der Transversalenergie des erzeugten Photons festgelegt. Die Teilchenschauer der Anfangs- und Endzustände sowie die Hadronisierung werden von PYTHIA6 \cite{Sjostrand:PYTHIA}, TAUOLA und PHOTOS (beide in \cite{Was:TAUOLA}) simuliert, dabei wird dieselbe Konfiguration wie für das Top-Paar-Sample (siehe auch Abschnitt \ref{sec:sim_top_paar}) benutzt. \\
-An die Teilchen im Endzustand werden bestimmte Anforderungen gestellt, sogenannte \enquote{Produktionsschnitte}. Es wird eine minimale transversale Energie gefordert, um Infrarotdivergenz zu vermeiden und eine Minimaldistanz im $\eta-\Phi$-Raum gegen kollineare Divergenz. In dieser Analyse wird eine minimale Transversalenergie des Photons und beider b-Quarks von 10\,GeV und ein $\Delta R > 0,1$ zwischen dem Photon und jedem anderen Teilchen im Endzustand gefordert. Die Messung wird davon nicht beeinflusst, da die Schnitte in der Ereignisselektion noch härter sind, siehe Kapitel \ref{sec:selektion}.
+Zur Ereignisgeneration wird die Partondichteverteilung CTEQ6L1 \cite{Pumplin:CTEQ} und eine variable Renor\-malisierungs- und Faktorisierungsskala benutzt. Diese Skalen werden für jedes Ereignis auf einen Wert von 172,5\,GeV ($m_t$) plus der Transversalenergie des erzeugten Photons festgelegt. Die Teilchenschauer der Anfangs- und Endzustände sowie die Hadronisierung werden von PYTHIA6 \cite{Sjostrand:PYTHIA}, TAUOLA und PHOTOS (beide in \cite{Was:TAUOLA}) simuliert, dabei wird dieselbe Konfiguration wie für das Top-Quark-Paar-Sample (siehe auch Abschnitt \ref{sec:sim_top_paar}) benutzt. \\
+An die Teilchen im Endzustand werden bestimmte Anforderungen gestellt, sogenannte \enquote{Produktionsschnitte}. Es wird eine minimale transversale Energie gefordert, um Infrarotdivergenz zu vermeiden und eine Minimaldistanz im $\eta-\Phi$-Raum gegen kollineare Divergenz. In dieser Analyse wird eine minimale Transversalenergie des Photons und beider b-Quarks von 10\,GeV und ein $\Delta R > 0,1$ zwischen dem Photon und jedem anderen Teilchen im Endzustand gefordert. Um Randeffekte zu vermeiden, werden in der Ereignisselektion härtere Schnitte angewendet, siehe Kapitel \ref{sec:selektion}.
 
-\subsection{Simulation des Top-Paar-Prozesses und der betrachteten Untergründe}
+\subsection{Simulation des Top-Quark-Paar-Prozesses und der betrachteten Untergründe}
 \label{sec:sim_top_paar}
 
-Die meisten Monte-Carlo-Simulationen neben den $t\overline{t}+\gamma$-Ereignissen werden mit MADGRAPH \cite{Alwall:MADGRAPH} generiert, hier wird die Partondichtefunktion CTEQ6L1 benutzt. Single-Top-Ereignisse werden mit POWHEG \cite{Alioli:POWHEG}, \cite{Re:POWHEG} simuliert, für den Zerfall des $\tau$-Leptons wird TAUOLA benutzt. Die Hadronisierung und die Teilchenschauer werden mit PYTHIA (hadronische Wechselwirkung) sowie PHOTOS (elektromagnetische Wechselwirkung) modelliert.\
-Da der Phasenraum der Ereignisse der WHIZARD $t\overline{t}+\gamma$-Simulation im MADGRAPH $t\overline{t}$-Sample schon abgedeckt ist, werden Ereignisse aus dem $t\overline{t}$-Sample, welche die Produktionsschnitte in WHIZARD auf Partonebene erfüllen, entfernt, um diese Überschneidung zu vermeiden.
+Die meisten Monte-Carlo-Simulationen neben den $t\overline{t}+\gamma$-Ereignissen werden mit \protect\linebreak{MADGRAPH} \cite{Alwall:MADGRAPH} generiert, hier wird die Partondichtefunktion CTEQ6L1 benutzt. Single-Top-Ereignisse werden mit POWHEG \cite{Alioli:POWHEG}, \cite{Re:POWHEG} simuliert, für den Zerfall des $\tau$-Leptons wird TAUOLA benutzt. Die Hadronisierung und die Teilchenschauer werden mit PYTHIA (hadronische Wechselwirkung) sowie PHOTOS (elektromagnetische Wechselwirkung) modelliert.\
+Da der Phasenraum der Ereignisse der WHIZARD $t\overline{t}+\gamma$-Simulation im \protect\linebreak{MADGRAPH} $t\overline{t}$-Sample schon abgedeckt ist, werden Ereignisse aus dem $t\overline{t}$-Sample, welche die Produktionsschnitte in WHIZARD auf Partonebene erfüllen, entfernt, um diese Überschneidung zu vermeiden.
 
 \subsection{Detektorsimulation}
 
-Der Durchgang der von den Monte-Carlo-Generatoren erzeugten Teilchen durch die einzelnen Detektorkomponenten sowie die dadurch ausgelösten Signale werden mit dem Programm GEANT4 \cite{Agostinelli:GEANT} modelliert. GEANT4 simuliert anhand der Detektorgeometrie und des Magnetfeldes das Verhalten der einzelnen Teilchen im Detektor. Dabei werden alle elektromagnetischen und hadronischen Wechselwirkungen mit dem Detektormaterial berücksichtigt, wie z.B. Schauer in den Kalorimetern. Trifft ein Teilchen aktives Detektormaterial, erzeugt die Simulation das elektrische Signal, welches auch bei einer Messung entstehen würde und simuliert die elektronische Auslese der Signale, die Digitalisierung, in den unterschiedlichen Detektorkomponenten. Die Ausgabe der Digitalisierung wird gespeichert und später in der Rekonstruktion der einzelnen Teilchen verwendet. Diese Rekonstruktion erfolgt mit den gleichen Algorithmen wie die Rekonstruktion experimenteller Daten. Neben der vollständigen Simulation des Detektors (\enquote{FullSim}), die viel Rechenzeit und -aufwand benötigt, wurden auch vereinfachte Modelle zur Detektorsimulation entwickelt (\enquote{FastSim}) \cite{CMS:TDR1}. Dadurch werden die Dauer der Simulation und der benötigte Speicherplatz erheblich reduziert. Die Daten in dieser Analyse werden mittels FullSim prozessiert.
+Der Durchgang der von den Monte-Carlo-Generatoren erzeugten Teilchen durch die einzelnen Detektorkomponenten sowie die dadurch ausgelösten Signale werden mit GEANT4 \cite{Agostinelli:GEANT} modelliert. GEANT4 simuliert anhand der Detektorgeometrie und des Magnetfeldes das Verhalten der einzelnen Teilchen im Detektor. Dabei werden alle elektromagnetischen und hadronischen Wechselwirkungen mit dem Detektormaterial berücksichtigt, wie z.B. Schauer in den Kalorimetern. Die Ausgabe der Digitalisierung wird gespeichert und in der Rekonstruktion der einzelnen Teilchen verwendet. Diese Rekonstruktion erfolgt mit den gleichen Algorithmen wie die Rekonstruktion experimenteller Daten. Neben der vollständigen Simulation des Detektors (\enquote{FullSim}), die viel Rechenzeit und -aufwand benötigt, wurden auch vereinfachte Modelle zur Detektorsimulation entwickelt (\enquote{FastSim}) \cite{CMS:TDR1}. Dadurch werden die Dauer der Simulation und der benötigte Speicherplatz erheblich reduziert. Die Daten in dieser Analyse werden mittels FullSim prozessiert.
 
 
 \section{Studie der von WHIZARD generierten Monte-Carlo-Samples}
 \label{sec:montecarlo}
 
-Die Studie der von WHIZARD generierten Monte-Carlo-Daten soll zeigen, wie sich der Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses sowie das $E_T$-Spektrum der Photonen aus dem harten Prozess durch Variation des angenommenen $d_A^{\gamma}$-Wertes verändert. Desweiteren soll untersucht werden, welche Variable sich am besten eignet, zwischen verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden. Durch Verwendung von Generatorteilchen werden Auflösungseffekte durch die Rekonstruktion sowie Akzeptanzeffekte durch die Selektion vermieden.
+Die Studie der von WHIZARD generierten Monte-Carlo-Daten soll zeigen, wie sich der Wirkungsquerschnitt $\sigma = \sigma(d_A^{\gamma}($ des $t\overline{t}+\gamma$-Prozesses sowie das $E_T$-Spektrum $E_T = E_T(d_A^{\gamma})$ der Photonen aus dem harten Prozess durch Variation des angenommenen $d_A^{\gamma}$-Wertes verändert. Dazu wird eine 2-Bin-Analyse (Abschnitt~\ref{sec:ana_twobin}), eine Analyse des Schwerpunktes der $E_T$-Verteilung (Abschnitt~\ref{sec:ana_mean}) sowie die Analyse  einer Exponentialanpassung an das $E_T$-Spektrum (Abschnitt~\ref{sec:ana_slope}) implementiert. Desweiteren soll untersucht werden, welche der Variablen sich am besten eignet, zwischen verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden. Durch Verwendung von Generatorteilchen werden Auflösungseffekte durch die Rekonstruktion sowie Akzeptanzeffekte durch die Selektion vermieden.
 
 \subsection{Wirkungsquerschnitt des \texorpdfstring{$t\overline{t}+\gamma$}{ttg}-Prozesses}
 \label{sec:wq}
 
 Es wird eine quadratische Abhängigkeit des Wirkungsquerschnittes vom Parameter $d_A^{\gamma}$ erwartet, da $d_A^{\gamma}$ linear in das Matrixelement eingeht und der Wirkungsquerschnitt proportional zum Quadrat des Matrixelementes ist. \\
-Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden zuerst für verschiedene elektrische Dipolmomente in Schritten von 0,01 für $0<d_A^{\gamma}<1$ die Matrixelemente des harten Prozesses generiert. Das Modell $2 \rightarrow 5$ wird implementiert mit zwei W-Bosonen, zwei b-Quarks und einem Photon im Endzustand. Die Matrixelement-Berechnung wird so lange fortgeführt, bis ein Fehler auf den Wirkungsquerschnitt von unter 1\% erreicht wird. Die berechneten Wirkungsquerschnitte sind in Abb. \ref{fig:cs_wofit} dargestellt. Eine Anpassung zeigt die erwartete quadratische Abhängigkeit. Auffällig sind die großen Fehler auf den Wirkungsquerschnitt bei den Werten $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$. Auch eine deutlich längere Berechnung des Matrixelements verringert diese nicht. Es ist derzeit nicht klar, was diesen großen Fehler verursacht. Es wird von einem internen Berechnungsproblem von WHIZARD bei diesen $d_A^{\gamma}$-Werten ausgegangen, da sich die Steuerungsskripte zur Berechnung der verschiedenen Monte-Carlo-Samples ausschließlich im vorgegebenen $d_A^{\gamma}$-Wert unterscheiden.
+Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden zuerst für verschiedene elektrische Dipolmomente in Schritten von 0,01 für $0<d_A^{\gamma}<1$ die Matrixelemente des harten Prozesses generiert. Das Modell $2 \rightarrow 5$ wird implementiert mit zwei W-Bosonen, zwei b-Quarks und einem Photon im Endzustand. Die Matrixelement-Berechnung wird so lange fortgeführt, bis der Unsicherheitsestimator der numerischen Integration 1\% unterschreitet. Die berechneten Wirkungsquerschnitte sind in Abb. \ref{fig:cs_wofit} dargestellt. Eine Anpassung zeigt die erwartete quadratische Abhängigkeit. Auffällig sind die großen Fehler auf den Wirkungsquerschnitt bei den Werten $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$. Auch eine deutlich längere Berechnung des Matrixelements verringert diese nicht. Es ist derzeit nicht klar, was diesen großen Fehler verursacht. Es wird von einem internen Berechnungsproblem von WHIZARD bei diesen $d_A^{\gamma}$-Werten ausgegangen, da sich die Steuerungsskripte zur Berechnung der verschiedenen Monte-Carlo-Samples ausschließlich im vorgegebenen $d_A^{\gamma}$-Wert unterscheiden.
 
 \begin{figure}%
 \centering
@@ -79,7 +79,7 @@ Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden 
 \subsection{\texorpdfstring{$E_T$}{ET}-Spektrum des Photons}
 \label{sec:etphoton}
 
-Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 Ereignisse generiert und im Les-Houches-Event Format (LHEF) abgespeichert \cite{Alwall:LesHouches}. Abbildung \ref{fig:et_gen_galerie} zeigt in halblogarithmischer Auftragung ausgewählte $E_T$-Spektren dieser generierten Ereignisse. Die Erwartung, dass sich das Photonspektrum bei einer höheren Kopplungsstärke $d_A^{\gamma}$ zu höheren Energien hin verschiebt, bestätigt sich. Im folgenden werden mehrere Ansätze diskutiert, die Abhängigkeit des $E_T$-Spektrums von $d_A^{\gamma}$ zu beschreiben.
+Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 Ereignisse generiert und im Les-Houches-Event Format (LHEF) abgespeichert \cite{Alwall:LesHouches}. Abbildung \ref{fig:et_gen_galerie} zeigt in halblogarithmischer Auftragung ausgewählte $E_T$-Spektren dieser generierten Ereignisse. Die Erwartung, dass eine höheren Kopplungsstärke $d_A^{\gamma}$ zu härteren Energiespektren führt, bestätigt sich. Im folgenden werden mehrere Ansätze diskutiert, die Abhängigkeit des $E_T$-Spektrums von $d_A^{\gamma}$ zu beschreiben.
 
 \begin{figure}%
 \begin{subfigure}[b]{0.4\textwidth}
@@ -110,6 +110,7 @@ Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 E
 \end{figure}
 
 \subsubsection{2-Bin-Analyse}
+\label{sec:ana_twobin}
 
 Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht von 0\,GeV bis 100\,GeV, der zweite von 100\,GeV bis 700\,GeV, siehe dazu Abb. \ref{fig:2bin_skizze}. Nun wird das Verhältnis der Anzahl der Photonen in den beiden Bereichen gegen $d_A^{\gamma}$ aufgetragen, siehe Abb. \ref{fig:2bin_plot}. Auf der linken Seite sieht man zwei Messwerte, die nicht dem allgemeinen Verlauf folgen. Dies sind die schon in Kapitel \ref{sec:wq} angesprochenen Messpunkte, die durch irreduzibel große Fehler auf den Wirkungsquerschnitt auffielen und auch in allen anderen Analysemethoden herausstechen. Die Punkte $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$ werden im folgenden für die Auswertung der verschiedenen Analysemethoden nicht berücksichtigt. Der so bereinigte Plot ist in Abb. \ref{fig:2bin_plot} rechts zu sehen. Die 2-Bin-Analyse stellt einen vielversprechenden Ansatz dar, das härtere Photonenspektrum für größere Kopplungsstärken $d_A^{\gamma}$ zu beschreiben. Auf Generatorniveau ist eine sehr gute Separationskraft vorhanden, der Wertebereich erstreckt sich von $E_{Low} / E_{High} = 3,8$ für $d_A^{\gamma} = 0$ bis $E_{Low} / E_{High} = 2,2$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit durch Statistik von $\Delta E_{Low} / E_{High} \leq 0,03$. 
 
@@ -134,6 +135,7 @@ Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht vo
 \end{figure}
 
 \subsubsection{\texorpdfstring{$E_T$}{ET}-Mean-Analyse}
+\label{sec:ana_mean}
 
 In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, dies ist der gewichtete Mittelwert $\overline{E_T}$ dieser Verteilung. Für die Berechnung des gewichteten Mittelwertes und des Fehlers auf diesen Mittelwert werden die folgenden Formeln benutzt:
 
@@ -143,7 +145,7 @@ In diesem Ansatz wird der Schwerpunkt der $E_T$-Verteilung betrachtet, dies ist 
 \label{eq:meanerror}
 \end{align}
 
-Hier ist $x_i$ der Mittelpunkt des i-ten Bins des Histogrammes und $\omega_i$ die Anzahl der Einträge in diesem Bin. $E_{T,mean}$ wird gegen $d_A^{\gamma}$ aufgetragen (siehe Abbildung \ref{fig:mean_plot}). Es ergibt sich eine hohe Separationskraft dieser Variablen auf Generatorniveau, der Wertebereich liegt hier zwischen 34,7 und 53,5\,GeV mit einer Unsicherheit von $\Delta \overline{E_T} \leq 0,22\,GeV$. 
+Hier ist $x_i$ der Mittelpunkt des i-ten Bins des Histogrammes und $\omega_i$ die Anzahl der Einträge in diesem Bin. $\overline{E_T}$ wird gegen $d_A^{\gamma}$ aufgetragen (siehe Abbildung \ref{fig:mean_plot}). Es ergibt sich eine hohe Separationskraft dieser Variablen auf Generatorniveau, der Wertebereich liegt hier zwischen 34,7 und 53,5\,GeV mit einer Unsicherheit von $\Delta \overline{E_T} \leq 0,22\,GeV$. 
 
 \begin{figure}%
 \centering
