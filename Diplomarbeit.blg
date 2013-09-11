@@ -9,10 +9,12 @@ A level-1 auxiliary file: kapitel/selektion.aux
 A level-1 auxiliary file: kapitel/datenstudie.aux
 A level-1 auxiliary file: kapitel/zusammenfassung.aux
 A level-1 auxiliary file: kapitel/anhang.aux
+A level-1 auxiliary file: kapitel/danksagung.aux
 The style file: plain.bst
 Database file #1: referenzen.bib
 Warning--entry type for "Heinson:Diagrams" isn't style-file defined
 --line 331 of file referenzen.bib
+Warning--I didn't find a database entry for "1"
 Name 1 in "Torbjörn Sjöstrand, Stephen Mrenna, and Peter Skands" has a comma at the end for entry Sjostrand:PYTHIA
 while executing---line 1049 of file plain.bst
 Warning--empty journal in CMS:Slice
