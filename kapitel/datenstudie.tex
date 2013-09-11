@@ -5,13 +5,13 @@
 %
 
 
-\chapter{Vergleich der Monte-Carlo-Simulationen mit Daten}
+\chapter{Vergleich mit Daten}
 \label{sec:datenstudie}
 
 \section{\texorpdfstring{$E_T$}{ET}-Spektren}
 
-Für elf der in Kapitel \ref{sec:montecarlo} erzeugten WHIZARD-Sample ($0\leq d_A^{\gamma} \leq 1$, Schritte von 0,1) werden nun die Hadronisierung und die Detektorantwort simuliert, die Rekonstruktionsalgorithmen darauf angewendet (siehe Abschnitt \ref{sec:reco}) sowie die in den Abschnitten \ref{sec:vorselektion} respektive \ref{sec:ttg_selektion} beschriebenen Selektionen durchgeführt. Die $E_T$-Spektren der jeweiligen Photonkandidaten in den selektierten Ereignissen werden aufgetragen. Abbildung~\ref{fig:et_galerie} zeigt einige dieser Spektren in logarithmischer Darstellung, die Histogramme sind auf die Luminosität 4,7\,fb$^{-1}$ normiert. Man erkennt, dass sich das Photon-Spektrum mit steigendem $d_A^{\gamma}$ zu höheren Energien verschiebt. Dies ist auch in Abbildung~\ref{fig:et_kombi} zu sehen, die drei dieser Energiespektren zeigt. Dies ist eine erste qualitative Bestätigung dafür, dass die in Kapitel~\ref{sec:etphoton} beschriebenen Analysemethoden auch nach Rekonstruktion und Selektion der simulierten Daten noch anwendbar sind. Desweiteren erkennt man eine Zunahme der Gesamtanzahl der rekonstruierten und selektierten Photonen mit steigender Kopplungsstärke. Dies kommt zum einen daher, dass die $t\overline{t}+\gamma$-Selektion niederenergetische Photonen unterdrückt, zum anderen kann man hier auch auf eine Abhängigkeit des Wirkungsquerschnittes des Prozesses von $d_A^{\gamma}$ schließen, siehe Abschnitt~\ref{sec:wq}. \\
-Die in Abschnitt~\ref{sec:etphoton} für die generierten Ereignisse durchgeführten Analysen des Photon-$E_T$-Spektrums werden im folgenden auf die rekonstruierten Ereignisse angewendet.
+Für elf der in Kapitel \ref{sec:montecarlo} erzeugten WHIZARD-Sample ($0\leq d_A^{\gamma} \leq 1$, Schritte von 0,1) werden die Hadronisierung und die Detektorantwort simuliert, die Rekonstruktionsalgorithmen angewendet (siehe Abschnitt \ref{sec:reco}) und die in den Abschnitten \ref{sec:vorselektion} respektive \ref{sec:ttg_selektion} beschriebenen Selektionen durchgeführt. Anschließend werden die $E_T$-Spektren der jeweiligen Photonkandidaten in den selektierten Ereignissen untersucht. Abbildung~\ref{fig:et_galerie} zeigt einige dieser Spektren in logarithmischer Darstellung, die Histogramme sind auf die Luminosität 4,7\,fb$^{-1}$ normiert. Man erkennt, dass das Photon-Spektrum mit steigendem $d_A^{\gamma}$ zu höheren Energien verschoben wird. Dies ist in Abbildung~\ref{fig:et_kombi} zu sehen, welche drei dieser Energiespektren beispielhaft vergleicht. Es bestätigt sich, dass die in Kapitel~\ref{sec:etphoton} beschriebenen Analysemethoden nach Rekonstruktion und Selektion der simulierten Daten anwendbar sind. Man erkennt eine Zunahme der Gesamtanzahl rekonstruierter und selektierter Photonen mit steigender Kopplungsstärke. Dies ist erwartet, da die $t\overline{t}+\gamma$-Selektion niederenergetische Photonen unterdrückt und zusätzlich der Wirkungsquerschnitt des Prozesses mit $d_A^{\gamma}$ steigt, siehe Abschnitt~\ref{sec:wq} und Abbildung~\ref{fig:cs_wofit}. \\
+Die in Abschnitt~\ref{sec:etphoton} durchgeführten Analysen des Photon-$E_T$-Spektrums werden im Folgenden auf die rekonstruierten Ereignisse angewendet.
 
 \begin{figure}%
 \begin{subfigure}[b]{0.4\textwidth}
@@ -50,29 +50,29 @@ Die in Abschnitt~\ref{sec:etphoton} für die generierten Ereignisse durchgeführte
 
 \section{2-Bin-Analyse}
 
-Bei dieser Methode wird das $E_T$-Spektrum in zwei Bereiche unterteilt, einen niederenergetischen Bereich von 0\,GeV bis 100\,GeV und einen hochenergetischen Bereich von 100\,GeV bis 700\,GeV, siehe Abschnitt~\ref{sec:etphoton}. Das Verhältnis der Ereignisse in beiden Bereichen ist in Abbildung~\ref{fig:twobin_reco_plot} gegen $d_A^{\gamma}$ aufgetragen. Die $E_{Low}/E_{High}$-Werte und die Unsicherheiten sind hier zwischen den Messwerten interpoliert. Man erkennt auch auf Rekonstruktionsniveau eine klare Abhängigkeit des Verhältnisses $E_{Low}/E_{High}$ von der Kopplungsstärke $d_A^{\gamma}$. Ebenso ist auch hier, wie auf Generatorniveau, eine gute Separationskraft erkennbar, die Werte reichen von $E_{Low}/E_{High} = 6,4$ bei $d_A^{\gamma} = 0$ bis $E_{Low}/E_{High} = 3,2$ bei $d_A^{\gamma} = 1$. Die Unsicherheit auf die Bininhalte $E_{Low}$ und $E_{High}$ wird mit $\sqrt{E_{Low}}$ beziehungsweise $\sqrt{E_{High}}$ angenommen und die Unsicherheit auf das Verhältnis mittels Gauss'scher Fehlerfortpflanzung berechnet. Sie liegt im Bereich von $\Delta (E_{Low}/E_{High}) < 0,3$.
+Bei dieser Methode wird das $E_T$-Spektrum in zwei Bereiche unterteilt, einen niederenergetischen Bereich von 0\,GeV bis 100\,GeV und einen hochenergetischen Bereich von 100\,GeV bis 700\,GeV, siehe Abschnitt~\ref{sec:etphoton}. Das Verhältnis der Ereignisanzahl in beiden Bereichen ist in Abbildung~\ref{fig:twobin_reco_plot} gegen $d_A^{\gamma}$ aufgetragen und wird als $E_{Low}/E_{High}$ bezeichnet. Man erkennt auch auf Rekonstruktionsniveau eine klare Abhängigkeit der Verhältnisse $E_{Low}/E_{High}$ von der Kopplungsstärke $d_A^{\gamma}$. Es zeigt sich, wie auf Generatorniveau, eine gute Separationskraft, da der Wertebereich von $E_{Low}/E_{High} = 6,4$ bei $d_A^{\gamma} = 0$ bis $E_{Low}/E_{High} = 3,2$ bei $d_A^{\gamma} = 1$ reicht. Die Unsicherheit auf die Bininhalte $E_{Low}$ und $E_{High}$ wird mit $\sqrt{E_{Low}}$ beziehungsweise $\sqrt{E_{High}}$ angenommen. Die Unsicherheit auf das Verhältnis ergibt sich aus Gauss'scher Fehlerfortpflanzung und liegt im Bereich von $\Delta (E_{Low}/E_{High}) < 0,3$.
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/twobin_reco_plot.pdf}%
-\caption{Verlauf von $E_{Low}/E_{High}$ in Abhängigkeit von $d_A^{\gamma}$ auf Rekonstruktionsniveau.}%
+\includegraphics[width=0.6\columnwidth]{bilder/twobin_reco_plot.pdf}%
+\caption{Interpolierter Verlauf von $E_{Low}/E_{High}$ in Abhängigkeit von $d_A^{\gamma}$ auf Rekonstruktionsniveau.}%
 \label{fig:twobin_reco_plot}%
 \end{figure}
 
 \section{\texorpdfstring{$E_T$}{ET}-Mean-Analyse}
 
-Die Schwerpunkte der $E_T$-Spektren der Photonkandidaten sowie die Unsicherheiten werden in Abbildung~\ref{fig:mean_reco_plot} mittels der Gleichungen \ref{eq:mean} sowie \ref{eq:meanerror} bestimmt und gegen $d_A^{\gamma}$ aufgetragen. Auch hier bleibt die Abhängigkeit des Schwerpunktes von $d_A^{\gamma}$ auf Rekonstruktionslevel erhalten. Die Werte liegen dabei zwischen $\overline{E_T} = 53,75$\,GeV und $\overline{E_T} = 70,15$\,GeV bei einer Unsicherheit von $\Delta \overline{E_T} < 1,9$\,GeV.
+Die Schwerpunkte der $E_T$-Spektren der Photonkandidaten und deren Unsicherheiten werden mittels der Gleichungen \ref{eq:mean} und \ref{eq:meanerror} bestimmt und in Abbildung~\ref{fig:mean_reco_plot} gegen $d_A^{\gamma}$ aufgetragen. Die Abhängigkeit des Schwerpunktes von $d_A^{\gamma}$ auf Rekonstruktionslevel bleibt erhalten und der Wertebereich beträgt $\overline{E_T} = 53,75$\,GeV bis $\overline{E_T} = 70,15$\,GeV für $d_A^{\gamma} = 0$ respektive $d_A^{\gamma} = 1$. Die Unsicherheit $\Delta \overline{E_T}$ ist insgesamt kleiner als $1,9$\,GeV.
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/mean_reco_plot.pdf}%
-\caption{Verlauf von $\overline{E_T}$ in Abhängigkeit von $d_A^{\gamma}$ auf Rekonstruktionsniveau.}%
+\includegraphics[width=0.6\columnwidth]{bilder/mean_reco_plot.pdf}%
+\caption{Interpolierter Verlauf von $\overline{E_T}$ in Abhängigkeit von $d_A^{\gamma}$ auf Rekonstruktionsniveau.}%
 \label{fig:mean_reco_plot}%
 \end{figure}
 
 \section{Analyse der Exponentialanpassung}
 
-Die Anpassung einer Exponentialfunktion an die $E_T$-Verteilung des Photons wird betrachtet. Dazu wird das $E_T$-Spektrum im Bereich von 20\,GeV bis 200\,GeV durch eine Exponentialfunktion wie in Gleichung \ref{eq:expofit} beschrieben angepasst, siehe Abbildung \ref{fig:fit_galerie}. Der so erhaltene Slope-Parameter $\lambda$ ist in Abbildung~\ref{fig:slope_reco_plot} gegen $d_A^{\gamma}$ aufgetragen. Wie in den beiden anderen Analysestrategien bleibt die Abhängigkeit der Variablen von $d_A^{\gamma}$ auf Rekonstruktionsniveau erhalten, bei $d_A^{\gamma} = 0,7$ ist jedoch ein Knick im ansonsten streng monoton steigenden Verlauf des $\lambda$-Parameters zu erkennen. Dieser liegt jedoch innerhalb der Unsicherheit. Es werden Werte von $\lambda = -0,035$ für $d_A^{\gamma} = 0$ bis $\lambda = -0,024$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit von $\Delta \lambda < 0,0007$ gemessen.
+Es wird eine Exponentialfunktion, siehe Gleichung~\ref{eq:expofit}, an die $E_T$-Verteilung der Photonen im Bereich von 20\,GeV bis 200\,GeV angepasst. Abbildung \ref{fig:fit_galerie} zeigt exemplarisch ausgewählte $d_A^{\gamma}$-Szenarien. Die Ergebnisse der Anpassungen sind in Abbildung~\ref{fig:slope_reco_plot} gegen $d_A^{\gamma}$ aufgetragen. Ähnlich zu den vorangegangenen Analysestrategien bleibt die Abhängigkeit der Variablen von $d_A^{\gamma}$ auf Rekonstruktionsniveau erhalten. Im ansonsten streng monoton steigenden Verlauf von $\lambda$ gibt es bei $d_A^{\gamma} = 0,7$ einen lokalen Knick, der innerhalb der Unsicherheiten liegt. Insgesamt erstreckt sich der Wertebereich von $\lambda = -0,035$ für $d_A^{\gamma} = 0$ bis $\lambda = -0,024$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit von $\Delta \lambda < 0,0007$.
 
 \begin{figure}%
 \begin{subfigure}[b]{0.4\textwidth}
@@ -98,23 +98,23 @@ Die Anpassung einer Exponentialfunktion an die $E_T$-Verteilung des Photons wird
 \begin{subfigure}[b]{0.4\textwidth}
 \includegraphics[width=\textwidth]{bilder/fit_1.pdf}%
 \end{subfigure}
-\caption{Exponentieller Fit an die $E_T$-Verteilungen von rekonstruierten und selektierten Monte-Carlo-Daten für verschiedene Werte von $d_A^{\gamma}$.}%
+\caption{Exponentieller Fit an die $E_T$-Verteilungen von rekonstruierten und selektierten Monte-Carlo-Daten für verschiedene $d_A^{\gamma}$-Szenarien.}%
 \label{fig:fit_galerie}%
 \end{figure}
 
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/slope_reco_plot.pdf}%
-\caption{Verlauf des Slope-Parameters $\lambda$ in Abhängigkeit von $d_A^{\gamma}$ auf Rekonstruktionsniveau.}%
+\includegraphics[width=0.6\columnwidth]{bilder/slope_reco_plot.pdf}%
+\caption{Interpolierter Verlauf des Exponenten $\lambda$ der Exponentialfunktion, Gleichung~\ref{eq:expofit}, in Abhängigkeit von $d_A^{\gamma}$ auf Rekonstruktionsniveau.}%
 \label{fig:slope_reco_plot}%
 \end{figure}
 
-\section{Vergleich der Analysemethoden auf Rekonstruktionsniveau}
+\section{Vergleich der Analysemethoden}
 
-Auch bei der Analyse der rekonstruierten und selektierten Monte-Carlo-Ereignisse zeigt sich in allen vorgestellten Analysemethoden eine klare Abhängigkeit der jeweiligen Variablen von $d_A^{\gamma}$. Ebenso weisen alle Variablen eine Separationskraft auf, diese ist jedoch aufgrund der durch Rekonstruktion und Selektion verringerten Statistik sowie aufgrund von Detektoreffekten kleiner als auf Generatorniveau. \\
-Die größte Separationskraft auf Rekonstruktionsniveau zeigt die Analyse der Exponentialanpassung der $E_T$-Verteilung. Hier liegen zwischen den Extremwerten von $\overline{E_T}$ 15 Standardabweichungen. Die 2-Bin-Analyse weist einen Wertebereich von 10 Standardabweichungen auf und die Analyse des Schwerpunktes der Verteilung hat eine Spannweite von 9 Standardabweichungen. Somit hat die Analyse der Exponentialanpassung im Vergleich zum Generatorniveau nicht viel von ihrer Separationskraft eingebüßt. Die anderen beiden Analysemethoden separieren aufgrund der verringerten Statistik aber wie erwartet auf Rekonstruktionsniveau weitaus weniger stark zwischen den verschiedenen $d_A^{\gamma}$-Szenarien. \\
-Während die Variablen in der 2-Bin-Analyse sowie in der Analyse der Exponentialanpassung eine lineare Abhängigkeit von $d_A^{\gamma}$ erahnen lassen, scheint zwischen $\overline{E_T}$ und $d_A^{\gamma}$ ein parabolischer Zusammenhang zu bestehen. Dies bedeutet eine schlechtere Separation für kleine $d_A^{\gamma}$, aber eine bessere Separation für große $d_A^{\gamma}$.
+Die Analyse der rekonstruierten und selektierten Monte-Carlo-Ereignisse zeigt in allen vorgestellten Methoden eine klare Abhängigkeit der Variablen von $d_A^{\gamma}$. Ebenso weisen alle Variablen eine Separationskraft auf, die aufgrund der durch Rekonstruktion und Selektion verringerten Statistik und durch Detektoreffekte kleiner als auf Generatorniveau ist. \\
+Die größte Separationskraft auf Rekonstruktionsniveau zeigt die Analyse der Exponen\-tial\-anpassung der $E_T$-Verteilung. Zwischen den Extremwerten von $\overline{E_T}$ liegen 15 Standardabweichungen. Die 2-Bin-Analyse weist mit 10 Standardabweichungen einen größeren Wertebereich auf als die Analyse des Schwerpunktes der Verteilung mit 9 Standardabweichungen. Die Separationskraft der Analyse der Exponentialanpassung bleibt im Vergleich zum Generatorniveau fast erhalten. \\
+Die Variablen der 2-Bin-Analyse und der Exponentialanpassung zeigen eine lineare Ab\-hän\-gigkeit von $d_A^{\gamma}$, während zwischen $\overline{E_T}$ und $d_A^{\gamma}$ ein parabolischer Zusammenhang ersichtlich ist. Dies bedeutet eine geringere Separation für $d_A^{\gamma}\rightarrow 0$ und eine stärkere Separation für $d_A^{\gamma}\rightarrow 1$.
 
 \begin{table}[h]
 \caption{Vergleich der Separationskraft der untersuchten Variablen auf Generator- und Rekonstruktionsniveau.}
@@ -122,72 +122,71 @@ Während die Variablen in der 2-Bin-Analyse sowie in der Analyse der Exponentiala
 \centering
 \begin{tabular}{c|c|c}
  & Spannweite auf & Spannweite auf \\
-Methode & Generatorniveau & Rekonstruktionsniveau  \parbox[0pt][1.4em][c]{0cm}{} \\
+Methode & Generatorniveau & Rekonstruktionsniveau  \parbox[0pt][1.6em][c]{0cm}{} \\
 \hline
-2-Bin-Analyse & $50\sigma$ & $10\sigma$  \parbox[0pt][1.4em][c]{0cm}{} \\
-$\overline{E_T}$-Analyse & $85\sigma$ & $9\sigma$  \parbox[0pt][1.4em][c]{0cm}{} \\
-\multirow{2}{*}{ $ \begin{array}{cc} \text{Analyse der}  \\ \text{Exponentialanpassung} \\ \end{array} $} & \multirow{2}{*}{$19\sigma$} & \multirow{2}{*}{$15\sigma$} \\
+2-Bin-Analyse & $50\,\sigma$ & $10\,\sigma$  \parbox[0pt][1.6em][c]{0cm}{} \\
+$\overline{E_T}$-Analyse & $85\,\sigma$ & $9\,\sigma$  \parbox[0pt][1.6em][c]{0cm}{} \\
+\multirow{2}{*}{ $ \begin{array}{cc} \text{Analyse der}  \\ \text{Exponentialanpassung} \\ \end{array} $} & \multirow{2}{*}{$19\,\sigma$} & \multirow{2}{*}{$15\,\sigma$} \\
  & &  \parbox[0pt][1.4em][c]{0cm}{} \\
 \end{tabular}
 \label{tab:sigmas}
 \end{table}
 
-
 \section{Auswertung von 4,7 \texorpdfstring{fb$^{-1}$}{inv. fb} Daten}
 
-Auf 4,7 fb$^{-1}$ Daten des CMS-Experiments werden die gleichen Selektionen (Top-Paar- bzw. $t\overline{t} + \gamma$-Selektion) angewendet. Die Daten wurden im Jahr 2011 bei einer Schwerpunktsenergie von 7\,TeV aufgenommen. Aus diesem Datensatz werden 134 Ereignisse selektiert, die alle geforderten Kriterien erfüllen. Das $E_T$-Spektrum dieser Ereignisse ist in Abbildung \ref{fig:et_data} gezeigt. \\
-
+Diese Analyse verwendet 4,7 fb$^{-1}$ Daten, die im Jahre 2011 bei einer Schwerpunktsenergie von 7\,TeV von CMS aufgezeichnet wurden. Nach der Anwendung der Top-Paar- und $t\overline{t} + \gamma$-Selektion erfüllen 134 Ereignisse alle geforderten Kriterien. Das $E_T$-Spektrum dieser selektierten Ereignisse ist in Abbildung \ref{fig:et_data} gezeigt. \\
 \begin{figure}%
 \centering
-\includegraphics[width=0.4\columnwidth]{bilder/et_data}%
+\includegraphics[width=0.6\columnwidth]{bilder/et_data.pdf}%
 \caption{$E_T$-Verteilung von 4,7\,fb$^{-1}$ Daten aus 2011.}%
 \label{fig:et_data}%
 \end{figure}
-
-Mit den oben beschriebenen Analysemethoden wird dieses Spektrum analog zu den Spektren aus Monte-Carlo-Simulationen untersucht. Dabei ergeben sich die folgenden Werte:
+Mit den im vorangegangenen Unterkapitel beschriebenen Analysemethoden wird das Spektrum analog zu den Monte-Carlo-Simulationen ausgewertet. Man erhält für die unterschiedlichen Methoden die folgenden Ergebnisse:
+\begin{alignat}{2}
+(E_{Low}/E_{High})_{Data} &= 5 & &\pm 1 \ , \nonumber \\
+\label{eq:data}
+\overline{E_T}_{Data} &= 55 & &\pm 3\,\text{GeV} \ , \\
+\lambda_{Data} &= -0,033 & &\pm 0,003 \ . \nonumber
+\end{alignat}
+Aufgrund der eingeschränkten Statistik von 134 Ereignissen zeigen alle Analysemethoden einen dominanten statistischen Fehler. Die Ergebnisse aus Gleichung~\ref{eq:data} werden in den Abbildungen~\ref{fig:twobin_data_mc}, \ref{fig:mean_data_mc} und \ref{fig:slope_data_mc} mit den Monte-Carlo-Simulationen zu verschiedenen $d_A^{\gamma}$-Szenarien verglichen. Man erhält für das elektrische Dipolmoment, bestimmt aus Daten
 \begin{alignat*}{2}
-(E_{Low}/E_{High})_{Data} &= 5,09 & &\pm 1,19 \\
-\overline{E_T}_{Data} &= 55,36 & &\pm 3,19\,\text{GeV} \\
-\lambda_{Data} &= -0,0333 & &\pm 0,0037 \ .
+E_{Low}/E_{High} &: d^{\gamma}_{A\, Data} & &= 0,44_{-0,44}^{+0,37} \ , \\
+\overline{E_T} &: d^{\gamma}_{A\, Data} & &= 0,24_{-0,24}^{+0,31} \ , \\
+\lambda &: d^{\gamma}_{A\, Data} & &= 0,08_{-0,08}^{+0,47} \\
 \end{alignat*}
-Um diese Werte mit den Verläufen aus den Monte-Carlo-Simulationen zu vergleichen, werden sie in die jeweiligen Plots eingefügt, siehe Abbildung \ref{fig:ana_data_mc}.
+als Ergebnis für die verschiedenen Analysemethoden. Die angegebenen Unsicherheiten ergeben sich aus den statistischen Unsicherheiten von Daten und Simulation. \\
+Für alle drei Analysemethoden ist das erhaltene elektrische Dipolmoment $d^{\gamma}_{A\, Data}$ innerhalb einer Standardabweichung mit dem Standardmodell vereinbar. Szenarien mit $d_A^{\gamma} > 0,55$ (Exponentialanpassung, Messung des Schwerpunktes) sowie $d_A^{\gamma} > 0,81$ ($E_{Low}/E_{High}$) liegen außerhalb des $1\,\sigma$- und innerhalb des $3\,\sigma$-Bandes.
 \begin{figure}%
 \centering
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/twobin_data_mc.pdf}%
-\end{subfigure}
-\hspace{0.1\textwidth}
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/mean_data_mc.pdf}%
-\end{subfigure}
-
-\begin{subfigure}[b]{0.4\textwidth}
-\includegraphics[width=\textwidth]{bilder/slope_data_mc.pdf}%
-\end{subfigure}
-\caption{Vergleich der Variablen für Monte-Carlo- und Daten-Ereignisse.}
-\label{fig:ana_data_mc}
+\includegraphics[width=0.6\columnwidth]{bilder/twobin_data_mc.pdf}%
+\caption{Vergleich der Variablen für Monte-Carlo- und Daten-Ereignisse, hier: $E_{Low}/E_{High}$.}
+\label{fig:twobin_data_mc}
 \end{figure}
-Man kann aus den Graphen einen Wert für $d_A^{\gamma}$ bestimmen. Für die verschiedenen Observablen ergibt sich:
-\begin{alignat*}{2}
-E_{Low}/E_{High} &: d_A^{\gamma} & &= 0,437_{-0,437}^{+0,373} \\
-\overline{E_T} &: d_A^{\gamma} & &= 0,238_{-0,238}^{+0,306} \\
-\lambda &: d_A^{\gamma} & &= 0,075_{-0,075}^{+0,469} \\
-\end{alignat*}
-Hier sind jeweils die statistischen Unsicherheiten von Daten und Simulation berücksichtigt. \\
-In allen Analysemethoden ist ein großer statistischer Fehler auf die Werte für experimentell gesammelte Daten zu erkennen. Dies ist der kleinen Statistik von lediglich 134 Ereignissen geschuldet. Ebenso ist der Datenwert in allen Methoden mit dem Standardmodellwert von $d_A^{\gamma} = 0$ innerhalb einer Standardabweichung vereinbar, auf der anderen Seite liegen die Werte $d_A^{\gamma} > 0,55$ (Exponentialanpassung, Messung des Schwerpunktes) sowie $d_A^{\gamma} > 0,81$ ($E_{Low}/E_{High}$) außerhalb des $1\sigma$-Bandes. Mit der vorhandenen Datenmenge können jedoch keine Werte für $d_A^{\gamma}$ signifikant ausgeschlossen werden.
+\begin{figure}%
+\centering
+\includegraphics[width=0.6\columnwidth]{bilder/mean_data_mc.pdf}%
+\caption{Vergleich der Variablen für Monte-Carlo- und Daten-Ereignisse, hier: $\overline{E_T}$.}
+\label{fig:mean_data_mc}
+\end{figure}
+\begin{figure}%
+\centering
+\includegraphics[width=0.6\columnwidth]{bilder/slope_data_mc.pdf}%
+\caption{Vergleich der Variablen für Monte-Carlo- und Daten-Ereignisse, hier: $\lambda$.}
+\label{fig:slope_data_mc}
+\end{figure}
 
 \section{Statistische und systematische Unsicherheiten}
 
-Die in den vorherigen Kapiteln betrachteten Unsicherheiten sind alle statistischer Natur. Im Allgemeinen müssen zusätzlich auch systematische Unsicherheiten berücksichtigt werden. Diese werden im Folgenden betrachtet.
+Dieses Kapitel erläutert zuerst die statistischen und anschließend die wichtigsten systematischen Unsicherheiten.
 
 \subsection{Statistische Unsicherheiten}
 
 Die statistischen Unsicherheiten auf die Variablen $E_{Low}/E_{High}$, $\overline{E_T}$ und $\lambda$ werden folgendermaßen bestimmt:
 
 \begin{description}
-  \item [$E_{Low}/E_{High}$ : ] Die Unsicherheit auf die Bininhalte $E_{Low}$ und $E_{High}$ wird mit $\sqrt{E_{Low}}$ beziehungsweise $\sqrt{E_{High}}$ angenommen und die Unsicherheit auf das Verhältnis mittels Gauss'scher Fehlerfortpflanzung berechnet.
+  \item [$E_{Low}/E_{High}$ : ] Die Unsicherheit auf die Bininhalte $E_{Low}$ und $E_{High}$ wird mit $\sqrt{E_{Low}}$ beziehungsweise $\sqrt{E_{High}}$ angenommen und auf das Verhältnis mittels Gauss'scher Fehlerrechnung fortgepflanzt.
 	\item [$\overline{E_T}$ : ] Die Unsicherheit auf den Schwerpunkt der $E_T$-Verteilung wird mittels Formel \ref{eq:meanerror} ermittelt.
-	\item [$\lambda$ : ] Die Unsicherheit auf den Slope-Parameter der Exponentialanpassung wird mittels der in Kapitel \ref{sec:ensemble} beschriebenen Ensemblestudie durch 1000-faches Neuwürfeln der $E_T$-Verteilung bestimmt.
+	\item [$\lambda$ : ] Die Unsicherheit auf den Exponenten $\lambda$ der Exponentialanpassung wird mit der in Kapitel \ref{sec:ensemble} beschriebenen Ensemblestudie durch 1000-faches Neuwürfeln der $E_T$-Verteilung bestimmt.
 \end{description}
 
 \subsection{Systematische Unsicherheiten}
@@ -196,15 +195,13 @@ Die statistischen Unsicherheiten auf die Variablen $E_{Low}/E_{High}$, $\overlin
 Die Signifikanz dieser Analyse wird von vielen systematischen Effekten limitiert. Exemplarisch wird hier die Abhängigkeit von der Wahl des Monte-Carlo-Generators und dem Einfluss der Normierung von Signal- bzw. Untergrund-Sample diskutiert. Die Zahlenwerte gelten jeweils für das $d_A^{\gamma} = 0$-Szenario.
 
 \begin{description}
-  \item [Generator] Verschiedene Monte-Carlo-Generatoren benutzen unterschiedliche Algorithmen zur Simulation der Hadronisierung und Schauerbildung und erzeugen somit auch voneinander abweichende Energiespektren. Ein zweites $t\overline{t}$-Sample wurde mit einem anderen Matrixelementgenerator (MC@NLO \cite{Frixione:MCatNLO}) und einem anderen Hadronisierungs- und Schauermodell (HERWIG \cite{Frixione:MCatNLO}) generiert. Dieses wurde mit einem Sample verglichen, welches mittels MADGRAPH und PYTHIA, wie in dieser Analyse verwendet, mit denselben Randbedingungen erstellt wurde. Die volle Photon-$E_T$-Analyse wurde mit beiden Samplen durchgeführt und die relative Abweichung der untersuchten Variablen als systematische Unsicherheit definiert:
-	
+  \item [Generator: ] Verschiedene Monte-Carlo-Generatoren benutzen unterschiedliche Algorithmen zur Simulation der Hadronisierung und Schauerbildung und erzeugen somit voneinander abweichende Energiespektren. Ein zweites $t\overline{t}$-Sample wird mit einem anderen Matrixelementgenerator (MC@NLO \cite{Frixione:MCatNLO}) und Hadronisierungs- und Schauermodell (HERWIG \cite{Frixione:MCatNLO}) generiert. Dieses wird mit einem Sample, welches mit MADGRAPH und PYTHIA erzeugt wird, verglichen. Es werden alle Analysemethoden analog angewendet und eine relative Abweichung der untersuchten Variablen gemäß
 	\begin{equation}
 	\Delta X_{rel} = \frac{X_{MC@NLO}-X_{MADGRAPH}}{X_{MADGRAPH}} \ .
 	\end{equation}
-
-Hier bezeichnet X die jeweils untersuchte Variable.
-  \item [Normierung des Signals] Die Unsicherheit durch Signalnormierung wird bestimmt, indem die Ereigniszahl des Signal-Samples um $\pm 25\%$ variiert wird. Dies bildet eine Änderung der Faktorisierungs- beziehungsweise Renormalisierungsskala ab  \cite{Tholen:AN}.
-	\item [Normierung der Untergrundprozesse] Die in Kapitel \ref{sec:top_untergrund} beschriebenen Unsicherheiten auf den Wirkungsquerschnitt der Untergrundprozesse werden gaussisch addiert und die Ereigniszahl der Untergrundprozesse mit dieser Gesamtunsicherheit variiert.
+als systematische Unsicherheit definiert.
+  \item [Normierung des Signals: ] Die Unsicherheit durch Signalnormierung ergibt sich durch Variation der Ereignisanzahl des Signal-Samples um $\pm 25\%$. Dies bildet eine Änderung der Faktorisierungs- beziehungsweise Renormalisierungsskala ab \cite{Tholen:AN}.
+	\item [Normierung der Untergrundprozesse: ] Die in Kapitel \ref{sec:top_untergrund} beschriebenen Unsicherheiten auf den Wirkungsquerschnitt der Untergrundprozesse werden gaussisch addiert und die Ereignisanzahl der Untergrundprozesse entsprechend dieser Gesamtunsicherheit variiert.
 \end{description}
 \begin{table}[h]%
 \centering
@@ -213,21 +210,21 @@ Hier bezeichnet X die jeweils untersuchte Variable.
 \begin{tabular}{|c|c|c|c|}
 \hline
 \parbox[0pt][1.4em][c]{0cm}{} & \multicolumn{3}{c|}{systematische Unsicherheit auf}  \\
-Effekt & $E_{Low}/E_{High}$ & $\overline{E_T}$ & $\lambda$ \parbox[0pt][1.4em][c]{0cm}{} \\
+Systematik & $E_{Low}/E_{High}$ & $\overline{E_T}$ & $\lambda$ \parbox[0pt][1.4em][c]{0cm}{} \\
 \hline
-Generator & 10,4\% & 1,65\% & 2,85\% \parbox[0pt][1.4em][c]{0cm}{} \\
-Signalnormierung & 7,21\% & 1,75\% & 4,78\% \parbox[0pt][1.4em][c]{0cm}{} \\
-Untergrundnormierung & 3,40\% & 0,90\% & 2,22\% \parbox[0pt][1.4em][c]{0cm}{} \\
+Generator & 10\% & 1,7\% & 2,9\% \parbox[0pt][1.4em][c]{0cm}{} \\
+Signalnormierung & 7,2\% & 1,8\% & 4,8\% \parbox[0pt][1.4em][c]{0cm}{} \\
+Untergrundnormierung & 3,4\% & 0,9\% & 2,2\% \parbox[0pt][1.4em][c]{0cm}{} \\
 \hline
-gesamt & 13,1\% & 2,57\% & 5,99\% \parbox[0pt][1.4em][c]{0cm}{} \\
+gesamt & 13\% & 2,6\% & 6,0\% \parbox[0pt][1.4em][c]{0cm}{} \\
 \hline
 \end{tabular}
 \label{tab:systematiken}
 \end{table}
-Die dominante Systematik bei der 2-Bin-Analyse ist die Wahl des Monte-Carlo-Generators mit 10,4\%, bei der Mean-Analyse und der Analyse der Exponentialanpassung dominiert der Einfluss der Normierung des Signals mit 1,75\% respektive 4,78\%. Es ergeben sich damit für die untersuchten Variablen im $d_A^{\gamma} = 0$-Szenario die folgenden Werte:
+Die dominante Systematik der 2-Bin-Analyse ist die Wahl des Monte-Carlo-Generators mit 10\%. Die $\overline{E_T}$-Analyse und die Exponentialanpassung werden durch die Normierung des Signals mit 1,8\% respektive 4,8\% dominiert. Für die untersuchten Variablen im $d_A^{\gamma} = 0$-Szenario erhält man die folgenden Ergebnisse:
 \begin{alignat*}{3}
-E_{Low}/E_{High} &= 6,421 & &\pm 0,304 (\text{stat.}) & &\pm 0,841 (\text{syst.}) \\
-\overline{E_T} &= 53,745 & &\pm 1,331 (\text{stat.}) & &\pm 1,381 (\text{syst.})\,\text{GeV} \\
-\lambda &= -0,03473 & &\pm 0,00070 (\text{stat.}) & &\pm 0,00208 (\text{syst.}) \ .
+E_{Low}/E_{High} &= 6,4 & &\pm 0,3 (\text{stat.}) & &\pm 0,8 (\text{syst.}) \ , \\
+\overline{E_T} &= 53 & &\pm 1 (\text{stat.}) & &\pm 1 (\text{syst.})\,\text{GeV} \ , \\
+\lambda &= -0,0347 & &\pm 0,0007 (\text{stat.}) & &\pm 0,0020 (\text{syst.}) \ .
 \end{alignat*}
-Die untersuchten Systematiken haben mit 13,1\% den größten Einfluss auf die 2-Bin-Analyse, die Analyse des Schwerpunktes der $E_T$-Verteilung wird mit 2,57\% am wenigsten von den systematischen Unsicherheiten beeinflusst. Sie ist hinsichtlich der Systematiken die beste Methode, zwischen den verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden.
+Die 2-Bin-Analyse wird mit 13,1\% am stärksten von den untersuchten Systematiken beeinflusst, während die Analyse des Schwerpunktes der $E_T$-Verteilung mit 2,57\% am robustesten ist. Sie ist daher hinsichtlich der Systematiken die beste Methode, zwischen den verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden.

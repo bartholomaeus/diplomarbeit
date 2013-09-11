@@ -65,7 +65,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeldate</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
@@ -117,15 +117,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortscheme</bcf:key>
-      <bcf:value>nyt</bcf:value>
+      <bcf:value>none</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useauthor</bcf:key>
@@ -598,30 +598,7 @@
   <bcf:sorting>
     <bcf:presort>mm</bcf:presort>
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
-      <bcf:sortitem order="2">0000</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sorting>
   <!-- DATA MODEL -->
@@ -1967,12 +1944,12 @@
     <bcf:citekey order="7">Berger:Teilchen</bcf:citekey>
     <bcf:citekey order="8">CMS:Higgs</bcf:citekey>
     <bcf:citekey order="9">ATLAS:Higgs</bcf:citekey>
-    <bcf:citekey order="10">Kuessel:Diplom</bcf:citekey>
-    <bcf:citekey order="11">Kuessel:Diplom</bcf:citekey>
-    <bcf:citekey order="12">Koba:CPV</bcf:citekey>
-    <bcf:citekey order="13">CDF:Top</bcf:citekey>
-    <bcf:citekey order="14">D0:Top</bcf:citekey>
-    <bcf:citekey order="15">PAS:TopMass</bcf:citekey>
+    <bcf:citekey order="10">Koba:CPV</bcf:citekey>
+    <bcf:citekey order="11">CDF:Top</bcf:citekey>
+    <bcf:citekey order="12">D0:Top</bcf:citekey>
+    <bcf:citekey order="13">PAS:TopMass</bcf:citekey>
+    <bcf:citekey order="14">Kuessel:Diplom</bcf:citekey>
+    <bcf:citekey order="15">Kuessel:Diplom</bcf:citekey>
     <bcf:citekey order="16">Kidonakis:Cross</bcf:citekey>
     <bcf:citekey order="17">Heinson:Diagrams</bcf:citekey>
     <bcf:citekey order="18">Heinson:Diagrams</bcf:citekey>
@@ -2062,5 +2039,6 @@
     <bcf:citekey order="102">Frixione:MCatNLO</bcf:citekey>
     <bcf:citekey order="103">Frixione:MCatNLO</bcf:citekey>
     <bcf:citekey order="104">Tholen:AN</bcf:citekey>
+    <bcf:citekey order="105">Tholen:AN</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

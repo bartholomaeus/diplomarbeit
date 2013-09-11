@@ -25,7 +25,7 @@ Die Rekonstruktion untersucht diese Signaturen, um Rückschlüsse auf die erzeugte
 Myonen können vom CMS-Detektor konstruktionsbedingt überaus präzise detektiert werden \cite{CMS:TDR1}. Myonen sind geladene Teilchen, ihre Spur ist demnach im Tracker gekrümmt und sie hinterlassen in jedem weiteren Subdetektor eine spezifische Signatur, die zur Rekonstruktion genutzt werden kann. Ein hochenergetisches Myon verliert in den Kalorimetern nur wenig Energie und erzeugt ab einer Energie von 4\,GeV Einträge im Myonsystem. Die Algorithmen der Rekonstruktionssoftware kombinieren die Informationen des Trackers und des Myonsystems und profitiert so von der speziellen Myon-Signatur. Es wird zwischen \enquote{standalone muons}, die ausschließlich anhand von Informationen des Myonsystems rekonstruiert werden, und \enquote{global muons}, die aus der Kombination von Spurdetektor und Myonkammern gebildet werden, unterschieden. \\
 Als Startwert für die Erzeugung von standalone muons dienen zum einen die Myonen, welche vom L1-Trigger rekonstruiert wurden, zum anderen Regionen erhöhter Aktivität im Myonsystem. In den umliegenden Myonkammern wird dann nach charakteristischen Einträgen gesucht, die eine Spur bilden könnten. Schließlich wird ein Kalman-Filter angewendet \cite{Kalman:Filter}. Zunächst von innen nach außen, dann von außen nach innen, wird ein iterativer Fit der Spur in den einzelnen Detektorlagen durchgeführt. Die Spurparameter der Ausgangsspur werden dabei in die jeweils nächste Ebene der Myonkammern projiziert. Wenn das $\chi^2/ndf$ des Fits größer ist als ein Maximalwert von 25 oder nicht mindestens zwei Einträge der Anpassung in den Myonkammern verwendet wurden, davon mindestens einer in den Driftkammern oder Kathodenstreifenkammern, wird die Spur verworfen. Als letzte Forderung an die Myonspur wird gestellt, dass sie aus dem Wechselwirkungspunkt stammen muss, der in den Fit mit einbezogen wird. So wird die Impulsauflösung des Myons verbessert und gegen kosmische Myonen gefiltert. Die Teilchenspuren in den inneren Spurdetektoren werden auf eine ähnliche Weise mittels eines Kalman-Filters rekonstruiert \cite{Adam:Reco}. Wie im Myonsystem wird hier ausgehend von einem Startpunkt in der nächsten Detektorlage nach einem Eintrag gesucht, der dann in den Fit einbezogen wird. In den Spurdetektoren finden sich jedoch aufgrund der hohen Teilchenrate mehrere passende Einträge. Diese werden parallel verarbeitet, und nur die besten fünf Spuren werden nach jedem Schritt nicht verworfen. Als weitere Forderung müssen mindestens fünf Einträge in den einzelnen Lagen des Trackers Verwendung finden. Die so von außen nach innen rekonstruierte Spur wird auch hier noch einmal in Richtung des Strahlrohres gefittet. \\
 Um ein globales Myon zu rekonstruieren, werden Spuren aus dem Myonsystem mit Spuren der inneren Spurdetektoren kombiniert. Dabei geht man von einem bereits rekonstruierten standalone muon aus und nutzt die rekonstruierten Spuren in den Spurkammern. Zunächst wird abhängig von Parametern des standalone muons wie Ort und Impuls ein Raumwinkelbereich definiert, aus dem innere Spuren berücksichtigt werden. Dieser Bereich ist rechteckig in der $\eta-\Phi-$Ebene. Dann werden die Tracker-Spuren und die Trajektorie des standalone muons auf eine gemeinsame Fläche in $\eta$ und $\Phi$ extrapoliert, auf der die Suche nach bester Übereinstimmung vorgenommen wird. Die Wahl dieser Fläche ist abhängig vom Myonimpuls. Auf der gemeinsamen Fläche werden nun unter Verwendung von örtlichen Diskriminatoren, die für hochenergetische Myonen besonders effektiv sind, sowie Impulsdiskriminatoren, die für die Auswahl niederenergetischer Myonen relevant sind, iterativ die besten Übereinstimmungen der Spuren gesucht. Im Allgemeinen bleiben durch diesen Schritt mehrere Tracker-Spuren übrig. Schließlich werden alle möglichen Paare von standalone muons und den ausgewählten Tracker-Spuren global gefittet. Bei mehreren möglichen Paarungen wird die ausgewählt, deren Fit das niedrigste $\chi^2/ndf$ aufweist. So wird aus jedem standalone muon maximal ein globales Myon gebildet. \\
-In Abbildung~\ref{fig:reco_eff_muon} und \ref{fig:reco_res_muon} ist ein Vergleich der Rekonstruktionseffizienz und der $q/p_T$-Auflösung, das ist ein Maß der Spurqualität und -krümmung, der \enquote{standalone} mit den globalen Myonen zu sehen. Die Rekonstruktionseffizienzen sind in $\left| \eta \right|$ vergleichbar, die $q/p_T$-Auflösung ist für globale Myonen um eine Größenordnung verbessert. Die verschlechterung der Effizienz in lokalen $\left| \eta \right|$-Bereichen ist durch Lücken zwischen den aktiven Detektorelementen verursacht, in den Übrigen Bereichen liegt die Effizienz zwischen 95 und 99\%.
+In Abbildung~\ref{fig:reco_eff_muon} und \ref{fig:reco_res_muon} ist ein Vergleich der Rekonstruktionseffizienz und der $q/p_T$-Auflösung, das ist ein Maß der Spurqualität und -krümmung, der \enquote{standalone} mit den globalen Myonen zu sehen. Die Rekonstruktionseffizienzen sind in $\left| \eta \right|$ vergleichbar, die $q/p_T$-Auflösung ist für globale Myonen um eine Größenordnung verbessert. Die Verschlechterung der Effizienz in lokalen $\left| \eta \right|$-Bereichen ist durch Lücken zwischen den aktiven Detektorelementen verursacht, in den Übrigen Bereichen liegt die Effizienz zwischen 95 und 99\%.
 
 \begin{figure}%
 \includegraphics[width=0.9\columnwidth]{bilder/reco_eff_muon}%
@@ -74,30 +74,24 @@ Als Jet wird eine Kollektion von verschiedenen Teilchen bezeichnet, die nur geri
 Für einen gegebenen Jet ist nicht eindeutig beantwortbar, welches Teilchen zum Jet gehört und welches nicht. Das Endergebnis der Messung wird jedoch von den Jeteigenschaften wie Energie und Richtung beeinflusst, und damit auch davon, ob ein Teilchen zum Jet gezählt wird oder nicht. Daher versucht man, die Jet-Algorithmen ständig zu optimieren, die aus den gegebenen Messwerten wie z.B. Kalorimetereinträgen Jets zu rekonstruieren. In dieser Analyse wird der sogenannte \enquote{anti-k$_T$-Algorithmus} verwendet, der im folgenden kurz erläutert wird: \\
 Der anti-k$_T$-Algorithmus basiert auf den sogenannten \enquote{Cluster}- oder Kombinationsalgorithmen, bei denen zunächst für jedes Teilchen- bzw. Protojetpaar ein Abstandsmaß berechnet wird. Die Viererimpulse der Teilchen mit dem kleinsten Abstand werden zu einem Protojet aufaddiert, dieser wird zur Kollektion hinzugefügt und die beiden ursprünglichen Objekte entfernt. Dies wird so lange wiederholt, bis eine Abbruchbedingung erfüllt ist. Der Jet gilt dann als komplett rekonstruiert und wird aus der Kollektion entfernt. \\
 Als Abstandsmaß zwischen den Objekten $i$ und $j$ wird ein mit den Impulsen gewichteter Winkelabstand
-
 \begin{equation}
 d_{ij} = \text{min}\left(k_{Ti}^{-2},k_{Tj}^{-2}\right)\frac{\Delta_{ij}^2}{\rho^2}
 \end{equation}
-
 verwendet, mit $\Delta_{ij}^2=\left(y_i-y_j\right)^2+\left(\Phi_i-\Phi_j\right)^2$. Hier bezeichnet $k_T$ den Transversalimpuls, $\Phi$ den Azimuthalwinkel und $y$ die Rapidität. Die Abbruchbedingung wird mittels
-
 \begin{equation}
 d_{i,Beam}=k_{Ti}^{-2}
 \end{equation}
-
 bestimmt. Wenn $d_{i,Beam}$ kleiner ist als jedes $d_{ij}$, ist diese erfüllt. Der Radiusparameter $\rho$, der das Abbruchkriterium mitdefiniert, ist in dieser Analyse auf $\rho = 0.5$ festgelegt. \\
 Der anti-k$_T$-Algorithmus ist sicher gegenüber niederenergetischen Teilchen und gegen kollineare Abstrahlungen \cite{Cacciari:Antikt}. Zunächst werden die hochenergetischen Teilchen zu einem Jet kombiniert. Dies wird durch den negativen Exponenten in der Impulsgewichtung erreicht. Danach erst werden alle weichen Objekte im Abstand $2\rho$ hinzugefügt. Sie haben keinen Einfluss auf die Form der Jets. Die Wahrscheinlichkeit, einen Jet aus vielen weichen Objekten zu bilden, wird dadurch sehr gering und auch die Wahrscheinlichkeit, dass durch ein zusätzliches weiches Objekt ein harter Bestandteil einem anderen Jet zugeordnet wird, wird gegenüber anderen Jet-Algorithmen deutlich verringert.
 
 \subsection{B-Tag}
 
 Die aus dem Zerfall des Top-Quark-Paares entstehenden zwei b-Quarks können aufgrund ihrer langen Lebensdauer hadronische Zustände bilden, die wiederum schwach zerfallen. Ein solcher Zerfall ist in der CKM-Matrix stark unterdrückt, die b-Hadronen sind daher relativ langlebig und zerfallen überwiegend in c-Quarks, weniger häufig in Leptonen und u-Quarks. Somit hat die Signatur eines b-Jets drei charakteristische Eigenschaften, die für seine Identifizierung genutzt werden können \cite{Saout:BTag}:
-
 \begin{itemize}
 	\item Es existiert eine große Anzahl an deplatzierten Spuren.
 	\item Die deplatzierten Spuren treffen sich in einem Sekundärvertex.
 	\item Ein Großteil der Jet-Energie wird vom b-Hadron getragen.
 \end{itemize}
-
 Es wurden diverse Algorithmen entwickelt, um b-Quarks zu identifizieren. In dieser Analyse wird ein sogenannter \enquote{combined secondary vertex b-tag with medium operation point} (CSVM) benutzt. Dieser führt eine Wahrscheinlichkeitsanalyse aufgrund von neun spurbasierten Parametern durch. Dieser Algorithmus liefert auch dann ein Ergebnis, wenn kein Sekundärvertex rekonstruiert werden kann, indem er einen \enquote{Pseudo-Vertex} benutzt. Nähere Informationen hierzu liefert \cite{CMS:BTag}.
 
 \section{Selektion}
@@ -107,28 +101,24 @@ Es wurden diverse Algorithmen entwickelt, um b-Quarks zu identifizieren. In dies
 \label{sec:vorselektion}
 
 Um die $t\overline{t}$-Ereignisse von den in Abschnitt \ref{sec:top_untergrund} beschriebenen Untergründen zu trennen, wird eine Vorselektion der Top-Paar-Ereignisse durchgeführt. Diese orientiert sich an der Referenzselektion des CMS-Experiments \cite{Kuessel:Doktor}. Die einzelnen Schritte werden im folgenden beschrieben.
-
 \begin{description}
   \item[HL Trigger] Es wird der High-Level-Trigger mit dem Pfad HLT\_IsoMu24 benutzt. Dieser verlangt ein Myon mit einem Transversalimpuls von mindestens 24\,GeV und einer Isolation von $\Delta R < 0,24$. Die Lage der Trigger-sensitiven Myondetektoren schränkt den $\eta$-Bereich des Myons ein auf $\left|\eta\right|<2,1$.
   \item[Primärvertex] Der Vertex mit der höchsten skalaren Summe der Transversalimpulse wird Primärvertex genannt. Spuren von Teilchen, die auf andere Vertizes zeigen, werden als Pile-Up behandelt und nicht weiter berücksichtigt. Der Primärvertex muss vier Freiheitsgrade besitzen und innerhalb von $\left|z\right|<24$\,cm bzw. $\rho<2$\,cm vom Interaktionspunkt liegen.
   \item[Hochenergetisches Myon] Ein hochenergetisches, gut isoliertes Myon muss im Ereignis enthalten sein. Isolationsvariablen sind skalare Summen von transversalen Energien oder Impulsen von Teilchen in einem bestimmten Abstand vom Myon. Die relative Isolation $relIso$ ist hier definiert durch
-
 \begin{equation}
 \text{relIso}=\frac{\text{photonIso}+\text{hadronIso}}{p_T}\ ,
 \end{equation}
-
 dabei bezeichnet photonIso (hadronIso) die skalare Summe der transversalen Energie (des transversalen Impulses) aller Photonen (Hadronen) innerhalb eines Kegels von $\Delta R < 0,4$. Es wird ein Wert von $\text{relIso} < 0,125$ verlangt, weiterhin muss der Abstand zu Jets in der $\eta-\Phi$-Ebene $\Delta R > 0,3$ sein. Das Myon muss ein globales Myon sein mit $\chi^2<10$ im globalen Fit (vgl. dazu auch die Myon-Rekonstruktion in Abschnitt \ref{sec:Reco_Myon}). Um kosmische Myonen auszuschließen, wird ein maximaler Abstand zwischen der Myonspur und dem Primärvertex in der Transversalebene von $\Delta z<5$\,mm und $\rho<0,2$\,mm verlangt.
   \item[Jets] Es müssen mindestens vier Jets in der instrumentierten Region des Spurdetektors $\left|\eta\right|<2,4$ vorhanden sein, deren transversaler Impuls jeweils größer als 30\,GeV sein muss. Der Jet muss aus mindestens zwei Elementen bestehen, von denen mindestens eines geladen ist. Als eine weitere Forderung müssen die elektromagnetischen bzw. hadronischen Energieanteile kleiner als 99\% sein, um fälschlich als Jets rekonstruierte Photonen bzw. Pionen zu vermeiden.
   \item[Veto auf Elektron] Ereignisse, in denen ein Elektron mit $E_T>15$\,GeV und $\text{relIso}<0,2$ im Bereich $\left|\eta\right|<2,5$ werden verworfen, um dileptonische Top-Paar-Ereignisse zu unterdrücken.
   \item[Veto auf zweites Myon] Es wird gefordert, dass sich neben dem hochenergetischen Myon kein weiteres Myon mit $p_T>10$\,GeV, $\left|\eta\right|<2,5$ und $\text{relIso}<0,2$ im Ereignis befindet, um Ereignisse aus Z-Untergründen auszuschließen.
   \item[b-Tag] Mindestens einer der oben erwähnten Jets muss b-artig sein. Dazu wird ein sogenannter \enquote{combined secondary vertex} Algorithmus verwendet mit einem Diskriminator von $\text{CSVM}>0,679$.
 \end{description}
-
 Es ergibt sich ein Signal-zu-Untergrund-Verhältnis von $S/B = 2,24$ und eine Selektionseffizienz von $\epsilon_{t\overline{t}} = 2,8\%$. Die Hauptuntergrundprozesse sind W+jets Ereignisse sowie Ereignisse mit einzelnen Top-Zerfällen.
 
 \subsection{Photon matching}
 
-Das sogenannte \enquote{matching} bezeichnet die Zuordnung von rekonstruierten Teilchen zu generierten Monte Carlo Objekten. Für jeden rekonstruierten Photonkandidaten wird die Kollektion der Generatorteilchen nach Photonen durchsucht. Ein generiertes Photon wird dem rekonstruierten Photon zugeordnet, wenn es in einem Kegel von $\Delta R < 0,2$ liegt und die Energiedifferenz $\Delta E$ kleiner als die doppelte ECAL Energieauflösung bei der Energie des generierten Photons. Wenn bei diesert Prozedur Ambiguitäten auftreten, wird das Photon mit dem kleinsten $\Delta R$ ausgewählt. Abbildung~\ref{fig:matching} zeigt die $\Delta R$- bzw. $\Delta E/E$-Verteilungen zwischen rekonstruierten und generierten Photonen. \\
+Das sogenannte \enquote{matching} bezeichnet die Zuordnung von rekonstruierten Teilchen zu generierten Monte Carlo Objekten. Für jeden rekonstruierten Photonkandidaten wird die Kollektion der Generatorteilchen nach Photonen durchsucht. Ein generiertes Photon wird dem rekonstruierten Photon zugeordnet, wenn es in einem Kegel von $\Delta R < 0,2$ liegt und die Energiedifferenz $\Delta E$ kleiner als die doppelte ECAL Energieauflösung bei der Energie des generierten Photons. Wenn bei dieser Prozedur Ambiguitäten auftreten, wird das Photon mit dem kleinsten $\Delta R$ ausgewählt. Abbildung~\ref{fig:matching} zeigt die $\Delta R$- bzw. $\Delta E/E$-Verteilungen zwischen rekonstruierten und generierten Photonen. \\
 Ein weiteres interessantes Kriterium ist die Migration der Energien von generierten und rekonstruierten Photonen. In Abbildung~\ref{fig:migration} ist aufgetragen, wie sich die Energie der generierten Photonen zur Energie der damit assoziierten rekonstruierten Photonkandidaten verhält. Hier sind nur wenige Migrationseffekte zu verzeichnen, die Energie der Photonen wird in der Rekonstruktion gut abgebildet. 
 
 \begin{figure}%
@@ -172,7 +162,6 @@ Während der Photon-Selektion werden vor jedem Schnitt Kontrollplots erstellt, we
 	\item[$\Delta R$(Photon, Jet)] Der Jet-Algorithmus bezieht sehr oft Photonen in die rekonstruierten Jets ein. Deshalb werden alle Photonen im Bereich von $0,15<\Delta R(\gamma,\text{jet})<0,5$ nicht berücksichtigt, die obere Ausschlussgrenze repräsentiert dabei den Jet-Radius von $\Delta R_{kt}=0,5$. Photon-Kandidaten innerhalb von $\Delta R < 0,15$ werden im nächsten Schnitt gesondert behandelt.
 	\item[Verhältnis von $E_{T,\gamma}$ zu $p_{T,Jet}$] Photonen im Bereich von $\Delta R < 0,15$ werden hinsichtlich des Verhältnisses von transversaler Energie des Photons zum transversalen Impuls des Jets weiter untersucht. Es wird angenommen, dass sich die Jets in diesem Bereich hauptsächlich aus dem Photon und niederenergetischer hadronischer Aktivität zusammensetzen, und dass die Photonen, bei denen der Einfluss der hadronischen Aktivität die präzise Messung des ECAL beeinträchtigt, von den weiter unten besprochenen Photon-Identifikationsschnitten weitestmöglich herausgefiltert werden. Photon-Kandidaten mit einem Verhältnis von $E_{T,\gamma}/p_{T,Jet}>75\%$ werden akzeptiert.
 \end{description}
-
 \begin{figure}%
 \centering
 \begin{subfigure}[b]{0.48\textwidth}
@@ -190,7 +179,6 @@ Während der Photon-Selektion werden vor jedem Schnitt Kontrollplots erstellt, we
 \begin{description}
   \item[\enquote{pixel seed} Veto] Das Photon darf keinen \enquote{track seed} im Pixeldetektor haben.
 	\item[Spurisolation] Die \enquote{Hollow Cone Track Isolation} $\Sigma_{trk}$ addiert den transversalen Impuls der Spuren im Siliziumspurdetektor in einem Kegel von $0,04<\Delta R<0,4$. Dieser Kegel ist hohl, um Photonen aus Paarerzeugung zu erlauben. Photonen in einem Bereich von $\Sigma_{trk}<2,0+0,001\cdot E_T/GeV$ werden akzeptiert.
-	
 \begin{figure}%
 \centering
 \begin{subfigure}[b]{0.48\textwidth}
@@ -202,30 +190,23 @@ Während der Photon-Selektion werden vor jedem Schnitt Kontrollplots erstellt, we
 \caption{Links: Spur-Isolations-Verteilung des Photons. Forderung: $\Sigma_{trk} < 2,0 + 0,001\cdot E_T$. Rechts: ECAL-Isolations-Verteilung des Photons. Forderung: $\Sigma_{ECAL} < 4,2 + 0,006\cdot E_T$.}%
 \label{fig:hollowconetrackiso_jurassicecaliso}%
 \end{figure}
-		
-	\item[ECAL Isolation] Die \enquote{Jurassic ECAL Isolation} $\Sigma_{ECAL}$ ist ein Hohlkegel mit $0,06<\Delta R<0,4$. Zusätzlich wird ein rechteckiger Bereich mit den Abmessungen $\Delta \eta \times \Delta \Phi =0,04\times 0,4$ um die Richtung des Photons nicht für die Berechnung der Isolation hinzugezogen, siehe Abb. \ref{fig:jurassic_ecal}. Dieser Schnitt fordert einen Wert von $\Sigma_{ECAL}<4,2+0,006\cdot E_T/GeV$
-	
+	\item[ECAL Isolation] Die \enquote{Jurassic ECAL Isolation} $\Sigma_{ECAL}$ ist ein Hohlkegel mit \protect\linebreak{$0,06<\Delta R<0,4$}. Zusätzlich wird ein rechteckiger Bereich mit den Abmessungen $\Delta \eta \times \Delta \Phi =0,04\times 0,4$ um die Richtung des Photons nicht für die Berechnung der Isolation hinzugezogen, siehe Abb. \ref{fig:jurassic_ecal}. Dieser Schnitt fordert einen Wert von $\Sigma_{ECAL}<4,2+0,006\cdot E_T/GeV$
 \begin{figure}%
 \centering
 \includegraphics[width=0.3\columnwidth]{bilder/jurassic_ecal}%
 \caption{Skizze zur \enquote{Jurassic ECAL Isolation}. Der zentrale Bereich wird für die Berechnung der Isolation nicht berücksichtigt. \cite{Tholen:Master}.}%
 \label{fig:jurassic_ecal}%
 \end{figure}	
-	
-	\item[HCAL Isolation] Die \enquote{Tower-based HCAL Isolation} $\Sigma_{HCAL}$ summiert über die deponierte Energie in allen HCAL towers innerhalb $\Delta R<0,4$ auf, dabei werden die towers hinter angesprochenen ECAL Clustern nicht berücksichtigt, mit diesen befasst sich der nächste Schritt. Die Photonen müssen die Forderung $\Sigma_{HCAL}<2,2+0,0025\cdot E_T/GeV$ erfüllen.
+	\item[HCAL Isolation] Die \enquote{Tower-based HCAL Isolation} $\Sigma_{HCAL}$ summiert über die deponierte Energie in allen HCAL towers innerhalb $\Delta R<0,4$ auf, dabei werden die towers hinter angesprochenen ECAL Clustern nicht berücksichtigt, mit diesen befasst sich der nächste Schritt. Die Photonen müssen die Forderung \protect\linebreak{$\Sigma_{HCAL}<2,2+0,0025\cdot E_T/GeV$} erfüllen.
 	\item[Verhältnis HCAL/ECAL] Die Energiedeposition in HCAL towers hinter den zugehörigen ECAL Clustern darf maximal 5\% sein.
 	\item[Weite des Superclusters] $\sigma_{i\eta i\eta}$ bezeichnet die Energie-gewichtete Aufspreizung des ECAL Superclusters in Richtung von $\eta$. Diese ist wie folgt definiert:
-	
 \begin{equation}
 \sigma_{i\eta i\eta}=\left(\frac{\sum(\eta_i-\overline{\eta})^2\omega_i}{\sum \omega_i}\right)^{1/2} \ ; \ \overline{\eta}=\frac{\sum \eta_i\omega_i}{\sum \omega_i} \ ; \ \omega_i=\text{max}\left(0;4,7+log\frac{E_i}{E_{5\times 5}}\right) \ .
 \end{equation}	
-
 Hier ist $E_i$ die in einem einzelnen ECAL-Kristall deponierte Energie und $E_{5\times 5}$ die Summe der Energiedepositionen in einem Cluster von 5 $\times$ 5 Kristallen um den höchste Energieeintrag herum. Photonen aus dem harten Prozess haben eine kleinere Schauerweite im ECAL als missidentifizierte Photonen. Die Forderung an die Schauerweite ist $\sigma_{i\eta i\eta}<0,011$ im Bereich von $\left|\eta\right|<1,5$ und $\sigma_{i\eta i\eta}<0,03$ für $\left|\eta\right|>1,5$.
-
 \end{description}
-
-Im allgemeinen zeigen die Schnittvariablen eine gute Übereinstimmung in der Form der Verteilung zwischen Daten- und Monte-Carlo-Ereignissen. Das Signal-zu-Untergrund-Verhältnis der $t\overline{t} + \gamma$-Selektion liegt bei $S/B = 0,53$, die Selektionseffizienz beträgt $\epsilon_{\gamma} = 23\%$. 134 Ereignisse aus experimentellen Daten werden selektiert. \\
-Abbildung \ref{fig:cutflow} zeigt den sogenannten \enquote{cutflow} der Photon-Selektion für das $d_A^{\gamma} = 0$-Szenario. Er beschreibt den Verlauf der Selektion für Monte-Carlo- und Datenereignisse. Die Ereignisse aus Monte-Carlo-Simulationen sind hier auf die integrierte Luminosität der experimentellen Daten normiert. Man erkennt, dass vor der Photon-Selektion durch Monte-Carlo-Simulationen mehr Ereignisse vorhergesagt werden als in experimentellen Daten aufgezeichnet wurden. Nach der Selektion sind jedoch mehr Datenereignisse vorhanden wie vorhergesagt. Der Übergang vom Monte-Carlo Überschuss zu einem Monte-Carlo Defizit findet im Selektionsschritt \enquote{Verhältnis von $E_{T,\gamma}$ zu $p_{T,Jet}$} statt. Dies weist auf eine Diskrepanz zwischen Monte-Carlo-Simulation und experimentellen Daten hin, die in weiteren Studien näher untersucht werden sollte. Eine mögliche Ursache für diese Diskrepanz könnte beispielsweise die Jet-Simulation oder das angewandte Hadronisierungsmodell sein. Der Fokus dieser Analyse liegt jedoch weniger auf der Messung der totalen Rate, also des Wirkungsquerschnittes, sondern auf der Analyse der $E_T$-Verteilung. Diese ist jedoch weitestgehend unabhängig von der Normierung, siehe Abbildung \ref{fig:eta_et} rechts.\\
+Im allgemeinen zeigen die Schnittvariablen eine gute Übereinstimmung in der Form der Verteilung zwischen Daten- und Monte-Carlo-Ereignissen. Das Signal-zu-Untergrund-Verhältnis der $t\overline{t} + \gamma$-Selektion liegt bei $S/B = 0,53$, die Selektionseffizienz beträgt \protect\linebreak{$\epsilon_{\gamma} = 23\%$}. 134 Ereignisse aus experimentellen Daten werden selektiert. \\
+Abbildung \ref{fig:cutflow} zeigt den sogenannten \enquote{cutflow} der Photon-Selektion für das \protect\linebreak{$d_A^{\gamma} = 0$}-Szenario. Er beschreibt den Verlauf der Selektion für Monte-Carlo- und Datenereignisse. Die Ereignisse aus Monte-Carlo-Simulationen sind hier auf die integrierte Luminosität der experimentellen Daten normiert. Man erkennt, dass vor der Photon-Selektion durch Monte-Carlo-Simulationen mehr Ereignisse vorhergesagt werden als in experimentellen Daten aufgezeichnet wurden. Nach der Selektion sind jedoch mehr Datenereignisse vorhanden wie vorhergesagt. Der Übergang vom Monte-Carlo Überschuss zu einem Monte-Carlo Defizit findet im Selektionsschritt \enquote{Verhältnis von $E_{T,\gamma}$ zu $p_{T,Jet}$} statt. Dies weist auf eine Diskrepanz zwischen Monte-Carlo-Simulation und experimentellen Daten hin, die in weiteren Studien näher untersucht werden sollte. Eine mögliche Ursache für diese Diskrepanz könnte beispielsweise die Jet-Simulation oder das angewandte Hadronisierungsmodell sein. Der Fokus dieser Analyse liegt jedoch weniger auf der Messung der totalen Rate, also des Wirkungsquerschnittes, sondern auf der Analyse der $E_T$-Verteilung. Diese ist jedoch weitestgehend unabhängig von der Normierung, siehe Abbildung \ref{fig:eta_et} rechts.\\
 Die gesamte Selektionseffizienz beträgt für Monte-Carlo-Ereignisse $\epsilon_{\gamma}^{ges, MC} \approx 0,42\%$ und für experimentell aufgezeichnete Daten $\epsilon_{\gamma}^{ges, Data} \approx 0,61\%$. 
 
 

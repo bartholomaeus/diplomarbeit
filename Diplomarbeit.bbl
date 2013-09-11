@@ -96,6 +96,12 @@ Johan~Alwall et~al.
 \newblock A standard format for les houches event files.
 \newblock {\em Computer Physics Communications}, 176(4):300--304, 2007.
 
+\bibitem{Collins:Drell-Yan}
+John C.~Collins et~al.
+\newblock Transverse {M}omentum {D}istribution in {D}rell-{Y}an {P}air and {W}
+  and {Z} {B}oson {P}roduction.
+\newblock {\em Nuclear Physics B}, 250(1):199--224, 1985.
+
 \bibitem{Pumplin:CTEQ}
 Jonathan~Pumplin et~al.
 \newblock New {G}eneration of {P}arton {D}istributions with {U}ncertainties
@@ -107,6 +113,11 @@ M.~Kobayashi et~al.
 \newblock {CP}-{V}iolation in the {R}enormalizable {T}heory of weak
   interaction.
 \newblock {\em Progress of {T}heoretical {P}hysics}, 49(2):652--657, 1973.
+
+\bibitem{Cacciari:Antikt}
+Matteo~Cacciari et~al.
+\newblock The anti-k t {j}et {c}lustering {a}lgorithm.
+\newblock {\em Journal of High Energy Physics}, 2008 04:063--063, 2008.
 
 \bibitem{LHC:Design1}
 Oliver~Brüning et~al.
@@ -126,6 +137,13 @@ S.~Agostinelli et~al.
   Accelerators, Spectrometers, Detectors, and Associated Equipment},
   506(3):250--303, 2003.
 
+\bibitem{Alioli:POWHEG}
+Simone~Alioli et~al.
+\newblock {NLO} single-top production matched with shower in {POWHEG}: s- and
+  t-channel contributions.
+\newblock {\em Journal of High Energy Physics}, 0909:111; Erratum ibid.
+  1002:011, 2009.
+
 \bibitem{Baffioni:Reco}
 Stephanie~Baffioni et~al.
 \newblock Electron {R}econstruction in {CMS}.
@@ -136,6 +154,11 @@ The~{CMS}Collaboration et~al.
 \newblock Particle-flow {E}vent {R}econstruction in {CMS} and {P}erformance for
   {J}ets, {T}au and {MET}.
 \newblock Technical Report PAS-PFT-09-001, CERN, 2009.
+
+\bibitem{Sjostrand:PYTHIA}
+Torbjörn~Sjöstrand et~al.
+\newblock {PYTHIA} 6.4 {P}hysics and {M}anual.
+\newblock {\em Journal of High Energy Physics}, 0605:026, 2006.
 
 \bibitem{Adam:Reco}
 Wolfgang~Adam et~al.
@@ -170,12 +193,6 @@ Peter Higgs.
 \newblock Broken {S}ymmetries and the {M}ass of {G}auge {B}osons.
 \newblock {\em Phys. Rev. Lett.}, 13(16):508--509, 1964.
 
-\bibitem{Collins:Drell-Yan}
-Davison E. Soper und George~Sterman John C.~Collins.
-\newblock Transverse {M}omentum {D}istribution in {D}rell-{Y}an {P}air and {W}
-  and {Z} {B}oson {P}roduction.
-\newblock {\em Nuclear Physics B}, 250(1):199--224, 1985.
-
 \bibitem{Kalman:Filter}
 Rudolph~Emil Kalman.
 \newblock A {N}ew {A}pproach to {L}inear {F}iltering and {P}rediction
@@ -200,11 +217,6 @@ Yvonne Kuessel.
   experiment}.
 \newblock Doktorarbeit, III. Physikalisches Institut B, RWTH Aachen, 2012.
 
-\bibitem{Cacciari:Antikt}
-Gavin P. Salam und Gregory~Soyez Matteo~Cacciari.
-\newblock The anti-k t {j}et {c}lustering {a}lgorithm.
-\newblock {\em Journal of High Energy Physics}, 2008 04:063--063, 2008.
-
 \bibitem{Re:POWHEG}
 Emanuele Re.
 \newblock Single-top {W}t-channel production matched with parton showers using
@@ -217,13 +229,6 @@ Cristophe Saout.
 \newblock {\em Helmholtz Alliance Workshop, Detector Understanding with First
   LHC Data}, 2009.
 
-\bibitem{Alioli:POWHEG}
-Carlo Oleari und Emanuele~Re Simone~Alioli, Paolo~Nason.
-\newblock {NLO} single-top production matched with shower in {POWHEG}: s- and
-  t-channel contributions.
-\newblock {\em Journal of High Energy Physics}, 0909:111; Erratum ibid.
-  1002:011, 2009.
-
 \bibitem{Frixione:MCatNLO}
 Fabian Stoeckli et~al. Stefano~Frixione.
 \newblock The {MC@NLO} 4.0 {E}vent {G}enerator.
@@ -234,11 +239,6 @@ Heiner Josef~Antonius Tholen.
 \newblock Study of the {I}nclusive $t\overline{t} + \gamma$ {C}ross {S}ection
   with the {CMS} {E}xperiment.
 \newblock Masterarbeit, III. Physikalisches Institut B, RWTH Aachen, 2012.
-
-\bibitem{Sjostrand:PYTHIA}
-Stephen~Mrenna Torbjörn~Sjöstrand and Peter Skands.
-\newblock {PYTHIA} 6.4 {P}hysics and {M}anual.
-\newblock {\em Journal of High Energy Physics}, 0605:026, 2006.
 
 \bibitem{Melnikov:GaugeBoson}
 Kirill~Melnikov und Frank~Petriello.
@@ -257,6 +257,11 @@ Hans~Bethe und Walter~Heitler.
 Zbigniew Was.
 \newblock Precision simulations with {TAUOLA} and {PHOTOS}.
 \newblock {\em Nucl. Phys. Proc. Suppl.}, 169:16--21, 2007.
+
+\bibitem{Weinberg:SM}
+Steven Weinberg.
+\newblock The {M}aking of the {S}tandard {M}odel.
+\newblock {\em European Physical Journal C}, 34(1):5--13, 2004.
 
 \bibitem{Fruehwirth:Reco}
 Rudolf Frühwirth et~al. Wolfgang~Adam.

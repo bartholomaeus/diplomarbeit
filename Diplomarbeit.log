@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  11 SEP 2013 02:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.7)  11 SEP 2013 14:57
 entering extended mode
 **Diplomarbeit.tex
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.tex
@@ -402,7 +402,7 @@ Package csquotes Info: ... found 'babel' package.
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/datenstudie.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/zusammenfassung.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/anhang.aux)
-(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/danksagung.aux))
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/erklaerung.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
@@ -479,9 +479,6 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/einleitung.tex
 Kapitel 1.
 
-LaTeX Warning: Citation `1' on page 1 undefined on input line 10.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
@@ -499,43 +496,49 @@ Kapitel 2.
 
 
 
-] [4] <bilder/gluonfusion-s-kanal.png, id=368, 206.74709pt x 134.47708pt>
+]
+Overfull \hbox (11.60622pt too wide) in paragraph at lines 63--65
+\OT1/cmr/m/n/12 Hier be-zeich-net $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 die Vie-re-rim-pul-se der je-wei-li-gen Teil-ch
+en. Ab-bil-dung []2.1[] zeigt die Feynman-
+ []
+
+[4] <bilder/gluonfusion-s-kanal.png, id=366, 206.74709pt x 134.47708pt>
 File: bilder/gluonfusion-s-kanal.png Graphic file (type png)
  <use bilder/gluonfusion-s-kanal.png>
-Package pdftex.def Info: bilder/gluonfusion-s-kanal.png used on input line 96.
+Package pdftex.def Info: bilder/gluonfusion-s-kanal.png used on input line 85.
 (pdftex.def)             Requested size: 184.28568pt x 119.873pt.
 
-<bilder/gluonfusion-t-kanal.png, id=369, 206.87288pt x 119.2455pt>
+<bilder/gluonfusion-t-kanal.png, id=367, 206.87288pt x 119.2455pt>
 File: bilder/gluonfusion-t-kanal.png Graphic file (type png)
  <use bilder/gluonfusion-t-kanal.png>
-Package pdftex.def Info: bilder/gluonfusion-t-kanal.png used on input line 102.
+Package pdftex.def Info: bilder/gluonfusion-t-kanal.png used on input line 91.
 (pdftex.def)             Requested size: 184.28568pt x 106.23186pt.
 
-<bilder/gluonfusion-u-kanal.png, id=370, 206.87288pt x 107.50162pt>
+<bilder/gluonfusion-u-kanal.png, id=368, 206.87288pt x 107.50162pt>
 File: bilder/gluonfusion-u-kanal.png Graphic file (type png)
  <use bilder/gluonfusion-u-kanal.png>
-Package pdftex.def Info: bilder/gluonfusion-u-kanal.png used on input line 109.
+Package pdftex.def Info: bilder/gluonfusion-u-kanal.png used on input line 98.
 (pdftex.def)             Requested size: 184.28568pt x 95.76962pt.
 
-<bilder/quark-annihilation.png, id=371, 206.3995pt x 127.94354pt>
+<bilder/quark-annihilation.png, id=369, 206.3995pt x 127.94354pt>
 File: bilder/quark-annihilation.png Graphic file (type png)
  <use bilder/quark-annihilation.png>
-Package pdftex.def Info: bilder/quark-annihilation.png used on input line 115.
+Package pdftex.def Info: bilder/quark-annihilation.png used on input line 104.
 (pdftex.def)             Requested size: 184.28568pt x 114.23834pt.
 
-<bilder/wirkungsquerschnitt.png, id=374, 394.05318pt x 474.80179pt>
+<bilder/wirkungsquerschnitt.png, id=372, 394.05318pt x 474.80179pt>
 File: bilder/wirkungsquerschnitt.png Graphic file (type png)
  <use bilder/wirkungsquerschnitt.png>
-Package pdftex.def Info: bilder/wirkungsquerschnitt.png used on input line 125.
+Package pdftex.def Info: bilder/wirkungsquerschnitt.png used on input line 114.
 (pdftex.def)             Requested size: 368.57838pt x 444.1258pt.
  [5]
-<bilder/kuchen.pdf, id=390, 796.9775pt x 597.23125pt>
+<bilder/kuchen.pdf, id=387, 796.9775pt x 597.23125pt>
 File: bilder/kuchen.pdf Graphic file (type pdf)
  <use bilder/kuchen.pdf>
-Package pdftex.def Info: bilder/kuchen.pdf used on input line 148.
+Package pdftex.def Info: bilder/kuchen.pdf used on input line 133.
 (pdftex.def)             Requested size: 414.6463pt x 310.72606pt.
 
-Overfull \hbox (0.2226pt too wide) in paragraph at lines 156--158
+Overfull \hbox (0.2226pt too wide) in paragraph at lines 141--143
 \OT1/cmr/m/n/12 Wie oben be-schrie-ben er-laubt das Top-Quark ei-ne di-rek-te Un-ter-su-chung des Quark-Photon-
  []
 
@@ -543,106 +546,123 @@ Overfull \hbox (0.2226pt too wide) in paragraph at lines 156--158
 diplomarbeit/bilder/gluonfusion-t-kanal.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/gluonfusion-u-kanal
 .png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/quark-annihilation.png>] [7 <C:/Users/Markus_2/Documents/G
 itHub/diplomarbeit/bilder/wirkungsquerschnitt.png>] [8 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/kuchen.pd
-f>] <bilder/vertex1.png, id=423, 258.21469pt x 141.52875pt>
+f>] <bilder/vertex1.png, id=420, 258.21469pt x 141.52875pt>
 File: bilder/vertex1.png Graphic file (type png)
  <use bilder/vertex1.png>
-Package pdftex.def Info: bilder/vertex1.png used on input line 167.
+Package pdftex.def Info: bilder/vertex1.png used on input line 150.
 (pdftex.def)             Requested size: 184.28568pt x 101.01088pt.
 
-<bilder/vertex2.png, id=424, 260.47313pt x 137.7647pt>
+<bilder/vertex2.png, id=421, 260.47313pt x 137.7647pt>
 File: bilder/vertex2.png Graphic file (type png)
  <use bilder/vertex2.png>
-Package pdftex.def Info: bilder/vertex2.png used on input line 174.
+Package pdftex.def Info: bilder/vertex2.png used on input line 157.
 (pdftex.def)             Requested size: 184.28568pt x 97.46886pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
-[]\OT1/cmr/m/n/10.95 (b) |Mit ei-ner Schlei-fen-kor-rek-tur
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+[][]|\OT1/cmr/m/n/10.95 Mit ei-ner Schlei-fen-kor-rek-tur
  []
 
 ) [9 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/vertex1.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbe
-it/bilder/vertex2.png>] [10] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/detektor.tex
+it/bilder/vertex2.png>] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/detektor.tex [10
+
+
+
+]
 Kapitel 3.
-[11
 
+Underfull \vbox (badness 4279) has occurred while \output is active []
 
-
-] <bilder/lhc.png, id=452, 253.68245pt x 418.13358pt>
+ [11]
+<bilder/lhc.png, id=449, 253.68245pt x 418.13358pt>
 File: bilder/lhc.png Graphic file (type png)
  <use bilder/lhc.png>
-Package pdftex.def Info: bilder/lhc.png used on input line 27.
+Package pdftex.def Info: bilder/lhc.png used on input line 24.
 (pdftex.def)             Requested size: 184.28568pt x 303.76114pt.
 
-<bilder/lumi2012.png, id=460, 578.16pt x 433.62pt>
+<bilder/lumi2012.png, id=457, 578.16pt x 433.62pt>
 File: bilder/lumi2012.png Graphic file (type png)
  <use bilder/lumi2012.png>
-Package pdftex.def Info: bilder/lumi2012.png used on input line 63.
+Package pdftex.def Info: bilder/lumi2012.png used on input line 57.
 (pdftex.def)             Requested size: 322.50345pt x 241.87277pt.
 
-<bilder/intlumi2012.png, id=464, 578.16pt x 433.62pt>
+<bilder/intlumi2012.png, id=461, 578.16pt x 433.62pt>
 File: bilder/intlumi2012.png Graphic file (type png)
  <use bilder/intlumi2012.png>
-Package pdftex.def Info: bilder/intlumi2012.png used on input line 70.
+Package pdftex.def Info: bilder/intlumi2012.png used on input line 63.
 (pdftex.def)             Requested size: 322.50345pt x 241.87277pt.
 
-<bilder/detektor.png, id=468, 438.49214pt x 320.58647pt>
+Underfull \hbox (badness 4726) in paragraph at lines 64--64
+[][]|\OT1/cmr/m/n/12 Zeit-li-cher Ver-lauf der to-ta-len in-te-grier-ten Lu-mi-no-sitat am CMS-
+ []
+
+<bilder/detektor.png, id=465, 438.49214pt x 320.58647pt>
 File: bilder/detektor.png Graphic file (type png)
  <use bilder/detektor.png>
-Package pdftex.def Info: bilder/detektor.png used on input line 84.
+Package pdftex.def Info: bilder/detektor.png used on input line 77.
 (pdftex.def)             Requested size: 276.43555pt x 202.1124pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [12 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/lhc.png>] [13 <C:/Users/Markus_2/Documents/GitHub/diplomarb
 eit/bilder/lumi2012.png>] [14 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/intlumi2012.png>] [15 <C:/Users/Ma
-rkus_2/Documents/GitHub/diplomarbeit/bilder/detektor.png>] <bilder/halbleiterdetektor.png, id=500, 165.418pt x 145.343pt
+rkus_2/Documents/GitHub/diplomarbeit/bilder/detektor.png>] <bilder/halbleiterdetektor.png, id=497, 165.418pt x 145.343pt
 >
 File: bilder/halbleiterdetektor.png Graphic file (type png)
  <use bilder/halbleiterdetektor.png>
-Package pdftex.def Info: bilder/halbleiterdetektor.png used on input line 102.
+Package pdftex.def Info: bilder/halbleiterdetektor.png used on input line 95.
 (pdftex.def)             Requested size: 184.28568pt x 161.9314pt.
-
-[16 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/halbleiterdetektor.png>]
-<bilder/pixeldetektor.png, id=515, 289.08pt x 129.9951pt>
+ [16 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/halbleiterdetektor.png>]
+<bilder/pixeldetektor.png, id=512, 289.08pt x 129.9951pt>
 File: bilder/pixeldetektor.png Graphic file (type png)
  <use bilder/pixeldetektor.png>
-Package pdftex.def Info: bilder/pixeldetektor.png used on input line 122.
+Package pdftex.def Info: bilder/pixeldetektor.png used on input line 115.
 (pdftex.def)             Requested size: 322.50345pt x 145.03217pt.
 
-<bilder/streifendetektor.png, id=519, 423.88148pt x 249.10085pt>
+<bilder/streifendetektor.png, id=516, 423.88148pt x 249.10085pt>
 File: bilder/streifendetektor.png Graphic file (type png)
  <use bilder/streifendetektor.png>
-Package pdftex.def Info: bilder/streifendetektor.png used on input line 134.
+Package pdftex.def Info: bilder/streifendetektor.png used on input line 127.
 (pdftex.def)             Requested size: 322.50345pt x 189.52385pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [17 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/pixeldetektor.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 148.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 141.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
- [18 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/streifendetektor.png>]
-<bilder/kalorimeter.png, id=536, 424.30151pt x 246.62914pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
+ [18 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/streifendetektor.png>] <bilder/kalorimeter.png, id=532, 424
+.30151pt x 246.62914pt>
 File: bilder/kalorimeter.png Graphic file (type png)
- <use bilder/kalorimeter.png>
-Package pdftex.def Info: bilder/kalorimeter.png used on input line 174.
+
+<use bilder/kalorimeter.png>
+Package pdftex.def Info: bilder/kalorimeter.png used on input line 166.
 (pdftex.def)             Requested size: 460.72124pt x 267.80809pt.
  [19]
-<bilder/kalorimeter2.png, id=552, 424.19348pt x 251.61562pt>
+Underfull \vbox (badness 3690) has occurred while \output is active []
+
+ [20 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/kalorimeter.png>] <bilder/kalorimeter2.png, id=553, 424.193
+48pt x 251.61562pt>
 File: bilder/kalorimeter2.png Graphic file (type png)
  <use bilder/kalorimeter2.png>
-Package pdftex.def Info: bilder/kalorimeter2.png used on input line 186.
+Package pdftex.def Info: bilder/kalorimeter2.png used on input line 178.
 (pdftex.def)             Requested size: 460.72124pt x 273.28423pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1472) has occurred while \output is active []
 
- [20 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/kalorimeter.png>] [21 <C:/Users/Markus_2/Documents/GitHub/d
-iplomarbeit/bilder/kalorimeter2.png>] [22]
-<bilder/myonsystem.png, id=571, 413.99702pt x 263.23509pt>
+ [21 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/kalorimeter2.png>] <bilder/myonsystem.png, id=562, 413.9970
+2pt x 263.23509pt>
 File: bilder/myonsystem.png Graphic file (type png)
  <use bilder/myonsystem.png>
-Package pdftex.def Info: bilder/myonsystem.png used on input line 203.
+Package pdftex.def Info: bilder/myonsystem.png used on input line 195.
 (pdftex.def)             Requested size: 460.72124pt x 292.96158pt.
- [23 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/myonsystem.png>]) [24] (C:\Users\Markus_2\Documents\GitHub\
-diplomarbeit\kapitel/konzept.tex
+
+[22] [23 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/myonsystem.png>]) [24]
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/konzept.tex
 Kapitel 4.
-<bilder/signal.png, id=586, 193.86296pt x 180.14748pt>
+<bilder/signal.png, id=583, 193.86296pt x 180.14748pt>
 File: bilder/signal.png Graphic file (type png)
  <use bilder/signal.png>
 Package pdftex.def Info: bilder/signal.png used on input line 17.
@@ -652,168 +672,183 @@ Package pdftex.def Info: bilder/signal.png used on input line 17.
 
 
 ]
-<bilder/qcd.png, id=600, 194.2544pt x 171.23846pt>
+<bilder/qcd.png, id=597, 194.2544pt x 171.23846pt>
 File: bilder/qcd.png Graphic file (type png)
  <use bilder/qcd.png>
 Package pdftex.def Info: bilder/qcd.png used on input line 44.
 (pdftex.def)             Requested size: 184.28568pt x 162.4535pt.
 
-<bilder/w+jets.png, id=608, 1003.75pt x 872.25874pt>
+<bilder/w+jets.png, id=605, 1003.75pt x 872.25874pt>
 File: bilder/w+jets.png Graphic file (type png)
  <use bilder/w+jets.png>
 Package pdftex.def Info: bilder/w+jets.png used on input line 55.
 (pdftex.def)             Requested size: 184.28568pt x 160.14085pt.
 
-Underfull \vbox (badness 4353) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/signal.png>] [27 <C:/Users/Markus_2/Documents/GitHub/diplom
 arbeit/bilder/qcd.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/w+jets.png (PNG copy)>] <bilder/drellyan.
-png, id=627, 1003.75pt x 890.32625pt>
+png, id=624, 1003.75pt x 890.32625pt>
 File: bilder/drellyan.png Graphic file (type png)
 
 <use bilder/drellyan.png>
 Package pdftex.def Info: bilder/drellyan.png used on input line 66.
 (pdftex.def)             Requested size: 184.28568pt x 163.45793pt.
  [28 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/drellyan.png (PNG copy)>]
-<bilder/singletop_s.png, id=645, 147.4965pt x 98.55pt>
+<bilder/singletop_s.png, id=642, 147.4965pt x 98.55pt>
 File: bilder/singletop_s.png Graphic file (type png)
  <use bilder/singletop_s.png>
 Package pdftex.def Info: bilder/singletop_s.png used on input line 79.
 (pdftex.def)             Requested size: 138.21777pt x 92.35732pt.
 
-<bilder/singletop_t.png, id=646, 148.00203pt x 139.34694pt>
+<bilder/singletop_t.png, id=643, 148.00203pt x 139.34694pt>
 File: bilder/singletop_t.png Graphic file (type png)
  <use bilder/singletop_t.png>
 Package pdftex.def Info: bilder/singletop_t.png used on input line 86.
 (pdftex.def)             Requested size: 138.21777pt x 130.1356pt.
 
-<bilder/singletop_tW.png, id=647, 147.44371pt x 213.9063pt>
+<bilder/singletop_tW.png, id=644, 147.44371pt x 213.9063pt>
 File: bilder/singletop_tW.png Graphic file (type png)
  <use bilder/singletop_tW.png>
 Package pdftex.def Info: bilder/singletop_tW.png used on input line 93.
 (pdftex.def)             Requested size: 138.21777pt x 200.52686pt.
  [29 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/singletop_s.png> <C:/Users/Markus_2/Documents/GitHub/diplom
 arbeit/bilder/singletop_t.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/singletop_tW.png>]
-<bilder/isr_quark.png, id=657, 193.9879pt x 90.52768pt>
+<bilder/isr_quark.png, id=654, 193.9879pt x 90.52768pt>
 File: bilder/isr_quark.png Graphic file (type png)
  <use bilder/isr_quark.png>
 Package pdftex.def Info: bilder/isr_quark.png used on input line 109.
 (pdftex.def)             Requested size: 184.28568pt x 86.00078pt.
 
-<bilder/isr_gluon.png, id=658, 194.13217pt x 88.46844pt>
+<bilder/isr_gluon.png, id=655, 194.13217pt x 88.46844pt>
 File: bilder/isr_gluon.png Graphic file (type png)
  <use bilder/isr_gluon.png>
 Package pdftex.def Info: bilder/isr_gluon.png used on input line 116.
 (pdftex.def)             Requested size: 184.28568pt x 83.98378pt.
 
-<bilder/fsr.png, id=661, 387.9585pt x 222.066pt>
+<bilder/fsr.png, id=658, 387.9585pt x 222.066pt>
 File: bilder/fsr.png Graphic file (type png)
  <use bilder/fsr.png>
 Package pdftex.def Info: bilder/fsr.png used on input line 126.
 (pdftex.def)             Requested size: 414.6463pt x 237.35411pt.
 
-Overfull \hbox (2.04222pt too wide) in paragraph at lines 140--141
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+ [30 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/isr_quark.png> <C:/Users/Markus_2/Documents/GitHub/diplomar
+beit/bilder/isr_gluon.png>]
+Overfull \hbox (2.04222pt too wide) in paragraph at lines 141--142
 \OML/cmm/m/it/12 d[]$ \OT1/cmr/m/n/12 (Ka-pi-tel []5.1[]) mit WHI-ZARD. Wei-te-re si-mu-lier-te Er-eig-nis-se in-klu-si-
 ve $\OML/cmm/m/it/12 t[]$\OT1/cmr/m/n/12 -Ereignissen
  []
 
-[30 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/isr_quark.png> <C:/Users/Markus_2/Documents/GitHub/diplomarb
-eit/bilder/isr_gluon.png>] <bilder/flowchart.png, id=681, 977.6525pt x 873.2625pt>
+<bilder/flowchart.png, id=677, 977.6525pt x 873.2625pt>
 File: bilder/flowchart.png Graphic file (type png)
  <use bilder/flowchart.png>
-Package pdftex.def Info: bilder/flowchart.png used on input line 150.
+Package pdftex.def Info: bilder/flowchart.png used on input line 151.
 (pdftex.def)             Requested size: 414.6463pt x 370.37878pt.
 ) [31 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fsr.png>] [32 <C:/Users/Markus_2/Documents/GitHub/diplomar
-beit/bilder/flowchart.png>] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/simulation.tex
+beit/bilder/flowchart.png>]
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/simulation.tex
 Kapitel 5.
 [33
 
 
 
-] <bilder/whizard.png, id=708, 430.60875pt x 238.64156pt>
+] <bilder/whizard.png, id=705, 430.60875pt x 238.64156pt>
 File: bilder/whizard.png Graphic file (type png)
  <use bilder/whizard.png>
-Package pdftex.def Info: bilder/whizard.png used on input line 42.
+Package pdftex.def Info: bilder/whizard.png used on input line 40.
 (pdftex.def)             Requested size: 322.50345pt x 178.7331pt.
  [34 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/whizard.png>]
-Overfull \hbox (1.52159pt too wide) in paragraph at lines 50--50
+Overfull \hbox (1.52159pt too wide) in paragraph at lines 47--47
 []\OT1/cmr/bx/n/14.4 Simulation des Top-Quark-Paar-Prozesses und der be-trach-
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 53--55
+Underfull \hbox (badness 2409) in paragraph at lines 50--52
 \OT1/cmr/m/n/12 Die meis-ten Monte-Carlo-Simulationen ne-ben den $\OML/cmm/m/it/12 t[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/1
 2 $\OT1/cmr/m/n/12 -Ereignissen wer-den mit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+\OT1/cmr/m/n/12 TAUO-LA be-nutzt. Die Ha-dro-ni-sie-rung und die Teil-chen-schau-er wer-den mit
+ []
+
+
+Overfull \hbox (4.29225pt too wide) in paragraph at lines 61--62
+\OT1/cmr/m/n/12 verandert. Da-zu wird ei-ne 2-Bin-Analyse, ei-ne Ana-ly-se des Schwer-punk-tes der $\OML/cmm/m/it/12 E[
+]$\OT1/cmr/m/n/12 -Verteilung
  []
 
 
 Underfull \vbox (badness 4060) has occurred while \output is active []
 
  [35]
-<bilder/crosssectionplot.png, id=745, 1023.825pt x 999.735pt>
+<bilder/crosssectionplot.png, id=740, 1023.825pt x 999.735pt>
 File: bilder/crosssectionplot.png Graphic file (type png)
  <use bilder/crosssectionplot.png>
-Package pdftex.def Info: bilder/crosssectionplot.png used on input line 74.
+Package pdftex.def Info: bilder/crosssectionplot.png used on input line 71.
 (pdftex.def)             Requested size: 230.36061pt x 224.93066pt.
 
-<bilder/et_gen_0.png, id=748, 598.235pt x 574.145pt>
+<bilder/et_gen_0.png, id=743, 598.235pt x 574.145pt>
 File: bilder/et_gen_0.png Graphic file (type png)
  <use bilder/et_gen_0.png>
-Package pdftex.def Info: bilder/et_gen_0.png used on input line 86.
+Package pdftex.def Info: bilder/et_gen_0.png used on input line 83.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
-<bilder/et_gen_02.png, id=749, 598.235pt x 574.145pt>
+<bilder/et_gen_02.png, id=744, 598.235pt x 574.145pt>
 File: bilder/et_gen_02.png Graphic file (type png)
  <use bilder/et_gen_02.png>
-Package pdftex.def Info: bilder/et_gen_02.png used on input line 90.
+Package pdftex.def Info: bilder/et_gen_02.png used on input line 87.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
-<bilder/et_gen_04.png, id=750, 598.235pt x 574.145pt>
+<bilder/et_gen_04.png, id=745, 598.235pt x 574.145pt>
 File: bilder/et_gen_04.png Graphic file (type png)
  <use bilder/et_gen_04.png>
-Package pdftex.def Info: bilder/et_gen_04.png used on input line 94.
+Package pdftex.def Info: bilder/et_gen_04.png used on input line 91.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
-<bilder/et_gen_06.png, id=751, 598.235pt x 574.145pt>
+<bilder/et_gen_06.png, id=746, 598.235pt x 574.145pt>
 File: bilder/et_gen_06.png Graphic file (type png)
  <use bilder/et_gen_06.png>
-Package pdftex.def Info: bilder/et_gen_06.png used on input line 98.
+Package pdftex.def Info: bilder/et_gen_06.png used on input line 95.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
-<bilder/et_gen_08.png, id=752, 598.235pt x 574.145pt>
+<bilder/et_gen_08.png, id=747, 598.235pt x 574.145pt>
 File: bilder/et_gen_08.png Graphic file (type png)
  <use bilder/et_gen_08.png>
-Package pdftex.def Info: bilder/et_gen_08.png used on input line 102.
+Package pdftex.def Info: bilder/et_gen_08.png used on input line 99.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
-<bilder/et_gen_1.png, id=753, 598.235pt x 574.145pt>
+<bilder/et_gen_1.png, id=748, 598.235pt x 574.145pt>
 File: bilder/et_gen_1.png Graphic file (type png)
  <use bilder/et_gen_1.png>
-Package pdftex.def Info: bilder/et_gen_1.png used on input line 106.
+Package pdftex.def Info: bilder/et_gen_1.png used on input line 103.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
 Underfull \vbox (badness 1062) has occurred while \output is active []
 
  [36]
-<bilder/2binskizze.png, id=769, 828.84656pt x 691.83469pt>
+<bilder/2binskizze.png, id=762, 828.84656pt x 691.83469pt>
 File: bilder/2binskizze.png Graphic file (type png)
  <use bilder/2binskizze.png>
-Package pdftex.def Info: bilder/2binskizze.png used on input line 119.
+Package pdftex.def Info: bilder/2binskizze.png used on input line 116.
 (pdftex.def)             Requested size: 230.36061pt x 192.2767pt.
 
-<bilder/twobinplot.png, id=770, 598.235pt x 574.145pt>
+<bilder/twobinplot.png, id=763, 598.235pt x 574.145pt>
 File: bilder/twobinplot.png Graphic file (type png)
  <use bilder/twobinplot.png>
-Package pdftex.def Info: bilder/twobinplot.png used on input line 127.
+Package pdftex.def Info: bilder/twobinplot.png used on input line 124.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
-<bilder/twobinplotv2.png, id=771, 598.235pt x 574.145pt>
+<bilder/twobinplotv2.png, id=764, 598.235pt x 574.145pt>
 File: bilder/twobinplotv2.png Graphic file (type png)
  <use bilder/twobinplotv2.png>
-Package pdftex.def Info: bilder/twobinplotv2.png used on input line 131.
+Package pdftex.def Info: bilder/twobinplotv2.png used on input line 128.
 (pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
 
-Underfull \vbox (badness 5403) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/crosssectionplot.png>] [38 <C:/Users/Markus_2/Documents/Git
 Hub/diplomarbeit/bilder/et_gen_0.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_gen_02.png> <C:/Users/M
@@ -822,41 +857,47 @@ en_06.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_gen_08.png
 plomarbeit/bilder/et_gen_1.png>] [39 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/2binskizze.png> <C:/Users/M
 arkus_2/Documents/GitHub/diplomarbeit/bilder/twobinplot.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/two
 binplotv2.png>]
-<bilder/meanplot.png, id=788, 598.235pt x 574.145pt>
+<bilder/meanplot.png, id=783, 598.235pt x 574.145pt>
 File: bilder/meanplot.png Graphic file (type png)
  <use bilder/meanplot.png>
-Package pdftex.def Info: bilder/meanplot.png used on input line 152.
+Package pdftex.def Info: bilder/meanplot.png used on input line 147.
 (pdftex.def)             Requested size: 230.36061pt x 221.08592pt.
 
-<bilder/slopeskizze.png, id=789, 1105.12875pt x 922.44624pt>
+<bilder/slopeskizze.png, id=784, 1105.12875pt x 922.44624pt>
 File: bilder/slopeskizze.png Graphic file (type png)
  <use bilder/slopeskizze.png>
-Package pdftex.def Info: bilder/slopeskizze.png used on input line 162.
+Package pdftex.def Info: bilder/slopeskizze.png used on input line 157.
 (pdftex.def)             Requested size: 230.36061pt x 192.26965pt.
 
-<bilder/slopeplot.png, id=792, 448.67625pt x 430.60875pt>
+<bilder/slopeplot.png, id=787, 448.67625pt x 430.60875pt>
 File: bilder/slopeplot.png Graphic file (type png)
  <use bilder/slopeplot.png>
-Package pdftex.def Info: bilder/slopeplot.png used on input line 178.
+Package pdftex.def Info: bilder/slopeplot.png used on input line 171.
 (pdftex.def)             Requested size: 230.36061pt x 221.08592pt.
- [40 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/meanplot.png>] [41 <C:/Users/Markus_2/Documents/GitHub/dipl
-omarbeit/bilder/slopeskizze.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/slopeplot.png>]
-<bilder/ensemble.pdf, id=812, 4637.01132pt x 1952.3359pt>
+
+Underfull \hbox (badness 2401) in paragraph at lines 172--172
+[][]|\OT1/cmr/m/n/12 Ver-lauf des Ex-po-nen-ti-al-ko-ef-fi-zi-en-ten $\OML/cmm/m/it/12 $ \OT1/cmr/m/n/12 der An-pas-sun
+g an die $\OML/cmm/m/it/12 E[]$\OT1/cmr/m/n/12 -
+ []
+
+[40 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/meanplot.png>] [41 <C:/Users/Markus_2/Documents/GitHub/diplo
+marbeit/bilder/slopeskizze.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/slopeplot.png>]
+<bilder/ensemble.pdf, id=807, 4637.01132pt x 1952.3359pt>
 File: bilder/ensemble.pdf Graphic file (type pdf)
  <use bilder/ensemble.pdf>
-Package pdftex.def Info: bilder/ensemble.pdf used on input line 191.
+Package pdftex.def Info: bilder/ensemble.pdf used on input line 184.
 (pdftex.def)             Requested size: 368.57838pt x 155.1772pt.
 
-<bilder/gauss.pdf, id=813, 569.12625pt x 546.04pt>
+<bilder/gauss.pdf, id=808, 569.12625pt x 546.04pt>
 File: bilder/gauss.pdf Graphic file (type pdf)
  <use bilder/gauss.pdf>
-Package pdftex.def Info: bilder/gauss.pdf used on input line 199.
+Package pdftex.def Info: bilder/gauss.pdf used on input line 192.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/sigma_lambda.pdf, id=814, 569.12625pt x 546.04pt>
+<bilder/sigma_lambda.pdf, id=809, 569.12625pt x 546.04pt>
 File: bilder/sigma_lambda.pdf Graphic file (type pdf)
  <use bilder/sigma_lambda.pdf>
-Package pdftex.def Info: bilder/sigma_lambda.pdf used on input line 205.
+Package pdftex.def Info: bilder/sigma_lambda.pdf used on input line 198.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 ) [42 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/ensemble.pdf>] [43 <C:/Users/Markus_2/Documents/GitHub/dip
 lomarbeit/bilder/gauss.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/sigma_la
@@ -866,7 +907,7 @@ mbda.pdf, page is rotated 90 degrees>] (C:\Users\Markus_2\Documents\GitHub\diplo
 
 ]
 Kapitel 6.
-<bilder/reco.png, id=971, 424.21207pt x 218.0929pt>
+<bilder/reco.png, id=966, 424.21207pt x 218.0929pt>
 File: bilder/reco.png Graphic file (type png)
  <use bilder/reco.png>
 Package pdftex.def Info: bilder/reco.png used on input line 17.
@@ -874,135 +915,160 @@ Package pdftex.def Info: bilder/reco.png used on input line 17.
  [45]
 Underfull \vbox (badness 8000) has occurred while \output is active []
 
- [46 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/reco.png>] <bilder/reco_eff_muon.png, id=993, 424.31578pt x
+ [46 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/reco.png>] <bilder/reco_eff_muon.png, id=988, 424.31578pt x
  200.58171pt>
 File: bilder/reco_eff_muon.png Graphic file (type png)
  <use bilder/reco_eff_muon.png>
 Package pdftex.def Info: bilder/reco_eff_muon.png used on input line 31.
 (pdftex.def)             Requested size: 414.6463pt x 196.01169pt.
 
-<bilder/reco_res_muon.png, id=996, 425.01643pt x 205.62535pt>
+<bilder/reco_res_muon.png, id=991, 425.01643pt x 205.62535pt>
 File: bilder/reco_res_muon.png Graphic file (type png)
  <use bilder/reco_res_muon.png>
 Package pdftex.def Info: bilder/reco_res_muon.png used on input line 37.
 (pdftex.def)             Requested size: 414.6463pt x 200.6141pt.
+ [47] [48 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/reco_eff_muon.png> <C:/Users/Markus_2/Documents/GitHub
+/diplomarbeit/bilder/reco_res_muon.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 2680) has occurred while \output is active []
-
- [47 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/reco_eff_muon.png>] [48 <C:/Users/Markus_2/Documents/GitHub
-/diplomarbeit/bilder/reco_res_muon.png>] [49]
-[50] [51] [52] [53] <bilder/matching.png, id=1056, 843.90282pt x 377.91188pt>
+ [49] [50] [51] [52] [53]
+<bilder/matching.png, id=1049, 843.90282pt x 377.91188pt>
 File: bilder/matching.png Graphic file (type png)
  <use bilder/matching.png>
-Package pdftex.def Info: bilder/matching.png used on input line 136.
+Package pdftex.def Info: bilder/matching.png used on input line 126.
 (pdftex.def)             Requested size: 460.72124pt x 206.31828pt.
 
-<bilder/migration.pdf, id=1057, 569.12625pt x 470.75874pt>
+<bilder/migration.pdf, id=1050, 569.12625pt x 470.75874pt>
 File: bilder/migration.pdf Graphic file (type pdf)
  <use bilder/migration.pdf>
-Package pdftex.def Info: bilder/migration.pdf used on input line 143.
+Package pdftex.def Info: bilder/migration.pdf used on input line 133.
 (pdftex.def)             Requested size: 230.36061pt x 190.5485pt.
 
-<bilder/eta_log.png, id=1062, 798.985pt x 774.895pt>
+<bilder/eta_log.png, id=1055, 798.985pt x 774.895pt>
 File: bilder/eta_log.png Graphic file (type png)
  <use bilder/eta_log.png>
-Package pdftex.def Info: bilder/eta_log.png used on input line 157.
+Package pdftex.def Info: bilder/eta_log.png used on input line 147.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/et_log.png, id=1063, 798.985pt x 774.895pt>
+<bilder/et_log.png, id=1056, 798.985pt x 774.895pt>
 File: bilder/et_log.png Graphic file (type png)
  <use bilder/et_log.png>
-Package pdftex.def Info: bilder/et_log.png used on input line 160.
+Package pdftex.def Info: bilder/et_log.png used on input line 150.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [54 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/matching.png>] [55 <C:/Users/Markus_2/Documents/GitHub/dipl
 omarbeit/bilder/migration.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/eta_l
-og.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_log.png>] <bilder/drjet_log.png, id=1121, 798.985pt x
+og.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_log.png>] <bilder/drjet_log.png, id=1115, 798.985pt x
  774.895pt>
 File: bilder/drjet_log.png Graphic file (type png)
  <use bilder/drjet_log.png>
-Package pdftex.def Info: bilder/drjet_log.png used on input line 179.
+Package pdftex.def Info: bilder/drjet_log.png used on input line 168.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/ptreldrjet_log.png, id=1122, 798.985pt x 774.895pt>
+<bilder/ptreldrjet_log.png, id=1116, 798.985pt x 774.895pt>
 File: bilder/ptreldrjet_log.png Graphic file (type png)
  <use bilder/ptreldrjet_log.png>
-Package pdftex.def Info: bilder/ptreldrjet_log.png used on input line 182.
+Package pdftex.def Info: bilder/ptreldrjet_log.png used on input line 171.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/hollowconetrackiso_log.png, id=1123, 798.985pt x 774.895pt>
+<bilder/hollowconetrackiso_log.png, id=1117, 798.985pt x 774.895pt>
 File: bilder/hollowconetrackiso_log.png Graphic file (type png)
  <use bilder/hollowconetrackiso_log.png>
-Package pdftex.def Info: bilder/hollowconetrackiso_log.png used on input line 197.
+Package pdftex.def Info: bilder/hollowconetrackiso_log.png used on input line 185.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/jurassicecaliso_log.png, id=1124, 798.985pt x 774.895pt>
+<bilder/jurassicecaliso_log.png, id=1118, 798.985pt x 774.895pt>
 File: bilder/jurassicecaliso_log.png Graphic file (type png)
  <use bilder/jurassicecaliso_log.png>
-Package pdftex.def Info: bilder/jurassicecaliso_log.png used on input line 200.
+Package pdftex.def Info: bilder/jurassicecaliso_log.png used on input line 188.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
- [56 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/drjet_log.png> <C:/Users/Markus_2/Documents/GitHub/diplomar
-beit/bilder/ptreldrjet_log.png>] <bilder/jurassic_ecal.png, id=1132, 697.8572pt x 702.37407pt>
+
+<bilder/jurassic_ecal.png, id=1120, 697.8572pt x 702.37407pt>
 File: bilder/jurassic_ecal.png Graphic file (type png)
  <use bilder/jurassic_ecal.png>
-Package pdftex.def Info: bilder/jurassic_ecal.png used on input line 210.
+Package pdftex.def Info: bilder/jurassic_ecal.png used on input line 196.
 (pdftex.def)             Requested size: 138.21777pt x 139.11122pt.
 
-Overfull \hbox (5.35782pt too wide) in paragraph at lines 217--218
+Underfull \hbox (badness 4479) in paragraph at lines 193--200
+[]\OT1/cmr/m/n/12 Die []  Ju-ras-sic ECAL Iso-la-ti-on\ $[]$ ist ein Hohl-ke-gel mit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+\OT1/cmr/m/n/12 der nachs-te Schritt. Die Pho-to-nen mussen die For-de-rung
+ []
+
+[56] [57 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/drjet_log.png> <C:/Users/Markus_2/Documents/GitHub/dipl
+omarbeit/bilder/ptreldrjet_log.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hollowconetrackiso_log.png> 
+<C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/jurassicecaliso_log.png>]
+Overfull \hbox (5.35782pt too wide) in paragraph at lines 202--203
 []$\OML/cmm/m/it/12 []$ \OT1/cmr/m/n/12 be-zeich-net die Energie-gewichtete Auf-sprei-zung des ECAL
  []
 
-[57 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hollowconetrackiso_log.png> <C:/Users/Markus_2/Documents/Git
-Hub/diplomarbeit/bilder/jurassicecaliso_log.png>] <bilder/cutflow.png, id=1143, 798.985pt x 774.895pt>
-File: bilder/cutflow.png Graphic file (type png)
 
-<use bilder/cutflow.png>
-Package pdftex.def Info: bilder/cutflow.png used on input line 234.
+Underfull \hbox (badness 2573) in paragraph at lines 208--211
+\OT1/cmr/m/n/12 nis der $\OML/cmm/m/it/12 t[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 $\OT1/cmr/m/n/12 -Selektion liegt bei 
+$\OML/cmm/m/it/12 S=B \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 ;\OT1/cmr/m/n/12 53$, die Se-lek-ti-ons-ef-fi-zi-enz be-tragt
+
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 208--211
+\OT1/cmr/m/n/12 Abbildung []6.10[] zeigt den so-ge-nann-ten []  cut-flow\ der Photon-Selektion fur das
+ []
+
+[58 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/jurassic_ecal.png>]
+<bilder/cutflow.png, id=1144, 798.985pt x 774.895pt>
+File: bilder/cutflow.png Graphic file (type png)
+ <use bilder/cutflow.png>
+Package pdftex.def Info: bilder/cutflow.png used on input line 215.
 (pdftex.def)             Requested size: 230.36061pt x 223.41316pt.
-) [58 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/jurassic_ecal.png>] [59 <C:/Users/Markus_2/Documents/GitHu
-b/diplomarbeit/bilder/cutflow.png>]
-(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/datenstudie.tex [60
+) [59 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/cutflow.png>] (C:\Users\Markus_2\Documents\GitHub\diplomar
+beit\kapitel/datenstudie.tex [60
 
 
 
 ]
 Kapitel 7.
-<bilder/et_0.pdf, id=1167, 569.12625pt x 546.04pt>
+<bilder/et_0.pdf, id=1163, 569.12625pt x 546.04pt>
 File: bilder/et_0.pdf Graphic file (type pdf)
  <use bilder/et_0.pdf>
 Package pdftex.def Info: bilder/et_0.pdf used on input line 18.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/et_02.pdf, id=1168, 569.12625pt x 546.04pt>
+<bilder/et_02.pdf, id=1164, 569.12625pt x 546.04pt>
 File: bilder/et_02.pdf Graphic file (type pdf)
  <use bilder/et_02.pdf>
 Package pdftex.def Info: bilder/et_02.pdf used on input line 22.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/et_04.pdf, id=1169, 569.12625pt x 546.04pt>
+<bilder/et_04.pdf, id=1165, 569.12625pt x 546.04pt>
 File: bilder/et_04.pdf Graphic file (type pdf)
  <use bilder/et_04.pdf>
 Package pdftex.def Info: bilder/et_04.pdf used on input line 26.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/et_06.pdf, id=1170, 569.12625pt x 546.04pt>
+<bilder/et_06.pdf, id=1166, 569.12625pt x 546.04pt>
 File: bilder/et_06.pdf Graphic file (type pdf)
  <use bilder/et_06.pdf>
 Package pdftex.def Info: bilder/et_06.pdf used on input line 30.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/et_08.pdf, id=1171, 569.12625pt x 546.04pt>
+<bilder/et_08.pdf, id=1167, 569.12625pt x 546.04pt>
 File: bilder/et_08.pdf Graphic file (type pdf)
  <use bilder/et_08.pdf>
 Package pdftex.def Info: bilder/et_08.pdf used on input line 34.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/et_1.pdf, id=1172, 569.12625pt x 546.04pt>
+<bilder/et_1.pdf, id=1168, 569.12625pt x 546.04pt>
 File: bilder/et_1.pdf Graphic file (type pdf)
  <use bilder/et_1.pdf>
 Package pdftex.def Info: bilder/et_1.pdf used on input line 38.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/et_kombi.pdf, id=1173, 569.12625pt x 548.0475pt>
+<bilder/et_kombi.pdf, id=1169, 569.12625pt x 548.0475pt>
 File: bilder/et_kombi.pdf Graphic file (type pdf)
  <use bilder/et_kombi.pdf>
 Package pdftex.def Info: bilder/et_kombi.pdf used on input line 46.
@@ -1012,115 +1078,96 @@ _2/Documents/GitHub/diplomarbeit/bilder/et_02.pdf, page is rotated 90 degrees> <
 marbeit/bilder/et_04.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_06.pdf,
  page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_08.pdf, page is rotated 90 degre
 es> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_1.pdf, page is rotated 90 degrees>]
-<bilder/twobin_reco_plot.pdf, id=1446, 569.12625pt x 548.0475pt>
+<bilder/twobin_reco_plot.pdf, id=1442, 569.12625pt x 548.0475pt>
 File: bilder/twobin_reco_plot.pdf Graphic file (type pdf)
  <use bilder/twobin_reco_plot.pdf>
 Package pdftex.def Info: bilder/twobin_reco_plot.pdf used on input line 57.
-(pdftex.def)             Requested size: 230.36061pt x 221.83258pt.
+(pdftex.def)             Requested size: 276.43555pt x 266.20412pt.
 
-<bilder/mean_reco_plot.pdf, id=1450, 569.12625pt x 548.0475pt>
+<bilder/mean_reco_plot.pdf, id=1446, 569.12625pt x 548.0475pt>
 File: bilder/mean_reco_plot.pdf Graphic file (type pdf)
  <use bilder/mean_reco_plot.pdf>
 Package pdftex.def Info: bilder/mean_reco_plot.pdf used on input line 68.
-(pdftex.def)             Requested size: 230.36061pt x 221.83258pt.
- [63 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_kombi.pdf, page is rotated 90 degrees>] [64 <C:/Users/Ma
-rkus_2/Documents/GitHub/diplomarbeit/bilder/twobin_reco_plot.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documen
-ts/GitHub/diplomarbeit/bilder/mean_reco_plot.pdf, page is rotated 90 degrees>] <bilder/fit_0.pdf, id=1596, 569.12625pt x
- 546.04pt>
-File: bilder/fit_0.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 276.43555pt x 266.20412pt.
 
-<use bilder/fit_0.pdf>
+<bilder/fit_0.pdf, id=1450, 569.12625pt x 546.04pt>
+File: bilder/fit_0.pdf Graphic file (type pdf)
+ <use bilder/fit_0.pdf>
 Package pdftex.def Info: bilder/fit_0.pdf used on input line 79.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
- <bilder/fit_02.pdf, id=1597, 569.12625pt x 546.04pt>
+
+<bilder/fit_02.pdf, id=1451, 569.12625pt x 546.04pt>
 File: bilder/fit_02.pdf Graphic file (type pdf)
  <use bilder/fit_02.pdf>
 Package pdftex.def Info: bilder/fit_02.pdf used on input line 83.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/fit_04.pdf, id=1598, 569.12625pt x 546.04pt>
+<bilder/fit_04.pdf, id=1452, 569.12625pt x 546.04pt>
 File: bilder/fit_04.pdf Graphic file (type pdf)
  <use bilder/fit_04.pdf>
 Package pdftex.def Info: bilder/fit_04.pdf used on input line 87.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/fit_06.pdf, id=1599, 569.12625pt x 546.04pt>
+<bilder/fit_06.pdf, id=1453, 569.12625pt x 546.04pt>
 File: bilder/fit_06.pdf Graphic file (type pdf)
  <use bilder/fit_06.pdf>
 Package pdftex.def Info: bilder/fit_06.pdf used on input line 91.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/fit_08.pdf, id=1600, 569.12625pt x 546.04pt>
+<bilder/fit_08.pdf, id=1454, 569.12625pt x 546.04pt>
 File: bilder/fit_08.pdf Graphic file (type pdf)
  <use bilder/fit_08.pdf>
 Package pdftex.def Info: bilder/fit_08.pdf used on input line 95.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
 
-<bilder/fit_1.pdf, id=1601, 569.12625pt x 546.04pt>
+<bilder/fit_1.pdf, id=1455, 569.12625pt x 546.04pt>
 File: bilder/fit_1.pdf Graphic file (type pdf)
  <use bilder/fit_1.pdf>
 Package pdftex.def Info: bilder/fit_1.pdf used on input line 99.
 (pdftex.def)             Requested size: 184.28568pt x 176.811pt.
-
-<bilder/slope_reco_plot.pdf, id=1602, 569.12625pt x 548.0475pt>
+ [63 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_kombi.pdf, page is rotated 90 degrees>] [64 <C:/Users/Ma
+rkus_2/Documents/GitHub/diplomarbeit/bilder/twobin_reco_plot.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documen
+ts/GitHub/diplomarbeit/bilder/mean_reco_plot.pdf, page is rotated 90 degrees>] <bilder/slope_reco_plot.pdf, id=1599, 569
+.12625pt x 548.0475pt>
 File: bilder/slope_reco_plot.pdf Graphic file (type pdf)
- <use bilder/slope_reco_plot.pdf>
+
+<use bilder/slope_reco_plot.pdf>
 Package pdftex.def Info: bilder/slope_reco_plot.pdf used on input line 108.
-(pdftex.def)             Requested size: 230.36061pt x 221.83258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
- []
-
-
-Underfull \vbox (badness 2573) has occurred while \output is active []
-
-
-Overfull \hbox (2.86145pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 7.5.  VERGLEICH DER ANALYSEMETHODEN AUF REKONSTRUKTIONSNIVEAU \OT1/cmr/m/n/12 65
- []
-
-[65] [66 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_0.pdf, page is rotated 90 degrees> <C:/Users/Markus
-_2/Documents/GitHub/diplomarbeit/bilder/fit_02.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/dipl
-omarbeit/bilder/fit_04.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_06.p
-df, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_08.pdf, page is rotated 90 d
-egrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_1.pdf, page is rotated 90 degrees>]
-<bilder/et_data.png, id=1873, 598.235pt x 574.145pt>
-File: bilder/et_data.png Graphic file (type png)
- <use bilder/et_data.png>
-Package pdftex.def Info: bilder/et_data.png used on input line 142.
-(pdftex.def)             Requested size: 184.28568pt x 176.86174pt.
-
-<bilder/twobin_data_mc.pdf, id=1875, 569.12625pt x 548.0475pt>
+(pdftex.def)             Requested size: 276.43555pt x 266.20412pt.
+ <bilder/et_data.pdf, id=1603, 569.12625pt x 546.04pt>
+File: bilder/et_data.pdf Graphic file (type pdf)
+ <use bilder/et_data.pdf>
+Package pdftex.def Info: bilder/et_data.pdf used on input line 140.
+(pdftex.def)             Requested size: 276.43555pt x 265.229pt.
+ [65]
+[66 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_0.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Do
+cuments/GitHub/diplomarbeit/bilder/fit_02.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarb
+eit/bilder/fit_04.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_06.pdf, p
+age is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_08.pdf, page is rotated 90 degree
+s> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/fit_1.pdf, page is rotated 90 degrees>] [67 <C:/Users/Markus_
+2/Documents/GitHub/diplomarbeit/bilder/slope_reco_plot.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/Git
+Hub/diplomarbeit/bilder/et_data.pdf, page is rotated 90 degrees>]
+<bilder/twobin_data_mc.pdf, id=1968, 569.12625pt x 548.0475pt>
 File: bilder/twobin_data_mc.pdf Graphic file (type pdf)
  <use bilder/twobin_data_mc.pdf>
-Package pdftex.def Info: bilder/twobin_data_mc.pdf used on input line 157.
-(pdftex.def)             Requested size: 184.28568pt x 177.46104pt.
+Package pdftex.def Info: bilder/twobin_data_mc.pdf used on input line 161.
+(pdftex.def)             Requested size: 276.43555pt x 266.20412pt.
 
-<bilder/mean_data_mc.pdf, id=1876, 569.12625pt x 548.0475pt>
+<bilder/mean_data_mc.pdf, id=1969, 569.12625pt x 548.0475pt>
 File: bilder/mean_data_mc.pdf Graphic file (type pdf)
  <use bilder/mean_data_mc.pdf>
-Package pdftex.def Info: bilder/mean_data_mc.pdf used on input line 161.
-(pdftex.def)             Requested size: 184.28568pt x 177.46104pt.
+Package pdftex.def Info: bilder/mean_data_mc.pdf used on input line 167.
+(pdftex.def)             Requested size: 276.43555pt x 266.20412pt.
 
-<bilder/slope_data_mc.pdf, id=1877, 569.12625pt x 548.0475pt>
+<bilder/slope_data_mc.pdf, id=1970, 569.12625pt x 548.0475pt>
 File: bilder/slope_data_mc.pdf Graphic file (type pdf)
  <use bilder/slope_data_mc.pdf>
-Package pdftex.def Info: bilder/slope_data_mc.pdf used on input line 165.
-(pdftex.def)             Requested size: 184.28568pt x 177.46104pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [67 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/slope_reco_plot.pdf, page is rotated 90 degrees>] [68 <C:/U
-sers/Markus_2/Documents/GitHub/diplomarbeit/bilder/et_data.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/
-twobin_data_mc.pdf, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/mean_data_mc.pdf
-, page is rotated 90 degrees> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/slope_data_mc.pdf, page is rotated
- 90 degrees>]
-Overfull \hbox (8.24205pt too wide) in paragraph at lines 199--200
-\OT1/cmr/m/n/12 an-de-ren Ma-tri-x-ele-ment-ge-ne-ra-tor (MC@NLO [[]]) und ei-nem an-de-ren Hadronisierungs-
- []
-
-[69]) [70] [71] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/zusammenfassung.tex [72
+Package pdftex.def Info: bilder/slope_data_mc.pdf used on input line 173.
+(pdftex.def)             Requested size: 276.43555pt x 266.20412pt.
+ [68] [69 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/twobin_data_mc.pdf, page is rotated 90 degrees> <C:/Us
+ers/Markus_2/Documents/GitHub/diplomarbeit/bilder/mean_data_mc.pdf, page is rotated 90 degrees>] [70 <C:/Users/Markus_2/
+Documents/GitHub/diplomarbeit/bilder/slope_data_mc.pdf, page is rotated 90 degrees>]) [71]
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/zusammenfassung.tex [72
 
 
 
@@ -1131,192 +1178,169 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-[73]
-Overfull \hbox (4.81927pt too wide) in paragraph at lines 21--22
-[]\OT1/cmr/m/n/12 Fur die ver-schie-de-nen
+[73] [74])
+Overfull \hbox (2.35315pt too wide) in paragraph at lines 44--37
+\OT1/cmr/m/n/12 Der Ein-fluss der sys-te-ma-ti-schen Un-si-cher-hei-ten durch die Wahl des Monte-Carlo-Generators
  []
 
-[74]) [75] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/anhang.tex [76
+[75] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/anhang.tex [76
 
 
 
 ]
 Anhang A.
-<bilder/eta_linear.png, id=2112, 798.985pt x 774.895pt>
+<bilder/eta_linear.png, id=2161, 798.985pt x 774.895pt>
 File: bilder/eta_linear.png Graphic file (type png)
  <use bilder/eta_linear.png>
-Package pdftex.def Info: bilder/eta_linear.png used on input line 21.
+Package pdftex.def Info: bilder/eta_linear.png used on input line 22.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 File: bilder/eta_log.png Graphic file (type png)
  <use bilder/eta_log.png>
-Package pdftex.def Info: bilder/eta_log.png used on input line 24.
+Package pdftex.def Info: bilder/eta_log.png used on input line 25.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/et_linear.png, id=2113, 798.985pt x 774.895pt>
+<bilder/et_linear.png, id=2162, 798.985pt x 774.895pt>
 File: bilder/et_linear.png Graphic file (type png)
  <use bilder/et_linear.png>
-Package pdftex.def Info: bilder/et_linear.png used on input line 33.
+Package pdftex.def Info: bilder/et_linear.png used on input line 34.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 File: bilder/et_log.png Graphic file (type png)
  <use bilder/et_log.png>
-Package pdftex.def Info: bilder/et_log.png used on input line 36.
+Package pdftex.def Info: bilder/et_log.png used on input line 37.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/drmuon_linear.png, id=2114, 798.985pt x 774.895pt>
+<bilder/drmuon_linear.png, id=2163, 798.985pt x 774.895pt>
 File: bilder/drmuon_linear.png Graphic file (type png)
  <use bilder/drmuon_linear.png>
-Package pdftex.def Info: bilder/drmuon_linear.png used on input line 45.
+Package pdftex.def Info: bilder/drmuon_linear.png used on input line 46.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/drmuon_log.png, id=2115, 798.985pt x 774.895pt>
+<bilder/drmuon_log.png, id=2164, 798.985pt x 774.895pt>
 File: bilder/drmuon_log.png Graphic file (type png)
  <use bilder/drmuon_log.png>
-Package pdftex.def Info: bilder/drmuon_log.png used on input line 48.
+Package pdftex.def Info: bilder/drmuon_log.png used on input line 49.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/drjet_linear.png, id=2116, 798.985pt x 774.895pt>
+<bilder/drjet_linear.png, id=2165, 798.985pt x 774.895pt>
 File: bilder/drjet_linear.png Graphic file (type png)
  <use bilder/drjet_linear.png>
-Package pdftex.def Info: bilder/drjet_linear.png used on input line 57.
+Package pdftex.def Info: bilder/drjet_linear.png used on input line 58.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 File: bilder/drjet_log.png Graphic file (type png)
  <use bilder/drjet_log.png>
-Package pdftex.def Info: bilder/drjet_log.png used on input line 60.
+Package pdftex.def Info: bilder/drjet_log.png used on input line 61.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/ptreldrjet_linear.png, id=2117, 798.985pt x 774.895pt>
+<bilder/ptreldrjet_linear.png, id=2166, 798.985pt x 774.895pt>
 File: bilder/ptreldrjet_linear.png Graphic file (type png)
  <use bilder/ptreldrjet_linear.png>
-Package pdftex.def Info: bilder/ptreldrjet_linear.png used on input line 69.
+Package pdftex.def Info: bilder/ptreldrjet_linear.png used on input line 70.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 File: bilder/ptreldrjet_log.png Graphic file (type png)
 
 <use bilder/ptreldrjet_log.png>
-Package pdftex.def Info: bilder/ptreldrjet_log.png used on input line 72.
+Package pdftex.def Info: bilder/ptreldrjet_log.png used on input line 73.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
-
-Underfull \hbox (badness 3189) in paragraph at lines 74--74
-\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ;\OT1/cmr/m/n/12 15$ in li-nea-rer (links) und hal-b-lo-ga-rith-mi-scher (rechts) Auf-
-tra-gung. For-de-rung:
- []
-
-<bilder/haspixelseeds_linear.png, id=2118, 798.985pt x 774.895pt>
+ <bilder/haspixelseeds_linear.png, id=2167, 798.985pt x 774.895pt>
 File: bilder/haspixelseeds_linear.png Graphic file (type png)
- <use bilder/haspixelseeds_linear.png>
-Package pdftex.def Info: bilder/haspixelseeds_linear.png used on input line 81.
-(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/haspixelseeds_log.png, id=2119, 798.985pt x 774.895pt>
+<use bilder/haspixelseeds_linear.png>
+Package pdftex.def Info: bilder/haspixelseeds_linear.png used on input line 82.
+(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
+ <bilder/haspixelseeds_log.png, id=2168, 798.985pt x 774.895pt>
 File: bilder/haspixelseeds_log.png Graphic file (type png)
- <use bilder/haspixelseeds_log.png>
-Package pdftex.def Info: bilder/haspixelseeds_log.png used on input line 84.
-(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/hollowconetrackiso_linear.png, id=2120, 798.985pt x 774.895pt>
+<use bilder/haspixelseeds_log.png>
+Package pdftex.def Info: bilder/haspixelseeds_log.png used on input line 85.
+(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
+ <bilder/hollowconetrackiso_linear.png, id=2169, 798.985pt x 774.895pt>
 File: bilder/hollowconetrackiso_linear.png Graphic file (type png)
- <use bilder/hollowconetrackiso_linear.png>
-Package pdftex.def Info: bilder/hollowconetrackiso_linear.png used on input line 93.
+
+<use bilder/hollowconetrackiso_linear.png>
+Package pdftex.def Info: bilder/hollowconetrackiso_linear.png used on input line 94.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 File: bilder/hollowconetrackiso_log.png Graphic file (type png)
-
-<use bilder/hollowconetrackiso_log.png>
-Package pdftex.def Info: bilder/hollowconetrackiso_log.png used on input line 96.
+ <use bilder/hollowconetrackiso_log.png>
+Package pdftex.def Info: bilder/hollowconetrackiso_log.png used on input line 97.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
- <bilder/jurassicecaliso_linear.png, id=2121, 798.985pt x 774.895pt>
-File: bilder/jurassicecaliso_linear.png Graphic file (type png)
 
-<use bilder/jurassicecaliso_linear.png>
-Package pdftex.def Info: bilder/jurassicecaliso_linear.png used on input line 105.
+<bilder/jurassicecaliso_linear.png, id=2170, 798.985pt x 774.895pt>
+File: bilder/jurassicecaliso_linear.png Graphic file (type png)
+ <use bilder/jurassicecaliso_linear.png>
+Package pdftex.def Info: bilder/jurassicecaliso_linear.png used on input line 106.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 File: bilder/jurassicecaliso_log.png Graphic file (type png)
- <use bilder/jurassicecaliso_log.png>
-Package pdftex.def Info: bilder/jurassicecaliso_log.png used on input line 108.
-(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/hcaliso_linear.png, id=2122, 798.985pt x 774.895pt>
+<use bilder/jurassicecaliso_log.png>
+Package pdftex.def Info: bilder/jurassicecaliso_log.png used on input line 109.
+(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
+ <bilder/hcaliso_linear.png, id=2171, 798.985pt x 774.895pt>
 File: bilder/hcaliso_linear.png Graphic file (type png)
- <use bilder/hcaliso_linear.png>
-Package pdftex.def Info: bilder/hcaliso_linear.png used on input line 117.
-(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/hcaliso_log.png, id=2123, 798.985pt x 774.895pt>
+<use bilder/hcaliso_linear.png>
+Package pdftex.def Info: bilder/hcaliso_linear.png used on input line 118.
+(pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
+ <bilder/hcaliso_log.png, id=2172, 798.985pt x 774.895pt>
 File: bilder/hcaliso_log.png Graphic file (type png)
  <use bilder/hcaliso_log.png>
-Package pdftex.def Info: bilder/hcaliso_log.png used on input line 120.
+Package pdftex.def Info: bilder/hcaliso_log.png used on input line 121.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/hadronicoverem_linear.png, id=2124, 798.985pt x 774.895pt>
+<bilder/hadronicoverem_linear.png, id=2173, 798.985pt x 774.895pt>
 File: bilder/hadronicoverem_linear.png Graphic file (type png)
  <use bilder/hadronicoverem_linear.png>
-Package pdftex.def Info: bilder/hadronicoverem_linear.png used on input line 129.
+Package pdftex.def Info: bilder/hadronicoverem_linear.png used on input line 130.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/hadronicoverem_log.png, id=2125, 798.985pt x 774.895pt>
+<bilder/hadronicoverem_log.png, id=2174, 798.985pt x 774.895pt>
 File: bilder/hadronicoverem_log.png Graphic file (type png)
  <use bilder/hadronicoverem_log.png>
-Package pdftex.def Info: bilder/hadronicoverem_log.png used on input line 132.
+Package pdftex.def Info: bilder/hadronicoverem_log.png used on input line 133.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/sigmaietaieta_linear.png, id=2126, 798.985pt x 774.895pt>
+<bilder/sigmaietaieta_linear.png, id=2175, 798.985pt x 774.895pt>
 File: bilder/sigmaietaieta_linear.png Graphic file (type png)
  <use bilder/sigmaietaieta_linear.png>
-Package pdftex.def Info: bilder/sigmaietaieta_linear.png used on input line 141.
+Package pdftex.def Info: bilder/sigmaietaieta_linear.png used on input line 142.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
 
-<bilder/sigmaietaieta_log.png, id=2127, 798.985pt x 774.895pt>
+<bilder/sigmaietaieta_log.png, id=2176, 798.985pt x 774.895pt>
 File: bilder/sigmaietaieta_log.png Graphic file (type png)
  <use bilder/sigmaietaieta_log.png>
-Package pdftex.def Info: bilder/sigmaietaieta_log.png used on input line 144.
+Package pdftex.def Info: bilder/sigmaietaieta_log.png used on input line 145.
 (pdftex.def)             Requested size: 221.14421pt x 214.47427pt.
-) [77] [78 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/eta_linear.png> <C:/Users/Markus_2/Documents/GitHub/d
-iplomarbeit/bilder/et_linear.png>]
-Overfull \hbox (61.4822pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 B.1.  VERTEILUNG DER SCHNITTVARIABLEN DER SELEKTION VON $\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 + \OML/cm
-m/m/it/12 $\OT1/cmr/m/sl/12 -EREIGNISSEN \OT1/cmr/m/n/12 79
- []
-
-[79 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/drmuon_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplo
-marbeit/bilder/drmuon_log.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/drjet_linear.png>] [80 <C:/Users/
-Markus_2/Documents/GitHub/diplomarbeit/bilder/ptreldrjet_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bi
-lder/haspixelseeds_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/haspixelseeds_log.png>]
-Overfull \hbox (61.4822pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 B.1.  VERTEILUNG DER SCHNITTVARIABLEN DER SELEKTION VON $\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 + \OML/cm
-m/m/it/12 $\OT1/cmr/m/sl/12 -EREIGNISSEN \OT1/cmr/m/n/12 81
- []
-
-[81 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hollowconetrackiso_linear.png> <C:/Users/Markus_2/Documents/
-GitHub/diplomarbeit/bilder/jurassicecaliso_linear.png>] [82 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hcal
-iso_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hcaliso_log.png> <C:/Users/Markus_2/Documents/Gi
-tHub/diplomarbeit/bilder/hadronicoverem_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hadronicover
-em_log.png>]
-Overfull \hbox (61.4822pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 B.1.  VERTEILUNG DER SCHNITTVARIABLEN DER SELEKTION VON $\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 + \OML/cm
-m/m/it/12 $\OT1/cmr/m/sl/12 -EREIGNISSEN \OT1/cmr/m/n/12 83
- []
-
-[83 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/sigmaietaieta_linear.png> <C:/Users/Markus_2/Documents/GitHu
-b/diplomarbeit/bilder/sigmaietaieta_log.png>]
-No file kapitel/danksagung.tex.
-(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.bbl [84
+) [77 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/eta_linear.png>] [78 <C:/Users/Markus_2/Documents/GitHub/d
+iplomarbeit/bilder/et_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/drmuon_linear.png> <C:/Users/M
+arkus_2/Documents/GitHub/diplomarbeit/bilder/drmuon_log.png>] [79 <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilde
+r/drjet_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/ptreldrjet_linear.png>] [80 <C:/Users/Markus
+_2/Documents/GitHub/diplomarbeit/bilder/haspixelseeds_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilde
+r/haspixelseeds_log.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hollowconetrackiso_linear.png>] [81 <C:
+/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/jurassicecaliso_linear.png> <C:/Users/Markus_2/Documents/GitHub/dip
+lomarbeit/bilder/hcaliso_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/hcaliso_log.png>] [82 <C:/U
+sers/Markus_2/Documents/GitHub/diplomarbeit/bilder/hadronicoverem_linear.png> <C:/Users/Markus_2/Documents/GitHub/diplom
+arbeit/bilder/hadronicoverem_log.png> <C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/sigmaietaieta_linear.png> 
+<C:/Users/Markus_2/Documents/GitHub/diplomarbeit/bilder/sigmaietaieta_log.png>]
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.bbl [83
 
 
-
-
-] [85]
-Underfull \hbox (badness 3746) in paragraph at lines 157--161
+] [84]
+Underfull \hbox (badness 3746) in paragraph at lines 180--184
 []\OT1/cmr/m/n/12 Ann Hein-son.  Use-ful Dia-grams of Top Si-gnals and Back-grounds, 2009.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 []$\OT1/cmtt/m/n/12 http : / / www-[]d0 . fnal . gov / Run2Physics / top / top _ public _ web _ pages / top _
  []
 
-[86] [87])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
- [88]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
- (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.aux
+[85]) [86] (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/erklaerung.tex) [87
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\Diplomarbeit.aux
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/titelseite.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/einleitung.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/theorie.aux)
@@ -1327,24 +1351,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/datenstudie.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/zusammenfassung.aux)
 (C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/anhang.aux)
-(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/danksagung.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+(C:\Users\Markus_2\Documents\GitHub\diplomarbeit\kapitel/erklaerung.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 Package rerunfilecheck Info: File `Diplomarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 0448EE4AF8F481F2EED02AC8D3553B3F;4229.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 25B83E82C22232CD87C5BCB691011D4D;4087.
  ) 
 Here is how much of TeX's memory you used:
- 10757 strings out of 494045
- 166905 string characters out of 3145961
- 275224 words of memory out of 3000000
- 13414 multiletter control sequences out of 15000+200000
+ 10764 strings out of 494045
+ 167150 string characters out of 3145961
+ 276589 words of memory out of 3000000
+ 13417 multiletter control sequences out of 15000+200000
  19166 words of font info for 74 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 38i,18n,41p,2643b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,18n,41p,2663b,622s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
@@ -1355,9 +1375,9 @@ lic/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Diplomarbeit.pdf (91 pages, 8457892 bytes).
+Output written on Diplomarbeit.pdf (90 pages, 8464745 bytes).
 PDF statistics:
- 2313 PDF objects out of 2487 (max. 8388607)
- 330 named destinations out of 1000 (max. 500000)
- 932 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2358 PDF objects out of 2487 (max. 8388607)
+ 332 named destinations out of 1000 (max. 500000)
+ 924 words of extra memory for PDF output out of 10000 (max. 10000000)
 
