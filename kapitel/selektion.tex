@@ -118,8 +118,9 @@ Es ergibt sich ein Signal-zu-Untergrund-Verhältnis von $S/B = 2,24$ und eine Sel
 
 \subsection{Photon matching}
 
-Das sogenannte \enquote{matching} bezeichnet die Zuordnung von rekonstruierten Teilchen zu generierten Monte Carlo Objekten. Für jeden rekonstruierten Photonkandidaten wird die Kollektion der Generatorteilchen nach Photonen durchsucht. Ein generiertes Photon wird dem rekonstruierten Photon zugeordnet, wenn es in einem Kegel von $\Delta R < 0,2$ liegt und die Energiedifferenz $\Delta E$ kleiner als die doppelte ECAL Energieauflösung bei der Energie des generierten Photons. Wenn bei dieser Prozedur Ambiguitäten auftreten, wird das Photon mit dem kleinsten $\Delta R$ ausgewählt. Abbildung~\ref{fig:matching} zeigt die $\Delta R$- bzw. $\Delta E/E$-Verteilungen zwischen rekonstruierten und generierten Photonen. \\
-Ein weiteres interessantes Kriterium ist die Migration der Energien von generierten und rekonstruierten Photonen. In Abbildung~\ref{fig:migration} ist aufgetragen, wie sich die Energie der generierten Photonen zur Energie der damit assoziierten rekonstruierten Photonkandidaten verhält. Hier sind nur wenige Migrationseffekte zu verzeichnen, die Energie der Photonen wird in der Rekonstruktion gut abgebildet. 
+Das sogenannte \enquote{matching} bezeichnet die Zuordnung von rekonstruierten Teilchen zu generierten Monte Carlo Objekten. Für jeden rekonstruierten Photonkandidaten wird die Kollektion der Generatorteilchen nach Photonen durchsucht. Ein generiertes Photon wird dem rekonstruierten Photon zugeordnet, wenn es in einem Kegel von $\Delta R < 0,2$ liegt und die Energiedifferenz $\Delta E$ kleiner als die doppelte ECAL Energieauflösung bei der Energie des generierten Photons. Wenn bei dieser Prozedur Ambiguitäten auftreten, wird das Photon mit dem kleinsten $\Delta R$ ausgewählt. Abbildung~\ref{fig:matching} zeigt die $\Delta R$- bzw. $\Delta E/E$-Verteilungen zwischen rekonstruierten und generierten Photonen. Aus dem RMS der $\Delta E/E$-Verteilung lässt sich eine Energieauflösung von 3,3\% ablesen. \\
+Ein weiteres interessantes Kriterium ist die Migration der Energien von generierten und rekonstruierten Photonen. In Abbildung~\ref{fig:migration} ist aufgetragen, wie sich die Energie der generierten Photonen zur Energie der damit assoziierten rekonstruierten Photonkandidaten verhält. Die Verteilung zeigt nur geringe Migrationseffekte, die Energie der Photonen wird in der Rekonstruktion gut abgebildet. \\
+Abbildung~\ref{fig:response} zeigt, welcher Anteil der Generatorphotonen rekonstruiert werden. Dazu werden die Elemente der Migrationsmatrix aus Abbildung~\ref{fig:migration} binweise durch die jeweilige Anzahl der ursprünglich in diesem Energiebereich generierten Photonen dividiert. Die Responsematrix weist ein uniformes Verhalten auf. Addiert man die Werte in der Matrix zeilenweise ergibt sich die Rekonstruktionseffizienz für den entsprechenden Energiebereich. Die Effizienz ist wie erwartet im höherenergetischen Bereich größer.
 
 \begin{figure}%
 \centering
@@ -130,16 +131,24 @@ Ein weiteres interessantes Kriterium ist die Migration der Energien von generier
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/migration}%
+\includegraphics[width=0.6\columnwidth]{bilder/migration}%
 \caption{Migrationsmatrix der Energie von generierten und rekonstruierten Photonen.}%
 \label{fig:migration}%
 \end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=0.6\columnwidth]{bilder/response.pdf}%
+\caption{Responsematrix der Energie von generierten und rekonstruierten Photonen.}%
+\label{fig:response}%
+\end{figure}
+
 
 \subsection{Selektion von \texorpdfstring{$t\overline{t}+\gamma$}{ttg}-Ereignissen}
 \label{sec:ttg_selektion}
 
 Im folgenden werden die Erfordernisse an die Photonen im Endzustand beschrieben. Diese setzen sich aus Schnitten zusammen, die spezifisch für diese Analyse sind, sowie aus Forderungen, die auf einer CMS Empfehlung für Photon-Selektion basieren (\enquote{Photon-ID}, \cite{CMS:WZProduction}). \\
-Während der Photon-Selektion werden vor jedem Schnitt Kontrollplots erstellt, welche die Verteilung der jeweiligen Schnittvariable zeigen. In den Abbildungen \ref{fig:eta_et} bis \ref{fig:hollowconetrackiso_jurassicecaliso} sind einige dieser Verteilungen für das $d_A^{\gamma} = 0$-Szenario gezeigt. Im Anhang \ref{sec:kontrollplots} finden sich alle Kontrollplots in linearer und logarithmischer Auftragung für das $d_A^{\gamma} = 0$-Szenario.
+Während der Photon-Selektion werden vor jedem Schnitt Kontrollplots erstellt, welche die Verteilung der jeweiligen Schnittvariable zeigen. In den Abbildungen \ref{fig:eta_et} bis \ref{fig:hollowconetrackiso_jurassicecaliso} sind einige dieser Verteilungen für das $\left[d_A^{\gamma} = 0\right]$-Szenario gezeigt. Im Anhang \ref{sec:kontrollplots} finden sich alle Kontrollplots in linearer und logarithmischer Auftragung für das $\left[d_A^{\gamma} = 0\right]$-Szenario.
 
 \begin{figure}%
 \centering

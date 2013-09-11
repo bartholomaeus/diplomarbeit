@@ -26,7 +26,7 @@ Die Luminosität hängt von der Anzahl $N_{p}$ der Protonen pro Teilchenpaket, der
 \label{fig:lhc}%
 \end{figure}
 Die Designluminosität des LHC beträgt 10$^{34}$\,cm$^{-2}$s$^{-1}$. Die wesentlichen Charakteristika des Beschleunigers bei Designluminosität und -energie sind in Tabelle~\ref{tab:lhc} zusammengefasst. \\
-Diese Arbeit befasst sich mit der Analyse von Daten, die im Jahre 2011 bei einer Schwerpunktsenergie von 7 TeV genommen worden sind. In diesem Jahr wurden maximal \protect\linebreak{1,45 $\cdot$ 10$^{11}$} Protonen zu einem Paket zusammengefasst, und maximal 1380 Pakete waren gleichzeitig im Beschleuniger vorhanden. Diese hatten einen zeitlichen Abstand zueinander von 50\,ns. Abbildung~\ref{fig:lumi2011} und~\ref{fig:intlumi2011} zeigen die Entwicklung von instantaner und integrierter Luminosität des LHC im Jahre 2011. Am Ende des Jahres wurde eine integrierte Luminosität von 5,5\,fb$^{-1}$ erreicht.
+Diese Arbeit befasst sich mit der Analyse von Daten, die im Jahre 2011 bei einer Schwerpunktsenergie von 7 TeV genommen worden sind. In diesem Jahr wurden maximal \protect\linebreak{1,45 $\cdot$ 10$^{11}$} Protonen zu einem Paket zusammengefasst, und maximal 1380 Pakete waren gleichzeitig im Beschleuniger vorhanden. Diese hatten einen zeitlichen Abstand zueinander von 50\,ns. Abbildung~\ref{fig:lumi2012} zeigt die Entwicklung von instantaner und integrierter Luminosität des LHC im Jahre 2011. Am Ende des Jahres wurde eine integrierte Luminosität von 5,5\,fb$^{-1}$ erreicht.
 \begin{table}
 \caption{Design-Kenngrößen des LHC bei Proton-Proton-Betrieb \cite{LHC:Design1}.}
 \centering
@@ -54,15 +54,15 @@ Länge eines Teilchenpaketes & 7,55 & cm \\
 \end{table}
 \begin{figure}%
 \centering
-\includegraphics[width=0.7\columnwidth]{bilder/lumi2012}%
-\caption{Zeitlicher Verlauf der maximalen Luminosität am CMS-Experiment in 2012 \cite{CMS:Lumiresults}.}%
-\label{fig:lumi2011}%
-\end{figure}
-\begin{figure}%
-\centering
-\includegraphics[width=0.7\columnwidth]{bilder/intlumi2012}%
-\caption{Zeitlicher Verlauf der totalen integrierten Luminosität am CMS-Experiment in 2012 \cite{CMS:Lumiresults}.}%
-\label{fig:intlumi2011}%
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{bilder/lumi2012}%
+\end{subfigure}
+\hspace{0.1\textwidth}
+\begin{subfigure}[b]{0.4\textwidth}%
+\includegraphics[width=\textwidth]{bilder/intlumi2012}%
+\end{subfigure}
+\caption{Zeitlicher Verlauf der maximalen (links) und totalen integrierten Luminosität (rechts) am CMS-Experiment in 2012 \cite{CMS:Lumiresults}.}%
+\label{fig:lumi2012}%
 \end{figure}
 
 \section{Der CMS-Detektor}
@@ -110,7 +110,7 @@ Der Krümmungsradius $r$ wird über die Sagitta bestimmt. Daher ist die Messgenaui
 
 Der Pixeldetektor ist unterteilt in den Barrel Pixel (BPIX) und den Forward Pixel (FPIX), siehe Abbildung~\ref{fig:pixeldetektor}. Der BPIX besteht aus drei jeweils 53\,cm langen zylindrischen Lagen mit Radien von 4,4\,cm, 7,3\,cm und 10,2\,cm. Die beiden FPIX haben einen Durchmesser von 30\,cm und bestehen aus jeweils 2 Scheiben, die bei $\left|z\right| = $ 34,5\,cm und $\left|z\right| = $ 46,5\,cm installiert sind. Die insgesamt 66 Millionen Pixel bedecken eine Fläche von 1\,m$^{2}$ und erstrecken sich bis $\left|\eta\right| = $ 2,4. Die einzelnen Pixel haben eine Ausdehnung von $100 \times 150\, \mu$m$^{2}$. Diese ist so gewählt, dass äquivalente Auflösungen in der $r-\Phi-$Ebene sowie in $z-$Richtung erreicht werden. Durch die Lorentzkraft verteilen sich die im Silizium freigesetzten Ladungen über mehrere Pixel. Durch eine analoge Auslese der einzelnen Pixel kann dann über eine Gewichtung benachbarter Messwerte eine räumliche Auflösung von 15 - 20\,$\mu$m erreicht werden.
 
-\begin{figure}%
+\begin{figure}[b]%
 \centering
 \includegraphics[width=0.7\columnwidth]{bilder/pixeldetektor.png}%
 \caption{Schematische Skizze des Pixeldetektors. Mittig die einzelnen Module des BPIX und an deren Enden die Module des FPIX \cite{Kuessel:Diplom}.}%
@@ -122,7 +122,7 @@ Der Pixeldetektor ist unterteilt in den Barrel Pixel (BPIX) und den Forward Pixe
 Der Streifendetektor schließt sich unmittelbar an den Pixeldetektor an. Er lässt sich, wie in Abbildung~\ref{fig:streifendetektor} dargestellt, in vier Bereiche einteilen: Tracker Inner Barrel (TIB), Tracker Inner Disks (TID), Tracker Outer Barrel (TOB) sowie Tracker Endcap (TEC), die sich durch die Anordnung und Art ihrer Module unterscheiden. TIB und TOB sind zylindrisch um die Strahlachse angeordnet, TID und TEC bilden Endkappen senkrecht zur Strahlrichtung. Der gesamte Detektor hat einen Radius von 1,1\,m bei einer Länge von 5,8\,m. Damit ergibt sich eine aktive Detektorfläche von 198\,m$^{2}$ und eine Abdeckung von $\left|\eta\right| < $ 2,5.\\
 Insgesamt sind 9,3 Millionen Siliziumstreifen auf 15.148 Detektormodulen installiert. Neben den einseitigen gibt es auch doppelseitige Module, um die Spurauflösung zu erhöhen. Diese bestehen aus zwei einseitigen Modulen, deren Siliziumstreifen unter einem Winkelversatz von 5,7\,° Rücken an Rücken angebracht sind. Dadurch wird eine Ortsauflösung von 23-53\,$\mu$m in der $r-\Phi-$Ebene und 230-530\,$\mu$m in $z-$Richtung ermöglicht. Die Länge der Sensoren nimmt mit steigendem Radius zu, damit ihre Okkupanz gleich bleibt. So wird jedoch gleichzeitig das Signal-zu-Rauschen-Verhältnis verändert, dies wird durch eine ansteigende Dicke der Sensoren ausgeglichen. Diese beträgt innen 320\,$\mu$m und nimmt nach außen bis auf 500\,$\mu$m zu.
 
-\begin{figure}%
+\begin{figure}[h]%
 \centering
 \includegraphics[width=0.7\columnwidth]{bilder/streifendetektor.png}%
 \caption{Schema des Streifendetektors \cite{Hegner:Diplom}.}%
@@ -136,7 +136,7 @@ Im ECAL werden hauptsächlich elektromagnetisch und wenig stark wechselwirkende T
 
 \subsubsection*{Das elektromagnetische Kalorimeter}
 
-Elektronen und Photonen werden im ECAL durch zwei Prozesse ineinander umgewandelt und dabei abgebremst: Bremsstrahlung ($e \rightarrow e\gamma$) und Paarbildung ($\gamma \rightarrow e^{+}e^{-}$). Es gibt mehrere Kenndaten, die einen so entstehenden Teilchenschauer beschreiben:
+Elektronen und Photonen werden im ECAL durch zwei Prozesse ineinander umgewandelt und dabei abgebremst: Bremsstrahlung ($e \rightarrow e\gamma$) und Paarbildung ($\gamma \rightarrow e^{+}e^{-}$). Dabei ist die Strahlungslänge bei Bremsstrahlung etwa gleich der Wechselwirkungslänge für Paarbildung. Es gibt mehrere Kenndaten, die einen so entstehenden Teilchenschauer beschreiben:
 \begin{itemize}
 	\item Die Strahlungslänge $X_{0}$ bezeichnet die Länge, nach der ein Elektron auf 1/e seiner ursprünglichen Energie abgebremst wurde und ist charakteristisch für das Material, das im Kalorimeter verbaut wurde.
 	\item Der Molière-Radius $R_{M}$ beschreibt die transversale Ausdehnung des Schauers und enthält 95\% der Energie des Ursprungsteilchens. Er ist in guter Näherung proportional zur Strahlungslänge.
@@ -175,7 +175,8 @@ Das hadronische Kalorimeter ist als Sampling-Kalorimeter konstruiert, das absorb
 \end{equation}
 
 \begin{figure}%
-\includegraphics[width=\columnwidth]{bilder/kalorimeter2}%
+\centering
+\includegraphics[width=0.7\columnwidth]{bilder/kalorimeter2}%
 \caption{Übersicht des CMS-Detektors mit Outer Calorimeter (HO) und Vorwärtskalorimeter (HF) \cite{Coll:CMSExperiment}.}%
 \label{fig:kalorimeter2}%
 \end{figure}
@@ -192,7 +193,8 @@ An den Solenoiden schließt sich das Myonsystem als letzte Detektorkomponente an.
 \end{equation}
 
 \begin{figure}%
-\includegraphics[width=\columnwidth]{bilder/myonsystem.png}%
+\centering
+\includegraphics[width=0.7\columnwidth]{bilder/myonsystem.png}%
 \caption{Das Myonsystem bei CMS \cite{James:MuonID}.}%
 \label{fig:myon}%
 \end{figure}

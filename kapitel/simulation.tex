@@ -60,18 +60,19 @@ Der Durchgang der von den Monte-Carlo-Generatoren erzeugten Teilchen durch die e
 
 Die Studie der von WHIZARD generierten Monte-Carlo-Daten soll zeigen, wie sich der Wirkungsquerschnitt $\sigma = \sigma(d_A^{\gamma})$ des $t\overline{t}+\gamma$-Prozesses sowie das $E_T$-Spektrum $E_T = E_T(d_A^{\gamma})$ der Photonen aus dem harten Prozess durch Variation des angenommenen $d_A^{\gamma}$-Wertes verändert. Dazu wird eine 2-Bin-Analyse, eine Analyse des Schwerpunktes der $E_T$-Verteilung sowie die Analyse einer Exponentialanpassung an das $E_T$-Spektrum implementiert (Abschnitt~\ref{sec:ana_slope}). Desweiteren soll untersucht werden, welche der Variablen sich am besten eignet, zwischen verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden. Durch Verwendung von Generatorteilchen werden Auflösungseffekte durch die Rekonstruktion sowie Akzeptanzeffekte durch die Selektion vermieden.
 
+\begin{figure}[h]%
+\centering
+\includegraphics[width=0.5\columnwidth]{bilder/crosssectionplot}%
+\caption{Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses für $0<d_A^{\gamma}<1$ mit eingezeichneter quadratischer Anpassung.}%
+\label{fig:cs_wofit}%
+\end{figure}
+
 \subsection{Wirkungsquerschnitt des \texorpdfstring{$t\overline{t}+\gamma$}{ttg}-Prozesses}
 \label{sec:wq}
 
 Es wird eine quadratische Abhängigkeit des Wirkungsquerschnittes vom Parameter $d_A^{\gamma}$ erwartet, da $d_A^{\gamma}$ linear in das Matrixelement eingeht und der Wirkungsquerschnitt proportional zum Quadrat des Matrixelementes ist. \\
 Mit dem Leading-Order-Monte-Carlo-Generator WHIZARD in der Version 2.1.1 werden zuerst für verschiedene elektrische Dipolmomente in Schritten von 0,01 für $0<d_A^{\gamma}<1$ die Matrixelemente des harten Prozesses generiert. Das Modell $2 \rightarrow 5$ wird implementiert mit zwei W-Bosonen, zwei b-Quarks und einem Photon im Endzustand. Die Matrixelement-Berechnung wird so lange fortgeführt, bis der Unsicherheitsestimator der numerischen Integration 1\% unterschreitet. Die berechneten Wirkungsquerschnitte sind in Abb. \ref{fig:cs_wofit} dargestellt. Eine Anpassung zeigt die erwartete quadratische Abhängigkeit. Auffällig sind die großen Fehler auf den Wirkungsquerschnitt bei den Werten $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$. Auch eine deutlich längere Berechnung des Matrixelements verringert diese nicht. Es ist derzeit nicht klar, was diesen großen Fehler verursacht. Es wird von einem internen Berechnungsproblem von WHIZARD bei diesen $d_A^{\gamma}$-Werten ausgegangen, da sich die Steuerungsskripte zur Berechnung der verschiedenen Monte-Carlo-Samples ausschließlich im vorgegebenen $d_A^{\gamma}$-Wert unterscheiden.
 
-\begin{figure}%
-\centering
-\includegraphics[width=0.5\columnwidth]{bilder/crosssectionplot}%
-\caption{Wirkungsquerschnitt des $t\overline{t}+\gamma$-Prozesses für $0<d_A^{\gamma}<1$ mit eingezeichneter quadratischer Anpassung.}%
-\label{fig:cs_wofit}%
-\end{figure}
 
 \subsection{\texorpdfstring{$E_T$}{ET}-Spektrum des Photons}
 \label{sec:etphoton}
@@ -102,32 +103,26 @@ Aus dem berechneten Matrixelement werden für jeden $d_A^{\gamma}$-Wert 105.000 E
 \begin{subfigure}[b]{0.4\textwidth}
 \includegraphics[width=\textwidth]{bilder/et_gen_1}%
 \end{subfigure}
-\caption{$E_T$-Verteilungen von Monte-Carlo-Daten auf Generator-Level für verschiedene Werte von $d_A^{\gamma}$.}%
+\caption{$E_T$-Verteilungen von Monte-Carlo-Ereignissen auf Generator-Level für verschiedene Werte von $d_A^{\gamma}$.}%
 \label{fig:et_gen_galerie}%
 \end{figure}
 
 \subsubsection{2-Bin-Analyse}
 \label{sec:ana_twobin}
 
-Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht von 0\,GeV bis 100\,GeV, der zweite von 100\,GeV bis 700\,GeV, siehe dazu Abb. \ref{fig:2bin_skizze}. Nun wird das Verhältnis der Anzahl der Photonen in den beiden Bereichen gegen $d_A^{\gamma}$ aufgetragen, siehe Abb. \ref{fig:2bin_plot}. Auf der linken Seite sieht man zwei Messwerte, die nicht dem allgemeinen Verlauf folgen. Dies sind die schon in Kapitel \ref{sec:wq} angesprochenen Messpunkte, die durch irreduzibel große Fehler auf den Wirkungsquerschnitt auffielen und auch in allen anderen Analysemethoden herausstechen. Die Punkte $d_A^{\gamma}=0,06$ und $d_A^{\gamma}=0,95$ werden im folgenden für die Auswertung der verschiedenen Analysemethoden nicht berücksichtigt. Der so bereinigte Plot ist in Abb. \ref{fig:2bin_plot} rechts zu sehen. Die 2-Bin-Analyse stellt einen vielversprechenden Ansatz dar, das härtere Photonenspektrum für größere Kopplungsstärken $d_A^{\gamma}$ zu beschreiben. Auf Generatorniveau ist eine sehr gute Separationskraft vorhanden, der Wertebereich erstreckt sich von $E_{Low} / E_{High} = 3,8$ für $d_A^{\gamma} = 0$ bis $E_{Low} / E_{High} = 2,2$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit durch Statistik von $\Delta E_{Low} / E_{High} \leq 0,03$. 
+Das $E_T$-Spektrum wird in zwei Bereiche aufgeteilt. Der erste Bereich reicht von 0\,GeV bis 100\,GeV, der zweite von 100\,GeV bis 700\,GeV, siehe dazu Abb. \ref{fig:2bin_skizze}. Das Verhältnis der Anzahl der Photonen in den beiden Bereichen wird gegen $d_A^{\gamma}$ aufgetragen, siehe Abb. \ref{fig:2bin_plot}. Die 2-Bin-Analyse stellt einen vielversprechenden Ansatz dar, das härtere Photonenspektrum für größere Kopplungsstärken $d_A^{\gamma}$ zu beschreiben. Auf Generatorniveau ist eine sehr gute Separationskraft vorhanden, der Wertebereich erstreckt sich von $E_{Low} / E_{High} = 3,8$ für $d_A^{\gamma} = 0$ bis $E_{Low} / E_{High} = 2,2$ für $d_A^{\gamma} = 1$ bei einer Unsicherheit durch Statistik von $\Delta E_{Low} / E_{High} \leq 0,03$. 
 
 \begin{figure}%
 \centering
-\includegraphics[width=0.5\columnwidth]{bilder/2binskizze}%
+\includegraphics[width=0.5\columnwidth]{bilder/twobin_skizze.pdf}%
 \caption{Schema der Unterteilung bei der 2-Bin-Analyse.}%
 \label{fig:2bin_skizze}%
 \end{figure}
 
 \begin{figure}%
 \centering
-\begin{subfigure}[b]{0.4\textwidth}
-  \includegraphics[width=\textwidth]{bilder/twobinplot}%
-\end{subfigure}
-\hspace{0.1\textwidth}
-\begin{subfigure}[b]{0.4\textwidth}
-  \includegraphics[width=\textwidth]{bilder/twobinplotv2}%
-\end{subfigure}
-\caption{Verhältnis der Anzahl der Photonen in Bin 1 und Bin 2. Im rechten Plot sind die Werte für $d_A^{\gamma} = 0,06$ und $d_A^{\gamma} = 0,95$ nicht berücksichtigt.}%
+\includegraphics[width=0.5\columnwidth]{bilder/twobinplot}%
+\caption{Verhältnis der Anzahl der Photonen in Bin 1 und Bin 2.}%
 \label{fig:2bin_plot}%
 \end{figure}
 
@@ -186,20 +181,17 @@ Zunächst wird mit der verfügbaren Statistik von 105000 Ereignissen, das entspric
 \label{fig:ensemble}%
 \end{figure}
 
-\begin{figure}%
+\begin{figure}[h]%
 \centering
-\begin{subfigure}[b]{0.4\textwidth}
-  \includegraphics[width=\textwidth]{bilder/gauss}%
-	\caption{Histogrammiertes $\lambda$.}
-  \label{fig:gauss}%
-\end{subfigure}
-\hspace{0.1\textwidth}
-\begin{subfigure}[b]{0.4\textwidth}
-  \includegraphics[width=\textwidth]{bilder/sigma_lambda}%
-	\caption{$\sigma_{\lambda}$ gegen $\mathcal L_{int}$ aufgetragen.}
-	\label{fig:sigma_lambda}
-\end{subfigure}
-\caption{Ergebnisse der Ensemblestudie}%
+\includegraphics[width=0.5\columnwidth]{bilder/gauss}%
+\caption{Histogrammiertes $\lambda$.}
+\label{fig:gauss}%
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{bilder/sigma_lambda}%
+\caption{$\sigma_{\lambda}$ gegen $\mathcal L_{int}$ aufgetragen.}
+\label{fig:sigma_lambda}
 \end{figure}
 
 \subsubsection{Vergleich der verschiedenen Analysemethoden}

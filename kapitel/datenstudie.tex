@@ -148,14 +148,14 @@ Mit den im vorangegangenen Unterkapitel beschriebenen Analysemethoden wird das S
 \overline{E_T}_{Data} &= 55 & &\pm 3\,\text{GeV} \ , \\
 \lambda_{Data} &= -0,033 & &\pm 0,003 \ . \nonumber
 \end{alignat}
-Aufgrund der eingeschränkten Statistik von 134 Ereignissen zeigen alle Analysemethoden einen dominanten statistischen Fehler. Die Ergebnisse aus Gleichung~\ref{eq:data} werden in den Abbildungen~\ref{fig:twobin_data_mc}, \ref{fig:mean_data_mc} und \ref{fig:slope_data_mc} mit den Monte-Carlo-Simulationen zu verschiedenen $d_A^{\gamma}$-Szenarien verglichen. Man erhält für das elektrische Dipolmoment, bestimmt aus Daten
+Aufgrund der eingeschränkten Statistik von 134 Ereignissen zeigen alle Analysemethoden einen dominanten statistischen Fehler. Die Ergebnisse aus Gleichung~\ref{eq:data} werden in den Abbildungen~\ref{fig:twobin_data_mc}, \ref{fig:mean_data_mc} und \ref{fig:slope_data_mc} mit den Monte-Carlo-Simulationen zu verschiedenen \protect\linebreak{$d_A^{\gamma}$-Szenarien} verglichen. Man erhält für das elektrische Dipolmoment, bestimmt aus Daten
 \begin{alignat*}{2}
-E_{Low}/E_{High} &: d^{\gamma}_{A\, Data} & &= 0,44_{-0,44}^{+0,37} \ , \\
-\overline{E_T} &: d^{\gamma}_{A\, Data} & &= 0,24_{-0,24}^{+0,31} \ , \\
-\lambda &: d^{\gamma}_{A\, Data} & &= 0,08_{-0,08}^{+0,47} \\
+E_{Low}/E_{High} &: d^{\gamma}_{A\, Data} & &= 0,4_{-0,4}^{+0,4} \ , \\
+\overline{E_T} &: d^{\gamma}_{A\, Data} & &= 0,2_{-0,2}^{+0,3} \ , \\
+\lambda &: d^{\gamma}_{A\, Data} & &= 0,1_{-0,1}^{+0,5} \\
 \end{alignat*}
 als Ergebnis für die verschiedenen Analysemethoden. Die angegebenen Unsicherheiten ergeben sich aus den statistischen Unsicherheiten von Daten und Simulation. \\
-Für alle drei Analysemethoden ist das erhaltene elektrische Dipolmoment $d^{\gamma}_{A\, Data}$ innerhalb einer Standardabweichung mit dem Standardmodell vereinbar. Szenarien mit $d_A^{\gamma} > 0,55$ (Exponentialanpassung, Messung des Schwerpunktes) sowie $d_A^{\gamma} > 0,81$ ($E_{Low}/E_{High}$) liegen außerhalb des $1\,\sigma$- und innerhalb des $3\,\sigma$-Bandes.
+Für alle drei Analysemethoden ist das erhaltene elektrische Dipolmoment $d^{\gamma}_{A\, Data}$ innerhalb einer Standardabweichung mit dem Standardmodell vereinbar. Szenarien mit $d_A^{\gamma} > 0,6$ (Exponentialanpassung, Messung des Schwerpunktes) sowie $d_A^{\gamma} > 0,8$ ($E_{Low}/E_{High}$) liegen außerhalb des $1\,\sigma$- und innerhalb des $3\,\sigma$-Bandes.
 \begin{figure}%
 \centering
 \includegraphics[width=0.6\columnwidth]{bilder/twobin_data_mc.pdf}%
@@ -184,7 +184,7 @@ Dieses Kapitel erläutert zuerst die statistischen und anschließend die wichtigst
 Die statistischen Unsicherheiten auf die Variablen $E_{Low}/E_{High}$, $\overline{E_T}$ und $\lambda$ werden folgendermaßen bestimmt:
 
 \begin{description}
-  \item [$E_{Low}/E_{High}$ : ] Die Unsicherheit auf die Bininhalte $E_{Low}$ und $E_{High}$ wird mit $\sqrt{E_{Low}}$ beziehungsweise $\sqrt{E_{High}}$ angenommen und auf das Verhältnis mittels Gauss'scher Fehlerrechnung fortgepflanzt.
+  \item [$E_{Low}/E_{High}$ : ] Die Unsicherheit auf die Zählraten $E_{Low}$ und $E_{High}$ wird mit $\sqrt{E_{Low}}$ beziehungsweise $\sqrt{E_{High}}$ angenommen und auf das Verhältnis mittels Gauss'scher Fehlerrechnung fortgepflanzt.
 	\item [$\overline{E_T}$ : ] Die Unsicherheit auf den Schwerpunkt der $E_T$-Verteilung wird mittels Formel \ref{eq:meanerror} ermittelt.
 	\item [$\lambda$ : ] Die Unsicherheit auf den Exponenten $\lambda$ der Exponentialanpassung wird mit der in Kapitel \ref{sec:ensemble} beschriebenen Ensemblestudie durch 1000-faches Neuwürfeln der $E_T$-Verteilung bestimmt.
 \end{description}
@@ -197,10 +197,10 @@ Die Signifikanz dieser Analyse wird von vielen systematischen Effekten limitiert
 \begin{description}
   \item [Generator: ] Verschiedene Monte-Carlo-Generatoren benutzen unterschiedliche Algorithmen zur Simulation der Hadronisierung und Schauerbildung und erzeugen somit voneinander abweichende Energiespektren. Ein zweites $t\overline{t}$-Sample wird mit einem anderen Matrixelementgenerator (MC@NLO \cite{Frixione:MCatNLO}) und Hadronisierungs- und Schauermodell (HERWIG \cite{Frixione:MCatNLO}) generiert. Dieses wird mit einem Sample, welches mit MADGRAPH und PYTHIA erzeugt wird, verglichen. Es werden alle Analysemethoden analog angewendet und eine relative Abweichung der untersuchten Variablen gemäß
 	\begin{equation}
-	\Delta X_{rel} = \frac{X_{MC@NLO}-X_{MADGRAPH}}{X_{MADGRAPH}} \ .
+	\Delta X_{rel} = \frac{X_{HERWIG}-X_{PYTHIA}}{X_{PYTHIA}} \ .
 	\end{equation}
 als systematische Unsicherheit definiert.
-  \item [Normierung des Signals: ] Die Unsicherheit durch Signalnormierung ergibt sich durch Variation der Ereignisanzahl des Signal-Samples um $\pm 25\%$. Dies bildet eine Änderung der Faktorisierungs- beziehungsweise Renormalisierungsskala ab \cite{Tholen:AN}.
+  \item [Normierung des Signals: ] Die Unsicherheit auf die Signalnormierung liegt in der Größenordnung von $\pm 25\%$. Dies resultiert im Wesentlichen aus Unsicherheiten der Faktorisierungs- beziehungsweise Renormalisierungsskala \cite{Tholen:AN}.
 	\item [Normierung der Untergrundprozesse: ] Die in Kapitel \ref{sec:top_untergrund} beschriebenen Unsicherheiten auf den Wirkungsquerschnitt der Untergrundprozesse werden gaussisch addiert und die Ereignisanzahl der Untergrundprozesse entsprechend dieser Gesamtunsicherheit variiert.
 \end{description}
 \begin{table}[h]%
@@ -221,10 +221,10 @@ gesamt & 13\% & 2,6\% & 6,0\% \parbox[0pt][1.4em][c]{0cm}{} \\
 \end{tabular}
 \label{tab:systematiken}
 \end{table}
-Die dominante Systematik der 2-Bin-Analyse ist die Wahl des Monte-Carlo-Generators mit 10\%. Die $\overline{E_T}$-Analyse und die Exponentialanpassung werden durch die Normierung des Signals mit 1,8\% respektive 4,8\% dominiert. Für die untersuchten Variablen im $d_A^{\gamma} = 0$-Szenario erhält man die folgenden Ergebnisse:
+Die dominante Systematik der 2-Bin-Analyse ist die Wahl des Monte-Carlo-Generators mit 10\%. Die $\overline{E_T}$-Analyse und die Exponentialanpassung werden durch die Normierung des Signals mit 1,8\% respektive 4,8\% dominiert. Für die untersuchten Variablen im $\left[d_A^{\gamma} = 0\right]$-Szenario erhält man die folgenden Ergebnisse:
 \begin{alignat*}{3}
 E_{Low}/E_{High} &= 6,4 & &\pm 0,3 (\text{stat.}) & &\pm 0,8 (\text{syst.}) \ , \\
 \overline{E_T} &= 53 & &\pm 1 (\text{stat.}) & &\pm 1 (\text{syst.})\,\text{GeV} \ , \\
 \lambda &= -0,0347 & &\pm 0,0007 (\text{stat.}) & &\pm 0,0020 (\text{syst.}) \ .
 \end{alignat*}
-Die 2-Bin-Analyse wird mit 13,1\% am stärksten von den untersuchten Systematiken beeinflusst, während die Analyse des Schwerpunktes der $E_T$-Verteilung mit 2,57\% am robustesten ist. Sie ist daher hinsichtlich der Systematiken die beste Methode, zwischen den verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden.
+Die 2-Bin-Analyse wird mit 13\% am stärksten von den untersuchten Systematiken beeinflusst, während die Analyse des Schwerpunktes der $E_T$-Verteilung mit 2,6\% am robustesten ist. Sie ist daher hinsichtlich der Systematiken die beste Methode, zwischen den verschiedenen $d_A^{\gamma}$-Szenarien zu unterscheiden.

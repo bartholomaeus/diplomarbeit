@@ -4,14 +4,14 @@
 \contentsline {section}{\numberline {2.2}Das Top-Quark am LHC}{3}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Erzeugung von Top-Quark-Paaren}{4}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Top-Quark-Zerfall}{5}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Anomale Kopplungen des Top-Quarks}{6}{section.2.3}
+\contentsline {section}{\numberline {2.3}Anomale Kopplungen des Top-Quarks}{8}{section.2.3}
 \contentsline {chapter}{\numberline {3}Das CMS-Experiment am LHC}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Der Large Hadron Collider}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Der CMS-Detektor}{14}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Die Silizium-Spurdetektoren}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Die Kalorimeter}{18}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Der Solenoidmagnet}{21}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Die Myonkammern}{22}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.2}Die Kalorimeter}{17}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Der Solenoidmagnet}{20}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Die Myonkammern}{20}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Das Triggersystem}{22}{subsection.3.2.5}
 \contentsline {chapter}{\numberline {4}Konzept der Analyse}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Signatur des Signals}{25}{section.4.1}
@@ -27,11 +27,11 @@
 \contentsline {subsection}{\numberline {5.1.4}Detektorsimulation}{35}{subsection.5.1.4}
 \contentsline {section}{\numberline {5.2}Studie der von WHIZARD generierten Monte-Carlo-Samples}{36}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Wirkungsquerschnitt des $t\overline {t}+\gamma $-Prozesses}{36}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}$E_T$-Spektrum des Photons}{36}{subsection.5.2.2}
-\contentsline {subsubsection}{2-Bin-Analyse}{37}{section*.42}
-\contentsline {subsubsection}{$E_T$-Mean-Analyse}{37}{section*.45}
-\contentsline {subsubsection}{Analyse der Exponentialanpassung der $E_T$-Verteilung}{40}{section*.47}
-\contentsline {subsubsection}{Ensemblestudie}{42}{section*.50}
+\contentsline {subsection}{\numberline {5.2.2}$E_T$-Spektrum des Photons}{37}{subsection.5.2.2}
+\contentsline {subsubsection}{2-Bin-Analyse}{37}{section*.41}
+\contentsline {subsubsection}{$E_T$-Mean-Analyse}{37}{section*.44}
+\contentsline {subsubsection}{Analyse der Exponentialanpassung der $E_T$-Verteilung}{40}{section*.46}
+\contentsline {subsubsection}{Ensemblestudie}{40}{section*.49}
 \contentsline {subsubsection}{Vergleich der verschiedenen Analysemethoden}{42}{section*.53}
 \contentsline {chapter}{\numberline {6}Ereignisrekonstruktion und -selektion}{45}{chapter.6}
 \contentsline {section}{\numberline {6.1}Ereignisrekonstruktion}{45}{section.6.1}
@@ -46,8 +46,8 @@
 \contentsline {subsection}{\numberline {6.2.1}Top-Quark-Paar-Selektion}{52}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Photon matching}{53}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Selektion von $t\overline {t}+\gamma $-Ereignissen}{54}{subsection.6.2.3}
-\contentsline {subsubsection}{Analyse-spezifische Schnitte}{56}{section*.60}
-\contentsline {subsubsection}{Photon-Identifikationsschnitte}{56}{section*.62}
+\contentsline {subsubsection}{Analyse-spezifische Schnitte}{56}{section*.61}
+\contentsline {subsubsection}{Photon-Identifikationsschnitte}{57}{section*.63}
 \contentsline {chapter}{\numberline {7}Vergleich mit Daten}{61}{chapter.7}
 \contentsline {section}{\numberline {7.1}$E_T$-Spektren}{61}{section.7.1}
 \contentsline {section}{\numberline {7.2}2-Bin-Analyse}{61}{section.7.2}
@@ -60,4 +60,4 @@
 \contentsline {subsection}{\numberline {7.7.2}Systematische Unsicherheiten}{70}{subsection.7.7.2}
 \contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{73}{chapter.8}
 \contentsline {chapter}{\numberline {A}Verteilungen der Schnittvariablen}{77}{appendix.A}
-\contentsline {chapter}{Literaturverzeichnis}{83}{figure.caption.88}
+\contentsline {chapter}{Literaturverzeichnis}{83}{figure.caption.89}
